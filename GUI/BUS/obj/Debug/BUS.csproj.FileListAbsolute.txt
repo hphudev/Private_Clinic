@@ -1,0 +1,6 @@
+D:\CodeSkill\Private Clinics\GUI\BUS\bin\Debug\BUS.dll
+D:\CodeSkill\Private Clinics\GUI\BUS\bin\Debug\BUS.pdb
+D:\CodeSkill\Private Clinics\GUI\BUS\obj\Debug\BUS.csprojAssemblyReference.cache
+D:\CodeSkill\Private Clinics\GUI\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+D:\CodeSkill\Private Clinics\GUI\BUS\obj\Debug\BUS.dll
+D:\CodeSkill\Private Clinics\GUI\BUS\obj\Debug\BUS.pdb
