@@ -1,0 +1,6 @@
+D:\CodeSkill\Private Clinics\GUI\DTO\bin\Debug\DTO.dll
+D:\CodeSkill\Private Clinics\GUI\DTO\bin\Debug\DTO.pdb
+D:\CodeSkill\Private Clinics\GUI\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+D:\CodeSkill\Private Clinics\GUI\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\CodeSkill\Private Clinics\GUI\DTO\obj\Debug\DTO.dll
+D:\CodeSkill\Private Clinics\GUI\DTO\obj\Debug\DTO.pdb

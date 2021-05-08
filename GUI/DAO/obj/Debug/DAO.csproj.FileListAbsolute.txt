@@ -1,0 +1,6 @@
+D:\CodeSkill\Private Clinics\GUI\DAO\bin\Debug\DAO.dll
+D:\CodeSkill\Private Clinics\GUI\DAO\bin\Debug\DAO.pdb
+D:\CodeSkill\Private Clinics\GUI\DAO\obj\Debug\DAO.csprojAssemblyReference.cache
+D:\CodeSkill\Private Clinics\GUI\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+D:\CodeSkill\Private Clinics\GUI\DAO\obj\Debug\DAO.dll
+D:\CodeSkill\Private Clinics\GUI\DAO\obj\Debug\DAO.pdb
