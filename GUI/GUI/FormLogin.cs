@@ -16,12 +16,15 @@ namespace GUI
         private string tbUser_hint = "Tên đăng nhập";
         private string tbPassword_hint = "Mật khẩu";
         private bool eye = false;
-
-        public FormLogin()
+        private FormEntrance parent;
+        public FormLogin(FormEntrance parent)
         {
             InitializeComponent();
             Init_HintText();
             Init_HintPassword();
+            DoubleBuffered = true;
+            bLogin.Click += bLoginClicked;
+            this.parent = parent;
         }
 
         private void Init_HintPassword()
@@ -51,7 +54,12 @@ namespace GUI
             {
                 BUS.Event.Leave_HintText(this.tbPassword, tbPassword_hint, eye);
             };
+        }
 
+        private void bLoginClicked(Object s, EventArgs e)
+        {
+            FormMain formMain = new FormMain();
+            BUS.Event.ShowChildForm_HideParentForm(formMain, parent);
         }
 
     }

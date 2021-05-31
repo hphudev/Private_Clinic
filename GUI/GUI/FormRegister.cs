@@ -20,12 +20,14 @@ namespace GUI
         private string tbEmail_hint = "Email";
         private string tbConfirmPassword_hint = "Xác nhận mật khẩu";
         private bool eye = false;
+        private FormEntrance parent;
 
-        public FormRegister()
+        public FormRegister(FormEntrance parent)
         {
             InitializeComponent();
             Init_HintText();
             Init_HintPassword();
+            this.parent = parent;
         }
 
         private void Init_HintPassword()
@@ -95,6 +97,12 @@ namespace GUI
             };
             
 
+        }
+
+        private void bRegisterClicked(Object s, EventArgs e)
+        {
+            FormMain formMain = new FormMain();
+            BUS.Event.ShowChildForm_HideParentForm(formMain, parent);
         }
     }
 }

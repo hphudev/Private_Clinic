@@ -47,9 +47,9 @@ namespace GUI
             bShowRegister.BackColor = Color.FromArgb(2, 119, 189);
             bShowLogin.BackColor = Color.FromArgb(3, 155, 229);
             pFormShow.Controls.Clear();
-            FormChoice = new FormLogin() { TopLevel = false, TopMost = true };
+            FormChoice = new FormLogin(this) { TopLevel = false, TopMost = true };
             pFormShow.Controls.Add(FormChoice);
-            FormChoice.Show();
+            BUS.Event.ShowFormEffect(FormChoice, 1);
         }
 
         private void ClickedShowFormRegister(Object s, EventArgs e)
@@ -61,9 +61,9 @@ namespace GUI
             bShowLogin.BackColor = Color.FromArgb(2, 119, 189);
             bShowRegister.BackColor = Color.FromArgb(3, 155, 229);
             pFormShow.Controls.Clear();
-            FormChoice = new FormRegister() { TopLevel = false, TopMost = true };
+            FormChoice = new FormRegister(this) { TopLevel = false, TopMost = true };
             pFormShow.Controls.Add(FormChoice);
-            FormChoice.Show();
+            BUS.Event.ShowFormEffect(FormChoice, 1);
         }
     }
 }

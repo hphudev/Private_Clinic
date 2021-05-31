@@ -78,6 +78,7 @@ namespace BUS
         {
             ShowFormEffect(child, 1);
             HideFormEffect(parent, 1, false);
+
         }
         #endregion
 
@@ -141,6 +142,22 @@ namespace BUS
         {
             textBox.UseSystemPasswordChar = (Eye == false) && (isHint);
             pictureBox.Image = (Eye) ? openEye : closeEye;
+        }
+        #endregion
+
+        #region Đổi màu văn bản khi đưa chuột vào Button
+        static public void MouseEnterChangeForeColor(object s, EventArgs e)
+        {
+            Button button = (Button)s;
+            button.ForeColor = Color.FromArgb(178, 34, 34);
+        }
+        #endregion
+
+        #region Đổi màu văn bản khi đưa chuột vào Button
+        static public void MouseLeaveChangeForeColor(object s, EventArgs e)
+        {
+            Button button = (Button)s;
+            button.ForeColor = Color.White;
         }
         #endregion
 

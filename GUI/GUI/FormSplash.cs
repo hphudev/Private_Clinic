@@ -26,7 +26,11 @@ namespace GUI
             this.bReConnectServer.Click += Clicked_bReconnectServer;
             this.KeyDown += ExitForm;
             BUS.Event.openEye = Resources.OpenEye; 
-            BUS.Event.closeEye = Resources.CloseEye; 
+            BUS.Event.closeEye = Resources.CloseEye;
+            this.MouseDown += (s, e) =>
+            {
+                BUS.Event.MouseDown_DragBar(this);
+            };
         }
 
         private void LoadForm(object s, EventArgs e)
@@ -38,6 +42,7 @@ namespace GUI
         private async void Clicked_bReconnectServer(object s, EventArgs e)
         {
             this.pBar.Visible = true;
+            this.lDisconnecting.Visible = false;
             this.bReConnectServer.Visible = false;
             this.lRecommend.Visible = false;
             timeSleep += 5000;
@@ -48,6 +53,7 @@ namespace GUI
                 this.bReConnectServer.Visible = true;
                 this.lRecommend.Visible = true;
                 this.pBar.Visible = false;
+                this.lDisconnecting.Visible = true;
                 this.pBar.Value = 0;
             }
             else

@@ -21,3 +21,12 @@ D:\CodeSkill\Private Clinics\GUI\GUI\bin\Debug\DAO.dll
 D:\CodeSkill\Private Clinics\GUI\GUI\bin\Debug\DTO.dll
 D:\CodeSkill\Private Clinics\GUI\GUI\bin\Debug\DAO.pdb
 D:\CodeSkill\Private Clinics\GUI\GUI\bin\Debug\DTO.pdb
+D:\CodeSkill\Private Clinics\GUI\GUI\obj\Debug\GUI.FormMain.resources
+D:\CodeSkill\Private Clinics\GUI\GUI\obj\Debug\GUI.FormMedicalExaminationList.resources
+D:\CodeSkill\Private Clinics\GUI\GUI\obj\Debug\GUI.FormSetMedicalExamination.resources
+D:\CodeSkill\Private Clinics\GUI\GUI\obj\Debug\GUI.FormPatientLookup.resources
+D:\CodeSkill\Private Clinics\GUI\GUI\obj\Debug\GUI.FormStaffManagement.resources
+D:\CodeSkill\Private Clinics\GUI\GUI\obj\Debug\GUI.FormInputMedical.resources
+D:\CodeSkill\Private Clinics\GUI\GUI\obj\Debug\GUI.FormSetting.resources
+D:\CodeSkill\Private Clinics\GUI\GUI\obj\Debug\GUI.FormSetReport.resources
+D:\CodeSkill\Private Clinics\GUI\GUI\obj\Debug\GUI.FormSetInvolke.resources

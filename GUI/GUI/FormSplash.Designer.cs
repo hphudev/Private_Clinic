@@ -32,6 +32,7 @@ namespace GUI
             this.pBar = new System.Windows.Forms.ProgressBar();
             this.bReConnectServer = new System.Windows.Forms.Button();
             this.lRecommend = new System.Windows.Forms.Label();
+            this.lDisconnecting = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // pBar
@@ -73,6 +74,19 @@ namespace GUI
             this.lRecommend.Text = "Bạn có thể nhấn phím Esc để thoát...";
             this.lRecommend.Visible = false;
             // 
+            // lDisconnecting
+            // 
+            this.lDisconnecting.AutoSize = true;
+            this.lDisconnecting.BackColor = System.Drawing.Color.Transparent;
+            this.lDisconnecting.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lDisconnecting.ForeColor = System.Drawing.Color.Orange;
+            this.lDisconnecting.Location = new System.Drawing.Point(539, 277);
+            this.lDisconnecting.Name = "lDisconnecting";
+            this.lDisconnecting.Size = new System.Drawing.Size(106, 20);
+            this.lDisconnecting.TabIndex = 10;
+            this.lDisconnecting.Text = "MẤT KẾT NỐI";
+            this.lDisconnecting.Visible = false;
+            // 
             // FormSplash
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -80,6 +94,7 @@ namespace GUI
             this.BackgroundImage = global::GUI.Properties.Resources.splash_screen_private_clinic;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1181, 598);
+            this.Controls.Add(this.lDisconnecting);
             this.Controls.Add(this.lRecommend);
             this.Controls.Add(this.bReConnectServer);
             this.Controls.Add(this.pBar);
@@ -97,5 +112,6 @@ namespace GUI
         private System.Windows.Forms.ProgressBar pBar;
         private System.Windows.Forms.Button bReConnectServer;
         private System.Windows.Forms.Label lRecommend;
+        private System.Windows.Forms.Label lDisconnecting;
     }
 }
