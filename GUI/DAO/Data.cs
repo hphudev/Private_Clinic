@@ -16,16 +16,17 @@ namespace DAO
         {
             try
             {
-                progressBar.Invoke((MethodInvoker)delegate {
-                    if (progressBar != null)
+                if (progressBar != null)
+                    progressBar.Invoke((MethodInvoker)delegate {
+                    
                         progressBar.Value = 5;
                 });
                 string connectionString = ConfigurationManager.ConnectionStrings["Server"].ConnectionString;
                 SqlConnection connection = new  SqlConnection(connectionString);
                 return await Task.Factory.StartNew(()=> {
                     connection.Open();
-                    progressBar.Invoke((MethodInvoker)delegate {
-                        if (progressBar != null)
+                    if (progressBar != null)
+                        progressBar.Invoke((MethodInvoker)delegate {
                             progressBar.Value += 5;
                     });
                     return connection;

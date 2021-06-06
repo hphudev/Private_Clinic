@@ -24,5 +24,10 @@ namespace GUI
         {
             BUS.Event.ShowFormEffect(parent, 1);
         }
+
+        private void FormSetReport_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

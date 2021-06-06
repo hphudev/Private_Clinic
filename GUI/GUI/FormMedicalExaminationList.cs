@@ -18,6 +18,11 @@ namespace GUI
             InitializeComponent();
             this.parent = parent;
             this.FormClosed += onFormClosed;
+            this.bAddPatient.Click += (s, e) =>
+            {
+                FormAddPatient formAddPatient = new FormAddPatient();
+                formAddPatient.ShowDialog();
+            };
         }
 
         private void onFormClosed(object s, FormClosedEventArgs e)

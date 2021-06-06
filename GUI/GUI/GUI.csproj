@@ -33,9 +33,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\framework\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\..\..\..\Download\Ngày 15_01_2021\Compressed\TestFramework\TestFramework\[FTUApps.com] - Guna UI Framework Ultimate v2.0.0.1 + Keygen\[FTUApps.com] - Guna UI Framework Ultimate v2.0.0.1 + Keygen\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -50,6 +58,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormAddPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddPatient.Designer.cs">
+      <DependentUpon>FormAddPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditMedical.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditMedical.Designer.cs">
+      <DependentUpon>FormEditMedical.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormInputMedical.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +111,12 @@
     </Compile>
     <Compile Include="FormMedicalExaminationList.Designer.cs">
       <DependentUpon>FormMedicalExaminationList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddMedicalUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddMedicalUnit.Designer.cs">
+      <DependentUpon>FormAddMedicalUnit.cs</DependentUpon>
     </Compile>
     <Compile Include="FormPatientLookup.cs">
       <SubType>Form</SubType>
@@ -142,11 +168,17 @@
     <Compile Include="FormStaffManagement.Designer.cs">
       <DependentUpon>FormStaffManagement.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FormAddPatient.resx">
+      <DependentUpon>FormAddPatient.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormBackground.resx">
       <DependentUpon>FormBackground.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormBackGround_2.resx">
       <DependentUpon>FormBackGround_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditMedical.resx">
+      <DependentUpon>FormEditMedical.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormEntrance.resx">
       <DependentUpon>FormEntrance.cs</DependentUpon>
@@ -162,6 +194,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMedicalExaminationList.resx">
       <DependentUpon>FormMedicalExaminationList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddMedicalUnit.resx">
+      <DependentUpon>FormAddMedicalUnit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPatientLookup.resx">
       <DependentUpon>FormPatientLookup.cs</DependentUpon>

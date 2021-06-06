@@ -4,3 +4,9 @@ D:\CodeSkill\Private Clinics\GUI\DAO\obj\Debug\DAO.csprojAssemblyReference.cache
 D:\CodeSkill\Private Clinics\GUI\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
 D:\CodeSkill\Private Clinics\GUI\DAO\obj\Debug\DAO.dll
 D:\CodeSkill\Private Clinics\GUI\DAO\obj\Debug\DAO.pdb
+F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\DAO\bin\Debug\DAO.dll
+F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\DAO\bin\Debug\DAO.pdb
+F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\DAO\obj\Debug\DAO.csprojAssemblyReference.cache
+F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\DAO\obj\Debug\DAO.dll
+F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\DAO\obj\Debug\DAO.pdb

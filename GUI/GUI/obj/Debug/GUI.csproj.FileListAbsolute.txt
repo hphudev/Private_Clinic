@@ -30,3 +30,39 @@ D:\CodeSkill\Private Clinics\GUI\GUI\obj\Debug\GUI.FormInputMedical.resources
 D:\CodeSkill\Private Clinics\GUI\GUI\obj\Debug\GUI.FormSetting.resources
 D:\CodeSkill\Private Clinics\GUI\GUI\obj\Debug\GUI.FormSetReport.resources
 D:\CodeSkill\Private Clinics\GUI\GUI\obj\Debug\GUI.FormSetInvolke.resources
+F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\GUI\bin\Debug\GUI.exe.config
+F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\GUI\bin\Debug\GUI.exe
+F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\GUI\bin\Debug\GUI.pdb
+F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\GUI\bin\Debug\BUS.dll
+F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\GUI\bin\Debug\DAO.dll
+F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\GUI\bin\Debug\DTO.dll
+F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\GUI\bin\Debug\BUS.pdb
+F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\GUI\bin\Debug\DAO.pdb
+F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\GUI\bin\Debug\DTO.pdb
+F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\GUI\obj\Debug\GUI.csprojAssemblyReference.cache
+F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\GUI\obj\Debug\GUI.FormBackground.resources
+F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\GUI\obj\Debug\GUI.FormBackGround_2.resources
+F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\GUI\obj\Debug\GUI.FormEntrance.resources
+F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\GUI\obj\Debug\GUI.FormInputMedical.resources
+F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\GUI\obj\Debug\GUI.FormLogin.resources
+F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\GUI\obj\Debug\GUI.FormMain.resources
+F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\GUI\obj\Debug\GUI.FormMedicalExaminationList.resources
+F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\GUI\obj\Debug\GUI.FormPatientLookup.resources
+F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\GUI\obj\Debug\GUI.FormRegister.resources
+F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\GUI\obj\Debug\GUI.FormSetting.resources
+F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\GUI\obj\Debug\GUI.FormSetReport.resources
+F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\GUI\obj\Debug\GUI.FormSetMedicalExamination.resources
+F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\GUI\obj\Debug\GUI.Properties.Resources.resources
+F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\GUI\obj\Debug\GUI.FormSplash.resources
+F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\GUI\obj\Debug\GUI.FormSetInvolke.resources
+F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\GUI\obj\Debug\GUI.FormStaffManagement.resources
+F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\GUI\obj\Debug\GUI.csproj.CopyComplete
+F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\GUI\obj\Debug\GUI.exe
+F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\GUI\obj\Debug\GUI.pdb
+F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\GUI\bin\Debug\Guna.UI2.dll
+F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\GUI\obj\Debug\GUI.FormAddPatient.resources
+F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\GUI\bin\Debug\Bunifu_UI_v1.52.dll
+F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\GUI\obj\Debug\GUI.FormAddMedicalUnit.resources
+F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\GUI\obj\Debug\GUI.FormEditMedical.resources

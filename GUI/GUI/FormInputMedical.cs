@@ -18,6 +18,16 @@ namespace GUI
             InitializeComponent();
             this.parent = parent;
             this.FormClosed += onFormClosed;
+            this.bAddUnit.Click += (s, e) =>
+            {
+                FormAddMedicalUnit formAddMedicalUnit = new FormAddMedicalUnit();
+                formAddMedicalUnit.ShowDialog();
+            };
+            this.bEditMedical.Click += (s, e) =>
+            {
+                FormEditMedical formEditMedical = new FormEditMedical();
+                formEditMedical.ShowDialog();
+            };
         }
 
         private void onFormClosed(object s, FormClosedEventArgs e)

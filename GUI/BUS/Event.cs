@@ -36,7 +36,7 @@ namespace BUS
             {
                 if (form.Opacity < 1)
                 {
-                    form.Opacity += 0.1;
+                    form.Opacity += 0.05;
                 }
                 else
                 {
@@ -51,6 +51,7 @@ namespace BUS
         #region Ẩn form với hiệu ứng Opacity
         public static void HideFormEffect(Form form, int timer_para, bool doClose)
         {
+            form.Hide();
             form.Opacity = 1;
             System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
             timer.Interval = timer_para;
@@ -58,7 +59,7 @@ namespace BUS
             {
                 if (form.Opacity > 0)
                 {
-                    form.Opacity -= 0.1;
+                    form.Opacity -= 0.2;
                 }
                 else
                 {
@@ -76,9 +77,8 @@ namespace BUS
         #region Hiễn thị form con và ẩn form cha
         static public void ShowChildForm_HideParentForm(Form child, Form parent)
         {
-            ShowFormEffect(child, 1);
             HideFormEffect(parent, 1, false);
-
+            ShowFormEffect(child, 1);
         }
         #endregion
 

@@ -4,3 +4,9 @@ D:\CodeSkill\Private Clinics\GUI\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
 D:\CodeSkill\Private Clinics\GUI\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 D:\CodeSkill\Private Clinics\GUI\DTO\obj\Debug\DTO.dll
 D:\CodeSkill\Private Clinics\GUI\DTO\obj\Debug\DTO.pdb
+F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\DTO\bin\Debug\DTO.dll
+F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\DTO\bin\Debug\DTO.pdb
+F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\DTO\obj\Debug\DTO.dll
+F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\DTO\obj\Debug\DTO.pdb
