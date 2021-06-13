@@ -47,16 +47,16 @@ namespace GUI
             bInputMedical.MouseLeave += BUS.Event.MouseLeaveChangeForeColor;
             bPatientLookup.MouseEnter += BUS.Event.MouseEnterChangeForeColor;
             bPatientLookup.MouseLeave += BUS.Event.MouseLeaveChangeForeColor;
-            bStaffManagement.MouseEnter += BUS.Event.MouseEnterChangeForeColor;
-            bStaffManagement.MouseLeave += BUS.Event.MouseLeaveChangeForeColor;
+            //bStaffManagement.MouseEnter += BUS.Event.MouseEnterChangeForeColor;
+            //bStaffManagement.MouseLeave += BUS.Event.MouseLeaveChangeForeColor;
             bSetReport.MouseEnter += BUS.Event.MouseEnterChangeForeColor;
             bSetReport.MouseLeave += BUS.Event.MouseLeaveChangeForeColor;
             bSetting.MouseEnter += BUS.Event.MouseEnterChangeForeColor;
             bSetting.MouseLeave += BUS.Event.MouseLeaveChangeForeColor;
             bSetInvolke.MouseEnter += BUS.Event.MouseEnterChangeForeColor;
             bSetInvolke.MouseLeave += BUS.Event.MouseLeaveChangeForeColor;
-            bReturn.MouseEnter += BUS.Event.MouseEnterChangeForeColor;
-            bReturn.MouseLeave += BUS.Event.MouseLeaveChangeForeColor;
+            bCancel.MouseEnter += BUS.Event.MouseEnterChangeForeColor;
+            bCancel.MouseLeave += BUS.Event.MouseLeaveChangeForeColor;
         }
 
         private void InitDragBar()
@@ -89,7 +89,7 @@ namespace GUI
 
         private void Init_bStaffManagement()
         {
-            bStaffManagement.Click += bStaffManagementClicked;
+           // bStaffManagement.Click += bStaffManagementClicked;
         }
 
         private void Init_bSetReport()

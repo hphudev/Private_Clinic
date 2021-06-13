@@ -21,12 +21,12 @@ namespace GUI
             this.bAddUnit.Click += (s, e) =>
             {
                 FormAddMedicalUnit formAddMedicalUnit = new FormAddMedicalUnit();
-                formAddMedicalUnit.ShowDialog();
+                BUS.Event.ShowFormDialog(formAddMedicalUnit);
             };
             this.bEditMedical.Click += (s, e) =>
             {
                 FormEditMedical formEditMedical = new FormEditMedical();
-                formEditMedical.ShowDialog();
+                BUS.Event.ShowFormDialog(formEditMedical);
             };
         }
 

@@ -30,20 +30,20 @@ namespace GUI
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.guna2GradientButton4 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.bCancelPatient = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.tbPatientDate = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tbPatientAddress = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tbPatientSex = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tbPatientName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvPatientWaiting = new System.Windows.Forms.DataGridView();
             this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,37 +51,37 @@ namespace GUI
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.gbPatientInformation = new System.Windows.Forms.GroupBox();
             this.cbTypeSick = new System.Windows.Forms.ComboBox();
-            this.guna2TextBox6 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox7 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox5 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.button10 = new System.Windows.Forms.Button();
+            this.tbDaySick = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tbSignalSick = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tbIdMedicalExam = new Guna.UI2.WinForms.Guna2TextBox();
+            this.bAddTypeSick = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.l = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.guna2GradientButton3 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.bDeleteMedical = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.bEditMedical = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.bAddInto = new Guna.UI2.WinForms.Guna2GradientButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button11 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.guna2TextBox11 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.bAddUseWay = new System.Windows.Forms.Button();
+            this.cbUseWay = new System.Windows.Forms.ComboBox();
+            this.tbMedicalNum = new Guna.UI2.WinForms.Guna2TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.cbMedicalName = new System.Windows.Forms.ComboBox();
-            this.guna2TextBox8 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tbIdMedical = new Guna.UI2.WinForms.Guna2TextBox();
             this.button5 = new System.Windows.Forms.Button();
             this.label19 = new System.Windows.Forms.Label();
             this.textBox17 = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
-            this.bAddPatient = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.bRefresh = new Guna.UI2.WinForms.Guna2GradientButton();
             this.panel55 = new System.Windows.Forms.Panel();
-            this.guna2TextBox9 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tbSumMedicalMoney = new Guna.UI2.WinForms.Guna2TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dgvMedicalList = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenThuoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DVT = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -90,10 +90,6 @@ namespace GUI
             this.ThanhTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CachDung = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.bReturn = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.bCancel = new Guna.UI2.WinForms.Guna2GradientButton();
             this.label7 = new System.Windows.Forms.Label();
@@ -103,27 +99,34 @@ namespace GUI
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse6 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2GradientButton5 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientButton6 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.bSave = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.bReturn = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.guna2Elipse9 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse7 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse8 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPatientWaiting)).BeginInit();
             this.panel3.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.gbPatientInformation.SuspendLayout();
             this.panel4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.panel55.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMedicalList)).BeginInit();
             this.guna2GradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.guna2GradientButton4);
-            this.groupBox1.Controls.Add(this.guna2TextBox3);
-            this.groupBox1.Controls.Add(this.guna2TextBox4);
-            this.groupBox1.Controls.Add(this.guna2TextBox2);
-            this.groupBox1.Controls.Add(this.guna2TextBox1);
+            this.groupBox1.Controls.Add(this.bCancelPatient);
+            this.groupBox1.Controls.Add(this.tbPatientDate);
+            this.groupBox1.Controls.Add(this.tbPatientAddress);
+            this.groupBox1.Controls.Add(this.tbPatientSex);
+            this.groupBox1.Controls.Add(this.tbPatientName);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label1);
@@ -139,137 +142,137 @@ namespace GUI
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin bệnh nhân";
             // 
-            // guna2GradientButton4
+            // bCancelPatient
             // 
-            this.guna2GradientButton4.Animated = true;
-            this.guna2GradientButton4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientButton4.BorderRadius = 6;
-            this.guna2GradientButton4.CheckedState.Parent = this.guna2GradientButton4;
-            this.guna2GradientButton4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2GradientButton4.CustomImages.Parent = this.guna2GradientButton4;
-            this.guna2GradientButton4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
-            this.guna2GradientButton4.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
-            this.guna2GradientButton4.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientButton4.ForeColor = System.Drawing.Color.Ivory;
-            this.guna2GradientButton4.HoverState.Parent = this.guna2GradientButton4;
-            this.guna2GradientButton4.Location = new System.Drawing.Point(1610, 29);
-            this.guna2GradientButton4.Name = "guna2GradientButton4";
-            this.guna2GradientButton4.ShadowDecoration.Parent = this.guna2GradientButton4;
-            this.guna2GradientButton4.Size = new System.Drawing.Size(102, 37);
-            this.guna2GradientButton4.TabIndex = 125;
-            this.guna2GradientButton4.Text = "Hủy khám";
+            this.bCancelPatient.Animated = true;
+            this.bCancelPatient.BackColor = System.Drawing.Color.Transparent;
+            this.bCancelPatient.BorderRadius = 6;
+            this.bCancelPatient.CheckedState.Parent = this.bCancelPatient;
+            this.bCancelPatient.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bCancelPatient.CustomImages.Parent = this.bCancelPatient;
+            this.bCancelPatient.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
+            this.bCancelPatient.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
+            this.bCancelPatient.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bCancelPatient.ForeColor = System.Drawing.Color.Ivory;
+            this.bCancelPatient.HoverState.Parent = this.bCancelPatient;
+            this.bCancelPatient.Location = new System.Drawing.Point(1610, 29);
+            this.bCancelPatient.Name = "bCancelPatient";
+            this.bCancelPatient.ShadowDecoration.Parent = this.bCancelPatient;
+            this.bCancelPatient.Size = new System.Drawing.Size(102, 37);
+            this.bCancelPatient.TabIndex = 125;
+            this.bCancelPatient.Text = "Hủy khám";
             // 
-            // guna2TextBox3
+            // tbPatientDate
             // 
-            this.guna2TextBox3.AutoSize = true;
-            this.guna2TextBox3.BorderRadius = 6;
-            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox3.DefaultText = "";
-            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.DisabledState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.FocusedState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox3.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.HoverState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Location = new System.Drawing.Point(934, 34);
-            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.guna2TextBox3.Name = "guna2TextBox3";
-            this.guna2TextBox3.PasswordChar = '\0';
-            this.guna2TextBox3.PlaceholderText = "";
-            this.guna2TextBox3.ReadOnly = true;
-            this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.ShadowDecoration.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Size = new System.Drawing.Size(166, 41);
-            this.guna2TextBox3.TabIndex = 47;
+            this.tbPatientDate.AutoSize = true;
+            this.tbPatientDate.BorderRadius = 6;
+            this.tbPatientDate.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbPatientDate.DefaultText = "";
+            this.tbPatientDate.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbPatientDate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbPatientDate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbPatientDate.DisabledState.Parent = this.tbPatientDate;
+            this.tbPatientDate.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbPatientDate.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbPatientDate.FocusedState.Parent = this.tbPatientDate;
+            this.tbPatientDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbPatientDate.ForeColor = System.Drawing.Color.Black;
+            this.tbPatientDate.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbPatientDate.HoverState.Parent = this.tbPatientDate;
+            this.tbPatientDate.Location = new System.Drawing.Point(934, 34);
+            this.tbPatientDate.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.tbPatientDate.Name = "tbPatientDate";
+            this.tbPatientDate.PasswordChar = '\0';
+            this.tbPatientDate.PlaceholderText = "";
+            this.tbPatientDate.ReadOnly = true;
+            this.tbPatientDate.SelectedText = "";
+            this.tbPatientDate.ShadowDecoration.Parent = this.tbPatientDate;
+            this.tbPatientDate.Size = new System.Drawing.Size(166, 41);
+            this.tbPatientDate.TabIndex = 47;
             // 
-            // guna2TextBox4
+            // tbPatientAddress
             // 
-            this.guna2TextBox4.AutoSize = true;
-            this.guna2TextBox4.BorderRadius = 6;
-            this.guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox4.DefaultText = "";
-            this.guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.DisabledState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.FocusedState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox4.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.HoverState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Location = new System.Drawing.Point(1207, 33);
-            this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.guna2TextBox4.Name = "guna2TextBox4";
-            this.guna2TextBox4.PasswordChar = '\0';
-            this.guna2TextBox4.PlaceholderText = "";
-            this.guna2TextBox4.ReadOnly = true;
-            this.guna2TextBox4.SelectedText = "";
-            this.guna2TextBox4.ShadowDecoration.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Size = new System.Drawing.Size(384, 41);
-            this.guna2TextBox4.TabIndex = 48;
+            this.tbPatientAddress.AutoSize = true;
+            this.tbPatientAddress.BorderRadius = 6;
+            this.tbPatientAddress.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbPatientAddress.DefaultText = "";
+            this.tbPatientAddress.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbPatientAddress.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbPatientAddress.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbPatientAddress.DisabledState.Parent = this.tbPatientAddress;
+            this.tbPatientAddress.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbPatientAddress.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbPatientAddress.FocusedState.Parent = this.tbPatientAddress;
+            this.tbPatientAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbPatientAddress.ForeColor = System.Drawing.Color.Black;
+            this.tbPatientAddress.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbPatientAddress.HoverState.Parent = this.tbPatientAddress;
+            this.tbPatientAddress.Location = new System.Drawing.Point(1207, 33);
+            this.tbPatientAddress.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.tbPatientAddress.Name = "tbPatientAddress";
+            this.tbPatientAddress.PasswordChar = '\0';
+            this.tbPatientAddress.PlaceholderText = "";
+            this.tbPatientAddress.ReadOnly = true;
+            this.tbPatientAddress.SelectedText = "";
+            this.tbPatientAddress.ShadowDecoration.Parent = this.tbPatientAddress;
+            this.tbPatientAddress.Size = new System.Drawing.Size(384, 41);
+            this.tbPatientAddress.TabIndex = 48;
             // 
-            // guna2TextBox2
+            // tbPatientSex
             // 
-            this.guna2TextBox2.AutoSize = true;
-            this.guna2TextBox2.BorderRadius = 6;
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.FocusedState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox2.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Location = new System.Drawing.Point(663, 34);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderText = "";
-            this.guna2TextBox2.ReadOnly = true;
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.ShadowDecoration.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Size = new System.Drawing.Size(131, 41);
-            this.guna2TextBox2.TabIndex = 46;
+            this.tbPatientSex.AutoSize = true;
+            this.tbPatientSex.BorderRadius = 6;
+            this.tbPatientSex.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbPatientSex.DefaultText = "";
+            this.tbPatientSex.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbPatientSex.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbPatientSex.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbPatientSex.DisabledState.Parent = this.tbPatientSex;
+            this.tbPatientSex.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbPatientSex.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbPatientSex.FocusedState.Parent = this.tbPatientSex;
+            this.tbPatientSex.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbPatientSex.ForeColor = System.Drawing.Color.Black;
+            this.tbPatientSex.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbPatientSex.HoverState.Parent = this.tbPatientSex;
+            this.tbPatientSex.Location = new System.Drawing.Point(663, 34);
+            this.tbPatientSex.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.tbPatientSex.Name = "tbPatientSex";
+            this.tbPatientSex.PasswordChar = '\0';
+            this.tbPatientSex.PlaceholderText = "";
+            this.tbPatientSex.ReadOnly = true;
+            this.tbPatientSex.SelectedText = "";
+            this.tbPatientSex.ShadowDecoration.Parent = this.tbPatientSex;
+            this.tbPatientSex.Size = new System.Drawing.Size(131, 41);
+            this.tbPatientSex.TabIndex = 46;
             // 
-            // guna2TextBox1
+            // tbPatientName
             // 
-            this.guna2TextBox1.AutoSize = true;
-            this.guna2TextBox1.BorderRadius = 6;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox1.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(145, 34);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.ReadOnly = true;
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(402, 41);
-            this.guna2TextBox1.TabIndex = 45;
+            this.tbPatientName.AutoSize = true;
+            this.tbPatientName.BorderRadius = 6;
+            this.tbPatientName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbPatientName.DefaultText = "";
+            this.tbPatientName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbPatientName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbPatientName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbPatientName.DisabledState.Parent = this.tbPatientName;
+            this.tbPatientName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbPatientName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbPatientName.FocusedState.Parent = this.tbPatientName;
+            this.tbPatientName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbPatientName.ForeColor = System.Drawing.Color.Black;
+            this.tbPatientName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbPatientName.HoverState.Parent = this.tbPatientName;
+            this.tbPatientName.Location = new System.Drawing.Point(145, 34);
+            this.tbPatientName.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.tbPatientName.Name = "tbPatientName";
+            this.tbPatientName.PasswordChar = '\0';
+            this.tbPatientName.PlaceholderText = "";
+            this.tbPatientName.ReadOnly = true;
+            this.tbPatientName.SelectedText = "";
+            this.tbPatientName.ShadowDecoration.Parent = this.tbPatientName;
+            this.tbPatientName.Size = new System.Drawing.Size(402, 41);
+            this.tbPatientName.TabIndex = 45;
             // 
             // label4
             // 
@@ -320,44 +323,45 @@ namespace GUI
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
-            this.panel2.Controls.Add(this.dataGridView1);
-            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.dateTimePicker1);
+            this.panel2.Controls.Add(this.dgvPatientWaiting);
             this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.label6);
             this.panel2.Location = new System.Drawing.Point(12, 220);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(756, 803);
             this.panel2.TabIndex = 23;
             // 
-            // dataGridView1
+            // dgvPatientWaiting
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dgvPatientWaiting.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.ColumnHeadersHeight = 29;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvPatientWaiting.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvPatientWaiting.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dgvPatientWaiting.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPatientWaiting.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvPatientWaiting.ColumnHeadersHeight = 29;
+            this.dgvPatientWaiting.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.STT,
             this.HoTen,
             this.GioiTinh,
             this.NamSinh});
-            this.dataGridView1.Location = new System.Drawing.Point(17, 54);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(721, 727);
-            this.dataGridView1.TabIndex = 6;
+            this.dgvPatientWaiting.Location = new System.Drawing.Point(17, 54);
+            this.dgvPatientWaiting.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvPatientWaiting.Name = "dgvPatientWaiting";
+            this.dgvPatientWaiting.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dgvPatientWaiting.RowHeadersWidth = 51;
+            this.dgvPatientWaiting.RowTemplate.Height = 24;
+            this.dgvPatientWaiting.Size = new System.Drawing.Size(721, 727);
+            this.dgvPatientWaiting.TabIndex = 6;
             // 
             // STT
             // 
@@ -398,13 +402,14 @@ namespace GUI
             this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(591, 14);
+            this.label6.Location = new System.Drawing.Point(13, 21);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(147, 26);
+            this.label6.Size = new System.Drawing.Size(101, 20);
             this.label6.TabIndex = 5;
-            this.label6.Text = "- Phòng số 1";
+            this.label6.Text = "Ngày khám";
+            this.label6.Click += new System.EventHandler(this.Label6_Click);
             // 
             // label5
             // 
@@ -413,7 +418,7 @@ namespace GUI
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Honeydew;
-            this.label5.Location = new System.Drawing.Point(132, 14);
+            this.label5.Location = new System.Drawing.Point(349, 15);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(325, 26);
             this.label5.TabIndex = 4;
@@ -424,36 +429,36 @@ namespace GUI
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
-            this.panel3.Controls.Add(this.groupBox2);
+            this.panel3.Controls.Add(this.gbPatientInformation);
             this.panel3.Location = new System.Drawing.Point(774, 220);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1138, 229);
             this.panel3.TabIndex = 24;
             // 
-            // groupBox2
+            // gbPatientInformation
             // 
-            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.gbPatientInformation.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox2.Controls.Add(this.cbTypeSick);
-            this.groupBox2.Controls.Add(this.guna2TextBox6);
-            this.groupBox2.Controls.Add(this.guna2TextBox7);
-            this.groupBox2.Controls.Add(this.guna2TextBox5);
-            this.groupBox2.Controls.Add(this.button10);
-            this.groupBox2.Controls.Add(this.label15);
-            this.groupBox2.Controls.Add(this.label13);
-            this.groupBox2.Controls.Add(this.label12);
-            this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.ForeColor = System.Drawing.Color.Honeydew;
-            this.groupBox2.Location = new System.Drawing.Point(9, 12);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox2.Size = new System.Drawing.Size(1114, 199);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Thông tin khám bệnh";
+            this.gbPatientInformation.Controls.Add(this.cbTypeSick);
+            this.gbPatientInformation.Controls.Add(this.tbDaySick);
+            this.gbPatientInformation.Controls.Add(this.tbSignalSick);
+            this.gbPatientInformation.Controls.Add(this.tbIdMedicalExam);
+            this.gbPatientInformation.Controls.Add(this.bAddTypeSick);
+            this.gbPatientInformation.Controls.Add(this.label15);
+            this.gbPatientInformation.Controls.Add(this.label13);
+            this.gbPatientInformation.Controls.Add(this.label12);
+            this.gbPatientInformation.Controls.Add(this.l);
+            this.gbPatientInformation.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbPatientInformation.ForeColor = System.Drawing.Color.Honeydew;
+            this.gbPatientInformation.Location = new System.Drawing.Point(9, 12);
+            this.gbPatientInformation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbPatientInformation.Name = "gbPatientInformation";
+            this.gbPatientInformation.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbPatientInformation.Size = new System.Drawing.Size(1114, 199);
+            this.gbPatientInformation.TabIndex = 1;
+            this.gbPatientInformation.TabStop = false;
+            this.gbPatientInformation.Text = "Thông tin khám bệnh";
             // 
             // cbTypeSick
             // 
@@ -467,104 +472,104 @@ namespace GUI
             this.cbTypeSick.Size = new System.Drawing.Size(858, 37);
             this.cbTypeSick.TabIndex = 127;
             // 
-            // guna2TextBox6
+            // tbDaySick
             // 
-            this.guna2TextBox6.AutoSize = true;
-            this.guna2TextBox6.BorderRadius = 3;
-            this.guna2TextBox6.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox6.DefaultText = "";
-            this.guna2TextBox6.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox6.DisabledState.Parent = this.guna2TextBox6;
-            this.guna2TextBox6.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox6.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox6.FocusedState.Parent = this.guna2TextBox6;
-            this.guna2TextBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox6.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox6.HoverState.Parent = this.guna2TextBox6;
-            this.guna2TextBox6.Location = new System.Drawing.Point(779, 33);
-            this.guna2TextBox6.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.guna2TextBox6.Name = "guna2TextBox6";
-            this.guna2TextBox6.PasswordChar = '\0';
-            this.guna2TextBox6.PlaceholderText = "";
-            this.guna2TextBox6.ReadOnly = true;
-            this.guna2TextBox6.SelectedText = "";
-            this.guna2TextBox6.ShadowDecoration.Parent = this.guna2TextBox6;
-            this.guna2TextBox6.Size = new System.Drawing.Size(240, 41);
-            this.guna2TextBox6.TabIndex = 52;
+            this.tbDaySick.AutoSize = true;
+            this.tbDaySick.BorderRadius = 3;
+            this.tbDaySick.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbDaySick.DefaultText = "";
+            this.tbDaySick.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbDaySick.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbDaySick.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbDaySick.DisabledState.Parent = this.tbDaySick;
+            this.tbDaySick.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbDaySick.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbDaySick.FocusedState.Parent = this.tbDaySick;
+            this.tbDaySick.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbDaySick.ForeColor = System.Drawing.Color.Black;
+            this.tbDaySick.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbDaySick.HoverState.Parent = this.tbDaySick;
+            this.tbDaySick.Location = new System.Drawing.Point(779, 33);
+            this.tbDaySick.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.tbDaySick.Name = "tbDaySick";
+            this.tbDaySick.PasswordChar = '\0';
+            this.tbDaySick.PlaceholderText = "";
+            this.tbDaySick.ReadOnly = true;
+            this.tbDaySick.SelectedText = "";
+            this.tbDaySick.ShadowDecoration.Parent = this.tbDaySick;
+            this.tbDaySick.Size = new System.Drawing.Size(240, 41);
+            this.tbDaySick.TabIndex = 52;
             // 
-            // guna2TextBox7
+            // tbSignalSick
             // 
-            this.guna2TextBox7.AutoSize = true;
-            this.guna2TextBox7.BorderRadius = 3;
-            this.guna2TextBox7.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox7.DefaultText = "";
-            this.guna2TextBox7.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox7.DisabledState.Parent = this.guna2TextBox7;
-            this.guna2TextBox7.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox7.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox7.FocusedState.Parent = this.guna2TextBox7;
-            this.guna2TextBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox7.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox7.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox7.HoverState.Parent = this.guna2TextBox7;
-            this.guna2TextBox7.Location = new System.Drawing.Point(161, 86);
-            this.guna2TextBox7.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.guna2TextBox7.Name = "guna2TextBox7";
-            this.guna2TextBox7.PasswordChar = '\0';
-            this.guna2TextBox7.PlaceholderText = "";
-            this.guna2TextBox7.ReadOnly = true;
-            this.guna2TextBox7.SelectedText = "";
-            this.guna2TextBox7.ShadowDecoration.Parent = this.guna2TextBox7;
-            this.guna2TextBox7.Size = new System.Drawing.Size(858, 41);
-            this.guna2TextBox7.TabIndex = 49;
+            this.tbSignalSick.AutoSize = true;
+            this.tbSignalSick.BorderRadius = 3;
+            this.tbSignalSick.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbSignalSick.DefaultText = "";
+            this.tbSignalSick.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbSignalSick.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbSignalSick.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbSignalSick.DisabledState.Parent = this.tbSignalSick;
+            this.tbSignalSick.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbSignalSick.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbSignalSick.FocusedState.Parent = this.tbSignalSick;
+            this.tbSignalSick.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbSignalSick.ForeColor = System.Drawing.Color.Black;
+            this.tbSignalSick.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbSignalSick.HoverState.Parent = this.tbSignalSick;
+            this.tbSignalSick.Location = new System.Drawing.Point(161, 86);
+            this.tbSignalSick.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.tbSignalSick.Name = "tbSignalSick";
+            this.tbSignalSick.PasswordChar = '\0';
+            this.tbSignalSick.PlaceholderText = "";
+            this.tbSignalSick.ReadOnly = true;
+            this.tbSignalSick.SelectedText = "";
+            this.tbSignalSick.ShadowDecoration.Parent = this.tbSignalSick;
+            this.tbSignalSick.Size = new System.Drawing.Size(858, 41);
+            this.tbSignalSick.TabIndex = 49;
             // 
-            // guna2TextBox5
+            // tbIdMedicalExam
             // 
-            this.guna2TextBox5.AutoSize = true;
-            this.guna2TextBox5.BorderRadius = 3;
-            this.guna2TextBox5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox5.DefaultText = "";
-            this.guna2TextBox5.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox5.DisabledState.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox5.FocusedState.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox5.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox5.HoverState.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.Location = new System.Drawing.Point(161, 34);
-            this.guna2TextBox5.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.guna2TextBox5.Name = "guna2TextBox5";
-            this.guna2TextBox5.PasswordChar = '\0';
-            this.guna2TextBox5.PlaceholderText = "";
-            this.guna2TextBox5.ReadOnly = true;
-            this.guna2TextBox5.SelectedText = "";
-            this.guna2TextBox5.ShadowDecoration.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.Size = new System.Drawing.Size(201, 41);
-            this.guna2TextBox5.TabIndex = 47;
+            this.tbIdMedicalExam.AutoSize = true;
+            this.tbIdMedicalExam.BorderRadius = 3;
+            this.tbIdMedicalExam.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbIdMedicalExam.DefaultText = "";
+            this.tbIdMedicalExam.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbIdMedicalExam.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbIdMedicalExam.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbIdMedicalExam.DisabledState.Parent = this.tbIdMedicalExam;
+            this.tbIdMedicalExam.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbIdMedicalExam.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbIdMedicalExam.FocusedState.Parent = this.tbIdMedicalExam;
+            this.tbIdMedicalExam.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbIdMedicalExam.ForeColor = System.Drawing.Color.Black;
+            this.tbIdMedicalExam.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbIdMedicalExam.HoverState.Parent = this.tbIdMedicalExam;
+            this.tbIdMedicalExam.Location = new System.Drawing.Point(161, 34);
+            this.tbIdMedicalExam.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.tbIdMedicalExam.Name = "tbIdMedicalExam";
+            this.tbIdMedicalExam.PasswordChar = '\0';
+            this.tbIdMedicalExam.PlaceholderText = "";
+            this.tbIdMedicalExam.ReadOnly = true;
+            this.tbIdMedicalExam.SelectedText = "";
+            this.tbIdMedicalExam.ShadowDecoration.Parent = this.tbIdMedicalExam;
+            this.tbIdMedicalExam.Size = new System.Drawing.Size(201, 41);
+            this.tbIdMedicalExam.TabIndex = 47;
             // 
-            // button10
+            // bAddTypeSick
             // 
-            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
-            this.button10.BackgroundImage = global::GUI.Properties.Resources.button_add1;
-            this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Location = new System.Drawing.Point(1025, 142);
-            this.button10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(37, 38);
-            this.button10.TabIndex = 39;
-            this.button10.UseVisualStyleBackColor = false;
+            this.bAddTypeSick.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
+            this.bAddTypeSick.BackgroundImage = global::GUI.Properties.Resources.button_add1;
+            this.bAddTypeSick.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bAddTypeSick.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bAddTypeSick.FlatAppearance.BorderSize = 0;
+            this.bAddTypeSick.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bAddTypeSick.Location = new System.Drawing.Point(1025, 142);
+            this.bAddTypeSick.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bAddTypeSick.Name = "bAddTypeSick";
+            this.bAddTypeSick.Size = new System.Drawing.Size(37, 38);
+            this.bAddTypeSick.TabIndex = 39;
+            this.bAddTypeSick.UseVisualStyleBackColor = false;
             // 
             // label15
             // 
@@ -599,101 +604,101 @@ namespace GUI
             this.label12.TabIndex = 13;
             this.label12.Text = "Triệu chứng:";
             // 
-            // label8
+            // l
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Honeydew;
-            this.label8.Location = new System.Drawing.Point(5, 34);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(116, 29);
-            this.label8.TabIndex = 5;
-            this.label8.Text = "Mã khám:";
+            this.l.AutoSize = true;
+            this.l.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l.ForeColor = System.Drawing.Color.Honeydew;
+            this.l.Location = new System.Drawing.Point(5, 34);
+            this.l.Name = "l";
+            this.l.Size = new System.Drawing.Size(116, 29);
+            this.l.TabIndex = 5;
+            this.l.Text = "Mã khám:";
             // 
             // panel4
             // 
             this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
-            this.panel4.Controls.Add(this.guna2GradientButton3);
-            this.panel4.Controls.Add(this.guna2GradientButton2);
-            this.panel4.Controls.Add(this.guna2GradientButton1);
+            this.panel4.Controls.Add(this.bDeleteMedical);
+            this.panel4.Controls.Add(this.bEditMedical);
+            this.panel4.Controls.Add(this.bAddInto);
             this.panel4.Controls.Add(this.groupBox3);
-            this.panel4.Controls.Add(this.bAddPatient);
+            this.panel4.Controls.Add(this.bRefresh);
             this.panel4.Location = new System.Drawing.Point(774, 455);
             this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1138, 206);
             this.panel4.TabIndex = 33;
             // 
-            // guna2GradientButton3
+            // bDeleteMedical
             // 
-            this.guna2GradientButton3.Animated = true;
-            this.guna2GradientButton3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientButton3.BorderRadius = 6;
-            this.guna2GradientButton3.CheckedState.Parent = this.guna2GradientButton3;
-            this.guna2GradientButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2GradientButton3.CustomImages.Parent = this.guna2GradientButton3;
-            this.guna2GradientButton3.FillColor = System.Drawing.Color.Ivory;
-            this.guna2GradientButton3.FillColor2 = System.Drawing.Color.Ivory;
-            this.guna2GradientButton3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientButton3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
-            this.guna2GradientButton3.HoverState.Parent = this.guna2GradientButton3;
-            this.guna2GradientButton3.Location = new System.Drawing.Point(929, 152);
-            this.guna2GradientButton3.Name = "guna2GradientButton3";
-            this.guna2GradientButton3.ShadowDecoration.Parent = this.guna2GradientButton3;
-            this.guna2GradientButton3.Size = new System.Drawing.Size(134, 37);
-            this.guna2GradientButton3.TabIndex = 136;
-            this.guna2GradientButton3.Text = "Xóa";
+            this.bDeleteMedical.Animated = true;
+            this.bDeleteMedical.BackColor = System.Drawing.Color.Transparent;
+            this.bDeleteMedical.BorderRadius = 6;
+            this.bDeleteMedical.CheckedState.Parent = this.bDeleteMedical;
+            this.bDeleteMedical.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bDeleteMedical.CustomImages.Parent = this.bDeleteMedical;
+            this.bDeleteMedical.FillColor = System.Drawing.Color.Ivory;
+            this.bDeleteMedical.FillColor2 = System.Drawing.Color.Ivory;
+            this.bDeleteMedical.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bDeleteMedical.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
+            this.bDeleteMedical.HoverState.Parent = this.bDeleteMedical;
+            this.bDeleteMedical.Location = new System.Drawing.Point(929, 152);
+            this.bDeleteMedical.Name = "bDeleteMedical";
+            this.bDeleteMedical.ShadowDecoration.Parent = this.bDeleteMedical;
+            this.bDeleteMedical.Size = new System.Drawing.Size(134, 37);
+            this.bDeleteMedical.TabIndex = 136;
+            this.bDeleteMedical.Text = "Xóa";
             // 
-            // guna2GradientButton2
+            // bEditMedical
             // 
-            this.guna2GradientButton2.Animated = true;
-            this.guna2GradientButton2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientButton2.BorderRadius = 6;
-            this.guna2GradientButton2.CheckedState.Parent = this.guna2GradientButton2;
-            this.guna2GradientButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2GradientButton2.CustomImages.Parent = this.guna2GradientButton2;
-            this.guna2GradientButton2.FillColor = System.Drawing.Color.Ivory;
-            this.guna2GradientButton2.FillColor2 = System.Drawing.Color.Ivory;
-            this.guna2GradientButton2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
-            this.guna2GradientButton2.HoverState.Parent = this.guna2GradientButton2;
-            this.guna2GradientButton2.Location = new System.Drawing.Point(929, 109);
-            this.guna2GradientButton2.Name = "guna2GradientButton2";
-            this.guna2GradientButton2.ShadowDecoration.Parent = this.guna2GradientButton2;
-            this.guna2GradientButton2.Size = new System.Drawing.Size(134, 37);
-            this.guna2GradientButton2.TabIndex = 135;
-            this.guna2GradientButton2.Text = "Chỉnh sửa";
+            this.bEditMedical.Animated = true;
+            this.bEditMedical.BackColor = System.Drawing.Color.Transparent;
+            this.bEditMedical.BorderRadius = 6;
+            this.bEditMedical.CheckedState.Parent = this.bEditMedical;
+            this.bEditMedical.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bEditMedical.CustomImages.Parent = this.bEditMedical;
+            this.bEditMedical.FillColor = System.Drawing.Color.Ivory;
+            this.bEditMedical.FillColor2 = System.Drawing.Color.Ivory;
+            this.bEditMedical.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bEditMedical.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
+            this.bEditMedical.HoverState.Parent = this.bEditMedical;
+            this.bEditMedical.Location = new System.Drawing.Point(929, 109);
+            this.bEditMedical.Name = "bEditMedical";
+            this.bEditMedical.ShadowDecoration.Parent = this.bEditMedical;
+            this.bEditMedical.Size = new System.Drawing.Size(134, 37);
+            this.bEditMedical.TabIndex = 135;
+            this.bEditMedical.Text = "Chỉnh sửa";
             // 
-            // guna2GradientButton1
+            // bAddInto
             // 
-            this.guna2GradientButton1.Animated = true;
-            this.guna2GradientButton1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientButton1.BorderRadius = 6;
-            this.guna2GradientButton1.CheckedState.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2GradientButton1.CustomImages.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.FillColor = System.Drawing.Color.Ivory;
-            this.guna2GradientButton1.FillColor2 = System.Drawing.Color.Ivory;
-            this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
-            this.guna2GradientButton1.HoverState.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(929, 65);
-            this.guna2GradientButton1.Name = "guna2GradientButton1";
-            this.guna2GradientButton1.ShadowDecoration.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Size = new System.Drawing.Size(134, 37);
-            this.guna2GradientButton1.TabIndex = 134;
-            this.guna2GradientButton1.Text = "Thêm vào đơn";
+            this.bAddInto.Animated = true;
+            this.bAddInto.BackColor = System.Drawing.Color.Transparent;
+            this.bAddInto.BorderRadius = 6;
+            this.bAddInto.CheckedState.Parent = this.bAddInto;
+            this.bAddInto.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bAddInto.CustomImages.Parent = this.bAddInto;
+            this.bAddInto.FillColor = System.Drawing.Color.Ivory;
+            this.bAddInto.FillColor2 = System.Drawing.Color.Ivory;
+            this.bAddInto.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bAddInto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
+            this.bAddInto.HoverState.Parent = this.bAddInto;
+            this.bAddInto.Location = new System.Drawing.Point(929, 65);
+            this.bAddInto.Name = "bAddInto";
+            this.bAddInto.ShadowDecoration.Parent = this.bAddInto;
+            this.bAddInto.Size = new System.Drawing.Size(134, 37);
+            this.bAddInto.TabIndex = 134;
+            this.bAddInto.Text = "Thêm vào đơn";
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.button11);
-            this.groupBox3.Controls.Add(this.comboBox1);
-            this.groupBox3.Controls.Add(this.guna2TextBox11);
+            this.groupBox3.Controls.Add(this.bAddUseWay);
+            this.groupBox3.Controls.Add(this.cbUseWay);
+            this.groupBox3.Controls.Add(this.tbMedicalNum);
             this.groupBox3.Controls.Add(this.label9);
             this.groupBox3.Controls.Add(this.cbMedicalName);
-            this.groupBox3.Controls.Add(this.guna2TextBox8);
+            this.groupBox3.Controls.Add(this.tbIdMedical);
             this.groupBox3.Controls.Add(this.button5);
             this.groupBox3.Controls.Add(this.label19);
             this.groupBox3.Controls.Add(this.textBox17);
@@ -710,60 +715,60 @@ namespace GUI
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Đơn thuốc";
             // 
-            // button11
+            // bAddUseWay
             // 
-            this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
-            this.button11.BackgroundImage = global::GUI.Properties.Resources.button_add1;
-            this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Location = new System.Drawing.Point(849, 91);
-            this.button11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(37, 38);
-            this.button11.TabIndex = 132;
-            this.button11.UseVisualStyleBackColor = false;
+            this.bAddUseWay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
+            this.bAddUseWay.BackgroundImage = global::GUI.Properties.Resources.button_add1;
+            this.bAddUseWay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bAddUseWay.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bAddUseWay.FlatAppearance.BorderSize = 0;
+            this.bAddUseWay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bAddUseWay.Location = new System.Drawing.Point(849, 91);
+            this.bAddUseWay.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bAddUseWay.Name = "bAddUseWay";
+            this.bAddUseWay.Size = new System.Drawing.Size(37, 38);
+            this.bAddUseWay.TabIndex = 132;
+            this.bAddUseWay.UseVisualStyleBackColor = false;
             // 
-            // comboBox1
+            // cbUseWay
             // 
-            this.comboBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.comboBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(443, 93);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(400, 37);
-            this.comboBox1.TabIndex = 131;
+            this.cbUseWay.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbUseWay.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbUseWay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbUseWay.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.cbUseWay.FormattingEnabled = true;
+            this.cbUseWay.Location = new System.Drawing.Point(443, 93);
+            this.cbUseWay.Name = "cbUseWay";
+            this.cbUseWay.Size = new System.Drawing.Size(400, 37);
+            this.cbUseWay.TabIndex = 131;
             // 
-            // guna2TextBox11
+            // tbMedicalNum
             // 
-            this.guna2TextBox11.AutoSize = true;
-            this.guna2TextBox11.BorderRadius = 3;
-            this.guna2TextBox11.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox11.DefaultText = "";
-            this.guna2TextBox11.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox11.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox11.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox11.DisabledState.Parent = this.guna2TextBox11;
-            this.guna2TextBox11.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox11.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox11.FocusedState.Parent = this.guna2TextBox11;
-            this.guna2TextBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox11.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox11.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox11.HoverState.Parent = this.guna2TextBox11;
-            this.guna2TextBox11.Location = new System.Drawing.Point(155, 97);
-            this.guna2TextBox11.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.guna2TextBox11.Name = "guna2TextBox11";
-            this.guna2TextBox11.PasswordChar = '\0';
-            this.guna2TextBox11.PlaceholderText = "";
-            this.guna2TextBox11.ReadOnly = true;
-            this.guna2TextBox11.SelectedText = "";
-            this.guna2TextBox11.ShadowDecoration.Parent = this.guna2TextBox11;
-            this.guna2TextBox11.Size = new System.Drawing.Size(130, 41);
-            this.guna2TextBox11.TabIndex = 130;
+            this.tbMedicalNum.AutoSize = true;
+            this.tbMedicalNum.BorderRadius = 3;
+            this.tbMedicalNum.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbMedicalNum.DefaultText = "";
+            this.tbMedicalNum.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbMedicalNum.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbMedicalNum.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbMedicalNum.DisabledState.Parent = this.tbMedicalNum;
+            this.tbMedicalNum.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbMedicalNum.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbMedicalNum.FocusedState.Parent = this.tbMedicalNum;
+            this.tbMedicalNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbMedicalNum.ForeColor = System.Drawing.Color.Black;
+            this.tbMedicalNum.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbMedicalNum.HoverState.Parent = this.tbMedicalNum;
+            this.tbMedicalNum.Location = new System.Drawing.Point(155, 97);
+            this.tbMedicalNum.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.tbMedicalNum.Name = "tbMedicalNum";
+            this.tbMedicalNum.PasswordChar = '\0';
+            this.tbMedicalNum.PlaceholderText = "";
+            this.tbMedicalNum.ReadOnly = true;
+            this.tbMedicalNum.SelectedText = "";
+            this.tbMedicalNum.ShadowDecoration.Parent = this.tbMedicalNum;
+            this.tbMedicalNum.Size = new System.Drawing.Size(130, 41);
+            this.tbMedicalNum.TabIndex = 130;
             // 
             // label9
             // 
@@ -788,33 +793,33 @@ namespace GUI
             this.cbMedicalName.Size = new System.Drawing.Size(400, 37);
             this.cbMedicalName.TabIndex = 128;
             // 
-            // guna2TextBox8
+            // tbIdMedical
             // 
-            this.guna2TextBox8.AutoSize = true;
-            this.guna2TextBox8.BorderRadius = 3;
-            this.guna2TextBox8.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox8.DefaultText = "";
-            this.guna2TextBox8.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox8.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox8.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox8.DisabledState.Parent = this.guna2TextBox8;
-            this.guna2TextBox8.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox8.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox8.FocusedState.Parent = this.guna2TextBox8;
-            this.guna2TextBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox8.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox8.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox8.HoverState.Parent = this.guna2TextBox8;
-            this.guna2TextBox8.Location = new System.Drawing.Point(155, 40);
-            this.guna2TextBox8.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.guna2TextBox8.Name = "guna2TextBox8";
-            this.guna2TextBox8.PasswordChar = '\0';
-            this.guna2TextBox8.PlaceholderText = "";
-            this.guna2TextBox8.ReadOnly = true;
-            this.guna2TextBox8.SelectedText = "";
-            this.guna2TextBox8.ShadowDecoration.Parent = this.guna2TextBox8;
-            this.guna2TextBox8.Size = new System.Drawing.Size(130, 41);
-            this.guna2TextBox8.TabIndex = 48;
+            this.tbIdMedical.AutoSize = true;
+            this.tbIdMedical.BorderRadius = 3;
+            this.tbIdMedical.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbIdMedical.DefaultText = "";
+            this.tbIdMedical.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbIdMedical.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbIdMedical.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbIdMedical.DisabledState.Parent = this.tbIdMedical;
+            this.tbIdMedical.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbIdMedical.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbIdMedical.FocusedState.Parent = this.tbIdMedical;
+            this.tbIdMedical.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbIdMedical.ForeColor = System.Drawing.Color.Black;
+            this.tbIdMedical.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbIdMedical.HoverState.Parent = this.tbIdMedical;
+            this.tbIdMedical.Location = new System.Drawing.Point(155, 40);
+            this.tbIdMedical.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.tbIdMedical.Name = "tbIdMedical";
+            this.tbIdMedical.PasswordChar = '\0';
+            this.tbIdMedical.PlaceholderText = "";
+            this.tbIdMedical.ReadOnly = true;
+            this.tbIdMedical.SelectedText = "";
+            this.tbIdMedical.ShadowDecoration.Parent = this.tbIdMedical;
+            this.tbIdMedical.Size = new System.Drawing.Size(130, 41);
+            this.tbIdMedical.TabIndex = 48;
             // 
             // button5
             // 
@@ -873,25 +878,25 @@ namespace GUI
             this.label28.TabIndex = 5;
             this.label28.Text = "Mã thuốc:";
             // 
-            // bAddPatient
+            // bRefresh
             // 
-            this.bAddPatient.Animated = true;
-            this.bAddPatient.BackColor = System.Drawing.Color.Transparent;
-            this.bAddPatient.BorderRadius = 6;
-            this.bAddPatient.CheckedState.Parent = this.bAddPatient;
-            this.bAddPatient.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bAddPatient.CustomImages.Parent = this.bAddPatient;
-            this.bAddPatient.FillColor = System.Drawing.Color.Ivory;
-            this.bAddPatient.FillColor2 = System.Drawing.Color.Ivory;
-            this.bAddPatient.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bAddPatient.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
-            this.bAddPatient.HoverState.Parent = this.bAddPatient;
-            this.bAddPatient.Location = new System.Drawing.Point(929, 22);
-            this.bAddPatient.Name = "bAddPatient";
-            this.bAddPatient.ShadowDecoration.Parent = this.bAddPatient;
-            this.bAddPatient.Size = new System.Drawing.Size(134, 37);
-            this.bAddPatient.TabIndex = 133;
-            this.bAddPatient.Text = "Làm mới";
+            this.bRefresh.Animated = true;
+            this.bRefresh.BackColor = System.Drawing.Color.Transparent;
+            this.bRefresh.BorderRadius = 6;
+            this.bRefresh.CheckedState.Parent = this.bRefresh;
+            this.bRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bRefresh.CustomImages.Parent = this.bRefresh;
+            this.bRefresh.FillColor = System.Drawing.Color.Ivory;
+            this.bRefresh.FillColor2 = System.Drawing.Color.Ivory;
+            this.bRefresh.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bRefresh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
+            this.bRefresh.HoverState.Parent = this.bRefresh;
+            this.bRefresh.Location = new System.Drawing.Point(929, 22);
+            this.bRefresh.Name = "bRefresh";
+            this.bRefresh.ShadowDecoration.Parent = this.bRefresh;
+            this.bRefresh.Size = new System.Drawing.Size(134, 37);
+            this.bRefresh.TabIndex = 133;
+            this.bRefresh.Text = "Thêm mới";
             // 
             // panel55
             // 
@@ -900,44 +905,44 @@ namespace GUI
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel55.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
             this.panel55.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel55.Controls.Add(this.guna2TextBox9);
+            this.panel55.Controls.Add(this.tbSumMedicalMoney);
             this.panel55.Controls.Add(this.label10);
-            this.panel55.Controls.Add(this.dataGridView2);
+            this.panel55.Controls.Add(this.dgvMedicalList);
             this.panel55.Location = new System.Drawing.Point(774, 667);
             this.panel55.Margin = new System.Windows.Forms.Padding(4);
             this.panel55.Name = "panel55";
             this.panel55.Size = new System.Drawing.Size(1137, 356);
             this.panel55.TabIndex = 38;
             // 
-            // guna2TextBox9
+            // tbSumMedicalMoney
             // 
-            this.guna2TextBox9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2TextBox9.AutoSize = true;
-            this.guna2TextBox9.BorderRadius = 3;
-            this.guna2TextBox9.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox9.DefaultText = "";
-            this.guna2TextBox9.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox9.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox9.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox9.DisabledState.Parent = this.guna2TextBox9;
-            this.guna2TextBox9.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox9.FillColor = System.Drawing.Color.Gainsboro;
-            this.guna2TextBox9.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox9.FocusedState.Parent = this.guna2TextBox9;
-            this.guna2TextBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox9.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox9.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox9.HoverState.Parent = this.guna2TextBox9;
-            this.guna2TextBox9.Location = new System.Drawing.Point(817, 300);
-            this.guna2TextBox9.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.guna2TextBox9.Name = "guna2TextBox9";
-            this.guna2TextBox9.PasswordChar = '\0';
-            this.guna2TextBox9.PlaceholderText = "";
-            this.guna2TextBox9.ReadOnly = true;
-            this.guna2TextBox9.SelectedText = "";
-            this.guna2TextBox9.ShadowDecoration.Parent = this.guna2TextBox9;
-            this.guna2TextBox9.Size = new System.Drawing.Size(300, 41);
-            this.guna2TextBox9.TabIndex = 49;
+            this.tbSumMedicalMoney.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbSumMedicalMoney.AutoSize = true;
+            this.tbSumMedicalMoney.BorderRadius = 3;
+            this.tbSumMedicalMoney.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbSumMedicalMoney.DefaultText = "";
+            this.tbSumMedicalMoney.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbSumMedicalMoney.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbSumMedicalMoney.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbSumMedicalMoney.DisabledState.Parent = this.tbSumMedicalMoney;
+            this.tbSumMedicalMoney.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbSumMedicalMoney.FillColor = System.Drawing.Color.Gainsboro;
+            this.tbSumMedicalMoney.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbSumMedicalMoney.FocusedState.Parent = this.tbSumMedicalMoney;
+            this.tbSumMedicalMoney.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbSumMedicalMoney.ForeColor = System.Drawing.Color.Black;
+            this.tbSumMedicalMoney.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbSumMedicalMoney.HoverState.Parent = this.tbSumMedicalMoney;
+            this.tbSumMedicalMoney.Location = new System.Drawing.Point(817, 300);
+            this.tbSumMedicalMoney.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.tbSumMedicalMoney.Name = "tbSumMedicalMoney";
+            this.tbSumMedicalMoney.PasswordChar = '\0';
+            this.tbSumMedicalMoney.PlaceholderText = "";
+            this.tbSumMedicalMoney.ReadOnly = true;
+            this.tbSumMedicalMoney.SelectedText = "";
+            this.tbSumMedicalMoney.ShadowDecoration.Parent = this.tbSumMedicalMoney;
+            this.tbSumMedicalMoney.Size = new System.Drawing.Size(300, 41);
+            this.tbSumMedicalMoney.TabIndex = 49;
             // 
             // label10
             // 
@@ -951,24 +956,24 @@ namespace GUI
             this.label10.TabIndex = 6;
             this.label10.Text = "TỔNG TIỀN THUỐC:";
             // 
-            // dataGridView2
+            // dgvMedicalList
             // 
-            this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dgvMedicalList.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView2.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView2.ColumnHeadersHeight = 29;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvMedicalList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvMedicalList.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dgvMedicalList.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvMedicalList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvMedicalList.ColumnHeadersHeight = 29;
+            this.dgvMedicalList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.TenThuoc,
             this.DVT,
@@ -976,14 +981,14 @@ namespace GUI
             this.Gia,
             this.ThanhTien,
             this.CachDung});
-            this.dataGridView2.Location = new System.Drawing.Point(7, 15);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(1114, 277);
-            this.dataGridView2.TabIndex = 2;
+            this.dgvMedicalList.Location = new System.Drawing.Point(7, 15);
+            this.dgvMedicalList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvMedicalList.Name = "dgvMedicalList";
+            this.dgvMedicalList.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dgvMedicalList.RowHeadersWidth = 51;
+            this.dgvMedicalList.RowTemplate.Height = 24;
+            this.dgvMedicalList.Size = new System.Drawing.Size(1114, 277);
+            this.dgvMedicalList.TabIndex = 2;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -1057,6 +1062,105 @@ namespace GUI
             this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.progressBar1.TabIndex = 39;
             this.progressBar1.Value = 50;
+            // 
+            // guna2GradientPanel1
+            // 
+            this.guna2GradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
+            this.guna2GradientPanel1.Controls.Add(this.bCancel);
+            this.guna2GradientPanel1.Controls.Add(this.label7);
+            this.guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
+            this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
+            this.guna2GradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2GradientPanel1.Name = "guna2GradientPanel1";
+            this.guna2GradientPanel1.ShadowDecoration.Parent = this.guna2GradientPanel1;
+            this.guna2GradientPanel1.Size = new System.Drawing.Size(1924, 92);
+            this.guna2GradientPanel1.TabIndex = 44;
+            // 
+            // bCancel
+            // 
+            this.bCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.bCancel.Animated = true;
+            this.bCancel.BackColor = System.Drawing.Color.Transparent;
+            this.bCancel.BorderColor = System.Drawing.Color.White;
+            this.bCancel.BorderRadius = 6;
+            this.bCancel.BorderThickness = 1;
+            this.bCancel.CheckedState.Parent = this.bCancel;
+            this.bCancel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bCancel.CustomImages.Parent = this.bCancel;
+            this.bCancel.FillColor = System.Drawing.Color.Transparent;
+            this.bCancel.FillColor2 = System.Drawing.Color.Transparent;
+            this.bCancel.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
+            this.bCancel.ForeColor = System.Drawing.Color.White;
+            this.bCancel.HoverState.Parent = this.bCancel;
+            this.bCancel.Location = new System.Drawing.Point(1797, 12);
+            this.bCancel.Name = "bCancel";
+            this.bCancel.ShadowDecoration.Parent = this.bCancel;
+            this.bCancel.Size = new System.Drawing.Size(115, 36);
+            this.bCancel.TabIndex = 115;
+            this.bCancel.Text = "THOÁT";
+            // 
+            // label7
+            // 
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(0, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(1924, 92);
+            this.label7.TabIndex = 113;
+            this.label7.Text = "LẬP PHIẾU KHÁM BỆNH";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.BorderRadius = 10;
+            this.guna2Elipse1.TargetControl = this.panel2;
+            // 
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.BorderRadius = 10;
+            this.guna2Elipse2.TargetControl = this.panel3;
+            // 
+            // guna2Elipse3
+            // 
+            this.guna2Elipse3.TargetControl = this.cbTypeSick;
+            // 
+            // guna2Elipse4
+            // 
+            this.guna2Elipse4.BorderRadius = 10;
+            this.guna2Elipse4.TargetControl = this.panel4;
+            // 
+            // guna2Elipse5
+            // 
+            this.guna2Elipse5.TargetControl = this.cbMedicalName;
+            // 
+            // guna2Elipse6
+            // 
+            this.guna2Elipse6.BorderRadius = 10;
+            this.guna2Elipse6.TargetControl = this.panel55;
+            // 
+            // bSave
+            // 
+            this.bSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.bSave.Animated = true;
+            this.bSave.BackColor = System.Drawing.Color.Transparent;
+            this.bSave.BorderRadius = 6;
+            this.bSave.CheckedState.Parent = this.bSave;
+            this.bSave.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bSave.CustomImages.Parent = this.bSave;
+            this.bSave.FillColor = System.Drawing.Color.Ivory;
+            this.bSave.FillColor2 = System.Drawing.Color.Ivory;
+            this.bSave.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bSave.ForeColor = System.Drawing.Color.Red;
+            this.bSave.HoverState.Parent = this.bSave;
+            this.bSave.Location = new System.Drawing.Point(1826, 147);
+            this.bSave.Name = "bSave";
+            this.bSave.ShadowDecoration.Parent = this.bSave;
+            this.bSave.Size = new System.Drawing.Size(85, 65);
+            this.bSave.TabIndex = 134;
+            this.bSave.Text = "LƯU LẠI";
             // 
             // button9
             // 
@@ -1138,125 +1242,26 @@ namespace GUI
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.Button3_Click);
             // 
-            // guna2GradientPanel1
+            // guna2Elipse9
             // 
-            this.guna2GradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
-            this.guna2GradientPanel1.Controls.Add(this.bCancel);
-            this.guna2GradientPanel1.Controls.Add(this.label7);
-            this.guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
-            this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
-            this.guna2GradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2GradientPanel1.Name = "guna2GradientPanel1";
-            this.guna2GradientPanel1.ShadowDecoration.Parent = this.guna2GradientPanel1;
-            this.guna2GradientPanel1.Size = new System.Drawing.Size(1924, 92);
-            this.guna2GradientPanel1.TabIndex = 44;
+            this.guna2Elipse9.TargetControl = this.cbMedicalName;
             // 
-            // bCancel
+            // guna2Elipse7
             // 
-            this.bCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bCancel.Animated = true;
-            this.bCancel.BackColor = System.Drawing.Color.Transparent;
-            this.bCancel.BorderColor = System.Drawing.Color.White;
-            this.bCancel.BorderRadius = 6;
-            this.bCancel.BorderThickness = 1;
-            this.bCancel.CheckedState.Parent = this.bCancel;
-            this.bCancel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bCancel.CustomImages.Parent = this.bCancel;
-            this.bCancel.FillColor = System.Drawing.Color.Transparent;
-            this.bCancel.FillColor2 = System.Drawing.Color.Transparent;
-            this.bCancel.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
-            this.bCancel.ForeColor = System.Drawing.Color.White;
-            this.bCancel.HoverState.Parent = this.bCancel;
-            this.bCancel.Location = new System.Drawing.Point(1797, 12);
-            this.bCancel.Name = "bCancel";
-            this.bCancel.ShadowDecoration.Parent = this.bCancel;
-            this.bCancel.Size = new System.Drawing.Size(115, 36);
-            this.bCancel.TabIndex = 115;
-            this.bCancel.Text = "THOÁT";
+            this.guna2Elipse7.TargetControl = this.cbUseWay;
             // 
-            // label7
+            // guna2Elipse8
             // 
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(0, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(1924, 92);
-            this.label7.TabIndex = 113;
-            this.label7.Text = "LẬP PHIẾU KHÁM BỆNH";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.guna2Elipse8.TargetControl = this.cbTypeSick;
             // 
-            // guna2Elipse1
+            // dateTimePicker1
             // 
-            this.guna2Elipse1.BorderRadius = 10;
-            this.guna2Elipse1.TargetControl = this.panel2;
-            // 
-            // guna2Elipse2
-            // 
-            this.guna2Elipse2.BorderRadius = 10;
-            this.guna2Elipse2.TargetControl = this.panel3;
-            // 
-            // guna2Elipse3
-            // 
-            this.guna2Elipse3.TargetControl = this.cbTypeSick;
-            // 
-            // guna2Elipse4
-            // 
-            this.guna2Elipse4.BorderRadius = 10;
-            this.guna2Elipse4.TargetControl = this.panel4;
-            // 
-            // guna2Elipse5
-            // 
-            this.guna2Elipse5.TargetControl = this.cbMedicalName;
-            // 
-            // guna2Elipse6
-            // 
-            this.guna2Elipse6.BorderRadius = 10;
-            this.guna2Elipse6.TargetControl = this.panel55;
-            // 
-            // guna2GradientButton5
-            // 
-            this.guna2GradientButton5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2GradientButton5.Animated = true;
-            this.guna2GradientButton5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientButton5.BorderRadius = 6;
-            this.guna2GradientButton5.CheckedState.Parent = this.guna2GradientButton5;
-            this.guna2GradientButton5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2GradientButton5.CustomImages.Parent = this.guna2GradientButton5;
-            this.guna2GradientButton5.FillColor = System.Drawing.Color.Ivory;
-            this.guna2GradientButton5.FillColor2 = System.Drawing.Color.Ivory;
-            this.guna2GradientButton5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientButton5.ForeColor = System.Drawing.Color.Red;
-            this.guna2GradientButton5.HoverState.Parent = this.guna2GradientButton5;
-            this.guna2GradientButton5.Location = new System.Drawing.Point(1826, 147);
-            this.guna2GradientButton5.Name = "guna2GradientButton5";
-            this.guna2GradientButton5.ShadowDecoration.Parent = this.guna2GradientButton5;
-            this.guna2GradientButton5.Size = new System.Drawing.Size(85, 65);
-            this.guna2GradientButton5.TabIndex = 134;
-            this.guna2GradientButton5.Text = "IN ĐƠN";
-            // 
-            // guna2GradientButton6
-            // 
-            this.guna2GradientButton6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2GradientButton6.Animated = true;
-            this.guna2GradientButton6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientButton6.BorderRadius = 6;
-            this.guna2GradientButton6.CheckedState.Parent = this.guna2GradientButton6;
-            this.guna2GradientButton6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2GradientButton6.CustomImages.Parent = this.guna2GradientButton6;
-            this.guna2GradientButton6.FillColor = System.Drawing.Color.Ivory;
-            this.guna2GradientButton6.FillColor2 = System.Drawing.Color.Ivory;
-            this.guna2GradientButton6.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientButton6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.guna2GradientButton6.HoverState.Parent = this.guna2GradientButton6;
-            this.guna2GradientButton6.Location = new System.Drawing.Point(1738, 147);
-            this.guna2GradientButton6.Name = "guna2GradientButton6";
-            this.guna2GradientButton6.ShadowDecoration.Parent = this.guna2GradientButton6;
-            this.guna2GradientButton6.Size = new System.Drawing.Size(82, 65);
-            this.guna2GradientButton6.TabIndex = 135;
-            this.guna2GradientButton6.Text = "LƯU LẠI";
+            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(119, 19);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(127, 26);
+            this.dateTimePicker1.TabIndex = 7;
             // 
             // FormSetMedicalExamination
             // 
@@ -1264,8 +1269,7 @@ namespace GUI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
-            this.Controls.Add(this.guna2GradientButton6);
-            this.Controls.Add(this.guna2GradientButton5);
+            this.Controls.Add(this.bSave);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.guna2GradientPanel1);
             this.Controls.Add(this.button9);
@@ -1279,23 +1283,23 @@ namespace GUI
             this.Controls.Add(this.button3);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormSetMedicalExamination";
-            this.Text = "FormSetMedicalExamination";
+            this.Text = "Lập phiếu khám bệnh";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormSetMedicalExamination_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPatientWaiting)).EndInit();
             this.panel3.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.gbPatientInformation.ResumeLayout(false);
+            this.gbPatientInformation.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.panel55.ResumeLayout(false);
             this.panel55.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMedicalList)).EndInit();
             this.guna2GradientPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -1312,12 +1316,12 @@ namespace GUI
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.DataGridView dgvPatientWaiting;
+        private System.Windows.Forms.GroupBox gbPatientInformation;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label l;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button bReturn;
@@ -1331,7 +1335,7 @@ namespace GUI
         private System.Windows.Forms.Panel panel55;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button bAddTypeSick;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.DataGridViewTextBoxColumn STT;
         private System.Windows.Forms.DataGridViewTextBoxColumn HoTen;
@@ -1340,31 +1344,31 @@ namespace GUI
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         private Guna.UI2.WinForms.Guna2GradientButton bCancel;
         private System.Windows.Forms.Label label7;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
+        private Guna.UI2.WinForms.Guna2TextBox tbPatientSex;
+        private Guna.UI2.WinForms.Guna2TextBox tbPatientName;
+        private Guna.UI2.WinForms.Guna2TextBox tbPatientAddress;
+        private Guna.UI2.WinForms.Guna2TextBox tbPatientDate;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox6;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox7;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox5;
+        private Guna.UI2.WinForms.Guna2TextBox tbDaySick;
+        private Guna.UI2.WinForms.Guna2TextBox tbSignalSick;
+        private Guna.UI2.WinForms.Guna2TextBox tbIdMedicalExam;
         private System.Windows.Forms.ComboBox cbTypeSick;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox11;
+        private System.Windows.Forms.Button bAddUseWay;
+        private System.Windows.Forms.ComboBox cbUseWay;
+        private Guna.UI2.WinForms.Guna2TextBox tbMedicalNum;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox cbMedicalName;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox8;
+        private Guna.UI2.WinForms.Guna2TextBox tbIdMedical;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse5;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton2;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
-        private Guna.UI2.WinForms.Guna2GradientButton bAddPatient;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton3;
+        private Guna.UI2.WinForms.Guna2GradientButton bEditMedical;
+        private Guna.UI2.WinForms.Guna2GradientButton bAddInto;
+        private Guna.UI2.WinForms.Guna2GradientButton bRefresh;
+        private Guna.UI2.WinForms.Guna2GradientButton bDeleteMedical;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse6;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dgvMedicalList;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenThuoc;
         private System.Windows.Forms.DataGridViewTextBoxColumn DVT;
@@ -1372,10 +1376,13 @@ namespace GUI
         private System.Windows.Forms.DataGridViewTextBoxColumn Gia;
         private System.Windows.Forms.DataGridViewTextBoxColumn ThanhTien;
         private System.Windows.Forms.DataGridViewTextBoxColumn CachDung;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton4;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton5;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton6;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox9;
+        private Guna.UI2.WinForms.Guna2GradientButton bCancelPatient;
+        private Guna.UI2.WinForms.Guna2GradientButton bSave;
+        private Guna.UI2.WinForms.Guna2TextBox tbSumMedicalMoney;
         private System.Windows.Forms.Label label10;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse9;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse7;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse8;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

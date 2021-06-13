@@ -64,6 +64,12 @@
     <Compile Include="FormAddPatient.Designer.cs">
       <DependentUpon>FormAddPatient.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormAddUseWay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddUseWay.Designer.cs">
+      <DependentUpon>FormAddUseWay.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormEditMedical.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +130,12 @@
     <Compile Include="FormPatientLookup.Designer.cs">
       <DependentUpon>FormPatientLookup.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormAddTypeSick.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddTypeSick.Designer.cs">
+      <DependentUpon>FormAddTypeSick.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormRegister.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,6 +183,9 @@
     <EmbeddedResource Include="FormAddPatient.resx">
       <DependentUpon>FormAddPatient.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormAddUseWay.resx">
+      <DependentUpon>FormAddUseWay.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormBackground.resx">
       <DependentUpon>FormBackground.cs</DependentUpon>
     </EmbeddedResource>
@@ -200,6 +215,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormPatientLookup.resx">
       <DependentUpon>FormPatientLookup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddTypeSick.resx">
+      <DependentUpon>FormAddTypeSick.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormRegister.resx">
       <DependentUpon>FormRegister.cs</DependentUpon>

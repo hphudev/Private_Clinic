@@ -10,3 +10,9 @@ F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\BUS\obj\Debug\BUS.csprojAssembly
 F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
 F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\BUS\obj\Debug\BUS.dll
 F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\BUS\obj\Debug\BUS.pdb
+F:\NMCNPM\Ver2\Private_Clinic-NMCNPM-Team_9\GUI\BUS\bin\Debug\BUS.dll
+F:\NMCNPM\Ver2\Private_Clinic-NMCNPM-Team_9\GUI\BUS\bin\Debug\BUS.pdb
+F:\NMCNPM\Ver2\Private_Clinic-NMCNPM-Team_9\GUI\BUS\obj\Debug\BUS.csprojAssemblyReference.cache
+F:\NMCNPM\Ver2\Private_Clinic-NMCNPM-Team_9\GUI\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+F:\NMCNPM\Ver2\Private_Clinic-NMCNPM-Team_9\GUI\BUS\obj\Debug\BUS.dll
+F:\NMCNPM\Ver2\Private_Clinic-NMCNPM-Team_9\GUI\BUS\obj\Debug\BUS.pdb

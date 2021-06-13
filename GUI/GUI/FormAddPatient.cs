@@ -27,5 +27,10 @@ namespace GUI
             //Form form = this;
             //form.Hide();
         }
+
+        private void Label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

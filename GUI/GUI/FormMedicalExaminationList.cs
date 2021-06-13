@@ -21,7 +21,7 @@ namespace GUI
             this.bAddPatient.Click += (s, e) =>
             {
                 FormAddPatient formAddPatient = new FormAddPatient();
-                formAddPatient.ShowDialog();
+                BUS.Event.ShowFormDialog(formAddPatient);
             };
         }
 
@@ -31,6 +31,16 @@ namespace GUI
         }
 
         private void Label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GroupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BFind_Click(object sender, EventArgs e)
         {
 
         }

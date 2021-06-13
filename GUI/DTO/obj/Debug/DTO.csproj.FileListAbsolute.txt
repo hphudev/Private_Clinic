@@ -10,3 +10,9 @@ F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\DTO\obj\Debug\DTO.csprojAssembly
 F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\DTO\obj\Debug\DTO.dll
 F:\NMCNPM\Ver1\Private_Clinic-NMCNPM-Team_9\GUI\DTO\obj\Debug\DTO.pdb
+F:\NMCNPM\Ver2\Private_Clinic-NMCNPM-Team_9\GUI\DTO\bin\Debug\DTO.dll
+F:\NMCNPM\Ver2\Private_Clinic-NMCNPM-Team_9\GUI\DTO\bin\Debug\DTO.pdb
+F:\NMCNPM\Ver2\Private_Clinic-NMCNPM-Team_9\GUI\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+F:\NMCNPM\Ver2\Private_Clinic-NMCNPM-Team_9\GUI\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+F:\NMCNPM\Ver2\Private_Clinic-NMCNPM-Team_9\GUI\DTO\obj\Debug\DTO.dll
+F:\NMCNPM\Ver2\Private_Clinic-NMCNPM-Team_9\GUI\DTO\obj\Debug\DTO.pdb

@@ -18,6 +18,7 @@ namespace BUS
     {
         public static Image openEye = null;
         public static Image closeEye = null;
+        public static Form formBackground = null;
 
         #region Thư viện Custom Drag Bar
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -160,6 +161,40 @@ namespace BUS
             button.ForeColor = Color.White;
         }
         #endregion
+
+        static public void ShowFormBackground(Form parent, Form formBackground)
+        {
+            if (formBackground == null)
+            {
+                formBackground = new Form();
+            }
+            formBackground.StartPosition = FormStartPosition.Manual;
+            formBackground.FormBorderStyle = FormBorderStyle.None;
+            formBackground.Opacity = 0.50d;
+            formBackground.BackColor = Color.Black;
+            formBackground.WindowState = FormWindowState.Maximized;
+            formBackground.TopMost = true;
+            formBackground.Location = parent.Location;
+            formBackground.ShowInTaskbar = false;
+            formBackground.Show();
+            parent.Owner = formBackground;
+        }
+        static public void CloseFormBackground(Form formBackground)
+        {
+            if (formBackground != null)
+                formBackground.Dispose();
+        }
+        static public void ShowFormDialog(Form main)
+        {
+            if (main != null)
+            {
+                Form formBackground = new Form();
+                ShowFormBackground(main, formBackground);
+                main.TopMost = true;
+                main.ShowDialog();
+                CloseFormBackground(formBackground);
+            }
+        }
 
     }
 }

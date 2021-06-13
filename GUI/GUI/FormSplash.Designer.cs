@@ -29,10 +29,12 @@ namespace GUI
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.pBar = new System.Windows.Forms.ProgressBar();
             this.bReConnectServer = new System.Windows.Forms.Button();
             this.lRecommend = new System.Windows.Forms.Label();
             this.lDisconnecting = new System.Windows.Forms.Label();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.SuspendLayout();
             // 
             // pBar
@@ -44,6 +46,7 @@ namespace GUI
             this.pBar.Step = 1;
             this.pBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.pBar.TabIndex = 0;
+            this.pBar.Value = 50;
             this.pBar.Visible = false;
             // 
             // bReConnectServer
@@ -87,6 +90,11 @@ namespace GUI
             this.lDisconnecting.Text = "MẤT KẾT NỐI";
             this.lDisconnecting.Visible = false;
             // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.BorderRadius = 20;
+            this.guna2Elipse1.TargetControl = this;
+            // 
             // FormSplash
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -113,5 +121,6 @@ namespace GUI
         private System.Windows.Forms.Button bReConnectServer;
         private System.Windows.Forms.Label lRecommend;
         private System.Windows.Forms.Label lDisconnecting;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
     }
 }

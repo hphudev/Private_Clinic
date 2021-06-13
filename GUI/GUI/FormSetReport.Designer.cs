@@ -30,12 +30,18 @@ namespace GUI
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.dtpEndday2 = new ns1.BunifuDatepicker();
+            this.dtpBeginDay2 = new ns1.BunifuDatepicker();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.bFind = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.cbMedicalName = new System.Windows.Forms.ComboBox();
+            this.bPrintMedicalReport = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dgvMedicalReport = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenThuoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DonViTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,10 +50,13 @@ namespace GUI
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.bReturn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
+            this.bReportTotal = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.dtpEndDay = new ns1.BunifuDatepicker();
+            this.dtpBeginDay = new ns1.BunifuDatepicker();
+            this.bPrintTotalReport = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvMoneyReport = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ngay = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SoBenhNhan = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,22 +67,14 @@ namespace GUI
             this.label10 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.cbTimKiem = new System.Windows.Forms.ComboBox();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.bunifuDatepicker1 = new ns1.BunifuDatepicker();
-            this.bunifuDatepicker2 = new ns1.BunifuDatepicker();
-            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.bunifuDatepicker3 = new ns1.BunifuDatepicker();
-            this.bunifuDatepicker4 = new ns1.BunifuDatepicker();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.bReportMedical = new Guna.UI2.WinForms.Guna2GradientButton();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMedicalReport)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMoneyReport)).BeginInit();
             this.guna2GradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -83,37 +84,124 @@ namespace GUI
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel4.Controls.Add(this.bunifuDatepicker3);
-            this.panel4.Controls.Add(this.bunifuDatepicker4);
+            this.panel4.Controls.Add(this.bReportMedical);
+            this.panel4.Controls.Add(this.dtpEndday2);
+            this.panel4.Controls.Add(this.dtpBeginDay2);
             this.panel4.Controls.Add(this.label5);
             this.panel4.Controls.Add(this.label7);
-            this.panel4.Controls.Add(this.guna2GradientButton2);
-            this.panel4.Controls.Add(this.cbTimKiem);
-            this.panel4.Controls.Add(this.button2);
+            this.panel4.Controls.Add(this.bFind);
+            this.panel4.Controls.Add(this.cbMedicalName);
+            this.panel4.Controls.Add(this.bPrintMedicalReport);
             this.panel4.Controls.Add(this.label6);
-            this.panel4.Controls.Add(this.dataGridView2);
+            this.panel4.Controls.Add(this.dgvMedicalReport);
             this.panel4.Location = new System.Drawing.Point(36, 582);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1860, 440);
             this.panel4.TabIndex = 38;
             // 
-            // button2
+            // dtpEndday2
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.BackColor = System.Drawing.Color.Lavender;
-            this.button2.BackgroundImage = global::GUI.Properties.Resources.print_80px;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.LightSeaGreen;
-            this.button2.FlatAppearance.BorderSize = 2;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(1780, 42);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(59, 58);
-            this.button2.TabIndex = 77;
-            this.button2.UseVisualStyleBackColor = false;
+            this.dtpEndday2.BackColor = System.Drawing.Color.White;
+            this.dtpEndday2.BorderRadius = 6;
+            this.dtpEndday2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dtpEndday2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpEndday2.ForeColor = System.Drawing.Color.Black;
+            this.dtpEndday2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpEndday2.FormatCustom = "dd/mm/yyyy";
+            this.dtpEndday2.Location = new System.Drawing.Point(339, 52);
+            this.dtpEndday2.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.dtpEndday2.Name = "dtpEndday2";
+            this.dtpEndday2.Size = new System.Drawing.Size(297, 42);
+            this.dtpEndday2.TabIndex = 137;
+            this.dtpEndday2.Value = new System.DateTime(2021, 6, 6, 11, 44, 35, 994);
+            // 
+            // dtpBeginDay2
+            // 
+            this.dtpBeginDay2.BackColor = System.Drawing.Color.White;
+            this.dtpBeginDay2.BorderRadius = 6;
+            this.dtpBeginDay2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dtpBeginDay2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpBeginDay2.ForeColor = System.Drawing.Color.Black;
+            this.dtpBeginDay2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpBeginDay2.FormatCustom = "dd/mm/yyyy";
+            this.dtpBeginDay2.Location = new System.Drawing.Point(19, 52);
+            this.dtpBeginDay2.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.dtpBeginDay2.Name = "dtpBeginDay2";
+            this.dtpBeginDay2.Size = new System.Drawing.Size(297, 42);
+            this.dtpBeginDay2.TabIndex = 136;
+            this.dtpBeginDay2.Value = new System.DateTime(2021, 6, 6, 11, 44, 35, 994);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Honeydew;
+            this.label5.Location = new System.Drawing.Point(334, 16);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(145, 26);
+            this.label5.TabIndex = 135;
+            this.label5.Text = "Ngày kết thúc";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Honeydew;
+            this.label7.Location = new System.Drawing.Point(14, 16);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(141, 26);
+            this.label7.TabIndex = 134;
+            this.label7.Text = "Ngày bắt đầu";
+            // 
+            // bFind
+            // 
+            this.bFind.Animated = true;
+            this.bFind.BackColor = System.Drawing.Color.Transparent;
+            this.bFind.BorderRadius = 6;
+            this.bFind.CheckedState.Parent = this.bFind;
+            this.bFind.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bFind.CustomImages.Parent = this.bFind;
+            this.bFind.FillColor = System.Drawing.Color.Ivory;
+            this.bFind.FillColor2 = System.Drawing.Color.Ivory;
+            this.bFind.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bFind.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
+            this.bFind.HoverState.Parent = this.bFind;
+            this.bFind.Location = new System.Drawing.Point(1596, 52);
+            this.bFind.Name = "bFind";
+            this.bFind.ShadowDecoration.Parent = this.bFind;
+            this.bFind.Size = new System.Drawing.Size(102, 37);
+            this.bFind.TabIndex = 133;
+            this.bFind.Text = "Tìm kiếm";
+            // 
+            // cbMedicalName
+            // 
+            this.cbMedicalName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbMedicalName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbMedicalName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbMedicalName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.cbMedicalName.FormattingEnabled = true;
+            this.cbMedicalName.Location = new System.Drawing.Point(1189, 52);
+            this.cbMedicalName.Name = "cbMedicalName";
+            this.cbMedicalName.Size = new System.Drawing.Size(397, 37);
+            this.cbMedicalName.TabIndex = 132;
+            // 
+            // bPrintMedicalReport
+            // 
+            this.bPrintMedicalReport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.bPrintMedicalReport.BackColor = System.Drawing.Color.Lavender;
+            this.bPrintMedicalReport.BackgroundImage = global::GUI.Properties.Resources.print_80px;
+            this.bPrintMedicalReport.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bPrintMedicalReport.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bPrintMedicalReport.FlatAppearance.BorderColor = System.Drawing.Color.LightSeaGreen;
+            this.bPrintMedicalReport.FlatAppearance.BorderSize = 2;
+            this.bPrintMedicalReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bPrintMedicalReport.Location = new System.Drawing.Point(1780, 42);
+            this.bPrintMedicalReport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bPrintMedicalReport.Name = "bPrintMedicalReport";
+            this.bPrintMedicalReport.Size = new System.Drawing.Size(59, 58);
+            this.bPrintMedicalReport.TabIndex = 77;
+            this.bPrintMedicalReport.UseVisualStyleBackColor = false;
             // 
             // label6
             // 
@@ -126,37 +214,37 @@ namespace GUI
             this.label6.TabIndex = 42;
             this.label6.Text = "Tên thuốc:";
             // 
-            // dataGridView2
+            // dgvMedicalReport
             // 
-            this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dgvMedicalReport.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView2.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
-            this.dataGridView2.ColumnHeadersHeight = 29;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvMedicalReport.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvMedicalReport.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dgvMedicalReport.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvMedicalReport.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvMedicalReport.ColumnHeadersHeight = 29;
+            this.dgvMedicalReport.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.TenThuoc,
             this.DonViTinh,
             this.SoLuong,
             this.SoLanDung});
-            this.dataGridView2.Location = new System.Drawing.Point(19, 105);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(1820, 314);
-            this.dataGridView2.TabIndex = 1;
+            this.dgvMedicalReport.Location = new System.Drawing.Point(19, 105);
+            this.dgvMedicalReport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvMedicalReport.Name = "dgvMedicalReport";
+            this.dgvMedicalReport.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dgvMedicalReport.RowHeadersWidth = 51;
+            this.dgvMedicalReport.RowTemplate.Height = 24;
+            this.dgvMedicalReport.Size = new System.Drawing.Size(1820, 314);
+            this.dgvMedicalReport.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -241,35 +329,87 @@ namespace GUI
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Controls.Add(this.guna2GradientButton1);
-            this.panel1.Controls.Add(this.bunifuDatepicker2);
-            this.panel1.Controls.Add(this.bunifuDatepicker1);
-            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.bReportTotal);
+            this.panel1.Controls.Add(this.dtpEndDay);
+            this.panel1.Controls.Add(this.dtpBeginDay);
+            this.panel1.Controls.Add(this.bPrintTotalReport);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Controls.Add(this.dgvMoneyReport);
             this.panel1.Location = new System.Drawing.Point(36, 160);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1860, 378);
             this.panel1.TabIndex = 43;
             // 
-            // button3
+            // bReportTotal
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.BackColor = System.Drawing.Color.Lavender;
-            this.button3.BackgroundImage = global::GUI.Properties.Resources.print_80px;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.LightSeaGreen;
-            this.button3.FlatAppearance.BorderSize = 2;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(1780, 71);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(59, 58);
-            this.button3.TabIndex = 78;
-            this.button3.UseVisualStyleBackColor = false;
+            this.bReportTotal.Animated = true;
+            this.bReportTotal.BackColor = System.Drawing.Color.Transparent;
+            this.bReportTotal.BorderRadius = 6;
+            this.bReportTotal.CheckedState.Parent = this.bReportTotal;
+            this.bReportTotal.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bReportTotal.CustomImages.Parent = this.bReportTotal;
+            this.bReportTotal.FillColor = System.Drawing.Color.Ivory;
+            this.bReportTotal.FillColor2 = System.Drawing.Color.Ivory;
+            this.bReportTotal.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bReportTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
+            this.bReportTotal.HoverState.Parent = this.bReportTotal;
+            this.bReportTotal.Location = new System.Drawing.Point(646, 68);
+            this.bReportTotal.Name = "bReportTotal";
+            this.bReportTotal.ShadowDecoration.Parent = this.bReportTotal;
+            this.bReportTotal.Size = new System.Drawing.Size(102, 37);
+            this.bReportTotal.TabIndex = 130;
+            this.bReportTotal.Text = "Báo cáo";
+            // 
+            // dtpEndDay
+            // 
+            this.dtpEndDay.BackColor = System.Drawing.Color.White;
+            this.dtpEndDay.BorderRadius = 6;
+            this.dtpEndDay.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dtpEndDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpEndDay.ForeColor = System.Drawing.Color.Black;
+            this.dtpEndDay.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpEndDay.FormatCustom = "dd/mm/yyyy";
+            this.dtpEndDay.Location = new System.Drawing.Point(339, 68);
+            this.dtpEndDay.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.dtpEndDay.Name = "dtpEndDay";
+            this.dtpEndDay.Size = new System.Drawing.Size(297, 42);
+            this.dtpEndDay.TabIndex = 122;
+            this.dtpEndDay.Value = new System.DateTime(2021, 6, 6, 11, 44, 35, 994);
+            // 
+            // dtpBeginDay
+            // 
+            this.dtpBeginDay.BackColor = System.Drawing.Color.White;
+            this.dtpBeginDay.BorderRadius = 6;
+            this.dtpBeginDay.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dtpBeginDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpBeginDay.ForeColor = System.Drawing.Color.Black;
+            this.dtpBeginDay.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpBeginDay.FormatCustom = "dd/mm/yyyy";
+            this.dtpBeginDay.Location = new System.Drawing.Point(19, 68);
+            this.dtpBeginDay.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.dtpBeginDay.Name = "dtpBeginDay";
+            this.dtpBeginDay.Size = new System.Drawing.Size(297, 42);
+            this.dtpBeginDay.TabIndex = 121;
+            this.dtpBeginDay.Value = new System.DateTime(2021, 6, 6, 11, 44, 35, 994);
+            // 
+            // bPrintTotalReport
+            // 
+            this.bPrintTotalReport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.bPrintTotalReport.BackColor = System.Drawing.Color.Lavender;
+            this.bPrintTotalReport.BackgroundImage = global::GUI.Properties.Resources.print_80px;
+            this.bPrintTotalReport.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bPrintTotalReport.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bPrintTotalReport.FlatAppearance.BorderColor = System.Drawing.Color.LightSeaGreen;
+            this.bPrintTotalReport.FlatAppearance.BorderSize = 2;
+            this.bPrintTotalReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bPrintTotalReport.Location = new System.Drawing.Point(1780, 71);
+            this.bPrintTotalReport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bPrintTotalReport.Name = "bPrintTotalReport";
+            this.bPrintTotalReport.Size = new System.Drawing.Size(59, 58);
+            this.bPrintTotalReport.TabIndex = 78;
+            this.bPrintTotalReport.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
@@ -293,37 +433,37 @@ namespace GUI
             this.label1.TabIndex = 39;
             this.label1.Text = "Ngày bắt đầu";
             // 
-            // dataGridView1
+            // dgvMoneyReport
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dgvMoneyReport.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
-            this.dataGridView1.ColumnHeadersHeight = 29;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvMoneyReport.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvMoneyReport.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dgvMoneyReport.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvMoneyReport.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvMoneyReport.ColumnHeadersHeight = 29;
+            this.dgvMoneyReport.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn2,
             this.Ngay,
             this.SoBenhNhan,
             this.DoanhThu,
             this.TyLe});
-            this.dataGridView1.Location = new System.Drawing.Point(19, 134);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1820, 227);
-            this.dataGridView1.TabIndex = 1;
+            this.dgvMoneyReport.Location = new System.Drawing.Point(19, 134);
+            this.dgvMoneyReport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvMoneyReport.Name = "dgvMoneyReport";
+            this.dgvMoneyReport.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dgvMoneyReport.RowHeadersWidth = 51;
+            this.dgvMoneyReport.RowTemplate.Height = 24;
+            this.dgvMoneyReport.Size = new System.Drawing.Size(1820, 227);
+            this.dgvMoneyReport.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn2
             // 
@@ -409,7 +549,7 @@ namespace GUI
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(1924, 92);
             this.label10.TabIndex = 113;
-            this.label10.Text = "TRA CỨU BỆNH NHÂN";
+            this.label10.Text = "LẬP BÁO CÁO";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
@@ -435,22 +575,10 @@ namespace GUI
             this.label4.TabIndex = 130;
             this.label4.Text = "Báo cáo doanh thu";
             // 
-            // cbTimKiem
-            // 
-            this.cbTimKiem.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cbTimKiem.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cbTimKiem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.cbTimKiem.FormattingEnabled = true;
-            this.cbTimKiem.Location = new System.Drawing.Point(1189, 52);
-            this.cbTimKiem.Name = "cbTimKiem";
-            this.cbTimKiem.Size = new System.Drawing.Size(397, 37);
-            this.cbTimKiem.TabIndex = 132;
-            // 
             // guna2Elipse1
             // 
             this.guna2Elipse1.BorderRadius = 10;
-            this.guna2Elipse1.TargetControl = this.cbTimKiem;
+            this.guna2Elipse1.TargetControl = this.cbMedicalName;
             // 
             // guna2Elipse2
             // 
@@ -462,131 +590,25 @@ namespace GUI
             this.guna2Elipse3.BorderRadius = 10;
             this.guna2Elipse3.TargetControl = this.panel1;
             // 
-            // bunifuDatepicker1
+            // bReportMedical
             // 
-            this.bunifuDatepicker1.BackColor = System.Drawing.Color.White;
-            this.bunifuDatepicker1.BorderRadius = 6;
-            this.bunifuDatepicker1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuDatepicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuDatepicker1.ForeColor = System.Drawing.Color.Black;
-            this.bunifuDatepicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.bunifuDatepicker1.FormatCustom = "dd/mm/yyyy";
-            this.bunifuDatepicker1.Location = new System.Drawing.Point(19, 68);
-            this.bunifuDatepicker1.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
-            this.bunifuDatepicker1.Name = "bunifuDatepicker1";
-            this.bunifuDatepicker1.Size = new System.Drawing.Size(297, 42);
-            this.bunifuDatepicker1.TabIndex = 121;
-            this.bunifuDatepicker1.Value = new System.DateTime(2021, 6, 6, 11, 44, 35, 994);
-            // 
-            // bunifuDatepicker2
-            // 
-            this.bunifuDatepicker2.BackColor = System.Drawing.Color.White;
-            this.bunifuDatepicker2.BorderRadius = 6;
-            this.bunifuDatepicker2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuDatepicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuDatepicker2.ForeColor = System.Drawing.Color.Black;
-            this.bunifuDatepicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.bunifuDatepicker2.FormatCustom = "dd/mm/yyyy";
-            this.bunifuDatepicker2.Location = new System.Drawing.Point(339, 65);
-            this.bunifuDatepicker2.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
-            this.bunifuDatepicker2.Name = "bunifuDatepicker2";
-            this.bunifuDatepicker2.Size = new System.Drawing.Size(297, 42);
-            this.bunifuDatepicker2.TabIndex = 122;
-            this.bunifuDatepicker2.Value = new System.DateTime(2021, 6, 6, 11, 44, 35, 994);
-            // 
-            // guna2GradientButton1
-            // 
-            this.guna2GradientButton1.Animated = true;
-            this.guna2GradientButton1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientButton1.BorderRadius = 6;
-            this.guna2GradientButton1.CheckedState.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2GradientButton1.CustomImages.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.FillColor = System.Drawing.Color.Ivory;
-            this.guna2GradientButton1.FillColor2 = System.Drawing.Color.Ivory;
-            this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
-            this.guna2GradientButton1.HoverState.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(646, 68);
-            this.guna2GradientButton1.Name = "guna2GradientButton1";
-            this.guna2GradientButton1.ShadowDecoration.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Size = new System.Drawing.Size(102, 37);
-            this.guna2GradientButton1.TabIndex = 130;
-            this.guna2GradientButton1.Text = "Tìm kiếm";
-            // 
-            // guna2GradientButton2
-            // 
-            this.guna2GradientButton2.Animated = true;
-            this.guna2GradientButton2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientButton2.BorderRadius = 6;
-            this.guna2GradientButton2.CheckedState.Parent = this.guna2GradientButton2;
-            this.guna2GradientButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2GradientButton2.CustomImages.Parent = this.guna2GradientButton2;
-            this.guna2GradientButton2.FillColor = System.Drawing.Color.Ivory;
-            this.guna2GradientButton2.FillColor2 = System.Drawing.Color.Ivory;
-            this.guna2GradientButton2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
-            this.guna2GradientButton2.HoverState.Parent = this.guna2GradientButton2;
-            this.guna2GradientButton2.Location = new System.Drawing.Point(1596, 52);
-            this.guna2GradientButton2.Name = "guna2GradientButton2";
-            this.guna2GradientButton2.ShadowDecoration.Parent = this.guna2GradientButton2;
-            this.guna2GradientButton2.Size = new System.Drawing.Size(102, 37);
-            this.guna2GradientButton2.TabIndex = 133;
-            this.guna2GradientButton2.Text = "Tìm kiếm";
-            // 
-            // bunifuDatepicker3
-            // 
-            this.bunifuDatepicker3.BackColor = System.Drawing.Color.White;
-            this.bunifuDatepicker3.BorderRadius = 6;
-            this.bunifuDatepicker3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuDatepicker3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuDatepicker3.ForeColor = System.Drawing.Color.Black;
-            this.bunifuDatepicker3.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.bunifuDatepicker3.FormatCustom = "dd/mm/yyyy";
-            this.bunifuDatepicker3.Location = new System.Drawing.Point(339, 49);
-            this.bunifuDatepicker3.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
-            this.bunifuDatepicker3.Name = "bunifuDatepicker3";
-            this.bunifuDatepicker3.Size = new System.Drawing.Size(297, 42);
-            this.bunifuDatepicker3.TabIndex = 137;
-            this.bunifuDatepicker3.Value = new System.DateTime(2021, 6, 6, 11, 44, 35, 994);
-            // 
-            // bunifuDatepicker4
-            // 
-            this.bunifuDatepicker4.BackColor = System.Drawing.Color.White;
-            this.bunifuDatepicker4.BorderRadius = 6;
-            this.bunifuDatepicker4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuDatepicker4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuDatepicker4.ForeColor = System.Drawing.Color.Black;
-            this.bunifuDatepicker4.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.bunifuDatepicker4.FormatCustom = "dd/mm/yyyy";
-            this.bunifuDatepicker4.Location = new System.Drawing.Point(19, 52);
-            this.bunifuDatepicker4.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
-            this.bunifuDatepicker4.Name = "bunifuDatepicker4";
-            this.bunifuDatepicker4.Size = new System.Drawing.Size(297, 42);
-            this.bunifuDatepicker4.TabIndex = 136;
-            this.bunifuDatepicker4.Value = new System.DateTime(2021, 6, 6, 11, 44, 35, 994);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Honeydew;
-            this.label5.Location = new System.Drawing.Point(334, 16);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(145, 26);
-            this.label5.TabIndex = 135;
-            this.label5.Text = "Ngày kết thúc";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Honeydew;
-            this.label7.Location = new System.Drawing.Point(14, 16);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(141, 26);
-            this.label7.TabIndex = 134;
-            this.label7.Text = "Ngày bắt đầu";
+            this.bReportMedical.Animated = true;
+            this.bReportMedical.BackColor = System.Drawing.Color.Transparent;
+            this.bReportMedical.BorderRadius = 6;
+            this.bReportMedical.CheckedState.Parent = this.bReportMedical;
+            this.bReportMedical.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bReportMedical.CustomImages.Parent = this.bReportMedical;
+            this.bReportMedical.FillColor = System.Drawing.Color.Ivory;
+            this.bReportMedical.FillColor2 = System.Drawing.Color.Ivory;
+            this.bReportMedical.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bReportMedical.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
+            this.bReportMedical.HoverState.Parent = this.bReportMedical;
+            this.bReportMedical.Location = new System.Drawing.Point(646, 55);
+            this.bReportMedical.Name = "bReportMedical";
+            this.bReportMedical.ShadowDecoration.Parent = this.bReportMedical;
+            this.bReportMedical.Size = new System.Drawing.Size(102, 37);
+            this.bReportMedical.TabIndex = 138;
+            this.bReportMedical.Text = "Báo cáo";
             // 
             // FormSetReport
             // 
@@ -601,17 +623,17 @@ namespace GUI
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.bReturn);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormSetReport";
-            this.Text = "FormSetInvolke";
+            this.Text = "Lập báo cáo";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormSetReport_Load);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMedicalReport)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMoneyReport)).EndInit();
             this.guna2GradientPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -620,7 +642,7 @@ namespace GUI
 
         #endregion
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dgvMedicalReport;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenThuoc;
         private System.Windows.Forms.DataGridViewTextBoxColumn DonViTinh;
@@ -630,11 +652,11 @@ namespace GUI
         private System.Windows.Forms.Button bReturn;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvMoneyReport;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button bPrintMedicalReport;
+        private System.Windows.Forms.Button bPrintTotalReport;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ngay;
         private System.Windows.Forms.DataGridViewTextBoxColumn SoBenhNhan;
@@ -645,17 +667,18 @@ namespace GUI
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox cbTimKiem;
+        private System.Windows.Forms.ComboBox cbMedicalName;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
-        private ns1.BunifuDatepicker bunifuDatepicker2;
-        private ns1.BunifuDatepicker bunifuDatepicker1;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton2;
-        private ns1.BunifuDatepicker bunifuDatepicker3;
-        private ns1.BunifuDatepicker bunifuDatepicker4;
+        private ns1.BunifuDatepicker dtpEndDay;
+        private ns1.BunifuDatepicker dtpBeginDay;
+        private Guna.UI2.WinForms.Guna2GradientButton bReportTotal;
+        private Guna.UI2.WinForms.Guna2GradientButton bFind;
+        private ns1.BunifuDatepicker dtpEndday2;
+        private ns1.BunifuDatepicker dtpBeginDay2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
+        private Guna.UI2.WinForms.Guna2GradientButton bReportMedical;
     }
 }
