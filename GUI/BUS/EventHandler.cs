@@ -1,20 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using System.IO;
 using System.Drawing;
-using System.Data.SqlClient;
-using System.ComponentModel;
 using System.Threading;
 using System.Windows.Forms;
-using System.Timers;
 using System.Runtime.InteropServices;
 
 namespace BUS
 {
-    public static class Event
+    public abstract class EventHandler : Handler
     {
         public static Image openEye = null;
         public static Image closeEye = null;
@@ -28,11 +21,11 @@ namespace BUS
         #endregion
 
         #region Hiển thị form với hiệu ứng Opacity
-        public static void ShowFormEffect(Form form, int timer_para)
+        public static void ShowFormEffect(Form form, int interval)
         {
             System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
             form.Opacity = 0;
-            timer.Interval = timer_para;
+            timer.Interval = interval;
             timer.Tick += (s, e) =>
             {
                 if (form.Opacity < 1)
@@ -108,7 +101,7 @@ namespace BUS
             if (textBox.Text == hintText)
             {
                 textBox.Text = "";
-                textBox.UseSystemPasswordChar = (Eye == false); 
+                textBox.UseSystemPasswordChar = (Eye == false);
             }
         }
         #endregion
@@ -179,11 +172,13 @@ namespace BUS
             formBackground.Show();
             parent.Owner = formBackground;
         }
+
         static public void CloseFormBackground(Form formBackground)
         {
             if (formBackground != null)
                 formBackground.Dispose();
         }
+
         static public void ShowFormDialog(Form main)
         {
             if (main != null)
@@ -195,6 +190,5 @@ namespace BUS
                 CloseFormBackground(formBackground);
             }
         }
-
     }
 }

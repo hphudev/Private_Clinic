@@ -18,7 +18,7 @@ namespace GUI
             this.bAddMedicalUnit.Click += (s, e) =>
             {
                 FormAddMedicalUnit formAddMedicalUnit = new FormAddMedicalUnit();
-                BUS.Event.ShowFormDialog(formAddMedicalUnit);
+                BUS.EventHandler.ShowFormDialog(formAddMedicalUnit);
             };
         }
     }

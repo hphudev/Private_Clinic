@@ -1,7 +1,7 @@
 ﻿
 namespace GUI
 {
-    partial class FormInputMedical
+    partial class FormImportMedicine
     {
         /// <summary>
         /// Required designer variable.
@@ -33,7 +33,7 @@ namespace GUI
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.dgvMedicalList = new System.Windows.Forms.DataGridView();
+            this.dgvMedicineList = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaThuoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenThuoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,16 +46,16 @@ namespace GUI
             this.bReturn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.tbRate = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tbRationToCalculateSellableUnitPrice = new Guna.UI2.WinForms.Guna2TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.bSave = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.bAdd = new Guna.UI2.WinForms.Guna2GradientButton();
             this.tbSellMoney = new Guna.UI2.WinForms.Guna2TextBox();
             this.bRefeshAdd = new Guna.UI2.WinForms.Guna2GradientButton();
             this.label7 = new System.Windows.Forms.Label();
-            this.tbMedicalName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.tbPupMoney = new Guna.UI2.WinForms.Guna2TextBox();
-            this.tbMedicalNum = new Guna.UI2.WinForms.Guna2TextBox();
-            this.tbMedicalUnit = new System.Windows.Forms.ComboBox();
+            this.tbName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tbImportedUnitPrice = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tbQuantityOfInput = new Guna.UI2.WinForms.Guna2TextBox();
+            this.cbUnit = new System.Windows.Forms.ComboBox();
             this.bAddUnit = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -80,7 +80,7 @@ namespace GUI
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMedicalList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMedicineList)).BeginInit();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.guna2GradientPanel1.SuspendLayout();
@@ -96,7 +96,7 @@ namespace GUI
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel4.Controls.Add(this.label1);
-            this.panel4.Controls.Add(this.dgvMedicalList);
+            this.panel4.Controls.Add(this.dgvMedicineList);
             this.panel4.Location = new System.Drawing.Point(34, 482);
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
@@ -114,14 +114,14 @@ namespace GUI
             this.label1.TabIndex = 139;
             this.label1.Text = "Danh sách thuốc điều trị";
             // 
-            // dgvMedicalList
+            // dgvMedicineList
             // 
-            this.dgvMedicalList.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dgvMedicineList.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvMedicalList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvMedicalList.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dgvMedicalList.BackgroundColor = System.Drawing.Color.White;
+            this.dgvMedicineList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvMedicineList.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dgvMedicineList.BackgroundColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -129,9 +129,9 @@ namespace GUI
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvMedicalList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvMedicalList.ColumnHeadersHeight = 29;
-            this.dgvMedicalList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvMedicineList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvMedicineList.ColumnHeadersHeight = 29;
+            this.dgvMedicineList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.MaThuoc,
             this.TenThuoc,
@@ -140,14 +140,14 @@ namespace GUI
             this.DonGiaNhap,
             this.DonGiaBan,
             this.TyLeTinh});
-            this.dgvMedicalList.Location = new System.Drawing.Point(8, 46);
-            this.dgvMedicalList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dgvMedicalList.Name = "dgvMedicalList";
-            this.dgvMedicalList.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.dgvMedicalList.RowHeadersWidth = 51;
-            this.dgvMedicalList.RowTemplate.Height = 24;
-            this.dgvMedicalList.Size = new System.Drawing.Size(1836, 346);
-            this.dgvMedicalList.TabIndex = 1;
+            this.dgvMedicineList.Location = new System.Drawing.Point(8, 46);
+            this.dgvMedicineList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvMedicineList.Name = "dgvMedicineList";
+            this.dgvMedicineList.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dgvMedicineList.RowHeadersWidth = 51;
+            this.dgvMedicineList.RowTemplate.Height = 24;
+            this.dgvMedicineList.Size = new System.Drawing.Size(1836, 346);
+            this.dgvMedicineList.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -259,16 +259,16 @@ namespace GUI
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.tbRate);
+            this.groupBox1.Controls.Add(this.tbRationToCalculateSellableUnitPrice);
             this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.bSave);
+            this.groupBox1.Controls.Add(this.bAdd);
             this.groupBox1.Controls.Add(this.tbSellMoney);
             this.groupBox1.Controls.Add(this.bRefeshAdd);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.tbMedicalName);
-            this.groupBox1.Controls.Add(this.tbPupMoney);
-            this.groupBox1.Controls.Add(this.tbMedicalNum);
-            this.groupBox1.Controls.Add(this.tbMedicalUnit);
+            this.groupBox1.Controls.Add(this.tbName);
+            this.groupBox1.Controls.Add(this.tbImportedUnitPrice);
+            this.groupBox1.Controls.Add(this.tbQuantityOfInput);
+            this.groupBox1.Controls.Add(this.cbUnit);
             this.groupBox1.Controls.Add(this.bAddUnit);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
@@ -283,32 +283,32 @@ namespace GUI
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Nhập thuốc chữa bệnh";
             // 
-            // tbRate
+            // tbRationToCalculateSellableUnitPrice
             // 
-            this.tbRate.AutoSize = true;
-            this.tbRate.BorderRadius = 6;
-            this.tbRate.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbRate.DefaultText = "";
-            this.tbRate.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.tbRate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.tbRate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbRate.DisabledState.Parent = this.tbRate;
-            this.tbRate.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbRate.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbRate.FocusedState.Parent = this.tbRate;
-            this.tbRate.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbRate.ForeColor = System.Drawing.Color.Black;
-            this.tbRate.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbRate.HoverState.Parent = this.tbRate;
-            this.tbRate.Location = new System.Drawing.Point(523, 174);
-            this.tbRate.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.tbRate.Name = "tbRate";
-            this.tbRate.PasswordChar = '\0';
-            this.tbRate.PlaceholderText = "";
-            this.tbRate.SelectedText = "";
-            this.tbRate.ShadowDecoration.Parent = this.tbRate;
-            this.tbRate.Size = new System.Drawing.Size(153, 43);
-            this.tbRate.TabIndex = 148;
+            this.tbRationToCalculateSellableUnitPrice.AutoSize = true;
+            this.tbRationToCalculateSellableUnitPrice.BorderRadius = 6;
+            this.tbRationToCalculateSellableUnitPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbRationToCalculateSellableUnitPrice.DefaultText = "";
+            this.tbRationToCalculateSellableUnitPrice.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbRationToCalculateSellableUnitPrice.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbRationToCalculateSellableUnitPrice.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbRationToCalculateSellableUnitPrice.DisabledState.Parent = this.tbRationToCalculateSellableUnitPrice;
+            this.tbRationToCalculateSellableUnitPrice.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbRationToCalculateSellableUnitPrice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbRationToCalculateSellableUnitPrice.FocusedState.Parent = this.tbRationToCalculateSellableUnitPrice;
+            this.tbRationToCalculateSellableUnitPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbRationToCalculateSellableUnitPrice.ForeColor = System.Drawing.Color.Black;
+            this.tbRationToCalculateSellableUnitPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbRationToCalculateSellableUnitPrice.HoverState.Parent = this.tbRationToCalculateSellableUnitPrice;
+            this.tbRationToCalculateSellableUnitPrice.Location = new System.Drawing.Point(523, 174);
+            this.tbRationToCalculateSellableUnitPrice.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.tbRationToCalculateSellableUnitPrice.Name = "tbRationToCalculateSellableUnitPrice";
+            this.tbRationToCalculateSellableUnitPrice.PasswordChar = '\0';
+            this.tbRationToCalculateSellableUnitPrice.PlaceholderText = "";
+            this.tbRationToCalculateSellableUnitPrice.SelectedText = "";
+            this.tbRationToCalculateSellableUnitPrice.ShadowDecoration.Parent = this.tbRationToCalculateSellableUnitPrice;
+            this.tbRationToCalculateSellableUnitPrice.Size = new System.Drawing.Size(153, 43);
+            this.tbRationToCalculateSellableUnitPrice.TabIndex = 148;
             // 
             // label9
             // 
@@ -321,25 +321,25 @@ namespace GUI
             this.label9.TabIndex = 147;
             this.label9.Text = "Tý lệ tính:";
             // 
-            // bSave
+            // bAdd
             // 
-            this.bSave.Animated = true;
-            this.bSave.BackColor = System.Drawing.Color.Transparent;
-            this.bSave.BorderRadius = 6;
-            this.bSave.CheckedState.Parent = this.bSave;
-            this.bSave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bSave.CustomImages.Parent = this.bSave;
-            this.bSave.FillColor = System.Drawing.Color.Ivory;
-            this.bSave.FillColor2 = System.Drawing.Color.Ivory;
-            this.bSave.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
-            this.bSave.HoverState.Parent = this.bSave;
-            this.bSave.Location = new System.Drawing.Point(542, 62);
-            this.bSave.Name = "bSave";
-            this.bSave.ShadowDecoration.Parent = this.bSave;
-            this.bSave.Size = new System.Drawing.Size(134, 37);
-            this.bSave.TabIndex = 143;
-            this.bSave.Text = "Lưu lại";
+            this.bAdd.Animated = true;
+            this.bAdd.BackColor = System.Drawing.Color.Transparent;
+            this.bAdd.BorderRadius = 6;
+            this.bAdd.CheckedState.Parent = this.bAdd;
+            this.bAdd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bAdd.CustomImages.Parent = this.bAdd;
+            this.bAdd.FillColor = System.Drawing.Color.Ivory;
+            this.bAdd.FillColor2 = System.Drawing.Color.Ivory;
+            this.bAdd.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
+            this.bAdd.HoverState.Parent = this.bAdd;
+            this.bAdd.Location = new System.Drawing.Point(542, 62);
+            this.bAdd.Name = "bAdd";
+            this.bAdd.ShadowDecoration.Parent = this.bAdd;
+            this.bAdd.Size = new System.Drawing.Size(134, 37);
+            this.bAdd.TabIndex = 143;
+            this.bAdd.Text = "Lưu lại";
             // 
             // tbSellMoney
             // 
@@ -399,98 +399,98 @@ namespace GUI
             this.label7.TabIndex = 145;
             this.label7.Text = "Đơn giá bán:";
             // 
-            // tbMedicalName
+            // tbName
             // 
-            this.tbMedicalName.AutoSize = true;
-            this.tbMedicalName.BorderRadius = 6;
-            this.tbMedicalName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbMedicalName.DefaultText = "";
-            this.tbMedicalName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.tbMedicalName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.tbMedicalName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbMedicalName.DisabledState.Parent = this.tbMedicalName;
-            this.tbMedicalName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbMedicalName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbMedicalName.FocusedState.Parent = this.tbMedicalName;
-            this.tbMedicalName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbMedicalName.ForeColor = System.Drawing.Color.Black;
-            this.tbMedicalName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbMedicalName.HoverState.Parent = this.tbMedicalName;
-            this.tbMedicalName.Location = new System.Drawing.Point(186, 24);
-            this.tbMedicalName.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.tbMedicalName.Name = "tbMedicalName";
-            this.tbMedicalName.PasswordChar = '\0';
-            this.tbMedicalName.PlaceholderText = "";
-            this.tbMedicalName.SelectedText = "";
-            this.tbMedicalName.ShadowDecoration.Parent = this.tbMedicalName;
-            this.tbMedicalName.Size = new System.Drawing.Size(310, 43);
-            this.tbMedicalName.TabIndex = 142;
+            this.tbName.AutoSize = true;
+            this.tbName.BorderRadius = 6;
+            this.tbName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbName.DefaultText = "";
+            this.tbName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbName.DisabledState.Parent = this.tbName;
+            this.tbName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbName.FocusedState.Parent = this.tbName;
+            this.tbName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbName.ForeColor = System.Drawing.Color.Black;
+            this.tbName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbName.HoverState.Parent = this.tbName;
+            this.tbName.Location = new System.Drawing.Point(186, 24);
+            this.tbName.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.tbName.Name = "tbName";
+            this.tbName.PasswordChar = '\0';
+            this.tbName.PlaceholderText = "";
+            this.tbName.SelectedText = "";
+            this.tbName.ShadowDecoration.Parent = this.tbName;
+            this.tbName.Size = new System.Drawing.Size(310, 43);
+            this.tbName.TabIndex = 142;
             // 
-            // tbPupMoney
+            // tbImportedUnitPrice
             // 
-            this.tbPupMoney.AutoSize = true;
-            this.tbPupMoney.BorderRadius = 6;
-            this.tbPupMoney.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbPupMoney.DefaultText = "";
-            this.tbPupMoney.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.tbPupMoney.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.tbPupMoney.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbPupMoney.DisabledState.Parent = this.tbPupMoney;
-            this.tbPupMoney.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbPupMoney.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbPupMoney.FocusedState.Parent = this.tbPupMoney;
-            this.tbPupMoney.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbPupMoney.ForeColor = System.Drawing.Color.Black;
-            this.tbPupMoney.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbPupMoney.HoverState.Parent = this.tbPupMoney;
-            this.tbPupMoney.Location = new System.Drawing.Point(186, 174);
-            this.tbPupMoney.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.tbPupMoney.Name = "tbPupMoney";
-            this.tbPupMoney.PasswordChar = '\0';
-            this.tbPupMoney.PlaceholderText = "";
-            this.tbPupMoney.SelectedText = "";
-            this.tbPupMoney.ShadowDecoration.Parent = this.tbPupMoney;
-            this.tbPupMoney.Size = new System.Drawing.Size(153, 43);
-            this.tbPupMoney.TabIndex = 141;
+            this.tbImportedUnitPrice.AutoSize = true;
+            this.tbImportedUnitPrice.BorderRadius = 6;
+            this.tbImportedUnitPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbImportedUnitPrice.DefaultText = "";
+            this.tbImportedUnitPrice.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbImportedUnitPrice.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbImportedUnitPrice.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbImportedUnitPrice.DisabledState.Parent = this.tbImportedUnitPrice;
+            this.tbImportedUnitPrice.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbImportedUnitPrice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbImportedUnitPrice.FocusedState.Parent = this.tbImportedUnitPrice;
+            this.tbImportedUnitPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbImportedUnitPrice.ForeColor = System.Drawing.Color.Black;
+            this.tbImportedUnitPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbImportedUnitPrice.HoverState.Parent = this.tbImportedUnitPrice;
+            this.tbImportedUnitPrice.Location = new System.Drawing.Point(186, 174);
+            this.tbImportedUnitPrice.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.tbImportedUnitPrice.Name = "tbImportedUnitPrice";
+            this.tbImportedUnitPrice.PasswordChar = '\0';
+            this.tbImportedUnitPrice.PlaceholderText = "";
+            this.tbImportedUnitPrice.SelectedText = "";
+            this.tbImportedUnitPrice.ShadowDecoration.Parent = this.tbImportedUnitPrice;
+            this.tbImportedUnitPrice.Size = new System.Drawing.Size(153, 43);
+            this.tbImportedUnitPrice.TabIndex = 141;
             // 
-            // tbMedicalNum
+            // tbQuantityOfInput
             // 
-            this.tbMedicalNum.AutoSize = true;
-            this.tbMedicalNum.BorderRadius = 6;
-            this.tbMedicalNum.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbMedicalNum.DefaultText = "";
-            this.tbMedicalNum.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.tbMedicalNum.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.tbMedicalNum.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbMedicalNum.DisabledState.Parent = this.tbMedicalNum;
-            this.tbMedicalNum.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbMedicalNum.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbMedicalNum.FocusedState.Parent = this.tbMedicalNum;
-            this.tbMedicalNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbMedicalNum.ForeColor = System.Drawing.Color.Black;
-            this.tbMedicalNum.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbMedicalNum.HoverState.Parent = this.tbMedicalNum;
-            this.tbMedicalNum.Location = new System.Drawing.Point(186, 122);
-            this.tbMedicalNum.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.tbMedicalNum.Name = "tbMedicalNum";
-            this.tbMedicalNum.PasswordChar = '\0';
-            this.tbMedicalNum.PlaceholderText = "";
-            this.tbMedicalNum.SelectedText = "";
-            this.tbMedicalNum.ShadowDecoration.Parent = this.tbMedicalNum;
-            this.tbMedicalNum.Size = new System.Drawing.Size(153, 43);
-            this.tbMedicalNum.TabIndex = 140;
+            this.tbQuantityOfInput.AutoSize = true;
+            this.tbQuantityOfInput.BorderRadius = 6;
+            this.tbQuantityOfInput.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbQuantityOfInput.DefaultText = "";
+            this.tbQuantityOfInput.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbQuantityOfInput.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbQuantityOfInput.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbQuantityOfInput.DisabledState.Parent = this.tbQuantityOfInput;
+            this.tbQuantityOfInput.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbQuantityOfInput.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbQuantityOfInput.FocusedState.Parent = this.tbQuantityOfInput;
+            this.tbQuantityOfInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbQuantityOfInput.ForeColor = System.Drawing.Color.Black;
+            this.tbQuantityOfInput.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbQuantityOfInput.HoverState.Parent = this.tbQuantityOfInput;
+            this.tbQuantityOfInput.Location = new System.Drawing.Point(186, 122);
+            this.tbQuantityOfInput.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.tbQuantityOfInput.Name = "tbQuantityOfInput";
+            this.tbQuantityOfInput.PasswordChar = '\0';
+            this.tbQuantityOfInput.PlaceholderText = "";
+            this.tbQuantityOfInput.SelectedText = "";
+            this.tbQuantityOfInput.ShadowDecoration.Parent = this.tbQuantityOfInput;
+            this.tbQuantityOfInput.Size = new System.Drawing.Size(153, 43);
+            this.tbQuantityOfInput.TabIndex = 140;
             // 
-            // tbMedicalUnit
+            // cbUnit
             // 
-            this.tbMedicalUnit.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.tbMedicalUnit.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.tbMedicalUnit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.tbMedicalUnit.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.tbMedicalUnit.FormattingEnabled = true;
-            this.tbMedicalUnit.Location = new System.Drawing.Point(186, 76);
-            this.tbMedicalUnit.Name = "tbMedicalUnit";
-            this.tbMedicalUnit.Size = new System.Drawing.Size(153, 37);
-            this.tbMedicalUnit.TabIndex = 139;
+            this.cbUnit.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbUnit.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbUnit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbUnit.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.cbUnit.FormattingEnabled = true;
+            this.cbUnit.Location = new System.Drawing.Point(186, 76);
+            this.cbUnit.Name = "cbUnit";
+            this.cbUnit.Size = new System.Drawing.Size(153, 37);
+            this.cbUnit.TabIndex = 139;
             // 
             // bAddUnit
             // 
@@ -796,13 +796,13 @@ namespace GUI
             // 
             // guna2Elipse4
             // 
-            this.guna2Elipse4.TargetControl = this.tbMedicalUnit;
+            this.guna2Elipse4.TargetControl = this.cbUnit;
             // 
             // guna2Elipse5
             // 
             this.guna2Elipse5.TargetControl = this.cbIdMedical;
             // 
-            // FormInputMedical
+            // FormImportMedicine
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -818,12 +818,12 @@ namespace GUI
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "FormInputMedical";
+            this.Name = "FormImportMedicine";
             this.Text = "Nhập thuốc";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMedicalList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMedicineList)).EndInit();
             this.panel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -837,7 +837,7 @@ namespace GUI
 
         #endregion
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.DataGridView dgvMedicalList;
+        private System.Windows.Forms.DataGridView dgvMedicineList;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Button bReturn;
         private System.Windows.Forms.Panel panel1;
@@ -850,12 +850,12 @@ namespace GUI
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox tbMedicalUnit;
-        private Guna.UI2.WinForms.Guna2TextBox tbMedicalName;
-        private Guna.UI2.WinForms.Guna2TextBox tbPupMoney;
-        private Guna.UI2.WinForms.Guna2TextBox tbMedicalNum;
+        private System.Windows.Forms.ComboBox cbUnit;
+        private Guna.UI2.WinForms.Guna2TextBox tbName;
+        private Guna.UI2.WinForms.Guna2TextBox tbImportedUnitPrice;
+        private Guna.UI2.WinForms.Guna2TextBox tbQuantityOfInput;
         private Guna.UI2.WinForms.Guna2GradientButton bRefeshAdd;
-        private Guna.UI2.WinForms.Guna2GradientButton bSave;
+        private Guna.UI2.WinForms.Guna2GradientButton bAdd;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaThuoc;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenThuoc;
@@ -877,7 +877,7 @@ namespace GUI
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
-        private Guna.UI2.WinForms.Guna2TextBox tbRate;
+        private Guna.UI2.WinForms.Guna2TextBox tbRationToCalculateSellableUnitPrice;
         private System.Windows.Forms.Label label9;
         private Guna.UI2.WinForms.Guna2TextBox tbSellMoney;
         private System.Windows.Forms.Label label7;

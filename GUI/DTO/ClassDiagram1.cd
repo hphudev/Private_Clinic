@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DTO.DetailImportedMedicineSlip" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIIAAAgAAAAACAAAAAAIAAAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>DetailImportedMedicineSlip.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DTO.DetailMedicineUseReport" Collapsed="true">
+    <Position X="7.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIMAAAAAAAAAAAgAAAAAAAAAAQIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DetailMedicineUseReport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DTO.DetailReport" Collapsed="true">
+    <Position X="6.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DetailReport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DTO.DetailRevenueReport" Collapsed="true">
+    <Position X="5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAoCAAA=</HashCode>
+      <FileName>DetailRevenueReport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DTO.IdentifiableObject" Collapsed="true">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IdentifiableObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DTO.Medicine" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAIACACAAAAAAAAAAAAAAAgAAAEAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Medicine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DTO.Unit" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Unit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

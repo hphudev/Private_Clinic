@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GUI.FormAddMedicalUnit" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAACAEABAAAACAAAACAAAAAAAIBAAAAIAAAAA=</HashCode>
+      <FileName>FormAddMedicalUnit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.FormAddPatient" Collapsed="true">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAUAACAEABAAIACAAAACAAAAIAAABAAAAIAAAQA=</HashCode>
+      <FileName>FormAddPatient.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.FormAddTypeSick" Collapsed="true">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAEABAAAACAAAASAAAAIAAABAAAAIAAAQI=</HashCode>
+      <FileName>FormAddTypeSick.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.FormAddUseWay" Collapsed="true">
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAASAEABAAAACAAAACAAAAIAAABAAAAIAAAQA=</HashCode>
+      <FileName>FormAddUseWay.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.FormBackground" Collapsed="true">
+    <Position X="12.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FormBackground.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.FormBackGround_2" Collapsed="true">
+    <Position X="5.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FormBackGround_2.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.FormCreateReport" Collapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UAAAAEBRQDAEABLAAADAQQACQIAAAAAXBVBABQgAAAA=</HashCode>
+      <FileName>FormCreateReport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.FormEditMedical" Collapsed="true">
+    <Position X="7" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAEAACAEABgAAACQoAACAAAAAAIIBIAAAIAAAAA=</HashCode>
+      <FileName>FormEditMedical.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.FormEntrance" Collapsed="true">
+    <Position X="8.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>GAAAAAAQADJAABAAAACQAAACAAgAgAgAAABAAAAAAAA=</HashCode>
+      <FileName>FormEntrance.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.FormImportMedicine" Collapsed="true">
+    <Position X="2.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IQRkAABQADEEARyAAACQBAACEKQAkAICBOBAIQggAQA=</HashCode>
+      <FileName>FormImportMedicine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.FormLogin" Collapsed="true">
+    <Position X="10.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAABAAACAAABBAAACQAAACUAABAAABAAAAAQBGABI=</HashCode>
+      <FileName>FormLogin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.FormMain" Collapsed="true">
+    <Position X="12.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgiAAACZEABAEAACQAEwCgACAAAQEhAwEAAABASI=</HashCode>
+      <FileName>FormMain.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.FormMedicalExaminationList" Collapsed="true">
+    <Position X="5.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAQALAMAIDRAACAACAeAAAAIAAABNIEIwBIJEQ=</HashCode>
+      <FileName>FormMedicalExaminationList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.FormPatientLookup" Collapsed="true">
+    <Position X="7" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAgAQADAEAJDQAACAAGgeAEaRICAGBcAgAwgIYAA=</HashCode>
+      <FileName>FormPatientLookup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.FormRegister" Collapsed="true">
+    <Position X="8.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AFAAIhCgACAEARBcAACUQAACUAIAEAABAAAgAQBGABA=</HashCode>
+      <FileName>FormRegister.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.FormSetInvolke" Collapsed="true">
+    <Position X="10.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gyBUBAAQADgEABLAABCGCOgSAAQgICACBUBAAwgAQEA=</HashCode>
+      <FileName>FormSetInvolke.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.FormSetMedicalExamination" Collapsed="true">
+    <Position X="12.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>3gBAAECQwDAGARTSIhCQCKgCIMwgcAAKFeAAIQkgYTE=</HashCode>
+      <FileName>FormSetMedicalExamination.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.FormSetting" Collapsed="true">
+    <Position X="5.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAgEAEQBDAEABDAAACACSgCEIAAAAAKBGCAAQAEABA=</HashCode>
+      <FileName>FormSetting.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.FormSplash" Collapsed="true">
+    <Position X="7" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MAAQAAAACCAEAAAAAACQAAAGAAAAAAAAAABQAAAAAAA=</HashCode>
+      <FileName>FormSplash.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.FormStaffManagement" Collapsed="true">
+    <Position X="8.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>cCAAAAAQATAAABDSAgSAACBCMPA5AAAAECABAQBAIII=</HashCode>
+      <FileName>FormStaffManagement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.MyForm" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAASAQAABAAACAAAACAAAAAABAAABAAAAAAAA=</HashCode>
+      <FileName>MyForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.Program" Collapsed="true">
+    <Position X="10.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.Properties.Resources" Collapsed="true">
+    <Position X="12.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEIAACAQABEAwggAMwFEkAAAQB0ABAABAGAAAAACYQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.Properties.Settings" Collapsed="true">
+    <Position X="5.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

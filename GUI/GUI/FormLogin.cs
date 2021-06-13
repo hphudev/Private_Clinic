@@ -32,7 +32,7 @@ namespace GUI
             this.pbEye.Click += (s, e) =>
             {
                 eye = !eye;
-                BUS.Event.HintPassword(this.tbPassword, this.pbEye, eye, !this.tbPassword.Text.Equals(tbPassword_hint));
+                BUS.EventHandler.HintPassword(this.tbPassword, this.pbEye, eye, !this.tbPassword.Text.Equals(tbPassword_hint));
             };
         }
 
@@ -40,26 +40,26 @@ namespace GUI
         {
             this.tbUser.Enter += (s, e) =>
             {
-                BUS.Event.Enter_HintText(this.tbUser, tbUser_hint);
+                BUS.EventHandler.Enter_HintText(this.tbUser, tbUser_hint);
             };
             this.tbUser.Leave += (s, e) =>
             {
-                BUS.Event.Leave_HintText(this.tbUser, tbUser_hint);
+                BUS.EventHandler.Leave_HintText(this.tbUser, tbUser_hint);
             };
             this.tbPassword.Enter += (s, e) =>
             {
-                BUS.Event.Enter_HintText(this.tbPassword, tbPassword_hint, eye);
+                BUS.EventHandler.Enter_HintText(this.tbPassword, tbPassword_hint, eye);
             };
             this.tbPassword.Leave += (s, e) =>
             {
-                BUS.Event.Leave_HintText(this.tbPassword, tbPassword_hint, eye);
+                BUS.EventHandler.Leave_HintText(this.tbPassword, tbPassword_hint, eye);
             };
         }
 
         private void bLoginClicked(Object s, EventArgs e)
         {
             FormMain formMain = new FormMain();
-            BUS.Event.ShowChildForm_HideParentForm(formMain, parent);
+            BUS.EventHandler.ShowChildForm_HideParentForm(formMain, parent);
         }
 
     }

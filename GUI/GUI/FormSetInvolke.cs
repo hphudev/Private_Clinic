@@ -22,7 +22,7 @@ namespace GUI
 
         private void onFormClosed(object s, FormClosedEventArgs e)
         {
-            BUS.Event.ShowFormEffect(parent, 1);
+            BUS.EventHandler.ShowFormEffect(parent, 1);
         }
 
         private void SetInvolke_Load(object sender, EventArgs e)

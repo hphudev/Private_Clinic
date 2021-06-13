@@ -39,29 +39,29 @@ namespace GUI
 
         private void Init_Effect()
         {
-            bMedicalExaminationList.MouseEnter += BUS.Event.MouseEnterChangeForeColor;
-            bMedicalExaminationList.MouseLeave += BUS.Event.MouseLeaveChangeForeColor;
-            bSetMedicalExamination.MouseEnter += BUS.Event.MouseEnterChangeForeColor;
-            bSetMedicalExamination.MouseLeave += BUS.Event.MouseLeaveChangeForeColor;
-            bInputMedical.MouseEnter += BUS.Event.MouseEnterChangeForeColor;
-            bInputMedical.MouseLeave += BUS.Event.MouseLeaveChangeForeColor;
-            bPatientLookup.MouseEnter += BUS.Event.MouseEnterChangeForeColor;
-            bPatientLookup.MouseLeave += BUS.Event.MouseLeaveChangeForeColor;
+            bMedicalExaminationList.MouseEnter += BUS.EventHandler.MouseEnterChangeForeColor;
+            bMedicalExaminationList.MouseLeave += BUS.EventHandler.MouseLeaveChangeForeColor;
+            bSetMedicalExamination.MouseEnter += BUS.EventHandler.MouseEnterChangeForeColor;
+            bSetMedicalExamination.MouseLeave += BUS.EventHandler.MouseLeaveChangeForeColor;
+            bInputMedical.MouseEnter += BUS.EventHandler.MouseEnterChangeForeColor;
+            bInputMedical.MouseLeave += BUS.EventHandler.MouseLeaveChangeForeColor;
+            bPatientLookup.MouseEnter += BUS.EventHandler.MouseEnterChangeForeColor;
+            bPatientLookup.MouseLeave += BUS.EventHandler.MouseLeaveChangeForeColor;
             //bStaffManagement.MouseEnter += BUS.Event.MouseEnterChangeForeColor;
             //bStaffManagement.MouseLeave += BUS.Event.MouseLeaveChangeForeColor;
-            bSetReport.MouseEnter += BUS.Event.MouseEnterChangeForeColor;
-            bSetReport.MouseLeave += BUS.Event.MouseLeaveChangeForeColor;
-            bSetting.MouseEnter += BUS.Event.MouseEnterChangeForeColor;
-            bSetting.MouseLeave += BUS.Event.MouseLeaveChangeForeColor;
-            bSetInvolke.MouseEnter += BUS.Event.MouseEnterChangeForeColor;
-            bSetInvolke.MouseLeave += BUS.Event.MouseLeaveChangeForeColor;
-            bCancel.MouseEnter += BUS.Event.MouseEnterChangeForeColor;
-            bCancel.MouseLeave += BUS.Event.MouseLeaveChangeForeColor;
+            bSetReport.MouseEnter += BUS.EventHandler.MouseEnterChangeForeColor;
+            bSetReport.MouseLeave += BUS.EventHandler.MouseLeaveChangeForeColor;
+            bSetting.MouseEnter += BUS.EventHandler.MouseEnterChangeForeColor;
+            bSetting.MouseLeave += BUS.EventHandler.MouseLeaveChangeForeColor;
+            bSetInvolke.MouseEnter += BUS.EventHandler.MouseEnterChangeForeColor;
+            bSetInvolke.MouseLeave += BUS.EventHandler.MouseLeaveChangeForeColor;
+            bCancel.MouseEnter += BUS.EventHandler.MouseEnterChangeForeColor;
+            bCancel.MouseLeave += BUS.EventHandler.MouseLeaveChangeForeColor;
         }
 
         private void InitDragBar()
         {
-            BUS.Event.MouseDown_DragBar(this);
+            BUS.EventHandler.MouseDown_DragBar(this);
            
         }
 
@@ -110,49 +110,49 @@ namespace GUI
         private void bMedicalExaminationListClicked(object sender, EventArgs e)
         {
             FormMedicalExaminationList formMedicalExaminationList = new FormMedicalExaminationList(this);
-            BUS.Event.ShowChildForm_HideParentForm(formMedicalExaminationList, this);
+            BUS.EventHandler.ShowChildForm_HideParentForm(formMedicalExaminationList, this);
         }
 
         private void bSetMedicalExaminationClicked(object s, EventArgs e)
         {
             FormSetMedicalExamination formSetMedicalExamination = new FormSetMedicalExamination(this);
-            BUS.Event.ShowChildForm_HideParentForm(formSetMedicalExamination, this);
+            BUS.EventHandler.ShowChildForm_HideParentForm(formSetMedicalExamination, this);
         }
         
         private void bSetInvolkeClicked(object s, EventArgs e)
         {
             FormSetInvolke formSetInvolke = new FormSetInvolke(this);
-            BUS.Event.ShowChildForm_HideParentForm(formSetInvolke, this);
+            BUS.EventHandler.ShowChildForm_HideParentForm(formSetInvolke, this);
         }
 
         private void bInputMedicalClicked(object s, EventArgs e)
         {
-            FormInputMedical formInputMedical = new FormInputMedical(this);
-            BUS.Event.ShowChildForm_HideParentForm(formInputMedical, this);
+            FormImportMedicine formInputMedical = new FormImportMedicine(this);
+            BUS.EventHandler.ShowChildForm_HideParentForm(formInputMedical, this);
         }
 
         private void bPatientLookupClicked(object s, EventArgs e)
         {
             FormPatientLookup formPatientLookup = new FormPatientLookup(this);
-            BUS.Event.ShowChildForm_HideParentForm(formPatientLookup, this);
+            BUS.EventHandler.ShowChildForm_HideParentForm(formPatientLookup, this);
         }
 
         private void bStaffManagementClicked(object s, EventArgs e)
         {
             FormStaffManagement formStaffManagement = new FormStaffManagement(this);
-            BUS.Event.ShowChildForm_HideParentForm(formStaffManagement, this);
+            BUS.EventHandler.ShowChildForm_HideParentForm(formStaffManagement, this);
         }
 
         private void bSetReportClicked(object s, EventArgs e)
         {
-            FormSetReport formSetReport = new FormSetReport(this);
-            BUS.Event.ShowChildForm_HideParentForm(formSetReport, this);
+            FormCreateReport formSetReport = new FormCreateReport(this);
+            BUS.EventHandler.ShowChildForm_HideParentForm(formSetReport, this);
         }
 
         private void bSettingClicked(object s, EventArgs e)
         {
             FormSetting formSetting = new FormSetting(this);
-            BUS.Event.ShowChildForm_HideParentForm(formSetting, this);
+            BUS.EventHandler.ShowChildForm_HideParentForm(formSetting, this);
         }
     }
 }

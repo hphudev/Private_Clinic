@@ -22,7 +22,7 @@ namespace GUI
 
         private void onFormClosed(object s, FormClosedEventArgs e)
         {
-            BUS.Event.ShowFormEffect(parent, 1);
+            BUS.EventHandler.ShowFormEffect(parent, 1);
         }
 
         private void Label10_Click(object sender, EventArgs e)

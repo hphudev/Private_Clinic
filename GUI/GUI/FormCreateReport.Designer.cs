@@ -1,7 +1,7 @@
 ﻿
 namespace GUI
 {
-    partial class FormSetReport
+    partial class FormCreateReport
     {
         /// <summary>
         /// Required designer variable.
@@ -627,7 +627,6 @@ namespace GUI
             this.Name = "FormSetReport";
             this.Text = "Lập báo cáo";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.FormSetReport_Load);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMedicalReport)).EndInit();

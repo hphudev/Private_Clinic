@@ -16,3 +16,9 @@ F:\NMCNPM\Ver2\Private_Clinic-NMCNPM-Team_9\GUI\DAO\obj\Debug\DAO.csprojAssembly
 F:\NMCNPM\Ver2\Private_Clinic-NMCNPM-Team_9\GUI\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
 F:\NMCNPM\Ver2\Private_Clinic-NMCNPM-Team_9\GUI\DAO\obj\Debug\DAO.dll
 F:\NMCNPM\Ver2\Private_Clinic-NMCNPM-Team_9\GUI\DAO\obj\Debug\DAO.pdb
+C:\Users\DELL\Documents\TvT\UIT\Courses\Studying\SE104.L22\Project\Private_Clinic-NMCNPM-Team_9_2\GUI\DAO\bin\Debug\DAO.dll
+C:\Users\DELL\Documents\TvT\UIT\Courses\Studying\SE104.L22\Project\Private_Clinic-NMCNPM-Team_9_2\GUI\DAO\bin\Debug\DAO.pdb
+C:\Users\DELL\Documents\TvT\UIT\Courses\Studying\SE104.L22\Project\Private_Clinic-NMCNPM-Team_9_2\GUI\DAO\obj\Debug\DAO.csprojAssemblyReference.cache
+C:\Users\DELL\Documents\TvT\UIT\Courses\Studying\SE104.L22\Project\Private_Clinic-NMCNPM-Team_9_2\GUI\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Documents\TvT\UIT\Courses\Studying\SE104.L22\Project\Private_Clinic-NMCNPM-Team_9_2\GUI\DAO\obj\Debug\DAO.dll
+C:\Users\DELL\Documents\TvT\UIT\Courses\Studying\SE104.L22\Project\Private_Clinic-NMCNPM-Team_9_2\GUI\DAO\obj\Debug\DAO.pdb

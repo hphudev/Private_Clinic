@@ -21,7 +21,7 @@ namespace GUI
             this.FormParent = formSplash;
             this.MouseDown += (s, e) =>
             {
-                BUS.Event.MouseDown_DragBar(this);
+                BUS.EventHandler.MouseDown_DragBar(this);
             };
             this.Load += LoadForm;
             Init_TabForm();
@@ -49,7 +49,7 @@ namespace GUI
             pFormShow.Controls.Clear();
             FormChoice = new FormLogin(this) { TopLevel = false, TopMost = true };
             pFormShow.Controls.Add(FormChoice);
-            BUS.Event.ShowFormEffect(FormChoice, 1);
+            BUS.EventHandler.ShowFormEffect(FormChoice, 1);
         }
 
         private void ClickedShowFormRegister(Object s, EventArgs e)
@@ -63,7 +63,7 @@ namespace GUI
             pFormShow.Controls.Clear();
             FormChoice = new FormRegister(this) { TopLevel = false, TopMost = true };
             pFormShow.Controls.Add(FormChoice);
-            BUS.Event.ShowFormEffect(FormChoice, 1);
+            BUS.EventHandler.ShowFormEffect(FormChoice, 1);
         }
     }
 }

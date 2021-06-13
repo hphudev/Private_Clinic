@@ -17,7 +17,7 @@ namespace GUI
             InitializeComponent();
             this.pDragBar.MouseDown += (s, e) =>
             {
-                BUS.Event.MouseDown_DragBar(this);
+                BUS.EventHandler.MouseDown_DragBar(this);
             };
             
         }

@@ -25,17 +25,17 @@ namespace GUI
             this.Load += LoadForm;
             this.bReConnectServer.Click += Clicked_bReconnectServer;
             this.KeyDown += ExitForm;
-            BUS.Event.openEye = Resources.OpenEye; 
-            BUS.Event.closeEye = Resources.CloseEye;
+            BUS.EventHandler.openEye = Resources.OpenEye; 
+            BUS.EventHandler.closeEye = Resources.CloseEye;
             this.MouseDown += (s, e) =>
             {
-                BUS.Event.MouseDown_DragBar(this);
+                BUS.EventHandler.MouseDown_DragBar(this);
             };
         }
 
         private void LoadForm(object s, EventArgs e)
         {
-            BUS.Event.ShowFormEffect(this, 1);
+            BUS.EventHandler.ShowFormEffect(this, 1);
             Clicked_bReconnectServer(this, new EventArgs());
         }
 
@@ -46,10 +46,10 @@ namespace GUI
             this.bReConnectServer.Visible = false;
             this.lRecommend.Visible = false;
             timeSleep += 5000;
-            await DAO.Data.OpenConnection(this.pBar);
+            await DAO.DataHandler.OpenConnection(this.pBar);
             if (this.pBar.Value == 5)
             {
-                await BUS.Event.FreezeForm(timeSleep);
+                await BUS.EventHandler.FreezeForm(timeSleep);
                 this.bReConnectServer.Visible = true;
                 this.lRecommend.Visible = true;
                 this.pBar.Visible = false;
@@ -59,8 +59,8 @@ namespace GUI
             else
             {
                 this.pBar.Value += 90;
-                await BUS.Event.FreezeForm(2000);
-                BUS.Event.ShowChildForm_HideParentForm(new FormEntrance(this), this);
+                await BUS.EventHandler.FreezeForm(2000);
+                BUS.EventHandler.ShowChildForm_HideParentForm(new FormEntrance(this), this);
             }
             return;
         }
@@ -68,7 +68,7 @@ namespace GUI
         private void ExitForm(object s, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Escape)
-                BUS.Event.HideFormEffect(this, 1, true);
+                BUS.EventHandler.HideFormEffect(this, 1, true);
         }
     }
 }

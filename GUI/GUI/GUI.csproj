@@ -37,7 +37,7 @@
       <HintPath>..\..\framework\Bunifu_UI_v1.52.dll</HintPath>
     </Reference>
     <Reference Include="Guna.UI2">
-      <HintPath>..\..\..\..\..\Download\Ngày 15_01_2021\Compressed\TestFramework\TestFramework\[FTUApps.com] - Guna UI Framework Ultimate v2.0.0.1 + Keygen\[FTUApps.com] - Guna UI Framework Ultimate v2.0.0.1 + Keygen\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
+      <HintPath>..\..\Framework\Guna.UI2.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
@@ -76,11 +76,11 @@
     <Compile Include="FormEditMedical.Designer.cs">
       <DependentUpon>FormEditMedical.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormInputMedical.cs">
+    <Compile Include="FormImportMedicine.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormInputMedical.Designer.cs">
-      <DependentUpon>FormInputMedical.cs</DependentUpon>
+    <Compile Include="FormImportMedicine.Designer.cs">
+      <DependentUpon>FormImportMedicine.cs</DependentUpon>
     </Compile>
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
@@ -148,17 +148,23 @@
     <Compile Include="FormSetting.Designer.cs">
       <DependentUpon>FormSetting.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormSetReport.cs">
+    <Compile Include="FormCreateReport.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormSetReport.Designer.cs">
-      <DependentUpon>FormSetReport.cs</DependentUpon>
+    <Compile Include="FormCreateReport.Designer.cs">
+      <DependentUpon>FormCreateReport.cs</DependentUpon>
     </Compile>
     <Compile Include="FormSetMedicalExamination.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormSetMedicalExamination.Designer.cs">
       <DependentUpon>FormSetMedicalExamination.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyForm.Designer.cs">
+      <DependentUpon>MyForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -198,8 +204,8 @@
     <EmbeddedResource Include="FormEntrance.resx">
       <DependentUpon>FormEntrance.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormInputMedical.resx">
-      <DependentUpon>FormInputMedical.cs</DependentUpon>
+    <EmbeddedResource Include="FormImportMedicine.resx">
+      <DependentUpon>FormImportMedicine.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
@@ -225,8 +231,8 @@
     <EmbeddedResource Include="FormSetting.resx">
       <DependentUpon>FormSetting.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormSetReport.resx">
-      <DependentUpon>FormSetReport.cs</DependentUpon>
+    <EmbeddedResource Include="FormCreateReport.resx">
+      <DependentUpon>FormCreateReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormSetMedicalExamination.resx">
       <DependentUpon>FormSetMedicalExamination.cs</DependentUpon>
@@ -250,6 +256,7 @@
     <EmbeddedResource Include="FormStaffManagement.resx">
       <DependentUpon>FormStaffManagement.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

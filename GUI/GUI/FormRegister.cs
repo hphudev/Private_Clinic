@@ -35,7 +35,7 @@ namespace GUI
             this.pbEye.Click += (s, e) =>
             {
                 eye = !eye;
-                BUS.Event.HintPassword(this.tbPassword, this.pbEye, eye, !this.tbPassword.Text.Equals(tbPassword_hint));
+                BUS.EventHandler.HintPassword(this.tbPassword, this.pbEye, eye, !this.tbPassword.Text.Equals(tbPassword_hint));
             };
         }
 
@@ -44,56 +44,56 @@ namespace GUI
             //1
             this.tbUser.Enter += (s, e) =>
             {
-                BUS.Event.Enter_HintText(this.tbUser, tbUser_hint);
+                BUS.EventHandler.Enter_HintText(this.tbUser, tbUser_hint);
             };
             this.tbUser.Leave += (s, e) =>
             {
-                BUS.Event.Leave_HintText(this.tbUser, tbUser_hint);
+                BUS.EventHandler.Leave_HintText(this.tbUser, tbUser_hint);
             };
             //2
             this.tbPassword.Enter += (s, e) =>
             {
-                BUS.Event.Enter_HintText(this.tbPassword, tbPassword_hint, eye);
+                BUS.EventHandler.Enter_HintText(this.tbPassword, tbPassword_hint, eye);
             };
             this.tbPassword.Leave += (s, e) =>
             {
-                BUS.Event.Leave_HintText(this.tbPassword, tbPassword_hint, eye);
+                BUS.EventHandler.Leave_HintText(this.tbPassword, tbPassword_hint, eye);
             };
             //3
             this.tbConfirmPassword.Enter += (s, e) =>
             {
-                BUS.Event.Enter_HintText(this.tbConfirmPassword, tbConfirmPassword_hint, eye);
+                BUS.EventHandler.Enter_HintText(this.tbConfirmPassword, tbConfirmPassword_hint, eye);
             };
             this.tbConfirmPassword.Leave += (s, e) =>
             {
-                BUS.Event.Leave_HintText(this.tbConfirmPassword, tbConfirmPassword_hint, eye);
+                BUS.EventHandler.Leave_HintText(this.tbConfirmPassword, tbConfirmPassword_hint, eye);
             };
             //4
             this.tbName.Enter += (s, e) =>
             {
-                BUS.Event.Enter_HintText(this.tbName, tbName_hint);
+                BUS.EventHandler.Enter_HintText(this.tbName, tbName_hint);
             };
             this.tbName.Leave += (s, e) =>
             {
-                BUS.Event.Leave_HintText(this.tbName, tbName_hint);
+                BUS.EventHandler.Leave_HintText(this.tbName, tbName_hint);
             };
             //5
             this.tbCard.Enter += (s, e) =>
             {
-                BUS.Event.Enter_HintText(this.tbCard, tbCard_hint);
+                BUS.EventHandler.Enter_HintText(this.tbCard, tbCard_hint);
             };
             this.tbCard.Leave += (s, e) =>
             {
-                BUS.Event.Leave_HintText(this.tbCard, tbCard_hint);
+                BUS.EventHandler.Leave_HintText(this.tbCard, tbCard_hint);
             };
             //6
             this.tbEmail.Enter += (s, e) =>
             {
-                BUS.Event.Enter_HintText(this.tbEmail, tbEmail_hint);
+                BUS.EventHandler.Enter_HintText(this.tbEmail, tbEmail_hint);
             };
             this.tbEmail.Leave += (s, e) =>
             {
-                BUS.Event.Leave_HintText(this.tbEmail, tbEmail_hint);
+                BUS.EventHandler.Leave_HintText(this.tbEmail, tbEmail_hint);
             };
             
 
@@ -102,7 +102,7 @@ namespace GUI
         private void bRegisterClicked(Object s, EventArgs e)
         {
             FormMain formMain = new FormMain();
-            BUS.Event.ShowChildForm_HideParentForm(formMain, parent);
+            BUS.EventHandler.ShowChildForm_HideParentForm(formMain, parent);
         }
     }
 }

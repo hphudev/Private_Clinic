@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BUS.CreateMedicineUseReportHandler" Collapsed="true">
+    <Position X="5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAICAAABAAAAAAAAAAAAQBAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>CreateMedicineUseReportHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BUS.CreateReportHandler" Collapsed="true">
+    <Position X="6.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEIAACAAAFAAAAAAgAAAAAABABAAAAAAACCBQAAAA=</HashCode>
+      <FileName>CreateReportHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BUS.CreateRevenueReportHandler" Collapsed="true">
+    <Position X="7.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAiAAABAAAAAAAgAAAAAAAAAAEAAAAAAAQAAAA=</HashCode>
+      <FileName>CreateRevenueReportHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BUS.EventHandler" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAIAJCACIgIACBgABABBAAAAAAAIAQAAE=</HashCode>
+      <FileName>EventHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BUS.Handler" Collapsed="true">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>Handler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BUS.IDHandler" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAEAAAAAAAAAAAAgAAAAAAAAEA=</HashCode>
+      <FileName>IDHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BUS.ImportedMedicineHandler" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IABIAAAAgAAAAQAAAEQAAAAAAAABAAAAAAgAAAEAAAA=</HashCode>
+      <FileName>ImportedMedicineHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

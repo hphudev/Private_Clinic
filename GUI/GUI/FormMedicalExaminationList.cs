@@ -21,13 +21,13 @@ namespace GUI
             this.bAddPatient.Click += (s, e) =>
             {
                 FormAddPatient formAddPatient = new FormAddPatient();
-                BUS.Event.ShowFormDialog(formAddPatient);
+                BUS.EventHandler.ShowFormDialog(formAddPatient);
             };
         }
 
         private void onFormClosed(object s, FormClosedEventArgs e)
         {
-            BUS.Event.ShowFormEffect(parent, 1);
+            BUS.EventHandler.ShowFormEffect(parent, 1);
         }
 
         private void Label1_Click(object sender, EventArgs e)
