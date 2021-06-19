@@ -195,7 +195,6 @@ STT	Nghiệp vụ	Người dùng	Phần mềm	Ghi chú
 6	Lập báo cáo doanh thu theo tháng	Cung cấp thông tin về tháng cần lập báo cáo doanh thu	Tính số bệnh nhân, doanh thu, tỷ lệ doanh thu các ngày có bệnh nhân đến khám trong tháng và ghi nhận	
 7	Lập báo cáo sử dụng thuốc theo tháng	Cung cấp thông tin về tháng cần lập báo cáo sử dụng thuốc	Tính số lượng, số lần dùng tương ứng các loại thuốc được sử dụng trong tháng và ghi nhận	
 
-
 2.2.2 Bảng trách nhiệm yêu cầu chất lượng
 Bảng 2.2 Bảng trách nhiệm yêu cầu chất lượng
 STT	Nghiệp vụ	Người dùng	Phần mềm	Ghi chú
@@ -212,24 +211,31 @@ STT	Họ Tên	Giới Tính	Năm Sinh	Địa Chỉ
 1				
 2				
 
-
 	Quy định
 QĐ1: Mỗi ngày khám tối đa 40 bệnh nhân.
+
+
+
+
+
+
+
+
+
 	Sơ đồ
 Sơ đồ 1: Sơ đồ luồng dữ liệu lập danh sách khám bệnh
 	Thuật toán
 o	Bước 1: Nhận D1 từ người dùng.
 o	Bước 2: Kết nối cơ sở dữ liệu.
 o	Bước 3: Đọc D3 từ bộ nhớ phụ.
-o	Bước 4: Kiểm tra dữ liệu D1 (họ tên, giới tính, ngày sinh, địa chỉ và ngày khám bệnh) người dùng nhập vào.
-o	Bước 5: Nếu người dùng nhập thiếu thì báo lỗi và mời người dùng nhập lại những thông tin bị thiếu.
-o	Bước 6: Kiểm tra số lượng bệnh nhân đã khám trong ngày có ít hơn so với số lượng bệnh nhân tối đa hay không.
-o	Bước 7: Nếu thỏa quy định trên thì thêm bệnh nhân mới vào.
-o	Bước 8: Nếu không thỏa quy định trên thì thông báo không tiếp nhận thêm bệnh nhân và đi đến bước 11.
-o	Bước 9: Trường hợp thông tin bệnh nhân đã tồn tại thì không cấp mã mới cho bệnh nhân mà lấy mã bệnh nhân đã được cấp trước đó.
-o	Bước 10: Lưu D4 xuống bộ nhớ phụ.
-o	Bước 11: Đóng kết nối cơ sở dữ liệu.	
-o	Bước 12: Kết thúc.
+o	Bước 4: Kiểm tra số lượng bệnh nhân đã khám trong ngày có ít hơn so với số lượng bệnh nhân tối đa hay không.
+o	Bước 5: Nếu thỏa quy định trên thì thêm bệnh nhân mới vào.
+o	Bước 6: Nếu không thỏa quy định trên thì thông báo không tiếp nhận thêm bệnh nhân và đi đến bước 10.
+o	Bước 7: Trường hợp thông tin bệnh nhân đã tồn tại thì không cấp mã mới cho bệnh nhân mà lấy mã bệnh nhân đã được cấp trước đó.
+o	Bước 8: Lưu D4 xuống bộ nhớ phụ.
+o	Bước 9: Trả D6 cho người dùng.
+o	Bước 10: Đóng kết nối cơ sở dữ liệu.	
+o	Bước 11: Kết thúc.
 2.3.2 Lập phiếu nhập thuốc
 	Biểu mẫu
 BM6:	Phiếu nhập thuốc
@@ -244,19 +250,15 @@ Sơ đồ 2: Sơ đồ luồng dữ liệu lập phiếu nhập thuốc
 o	Bước 1: Nhận D1 từ người dùng.
 o	Bước 2: Kết nối cơ sở dữ liệu.
 o	Bước 3: Đọc D3 từ bộ nhớ phụ.
-o	Bước 4: Kiểm tra danh sách các loại thuốc mới ở D1 so với danh sách các loại thuốc ban đầu ở D3. 
-o	Bước 5: Nếu thuốc chưa có trong danh sách thuốc ban đầu thì sẽ thêm vào danh sách.
-o	Bước 6: Kiểm tra tỉ lệ tính đơn giá bán của từng loại thuốc có lớn hơn 100% hay không. Nếu có thì tiến hành tính đơn giá bán bằng cách nhân đơn giá nhập với tỉ lệ đó. Nếu không thì yêu cầu người dùng nhập lại. 
-o	Bước 7: Nếu thuốc đã có trong danh sách thì không thêm vào nữa. Tiến hành cập nhập số lượng tồn trong kho của từng loại thuốc bằng cách cộng số lượng tồn ban đầu với số lượng nhập.
-o	Bước 8: Kiểm tra tỉ lệ tính đơn giá bán của từng loại thuốc. Nếu khác và lớn hơn 100%  thì tiến hành tính đơn giá bán bằng cách nhân đơn giá nhập với tỉ lệ đó. Nếu không thì không cần cập nhật lại đơn giá bán. 
+o	Bước 4: Kiểm tra từng loại thuốc ở D1 có trong danh sách các loại thuốc ở D3 không. 
+o	Bước 5: Nếu không thỏa thì thêm loại thuốc mới vào danh sách các loại thuốc. 
+o	Bước 6: Nếu thỏa thì không thêm vào danh sách các loại thuốc.
+o	Bước 7: Tiến hành cập nhập số lượng tồn trong kho của từng loại thuốc bằng cách cộng số lượng tồn ban đầu với số lượng nhập.
+o	Bước 8: Tiến hành tính đơn giá bán bằng cách nhân đơn giá nhập với tỉ lệ tính đơn giá bán. 
 o	Bước 9: Lưu D4 xuống bộ nhớ phụ.
-o	Bước 10: Đóng kết nối cơ sở dữ liệu.
-o	Bước 11: Kết thúc.
-
-
-
-
-
+o	Bước 10: Trả D6 cho người dùng.
+o	Bước 11: Đóng kết nối cơ sở dữ liệu.
+o	Bước 12: Kết thúc.
 2.3.3 Lập phiếu khám bệnh
 	Biểu mẫu
 BM2:	Phiếu Khám Bệnh
@@ -268,6 +270,8 @@ STT	Thuốc	Đơn Vị	Số Lượng	Cách Dùng
 
 	Quy định
 QĐ2: Có 5 loại bệnh. Có 30 loại thuốc, 2 loại đơn vị (viên, chai), có 4 cách dùng (1, 2, 3, 4)
+
+
 	Sơ đồ
 Sơ đồ 3: Sơ đồ luồng dữ liệu lập phiếu khám bệnh
 	Thuật toán
@@ -278,14 +282,17 @@ o	Bước 4: Kiểm tra loại bệnh của D1 có nằm trong danh sách các l
 o	Bước 5: Nếu không thỏa thì báo với người dùng loại bệnh này không tồn tại trong danh sách của phòng khám và mời người dùng nhập lại loại bệnh.
 o	Bước 6: Kiểm tra loại thuốc của D1 có nằm trong danh sách các loại thuốc không.
 o	Bước 7: Nếu không thỏa thì báo với người dùng loại thuốc này không tồn tại trong danh sách của phòng khám và mời người dùng nhập lại loại thuốc.
-o	Bước 8: Kiểm tra số lượng thuốc có nhỏ hơn hoặc bằng số lượng tồn của thuốc trong kho không. Nếu vi phạm thì thông báo đã hết loại thuốc đó.
-o	Bước 9: Kiểm tra đơn vị thuốc của D1 có nằm trong các loại đơn vị thuốc hay không. Nếu vi phạm thì yêu cầu người dùng nhập lại đơn vị thuốc. 
-o	Bước 10: Kiểm tra cách dùng của thuốc của D1 có nằm trong các loại cách dùng hay không. Nếu vi phạm thì yêu cầu người dùng nhập lại cách dùng của thuốc.
-o	Bước 11: Tính tổng tiền thuốc của phiếu thu bằng cách nhân đơn giá với số lượng từng loại thuốc trong phiếu thu rồi cộng lại với nhau. Cập nhật lại số lượng tồn của từng loại thuốc bằng cách lấy số lượng tồn ban đầu trừ cho số lượng thuốc. 
-o	Bước 12: Lưu D4 xuống bộ nhớ phụ.
-o	Bước 13: Xuất D5 ra máy in.
-o	Bước 14: Đóng kết nối cơ sở dữ liệu.
-o	Bước 15: Kết thúc.
+o	Bước 8: Kiểm tra đơn vị thuốc của D1 có nằm trong danh sách các loại đơn vị thuốc không.
+o	Bước 9: Nếu không thỏa thì báo với người dùng đơn vị thuốc này không tồn tại trong danh sách của phòng khám và mời người dùng nhập lại đơn vị thuốc.
+o	Bước 10: Kiểm tra cách dùng của D1 có nằm trong danh sách các loại cách dùng không.
+o	Bước 11: Nếu không thỏa thì báo với người dùng cách dùng này không tồn tại trong danh sách của phòng khám và mời người dùng nhập lại cách dùng.
+o	Bước 12: Tính tiền thuốc của từng loại thuốc trong phiếu khám bệnh bằng cách nhân đơn giá bán với số lượng thuốc tương ứng.
+o	Bước 13: Cập nhật lại số lượng tồn của từng loại thuốc bằng cách lấy số lượng tồn ban đầu trừ cho số lượng thuốc. 
+o	Bước 14: Lưu D4 xuống bộ nhớ phụ.
+o	Bước 15: Xuất D5 ra máy in.
+o	Bước 16: Trả D6 cho người dùng.
+o	Bước 17: Đóng kết nối cơ sở dữ liệu.
+o	Bước 18: Kết thúc.
 2.3.4 Tra cứu bệnh nhân
 	Biểu mẫu
 BM3:	Danh Sách Bệnh Nhân
@@ -293,17 +300,23 @@ STT	Họ Tên	Ngày Khám	Loại Bệnh	Triệu Chứng
 1				
 2				
 
+
+
 	Sơ đồ
 Sơ đồ 4: Sơ đồ luồng dữ liệu tra cứu bệnh nhân
 	Thuật toán
 o	Bước 1: Nhận D1 từ người dùng.
 o	Bước 2: Kết nối cơ sở dữ liệu.
 o	Bước 3: Đọc D3 từ bộ nhớ phụ.
-o	Bước 4: Lọc dữ liệu trong D3 theo tiêu chuẩn tìm kiếm D1 
+o	Bước 4: Lọc dữ liệu trong D3 theo tiêu chuẩn tìm kiếm trong D1.
 o	Bước 5: Xuất D5 ra máy in.
 o	Bước 6: Trả D6 cho người dùng.
 o	Bước 7: Đóng kết nối cơ sở dữ liệu.
 o	Bước 8: Kết thúc.
+
+
+
+
 2.3.5 Lập hóa đơn thanh toán
 	Biểu mẫu
 BM4:	Hóa Đơn Thanh Toán
@@ -313,17 +326,18 @@ Tiền khám:		Tiền thuốc:
 	Quy định
 QĐ4: Tiền khám 30.000. Tiền thuốc chỉ có khi bệnh nhân có dùng thuốc. Mỗi loại thuốc có đơn giá riêng.
 	Sơ đồ
-Sơ đồ 5: Sơ đồ luồng dữ liệu lập hóa đơn
+Sơ đồ 5: Sơ đồ luồng dữ liệu lập hóa đơn thanh toán
 	Thuật toán
 o	Bước 1: Nhận D1 từ người dùng.
 o	Bước 2: Kết nối cơ sở dữ liệu.
 o	Bước 3: Đọc D3 từ bộ nhớ phụ.
-o	Bước 4: Đọc tổng tiền thuốc được lưu trong phiếu khám bệnh có ngày khám bệnh tương ứng với ngày khám bệnh ở D1 của bệnh nhân. Đọc tiền khám tương ứng với ngày khám bệnh ở D1.
-o	Bước 5: Lưu D4 xuống bộ nhớ phụ.
-o	Bước 6: Xuất D5 ra máy in.
-o	Bước 7: Trả D6 cho người dùng.
-o	Bước 8: Đóng kết nối cơ sở dữ liệu.
-o	Bước 9: Kết thúc.
+o	Bước 4: Tính tổng tiền thuốc dựa vào tiền thuốc của từng loại thuốc trong phiếu khám bệnh có ngày khám bệnh tương ứng với ngày khám bệnh của bệnh nhân có thông tin được nhập ở D1.
+o	Bước 5: Tính tổng tiền hóa đơn bằng cách cộng tổng tiền thuốc với tiền khám.
+o	Bước 6: Lưu D4 xuống bộ nhớ phụ.
+o	Bước 7: Xuất D5 ra máy in.
+o	Bước 8: Trả D6 cho người dùng.
+o	Bước 9: Đóng kết nối cơ sở dữ liệu.
+o	Bước 10: Kết thúc.
 2.3.6 Lập báo cáo tháng
   2.3.6.1 Báo cáo doanh thu theo tháng 
 	Biểu mẫu
@@ -339,21 +353,22 @@ STT	Ngày	Số Bệnh Nhân	Doanh Thu	Tỷ Lệ
 
 
 
+
 	Sơ đồ 
-Sơ đồ 6: Sơ đồ luồng dữ liệu báo cáo doanh thu theo tháng
+Sơ đồ 6: Sơ đồ luồng dữ liệu lập báo cáo doanh thu theo tháng
 	Thuật toán
 o	Bước 1: Nhận D1 từ người dùng.
 o	Bước 2: Kết nối cơ sở dữ liệu.
 o	Bước 3: Đọc D3 từ bộ nhớ phụ.
-o	Bước 4: Đếm số bệnh nhân của từng ngày trong tháng bằng cách thống kê các hóa đơn có ngày khám tương ứng với các ngày trong tháng.
-o	 Bước 5: Tính doanh thu của từng ngày trong tháng bằng cách cộng tổng tiền khám của các hóa đơn có ngày khám tương ứng với các ngày trong tháng.
-o	Bước 6: Tính tỷ lệ của từng ngày bằng cách lấy doanh thu từng ngày chia cho toàn bộ doanh thu của tháng đó.
-o	Bước 7: Lập danh sách các ngày có doanh thu lớn hơn 0 trong tháng đó.	
-o	Bước 7: Lưu D4 xuống bộ nhớ phụ.
-o	Bước 8: Xuất D5 ra máy in.
-o	Bước 9: Trả D6 cho người dùng.
-o	Bước 10: Đóng kết nối cơ sở dữ liệu.
-o	Bước 11: Kết thúc.
+o	Bước 4: Đếm số bệnh nhân của từng ngày trong tháng bằng cách thống kê các bệnh nhân có hóa đơn thanh toán có ngày khám tương ứng với các ngày trong tháng.
+o	 Bước 5: Tính doanh thu của từng ngày trong tháng bằng cách cộng tổng tiền của các hóa đơn có ngày khám tương ứng với các ngày trong tháng.
+o	Bước 6: Tính tỷ lệ doanh thu của từng ngày bằng cách lấy doanh thu chia cho tổng doanh thu của tháng đó.
+o	Bước 7: Lập danh sách các ngày có doanh thu lớn hơn 0 trong tháng.
+o	Bước 8: Lưu D4 xuống bộ nhớ phụ.
+o	Bước 9: Xuất D5 ra máy in.
+o	Bước 10: Trả D6 cho người dùng.
+o	Bước 11: Đóng kết nối cơ sở dữ liệu.
+o	Bước 12: Kết thúc.
  2.3.6.2  Báo cáo sử dụng thuốc theo tháng
 	Biểu mẫu
 	   Biểu mẫu 5.2
@@ -364,21 +379,20 @@ STT	Thuốc	Đơn Vị Tính	Số Lượng	Số Lần Dùng
 2				
 
 	Sơ đồ
-Sơ đồ 7: Sơ đồ luồng dữ liệu báo cáo sử dụng thuốc
+Sơ đồ 7: Sơ đồ luồng dữ liệu lập báo cáo sử dụng thuốc theo tháng
 
 	Thuật toán
 o	Bước 1: Nhận D1 từ người dùng.
 o	Bước 2: Kết nối cơ sở dữ liệu.
 o	Bước 3: Đọc D3 từ bộ nhớ phụ.
-o	Bước 4: Thống kê các loại thuốc cùng với đơn vị tính tương ứng với loại thuốc đã sử dụng trong tháng bằng cách kiểm tra các loại thuốc có trong các phiếu khám bệnh trong tháng ở D1.
-o	Bước 5: Tính tổng số thuốc đã dùng của từng loại thuốc bằng cách cộng số lượng thuốc của từng loại thuốc trong các phiếu khám bệnh trong tháng ở D1.
-o	Bước 6: Tính số lần dùng thuốc của từng loại thuốc bằng cách đếm số lần xuất hiện của từng loại thuốc trong các phiếu khám bệnh trong tháng ở D1.
+o	Bước 4: Thống kê tên loại thuốc cùng với đơn vị tính tương ứng với các loại thuốc có trong các phiếu khám bệnh có hóa đơn thanh toán và có ngày khám bệnh trong tháng ở D1.
+o	Bước 5: Tính tổng số thuốc đã dùng của từng loại thuốc bằng cách cộng số lượng thuốc của thuốc tương ứng có trong các phiếu khám bệnh có hóa đơn thanh toán và có ngày khám bệnh trong tháng ở D1.
+o	Bước 6: Tính số lần dùng thuốc của từng loại thuốc bằng cách đếm số lần xuất hiện của thuốc tương ứng có trong các phiếu khám bệnh có hóa đơn thanh toán và có ngày khám bệnh trong tháng ở D1.
 o	Bước 7: Lưu D4 xuống bộ nhớ phụ.
 o	Bước 8: Xuất D5 ra máy in.
 o	Bước 9: Trả D6 cho người dùng.
 o	Bước 10: Đóng kết nối cơ sở dữ liệu.
 o	Bước 11: Kết thúc.
-
 
 
 
@@ -393,25 +407,29 @@ Sơ đồ 8: Sơ đồ luồng dữ liệu thay đổi số lượng bệnh nhâ
 o	Bước 1: Nhận D1 từ người dùng.
 o	Bước 2: Kết nối cơ sở dữ liệu.
 o	Bước 3: Đọc D3 từ bộ nhớ phụ.
-o	Bước 4: Kiểm tra xem số lượng bệnh nhân tối đa mới ở D1 có lớn hơn 0 và khác với số lượng bệnh nhân tối đa ban đầu hay không. Nếu không lớn hơn 0 hoặc giống số bệnh nhân tối đa ban đầu thì yêu cầu người dùng nhập lại số lượng bệnh nhân tối đa.
-o	Bước 5: Lưu D4 xuống bộ nhớ phụ.
-o	Bước 6: Đưa D6 cho người dùng.
-o	Bước 7: Đóng kết nối cơ sở dữ liệu.
-o	Bước 8: Kết thúc.
-2.3.7.2 Thay đổi số lượng loại bệnh, đơn vị thuốc và cách dùng
+o	Bước 4: Kiểm tra xem số lượng bệnh nhân tối đa mới ở D1 có khác với số lượng bệnh nhân tối đa ở D3 hay không. 
+o	Bước 5: Nếu không thỏa thì yêu cầu người dùng nhập lại số lượng bệnh nhân tối đa.
+o	Bước 6: Lưu D4 xuống bộ nhớ phụ.
+o	Bước 7: Trả D6 cho người dùng.
+o	Bước 8: Đóng kết nối cơ sở dữ liệu.
+o	Bước 9: Kết thúc.
+2.3.7.2 Thay đổi số lượng loại bệnh, đơn vị tính và cách dùng
 	Sơ đồ
-Sơ đồ 9: Sơ đồ luồng dữ liệu thay đổi số lượng bệnh, đơn vị tính và cách dùng
+Sơ đồ 9: Sơ đồ luồng dữ liệu thay đổi số lượng loại bệnh, đơn vị tính và cách dùng
 	Thuật toán
 o	Bước 1: Nhận D1 từ người dùng.
 o	Bước 2: Kết nối cơ sở dữ liệu.
 o	Bước 3: Đọc D3 từ bộ nhớ phụ.
-o	Bước 4: So sánh danh sách loại bệnh ở D1 với danh sách loại bệnh ở D3. Những loại bệnh chưa có trong danh sách loại bệnh ban đầu sẽ được thêm vào. Những loại bệnh đã có trong danh sách loại bệnh ban đầu thì không thêm vào nữa.
-o	Bước 5: So sánh danh sách loại đơn vị tính ở D1 với danh sách loại đơn vị tính ở D3. Những loại đơn vị tính chưa có trong danh sách loại đơn vị tính ban đầu sẽ được thêm vào. Những loại đơn vị tính đã có trong danh sách loại đơn vị tính ban đầu thì không thêm vào nữa.
-o	Bước 6: So sánh danh sách loại cách dùng ở D1 với danh sách loại cách dùng ở D3. Những loại cách dùng chưa có trong danh sách loại cách dùng ban đầu sẽ được thêm vào. Những loại cách dùng đã có trong danh sách loại cách dùng ban đầu thì không thêm vào nữa.
-o	Bước 7: Lưu D4 xuống bộ nhớ phụ.
-o	Bước 8: Đưa D6 cho người dùng.
-o	Bước 9: Đóng kết nối cơ sở dữ liệu.
-o	Bước 10: Kết thúc.
+o	Bước 4: Kiểm tra xem loại bệnh mới ở D1 có không nằm trong danh sách loại bệnh ở D3 hay không.
+o	Bước 5: Nếu không thỏa thì yêu cầu người dùng nhập lại loại bệnh.
+o	Bước 6: Kiểm tra xem loại đơn vị tính mới ở D1 có không nằm trong danh sách loại đơn vị tính ban đầu hay không.
+o	Bước 7: Nếu không thỏa thì yêu cầu người dùng nhập lại loại đơn vị tính.
+o	Bước 8: Kiểm tra xem loại cách dùng mới ở D1 có không nằm trong danh sách loại cách dùng ban đầu hay không.
+o	Bước 9: Nếu không thỏa thì yêu cầu người dùng nhập lại loại cách dùng.
+o	Bước 10: Lưu D4 xuống bộ nhớ phụ.
+o	Bước 11: Trả D6 cho người dùng.
+o	Bước 12: Đóng kết nối cơ sở dữ liệu.
+o	Bước 13: Kết thúc.
  2.3.7.3 Thay đổi tiền khám và tỉ lệ tính đơn giá bán của thuốc
 	Sơ đồ
  Sơ đồ 10: Sơ đồ luồng dữ liệu thay đổi tiền khám và tỉ lệ tính đơn giá bán của thuốc
@@ -419,13 +437,15 @@ o	Bước 10: Kết thúc.
 o	Bước 1: Nhận D1 từ người dùng.
 o	Bước 2: Kết nối cơ sở dữ liệu.
 o	Bước 3: Đọc D3 từ bộ nhớ phụ.
-o	Bước 4: Kiểm tra tiền khám ở D1 lớn hơn 0 và khác với tiền khám ban đầu hay không. Nếu không lớn hơn 0 hoặc giống số tiền khám ban đầu thì yêu cầu người dùng nhập lại số tiền khám.
-o	Bước 5: Kiểm tra tỉ lệ tính đơn giá bán của thuốc ở D1 lớn hơn 100% và khác với ban đầu hay không. Nếu không lớn hơn 100% hoặc giống với ban đầu thì yêu cầu người dùng nhập lại tỉ lệ tính đơn giá bán của thuốc.
-o	Bước 6: Lưu D4 xuống bộ nhớ phụ.
-o	Bước 7: Đưa D6 cho người dùng.
-o	Bước 8: Đóng kết nối cơ sở dữ liệu.
-o	Bước 9: Kết thúc.
-
+o	Bước 4: Kiểm tra tiền khám ở D1 có khác với tiền khám ở D3 hay không.
+o	Bước 5:  Nếu không thỏa thì yêu cầu người dùng nhập lại tiền khám.
+o	Bước 6: Kiểm tra tỉ lệ tính đơn giá bán của thuốc ở D1 có khác với tỉ lệ tính đơn giá bán của thuốc ở D3 hay không.
+o	Bước 7: Nếu không thỏa thì yêu cầu người dùng nhập lại tỉ lệ tính đơn giá bán của thuốc.
+o	Bước 8: Tính đơn giá bán mới của thuốc tương ứng bằng cách nhân đơn giá nhập với tỉ lệ tính đơn giá bán vừa thay đổi.
+o	Bước 9: Lưu D4 xuống bộ nhớ phụ.
+o	Bước 10: Trả D6 cho người dùng.
+o	Bước 11: Đóng kết nối cơ sở dữ liệu.
+o	Bước 12: Kết thúc.
 
 
 
@@ -438,18 +458,20 @@ o	Bước 9: Kết thúc.
 
 Chương 3. THIẾT KẾ HỆ THỐNG
 3.1	Kiến trúc hệ thống
-	Phần mềm sử dụng mô hình 3-Layers, 3-Tiers là mô hình kết nối đến CSDL thông qua các lớp DTO, BUS và DAO.
+	Phần mềm sử dụng mô hình 3-Layers, 3-Tiers là mô hình kết nối đến CSDL thông qua các lớp BLL, DTO và DAL.
 
-	3-tiers có tính vật lý (physical): Là mô hình client-server (mỗi tier có thể đặt chung 1 nơi hoặc nhiều nơi, kết nối với nhau qua Web services, WCF, Remoting...). Như hình vẽ ta thấy 3 tầng rõ rệt là 3 tầng:
-o	Presentation Tier bao gồm các thành phần phần xử lý giao diện Graphic User Interface (GUI).
-o	Business Tier gồm các thành phần Business Logic Layer (BLL), Data Access Layer (DAL) và Data Tranfer Object (DTO).
-o	Data Tier lưu trữ dữ liệu, là các hệ quản trị CSDL như MS SQL Server, Oracle, SQLite, MS Access, XML files, Text files,...
+	3-Tiers có tính vật lý (physical): Là mô hình client-server (mỗi tier có thể đặt chung 1 nơi hoặc nhiều nơi, kết nối với nhau qua Web Services, WCF, Remoting...). Như hình vẽ ta thấy 3 tầng rõ rệt là 3 tầng
+o	Presentation Tier bao gồm các thành phần Graphic User Interface (GUI).
+o	Business Tier bao gồm các thành phần Business Logic Layer (BLL), Data Access Layer (DAL) và Data Tranfer Object (DTO).
+o	Data Tier dùng để lưu trữ dữ liệu, là các hệ quản trị CSDL như MS SQL Server, Oracle, SQLite, MS Access…
 3.2	Mô tả thành phần trong hệ thống
 Bảng 3.1 Bảng mô tả thành phần trong hệ thống
 STT	Thành phần	Diễn giải
-1	DAO	Là lớp chỉ chuyên tác động vào Database như "Thêm, Xóa, Sửa, Update" dữ liệu mà không quan tâm dữ liệu có hợp lệ hay không
+1	DAL	Là lớp chỉ chuyên tác động vào cơ sở dữ liệu dùng để thêm, xóa và cập nhật dữ liệu mà không quan tâm dữ liệu có hợp lệ hay không
 2	DTO	Là lớp truyền dữ liệu, bao gồm các thuộc tính của đối tượng chứa dữ liệu
-3	BUS	Là lớp xử lý dữ liệu nhận được từ lớp DTO truyền xuống, ở lớp này nó sẽ kiểm tra xem dữ liệu truyền xuống Database có hợp lệ hay không để truyền tiếp xuống lớp tác động lên Database
+3	BLL	Là lớp xử lý dữ liệu nhận được từ lớp DTO truyền đến, ở lớp này nó sẽ kiểm tra xem dữ liệu truyền đến có hợp lệ hay không để truyền tiếp xuống lớp DAL
+
+
 
 
 
@@ -511,17 +533,6 @@ o	Thiết kế dữ liệu với tính đúng đắn
 -   Các thuộc tính mới: TrieuChung, DuDoanLoaiBenh, SoLuong, CachDung và TienThuoc.
 -   Thiết kế dữ liệu: table PHIEUKB và table CTPHIEUKB.
 -   Các thuộc tính trừu tượng mới: MaPhieuKB và MaCTPhieuKB.
-
-
-
-
-
-
-
-
-
-
-
 -   Sơ đồ Logic
  
 
@@ -533,11 +544,15 @@ o	Thiết kế dữ liệu với tính tiến hóa
 -   Các tham số mới: Không có.
 -   Thiết kế dữ liệu: table BENH, table DONVITINH và table CACHDUNG.
 -   Các thuộc tính trừu tượng mới: MaBenh, MaDonViTinh và MaCachDung.
+
+
+
+
+
 -   Sơ đồ Logic
  
 
  
-
 	Bước 4: Xét yêu cầu tra cứu bệnh nhân
 o	Thiết kế dữ liệu với tính đúng đắn
 -   Biểu mẫu liên quan: BM3.
@@ -561,10 +576,6 @@ o	Thiết kế dữ liệu với tính đúng đắn
 -   Các thuộc tính mới: TienKham, TongTienThuoc và TongTien.
 -   Thiết kế dữ liệu: table HOADON.
 -   Các thuộc tính trừu tượng mới: SoHD.
-
-
-
-
 -   Sơ đồ Logic
  
 
@@ -584,9 +595,6 @@ o	Thiết kế dữ liệu với tính đúng đắn
 -   Các thuộc tính mới: NgayLap, SoBenhNhan, DoanhThu và TyLeDoanhThuThang.
 -   Thiết kế dữ liệu: table CTBCDOANHTHU.
 -   Các thuộc tính trừu tượng mới: MaCTBCDoanhThu.
-
-
-
 -   Sơ đồ Logic
  
 
@@ -606,8 +614,6 @@ o	Thiết kế dữ liệu với tính đúng đắn
 -   Các thuộc tính mới: Thang, Nam, SoLuongDung và SoLanDung.
 -   Thiết kế dữ liệu: table CTBCSDTHUOC.
 -   Các thuộc tính trừu tượng mới: MaCTBCSDThuoc.
-
-
 -   Sơ đồ Logic
  
 
@@ -620,15 +626,6 @@ o	Thiết kế dữ liệu với tính tiến hóa
 -   Thiết kế dữ liệu: Không có.
 -   Các thuộc tính trừu tượng mới: Không có.
 -   Sơ đồ Logic: Không thay đổi.
-
-
-
-
-
-
-
-
-
 4.2 Sơ đồ logic hoàn chỉnh
  
 
@@ -711,7 +708,6 @@ STT	Thuộc tính	Kiểu dữ liệu	Ràng buộc	Diễn giải
 
 
 
-
 4.4.8 Bảng CTPHIEUKB
 Bảng 4.9 Bảng các thuộc tính của bảng CTPHIEUKB
 STT	Thuộc tính	Kiểu dữ liệu	Ràng buộc	Diễn giải
@@ -729,8 +725,6 @@ STT	Thuộc tính	Kiểu dữ liệu	Ràng buộc	Diễn giải
 2	TenCachDung	Chuỗi	Khác rỗng và mỗi tên cách dùng là duy nhất	Tên cách dùng
 
 
-
-
 4.4.10 Bảng DONVITINH
 Bảng 4.11 Bảng các thuộc tính của bảng DONVITINH
 STT	Thuộc tính	Kiểu dữ liệu	Ràng buộc	Diễn giải
@@ -745,9 +739,6 @@ STT	Thuộc tính	Kiểu dữ liệu	Ràng buộc	Diễn giải
 3	TienKham	Số nguyên	Bằng tiền khám được quy định trong bảng tham số	Tiền khám
 4	TongTienThuoc	Số nguyên	Bằng tổng các tiền thuốc trong các chi tiết phiếu khám bệnh của phiếu khám bệnh có mã chi tiết khám bệnh tương ứng 	Tổng tiền thuốc
 5	TongTien	Số nguyên	Bằng tổng của tiền khám và tổng tiền thuốc	Tổng tiền
-
-
-
 
 
 
@@ -773,7 +764,6 @@ STT	Thuộc tính	Kiểu dữ liệu	Ràng buộc	Diễn giải
 4	MaThuoc	Chuỗi	Khác rỗng và khóa ngoại	Mã thuốc
 5	SoLuongDung	Số nguyên	Bằng tổng số lượng dùng của thuốc tương ứng trong các chi tiết phiếu khám bệnh trong tháng năm được nhập	Số lượng dùng
 6	SoLanDung	Số nguyên	Bằng số lần xuất hiện của thuốc tương ứng trong các chi tiết phiếu khám bệnh trong tháng năm được nhập	Số lần dùng
-
 
 Chương 5. THIẾT KẾ GIAO DIỆN
 5.1	Sơ đồ liên kết màn hình
@@ -1164,7 +1154,6 @@ STT	Biến cố	Xử lý
 5.3.10 Màn hình thêm đơn vị tính
 		5.3.10.1 Giao diện
  
-
 		5.3.10.2 Mô tả các đối tượng trên màn hình
 STT	Tên	Kiểu	Ràng buộc	Chức năng
 1	lTitle	Label	Không có	Hiển thị tiêu đề
@@ -1179,6 +1168,7 @@ STT	Biến cố	Xử lý
 1	Nhấn nút thoát	Thoát khỏi màn hình thêm đơn vị tính
 2	Nhấn nút làm mới	Xóa dữ liệu hiện tại trong các đối tượng nhập liệu
 3	Nhấn nút lưu	Lưu đơn vị tính xuống cơ sở dữ liệu
+
 
 5.3.11 Màn hình tra cứu bệnh nhân
 		5.3.11.1 Giao diện
@@ -1244,7 +1234,6 @@ STT	Biến cố	Xử lý
 5.3.12 Màn hình Lập báo cáo
 		5.3.12.1 Giao diện
  
-
 		5.3.12.2 Mô tả các đối tượng trên màn hình
 STT	Tên	Kiểu	Ràng buộc	Chức năng
 1	lTitle	Label	Không có	Hiển thị tiêu đề
@@ -1280,6 +1269,8 @@ STT	Biến cố	Xử lý
 7	Nhấn nút mũi tên của ComboBox nhập tên thuốc	Hiển thị danh sách tên thuốc có sẵn
 8	Nhập dữ liệu vào ComboBox nhập tên thuốc	Hiển thị danh sách tên thuốc có sẵn và gợi ý nhập
 9	Nhấn nút tra cứu	Hiển thị kết quả tra cứu trong báo cáo sử dụng thuốc
+
+
 
 
 
