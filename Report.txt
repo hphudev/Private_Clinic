@@ -176,7 +176,7 @@ Chương 1. TỔNG QUAN
 
 Chương 2. XÁC ĐỊNH VÀ MÔ HÌNH HÓA CÁC YÊU CẦU PHẦN MỀM
 	2.1 Phân loại các yêu cầu phần mềm
-		2.1.1 Yêu cầu nghiệp vụ
+2.1.1 Yêu cầu nghiệp vụ
 	Lưu trữ: Lập danh sách khám bệnh, lập phiếu nhập thuốc, lập phiếu khám bệnh, lập hóa đơn thanh toán và lập báo cáo tháng.
 	Tra cứu: Tra cứu bệnh nhân.
 	Kết xuất: Lập báo cáo tháng.
@@ -191,17 +191,17 @@ STT	Nghiệp vụ	Người dùng	Phần mềm	Ghi chú
 2	Lập phiếu nhập thuốc	Cung cấp thông tin về phiếu nhập thuốc	Tính đơn giá bán, cập nhật số lượng tồn kho của từng loại thuốc và ghi nhận	
 3	Lập phiếu khám bệnh	Cung cấp thông tin về phiếu khám bệnh	Tính tiền thuốc, cập nhật số lượng tồn kho của các thuốc được sử dụng, kiểm tra quy định và ghi nhận	
 4	Tra cứu bệnh nhân	Cung cấp thông tin về bệnh nhân	Tìm và xuất thông tin liên quan	
-5	Lập hóa đơn thanh toán	Cung cấp thông tin về hóa đơn thanh toán	Tính tiền khám, tiền thuốc và ghi nhận	
+5	Lập hóa đơn thanh toán	Cung cấp thông tin về hóa đơn thanh toán	Tính tiền khám, tổng tiền thuốc, tổng tiền và ghi nhận	
 6	Lập báo cáo doanh thu theo tháng	Cung cấp thông tin về tháng cần lập báo cáo doanh thu	Tính số bệnh nhân, doanh thu, tỷ lệ doanh thu các ngày có bệnh nhân đến khám trong tháng và ghi nhận	
-7	Lập báo cáo sử dụng thuốc theo tháng	Cung cấp thông tin về tháng cần lập báo cáo sử dụng thuốc	Tính số lượng, số lần dùng, đọc đơn vị tính tương ứng các loại thuốc được sử dụng trong tháng và ghi nhận	
+7	Lập báo cáo sử dụng thuốc theo tháng	Cung cấp thông tin về tháng cần lập báo cáo sử dụng thuốc	Tính số lượng, số lần dùng tương ứng các loại thuốc được sử dụng trong tháng và ghi nhận	
 
 
 2.2.2 Bảng trách nhiệm yêu cầu chất lượng
 Bảng 2.2 Bảng trách nhiệm yêu cầu chất lượng
 STT	Nghiệp vụ	Người dùng	Phần mềm	Ghi chú
 1	Thay đổi số lượng bệnh nhân tối đa trong ngày	Cho biết giá trị mới của số lượng bệnh nhân tối đa trong ngày	Ghi nhận giá trị mới và thay đổi cách thức kiểm tra	
-2	Thay đổi số lượng loại bệnh, đơn vị tính và cách dùng	Cho biết giá trị mới của số lượng loại bệnh, đơn vị tính và cách dùng	Ghi nhận giá trị mới và thay đổi cách thức kiểm tra	
-3	Thay đổi tiền khám và đơn giá thuốc	Cho biết giá trị mới của tiền khám và đơn giá thuốc	Ghi nhận giá trị mới	
+2	Thay đổi số lượng loại bệnh, loại đơn vị tính và loại cách dùng	Cho biết thông tin của loại bệnh, loại đơn vị tính và loại cách dùng mới	Ghi nhận giá trị mới	
+3	Thay đổi tiền khám và đơn giá thuốc	Cho biết giá trị mới của tiền khám và tỷ lệ tính đơn giá bán mới của thuốc	Ghi nhận giá trị mới và tính đơn giá bán mới cho thuốc	
 
 2.3 Sơ đồ luồng dữ liệu cho từng loại yêu cầu
 2.3.1 Lập danh sách khám bệnh
@@ -643,7 +643,7 @@ STT	Tên bảng dữ liệu	Diễn giải
 5	CTPHIEUNT	Lưu trữ thông tin về chi tiết phiếu nhập thuốc bao gồm mã chi tiết phiếu nhập thuốc, mã phiếu nhập thuốc, mã thuốc, số lượng nhập, ngày nhập thuốc, đơn giá bán hiện tại và tỷ lệ tính đơn giá bán hiện tại
 6	BENH	Lưu trữ thông tin về bệnh bao gồm mã bệnh và tên bệnh
 7	PHIEUKB	Lưu trữ thông tin về phiếu khám bệnh bao gồm mã phiếu khám bệnh, mã chi tiết khám bệnh, triệu chứng và mã bệnh
-8	CTPHIEUKB	Lưu trữ thông tin về chi tiết phiếu khám bệnh bao gồm mã chi tiết phiếu khám bệnh, mã khám bệnh, mã thuốc, số lượng, mã cách dùng và tiền thuốc
+8	CTPHIEUKB	Lưu trữ thông tin về chi tiết phiếu khám bệnh bao gồm mã chi tiết phiếu khám bệnh, mã phiếu khám bệnh, mã thuốc, số lượng, mã cách dùng và tiền thuốc
 9	CACHDUNG	Lưu trữ thông tin về cách dùng của thuốc bao gồm mã cách dùng và tên cách dùng
 10	DONVITINH	Lưu trữ thông tin về đơn vị tính của thuốc bao gồm mã đơn vị tính và tên đơn vị tính
 11	HOADON	Lưu trữ thông tin về hóa đơn bao gồm số hóa đơn, mã chi tiết khám bệnh, tiền khám, tổng tiền thuốc và tổng tiền
@@ -678,7 +678,7 @@ Bảng 4.5 Bảng các thuộc tính của bảng THUOC
 STT	Thuộc tính	Kiểu dữ liệu	Ràng buộc	Diễn giải
 1	MaThuoc	Chuỗi	Khóa chính	Mã thuốc
 2	TenThuoc	Chuỗi	Khác rỗng và mỗi tên thuốc và mã đơn vị tính là duy nhất	Tên thuốc
-3	SoLuongTon	Số nguyên	Khác rỗng, lớn hơn hoặc bằng 0 và tự động cập nhật khi nhập hoặc sử dụng thuốc	Số lượng tồn
+3	SoLuongTon	Số nguyên	Khác rỗng, lớn hơn hoặc bằng 0 và tự động cập nhật khi nhập thuốc hoặc sử dụng thuốc	Số lượng tồn
 4	DonGiaNhap	Số nguyên	Khác rỗng và lớn hơn hoặc bằng 0	Đơn giá nhập
 5	DonGiaBan	Số nguyên	Bằng đơn giá nhập nhân với tỷ lệ tính đơn giá bán rồi chia cho 100	Đơn giá bán
 6	MaDonViTinh	Chuỗi	Khác rỗng và khóa ngoại	Mã đơn vị tính
@@ -691,8 +691,8 @@ STT	Thuộc tính	Kiểu dữ liệu	Ràng buộc	Diễn giải
 2	MaThuoc	Chuỗi	Khác rỗng và khóa ngoại	Mã thuốc
 3	SoLuongNhap	Số nguyên	Khác rỗng và lớn hơn 0	Số lượng nhập
 4	NgayNhapThuoc	Ngày	Ngày hợp lệ và lớn hơn hoặc bằng ngày hiện tại	Ngày nhập thuốc
-5	DonGiaBanHienTai	Số nguyên	Bằng đơn giá bán của thuốc tương ứng	Đơn giá bán hiện tại
-6	TyLeTinhDonGiaBanHienTai	Số nguyên	Bằng tỷ lệ tính đơn giá bán của thuốc tương ứng	Tỷ lệ tính đơn giá bán hiện tại
+5	DonGiaBanHienTai	Số nguyên	Bằng đơn giá bán của thuốc có mã thuốc tương ứng	Đơn giá bán hiện tại
+6	TyLeTinhDonGiaBanHienTai	Số nguyên	Bằng tỷ lệ tính đơn giá bán của thuốc có mã thuốc tương ứng	Tỷ lệ tính đơn giá bán hiện tại
 
 4.4.6 Bảng BENH
 Bảng 4.7 Bảng các thuộc tính của bảng BENH
@@ -718,7 +718,7 @@ STT	Thuộc tính	Kiểu dữ liệu	Ràng buộc	Diễn giải
 1	MaCTPhieuKB	Chuỗi	Khóa chính	Mã chi tiết phiếu khám bệnh
 2	MaPhieuKB	Chuỗi	Khác rỗng, khóa ngoại và mỗi mã phiếu khám bệnh và mã thuốc là duy nhất	Mã phiếu khám bệnh
 3	MaThuoc	Chuỗi	Khác rỗng và khóa ngoại	Mã thuốc
-4	SoLuong	Số nguyên	Khác rỗng và lớn hơn 0	Số lượng
+4	SoLuong	Số nguyên	Khác rỗng, lớn hơn 0 và nhỏ hơn hoặc bằng số lượng tồn của thuốc tương ứng	Số lượng
 5	MaCachDung	Chuỗi	Khác rỗng và khóa ngoại	Mã cách dùng
 6	TienThuoc	Số nguyên	Bằng số lượng nhân với đơn giá bán của thuốc tương ứng	Tiền thuốc
 
@@ -743,7 +743,7 @@ STT	Thuộc tính	Kiểu dữ liệu	Ràng buộc	Diễn giải
 1	SoHD	Chuỗi	Khóa chính	Số hóa đơn
 2	MaCTKB	Chuỗi	Khác rỗng và khóa ngoại	Mã chi tiết khám bệnh
 3	TienKham	Số nguyên	Bằng tiền khám được quy định trong bảng tham số	Tiền khám
-4	TongTienThuoc	Số nguyên	Bằng tổng các tiền thuốc của các chi tiết phiếu khám bệnh tương ứng	Tổng tiền thuốc
+4	TongTienThuoc	Số nguyên	Bằng tổng các tiền thuốc trong các chi tiết phiếu khám bệnh của phiếu khám bệnh có mã chi tiết khám bệnh tương ứng 	Tổng tiền thuốc
 5	TongTien	Số nguyên	Bằng tổng của tiền khám và tổng tiền thuốc	Tổng tiền
 
 
@@ -773,6 +773,7 @@ STT	Thuộc tính	Kiểu dữ liệu	Ràng buộc	Diễn giải
 4	MaThuoc	Chuỗi	Khác rỗng và khóa ngoại	Mã thuốc
 5	SoLuongDung	Số nguyên	Bằng tổng số lượng dùng của thuốc tương ứng trong các chi tiết phiếu khám bệnh trong tháng năm được nhập	Số lượng dùng
 6	SoLanDung	Số nguyên	Bằng số lần xuất hiện của thuốc tương ứng trong các chi tiết phiếu khám bệnh trong tháng năm được nhập	Số lần dùng
+
 
 Chương 5. THIẾT KẾ GIAO DIỆN
 5.1	Sơ đồ liên kết màn hình
@@ -1318,4 +1319,5 @@ ExaminationMoney	TextBox	Chỉ nhận các ký tự 0-9 và giá trị lớn hơ
 STT	Biến cố	Xử lý
 1	Nhấn nút thoát	Thoát khỏi màn hình thiết lập
 2	Nhấn nút lưu	Lưu giá trị thiết lập xuống cơ sở dữ liệu
+
 
