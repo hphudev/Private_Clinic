@@ -156,68 +156,9 @@ LỜI NÓI ĐẦU
 
 
 Chương 1. TỔNG QUAN
-	1.1 Hiện trạng
+	1.1 Giới thiệu bài toán cần giải quyết
 		Hiện nay, trong bối cảnh xã hội đang phát triển, các nhu cầu của con người mỗi ngày một tăng. Ngoài các nhu cầu về ăn uống và thời trang thì nhu cầu được sử dụng các dịch vụ chăm sóc sức khỏe và sắc đẹp cũng dần tăng theo. Chính vì vậy, để nắm bắt được xu thế đó, các dịch vụ phòng mạch tư đã bắt đầu phát triển và trở nên phổ biến trong xã hội hiện đại. Tuy nhiên, trong thời đại công nghệ 4.0, việc quản lý một mô hình kinh doanh hay dịch vụ theo kiểu truyền thống sẽ khó giải quyết được bài toán về tốc độ, sự tiện nghi và cũng như là phân tích lợi ích và hạn chế của hoạt động kinh doanh mà chủ sở hữu đang hoạt động. Bởi những nguyên nhân ấy, nhóm chúng em đã đề xuất ra một mô hình quản lý theo hướng công nghệ hay cụ thể hơn là một phần mềm có thể giải quyết được các vấn đề nêu trên.
-	1.2 Mục đích và yêu cầu
-		1.2.1 Mục đích
-	Tối ưu hóa về mặt thời gian và tiết kiệm công sức.
-	Nâng cao tính chính xác, bám sát thực tiễn và quản lý tốt về mọi mặt liên quan cũng như phân quyền và bảo mật.
-1.2.2 Yêu cầu
-			1.2.2.1 Yêu cầu về chức năng
-	Lập danh sách khám bệnh
-o	Người được phân quyền được phép nhập liệu danh sách khám bệnh.
-o	Người được phân quyền được phép hiệu chỉnh thông tin bệnh nhân.
-o	Người được phân quyền được sử dụng chức năng nhập nhanh những bệnh nhân đã được lưu trong hệ thống.
-	Lập phiếu khám bệnh
-o	Người được phân quyền được phép nhập liệu thông tin của bệnh nhân, tên loại thuốc được sử dụng, triệu chứng và loại bệnh.
-o	Người được phân quyền được phép hiệu chỉnh phiếu khám bệnh khi còn hiệu lực.
-o	Người được phân quyền được phép in ấn phiếu khám bệnh.
-	Tra cứu bệnh nhân
-o	Người được phân quyền được phép tra cứu thông tin khám bệnh của các bệnh nhân nói chung và cũng như lịch sử khám bệnh của một bệnh nhân nói riêng.
-o	Người được phân quyền được phép thực hiện thao tác in ấn thông tin bệnh nhân.
-	Lập hóa đơn thanh toán
-o	Người được phân quyền được phép truy vấn đến hóa đơn thanh toán của bệnh nhân.
-o	Hóa đơn thanh toán sẽ được cấp cho mỗi truy vấn một cách tự động theo những thiết lập của chủ sở hữu.
-o	Người được phân quyền được phép in ấn hóa đơn thanh toán.
-	Nhập liệu danh mục thuốc
-o	Người được phân quyền được phép nhập liệu danh mục thuốc.
-o	Người được phân quyền sẽ không thể thực hiện xóa những dữ liệu ràng buộc, tuy nhiên dữ liệu ấy sẽ được ẩn khỏi hệ thống.
-o	Người được phân quyền được phép in ấn danh mục thuốc.
-o	Người được phân quyền được phép chỉnh sửa danh mục thuốc.
-	Lập báo cáo tháng
-o	Người được phân quyền được phép truy vấn báo cáo doanh thu và báo cáo sử dụng thuốc theo tháng.
-o	Người được phân quyền được phép in ấn báo cáo tháng.
-	Thay đổi quy định
-o	Người được phân quyền được phép thực hiện thay đổi một số ràng buộc về giới hạn số lượng, phạm vi,…
-1.2.2.2 Yêu cầu khác
-	Yêu cầu về giao diện
-o	Giao diện thân thiện và hợp lý.
-o	Màu sắc rõ ràng và cân đối.
-o	Các thành phần giao diện bố trí hợp lí và dễ sử dụng.
-o	Trực quan.
-	Yêu cầu về bảo mật
-o	Hệ thống phân quyền hợp lí và linh động.
-o	Dữ liệu được bảo mật và mật khẩu tài khoản được mã hóa.
-	Yêu cầu về môi trường sử dụng
-o	Tương thích trên hệ điều hành Windows. 
-	Yêu cầu về khả năng tiến hóa
-o	Không quá khó khi nâng cấp phần mềm. Bố cục mã hợp lí, rõ ràng và phân vùng, phân lớp.
-o	Thích nghi được với môi trường thực tiễn và dễ dàng biến đổi.
-	Yêu cầu về tính hiệu quả và đúng đắn
-o	Bảo đảm tính toàn vẹn của dữ liệu.
-o	Quản lý dữ liệu một cách logic, phân hoạch chức năng một cách rõ ràng và đúng người đúng nhiệm vụ.
-1.2.3 Đối tượng sử dụng
-	Chủ phòng mạch.
-	Quản lý.
-	Thu ngân.
-	Các đối tượng khác được chủ phòng mạch thiết lập.
-
-
-
-
-
-
-
+	1.2 Mô tả quy trình thực hiện công việc chính
 
 
 
@@ -833,389 +774,511 @@ STT	Thuộc tính	Kiểu dữ liệu	Ràng buộc	Diễn giải
 5	SoLuongDung	Số nguyên	Bằng tổng số lượng dùng của thuốc tương ứng trong các chi tiết phiếu khám bệnh trong tháng năm được nhập	Số lượng dùng
 6	SoLanDung	Số nguyên	Bằng số lần xuất hiện của thuốc tương ứng trong các chi tiết phiếu khám bệnh trong tháng năm được nhập	Số lần dùng
 
-Chương 5: THIẾT KẾ GIAO DIỆN
+Chương 5. THIẾT KẾ GIAO DIỆN
 5.1	Sơ đồ liên kết màn hình
 5.1.1 Sơ đồ tổng quan
  
-5.1.2 Sơ đồ chi tiết màn hình danh sách khám bệnh
+5.1.2 Sơ đồ chi tiết màn hình lập danh sách khám bệnh
  
 5.1.3 Sơ đồ chi tiết màn hình lập phiếu khám bệnh
  
-5.2.4 Sơ đồ chi tiết màn hình nhập thuốc
+5.1.4 Sơ đồ chi tiết màn hình lập phiếu nhập thuốc
  
 5.2	Danh sách màn hình
 STT	Màn hình	Loại màn hình	Chức năng
-1	Màn hình Khởi động	Màn hình tra cứu	Giới thiệu phần mềm và kiểm tra hoạt động kết nối máy chủ
-2	Màn hình Danh sách chức năng	Màn hình chính	Hiển thị tổng thể các chức năng có sẵn của phần mềm. Cho phép chọn các chức năng đó sử dụng
-3	Màn hình Danh sách khám bệnh	Màn hình nhập liệu	Cho phép nhập và lưu trữ thông tin về danh sách bệnh nhân khám bệnh 
-4	Màn hình Thêm mới bệnh nhân	Màn hình nhập liệu	Cho phép nhập và lưu trữ thông tin về các bệnh nhân mới
-5	Màn hình Lập phiếu khám bệnh	Màn hình nhập liệu	Cho phép nhập và lưu trữ thông tin về phiếu khám bệnh của bệnh nhân
-6	Màn hình Thêm cách dùng thuốc	Màn hình nhập liệu	Cho phép nhập và lưu trữ thông tin về các cách dùng thuốc
-7	Màn hình Thêm loại bệnh	Màn hình nhập liệu	Cho phép nhập và lưu trữ thông tin về các loại bệnh
-8	Màn hình Lập hóa đơn thành toán	Màn hình tra cứu	Cho phép nhập các tiêu chuẩn tra cứu, trình bày các kết quả tra cứu được và lưu trữ dữ liệu khi thanh toán 
-9	Màn hình Tra cứu bệnh nhân	Màn hình tra cứu	Cho phép nhập các tiêu chuẩn tra cứu và trình bày các kết quả tra cứu được
-10	Màn hình Nhập thuốc	Màn hình nhập liệu	Cho phép nhập và lưu trữ thông tin về các loại thuốc
-11	Màn hình Chỉnh sửa thuốc	Màn hình nhập liệu	Cho phép chỉnh sửa và lưu trữ thông tin về các loại thuốc
-12	Màn hình Thêm đơn vị tính	Màn hình nhập liệu	Cho phép nhập và lưu trự thông tin về các loại đơn vị tính
-13	Màn hình Lập báo cáo	Báo biểu	Trình bày kết quả báo cáo về doanh thu và sử dụng thuốc
-14	Màn hình Thiết lập	Màn hình nhập liệu	Cho phép nhập và lưu trữ thông tin về các loại đơn vị tính, tiền khám và số lượng bệnh nhân tối đa trong ngày
+1	Màn hình khởi động	Màn hình thông báo	Giới thiệu phần mềm và kiểm tra hoạt động kết nối máy chủ
+2	Màn hình hiển thị danh sách chức năng	Màn hình chính	Hiển thị tổng thể các chức năng có sẵn của phần mềm và cho phép chọn các chức năng đó sử dụng
+3	Màn hình lập danh sách khám bệnh	Màn hình nhập liệu	Cho phép nhập và lưu trữ thông tin về danh sách bệnh nhân đến khám bệnh 
+4	Màn hình thêm bệnh nhân	Màn hình nhập liệu	Cho phép nhập và lưu trữ thông tin về bệnh nhân mới
+5	Màn hình lập phiếu khám bệnh	Màn hình nhập liệu	Cho phép nhập và lưu trữ thông tin về phiếu khám bệnh của bệnh nhân
+6	Màn hình thêm cách dùng thuốc	Màn hình nhập liệu	Cho phép nhập và lưu trữ thông tin về cách dùng thuốc mới
+7	Màn hình thêm loại bệnh	Màn hình nhập liệu	Cho phép nhập và lưu trữ thông tin về loại bệnh mới
+8	Màn hình lập hóa đơn thanh toán	Màn hình nhập liệu	Cho phép nhập và lưu trữ thông tin về hóa đơn thanh toán 
+9	Màn hình tra cứu bệnh nhân	Màn hình tra cứu	Cho phép nhập các tiêu chuẩn tra cứu và trình bày các kết quả tra cứu được
+10	Màn hình lập phiếu nhập thuốc	Màn hình nhập liệu	Cho phép nhập và lưu trữ thông tin về phiếu nhập thuốc
+11	Màn hình thêm đơn vị tính	Màn hình nhập liệu	Cho phép nhập và lưu trữ thông tin về loại đơn vị tính mới
+12	Màn hình lập báo cáo	Báo biểu	Trình bày kết quả báo cáo về doanh thu và sử dụng thuốc
+13	Màn hình thiết lập	Màn hình nhập liệu	Cho phép nhập và lưu trữ thông tin về số lượng bệnh nhân tối đa trong ngày, tiền khám và tỷ lệ tính đơn giá bán thuốc mới
+
+
 
 
 5.3	Mô tả các màn hình
 5.3.1 Màn hình khởi động
 		5.3.1.1 Giao diện
  
-
 		5.3.1.2 Mô tả các đối tượng trên màn hình
 STT	Tên	Kiểu	Ràng buộc	Chức năng
-1	pbCheckConnect	ProgressBar	Không có	Báo cáo tiến độ của quá trình kết nối đế2n máy chủ
-2	lDisconnecting	Label	Không có	Hiển thị chuỗi ký tự thông báo mất kết nối đến máy chủ
-3	lRecommend	Label	Không có	Hiển thị chuỗi ký tự hướng dẫn người dùng thoát chương trình
-4	bReconnectServer	Button	Không có	Kết nối lại đến server
+1	pbConnectServer	ProgressBar	Không có	Hiển thị tiến độ của quá trình kết nối đến máy chủ
+2	lNotifyDisconnection	Label	Không có	Hiển thị chuỗi ký tự thông báo mất kết nối đến máy chủ
+3	lInstructToExitProgram	Label	Không có	Hiển thị chuỗi ký tự hướng dẫn người dùng thoát chương trình
+4	bReconnectServer	Button	Không có	Kết nối lại đến máy chủ
 
 		5.3.1.3 Danh sách biến cố và xử lý tương ứng trên màn hình
 STT	Biến cố	Xử lý
-1	Kết nối server thành công	Thanh tiến độ đạt tối đa và hiển thị Màn hình danh sách chức năng
-2	Kết nối server thất bại	Thanh tiến độ trở về cực tiểu, hiển thị button Mất kết nối, hiển thị chỉ thị mất kết nối và hiển thị hướng dẫn thoát chương trình
-3	Chọn button Kết nối lại	Tiến hành gởi lệnh kết nối đến server
+1	Kết nối máy chủ thành công	Thanh tiến độ đạt tối đa và hiển thị màn hình hiển thị danh sách chức năng
+2	Kết nối máy chủ thất bại	Thanh tiến độ đạt tối thiểu, hiển thị nút mất kết nối, hiển thị thông báo mất kết nối và hiển thị hướng dẫn thoát chương trình
+3	Nhấn nút kết nối lại	Tiến hành gửi lệnh kết nối đến máy chủ
 
-5.3.2 Màn hình Danh sách các chức năng
+5.3.2 Màn hình hiển thị danh sách chức năng
 		5.3.2.1 Giao diện
  
 
-		5.3.2.2 Mô tả các đối tượng trên màn hình
+		
+
+
+
+5.3.2.2 Mô tả các đối tượng trên màn hình
 STT	Tên	Kiểu	Ràng buộc	Chức năng
-1	bMedicalExaminationList	Button	Không có	Hiển thị màn hình Danh sách khám bệnh
-2	bSetMedicalExamination	Button	Không có	Hiển thị màn hình Lập phiếu khám bệnh
-3	bSetInvolke	Button	Không có	Hiển thị màn hình Lập phiếu thanh toán
-4	bInputMedical	Button	Không có	Hiển thị màn hình Nhập thuốc
-5	bPatientLookup	Button	Không có	Hiển thị màn hình Tra cứu bệnh nhân
-6	bSetReport	Button	Không có	Hiển thị màn hình Lập báo cáo
-7	bSetting	Button	Không có	Hiển thị màn hình Thiết lập
-8	bCancel	Button	Không có	Kết thức chương trình
+1	bCreateMedicalExaminationList	Button	Không có	Hiển thị màn hình lập danh sách khám bệnh
+2	bCreateMedicalExaminationSlip	Button	Không có	Hiển thị màn hình lập phiếu khám bệnh
+3	bCreateInvoice	Button	Không có	Hiển thị màn hình lập hóa đơn thanh toán
+4	bCreateImportedMedicineSlip	Button	Không có	Hiển thị màn hình lập phiếu nhập thuốc
+5	bFindPatient	Button	Không có	Hiển thị màn hình tra cứu bệnh nhân
+6	bCreateReport	Button	Không có	Hiển thị màn hình lập báo cáo
+7	bSetting	Button	Không có	Hiển thị màn hình thiết lập
+8	bCancel	Button	Không có	Kết thúc chương trình
 
 		5.3.2.3 Danh sách biến cố và xử lý tương ứng trên màn hình
 STT	Biến cố	Xử lý
-1	Chọn Button Lập danh sách khám bệnh	Hiển thị màn hình Danh sách khám bệnh
-2	Chọn Button Lập phiếu khám bệnh	Hiển thị màn hình Lập phiếu khám bệnh
-3	Chọn Button Lập hóa đơn thanh toán	Hiển thị màn hình Lập phiếu thanh toán
-4	Chọn Button Nhập thuốc	Hiển thị màn hình Nhập thuốc
-5	Chọn Button Tra cứu bệnh nhân	Hiển thị màn hình Tra cứu bệnh nhân
-6	Chọn Button Lập báo cáo	Hiển thị màn hình Lập báo cáo
-7	Chọn Button Thiết lập	Hiển thị màn hình Thiết lập
-8	Chọn Button Thoát	Kết thức chương trình
+1	Nhấn nút lập danh sách khám bệnh	Hiển thị màn hình lập danh sách khám bệnh
+2	Nhấn nút lập phiếu khám bệnh	Hiển thị màn hình lập phiếu khám bệnh
+3	Nhấn nút lập hóa đơn thanh toán	Hiển thị màn hình lập hóa đơn thanh toán
+4	Nhấn nút lập phiếu nhập thuốc	Hiển thị màn hình lập phiếu nhập thuốc
+5	Nhấn nút tra cứu bệnh nhân	Hiển thị màn hình tra cứu bệnh nhân
+6	Nhấn nút lập báo cáo	Hiển thị màn hình lập báo cáo
+7	Nhấn nút thiết lập	Hiển thị màn hình thiết lập
+8	Nhấn nút thoát	Kết thúc chương trình
 
 5.3.3 Màn hình Lập danh sách khám bệnh
 		5.3.3.1 Giao diện
  
-
-		5.3.2.2 Mô tả các đối tượng trên màn hình
+		5.3.3.2 Mô tả các đối tượng trên màn hình
 STT	Tên	Kiểu	Ràng buộc	Chức năng
-1	dtpSickDay	DateTimePicker	Không có	Chọn ngày khám bệnh
-2	cbFindIdPatient	ComboBox	Không có	Nhập mã khám bệnh
-3	cbFindPatient	ComboBox	Không có	Nhập họ tên bệnh nhân
-4	bFind	Button	Không có	Thực hiện tìm kiếm bệnh nhân
-5	bAddPatient	Button	Không có	Hiển thị màn hình Thêm mới bệnh nhân
-6	bRegisterPatient	Button	Không có	Thêm bệnh nhân được chọn vào danh sách khám bệnh
-7	dgvPatientList	DataGridView	Không có	Hiển thi danh sách các bệnh nhân phù hợp với tiêu chuẩn tìm kiếm
-8	dgvMedicalExaminationList	DataGridView	Không có	Hiển thị danh sách khám bệnh trong ngày
-9	bCancel	Button	Không có	Thoát khỏi màn hình Danh sách khám bệnh
-10	fbFindPatient	GroupBox	Không có	Nhóm thông tin tìm kiếm bệnh nhân
-11	lTitle	Label	Không có 	Hiển thị tiêu đề
-12	lInputIdPatient	Label	Không có	Hiển thị chỉ thị nhập mã bệnh nhân
-13	lInputPatientName	Label	Không có	Hiển thị nhập tên bệnh nhân
-14	lDaySick	Label	Không có	Hiển thị chỉ thị ngày khám bệnh
+1	lTitle	Label	Không có 	Hiển thị tiêu đề
+2	bCancel	Button	Không có	Thoát khỏi màn hình lập danh sách khám bệnh
+3	gbFindPatient	GroupBox	Không có	Nhóm các đối tượng dùng để tra cứu bệnh nhân
+4	lImportPatientID	Label	Không có	Hiển thị chú thích nhập mã bệnh nhân
+5	cbImportPatientID	ComboBox	Chỉ nhận giá trị mã bệnh nhân đã lưu trữ	Nhập mã bệnh nhân
+6	lImportPatient
+Name	Label	Không có	Hiển thị chú thích nhập họ và tên bệnh nhân
+7	cbImportPatient
+Name	ComboBox	Chỉ nhận giá trị họ và tên bệnh nhân đã lưu trữ	Nhập họ và tên bệnh nhân
+8	bFind	Button	Không có	Tra cứu bệnh nhân
+9	bReset	Button	Không có	Xóa dữ liệu hiện tại trong các đối tượng nhập liệu
+10	lChooseMedical
+ExaminationDate	Label	Không có	Hiển thị chú thích chọn ngày khám bệnh
+11	dtpChooseMedicalExaminationDate	DateTimePicker	Chỉ được chọn ngày lớn hơn hoặc bằng ngày hiện tại	Chọn ngày khám bệnh
+12	bAddPatient	Button	Không có	Hiển thị màn hình thêm bệnh nhân
+13	bRegisterPatient	Button	Không có	Thêm bệnh nhân được chọn vào danh sách khám bệnh
+14	pPatientList	Panel	Không có	Nhóm các đối tượng dùng để hiển thị danh sách bệnh nhân
+15	lPatientList	Label	Không có	Hiển thị tên bảng danh sách bệnh nhân
+16	dgvPatientList	DataGridView	Không có	Hiển thị danh sách các bệnh nhân phù hợp với tiêu chuẩn tra cứu
+17	pMedical
+ExaminationList	Panel	Không có	Nhóm các đối tượng dùng để hiển thị danh sách khám bệnh
+18	lMedical
+ExaminationList	Label	Không có	Hiển thị tên bảng danh sách khám bệnh
+19	dgvMedical
+ExaminationList	DataGridView	Không có	Hiển thị danh sách khám bệnh trong ngày
 
-		5.3.2.3 Danh sách biến cố và xử lý tương ứng trên màn hình
+
+5.3.3.3 Danh sách biến cố và xử lý tương ứng trên màn hình
 STT	Biến cố	Xử lý
-1	Chọn ComboBox Nhập mã khám bệnh	Hiển thị danh sách mã khám bệnh có sẵn, gợi ý nhập
-2	Chọn DateTimePicker Ngày khám bệnh	HIển thị hộp thoại chọn ngày tháng năm
-3	Chọn ComboBox Nhập họ tên bệnh nhân	Hiển thị danh sách tên bệnh nhân có sẵn, gợi ý nhập
-4	Chọn Button Tìm kiếm	Thực hiện tìm kiếm bệnh nhân có trong danh sách bệnh nhân
-5	Chọn Button Thêm mới bệnh nhân	Hiển thị màn hình Thêm mới bệnh nhân
-6	Chọn Button Ghi danh 	Thêm bệnh nhân được chọn từ danh sách bệnh nhân sang danh sách khám bệnh
-9 	Chọn Button Thoát	Thoát khỏi màn hình Danh sách khám bệnh
+1 	Nhấn nút thoát	Thoát khỏi màn hình lập danh sách khám bệnh
+2	Nhấn nút mũi tên của ComboBox nhập mã bệnh nhân	Hiển thị danh sách mã bệnh nhân có sẵn
+3	Nhập dữ liệu vào ComboBox nhập mã bệnh nhân	Hiển thị danh sách mã bệnh nhân có sẵn và gợi ý nhập
+4	Nhấn nút mũi tên của ComboBox nhập họ và tên bệnh nhân	Hiển thị danh sách họ và tên bệnh nhân có sẵn
+5	Nhập dữ liệu vào ComboBox nhập họ và tên bệnh nhân	Hiển thị danh sách họ và tên bệnh nhân có sẵn và gợi ý nhập
+6	Nhấn nút tra cứu bệnh nhân	Tra cứu bệnh nhân
+7	Nhấn nút làm mới	Xóa dữ liệu hiện tại trong các đối tượng nhập liệu
+8	Nhấn vào DateTimePicker chọn ngày khám bệnh	Hiển thị hộp thoại chọn ngày khám bệnh
+9	Nhấn nút thêm mới bệnh nhân	Hiển thị màn hình thêm bệnh nhân
+10	Nhấn nút ghi danh 	Thêm bệnh nhân được chọn từ danh sách bệnh nhân vào danh sách khám bệnh
 
-5.3.4 Màn hình Thêm mới bệnh nhân
+
+
+
+
+
+5.3.4 Màn hình thêm bệnh nhân
 		5.3.4.1 Giao diện
  
-
 		5.3.4.2 Mô tả các đối tượng trên màn hình
 STT	Tên	Kiểu	Ràng buộc	Chức năng
-1	tbName	TextBox	Chỉ nhận các ký tư A-Z và a-z	Nhập tên bệnh nhân
-2	cbSex	ComboBox	Không có	Chọn giới tính
-3	dtpDate	DateTimePicker	Không có	Chọn ngày sinh cho bệnh nhân
-4	tbAddress	TextBox	Không có	Nhập địa chỉ bệnh nhân
-5	bRefresh	Button	Không có	Xóa những nội dung trong các ô
-6	bSave	Button	Không có	Lưu dữ liệu của bệnh nhân và cơ sở dữ liệu
-7	bCancel	Button	Không có	Thoát khỏi màn hình thêm bệnh nhân mới
-8	lName	Label	Không có	Hiển thị chỉ thị họ tên bệnh nhân
-9	lSex	Label	Không có	Hiển thị chỉ thị giới tính bệnh nhân
-10	lDate	Label	Không có	Hiển thị chỉ thị ngày sinh bệnh nhân
-11	lAddress	Label	Không có	Hiển thị chỉ thị địa chỉ bệnh nh
-12	lTitle	Label	Không có	Hiển thị tiêu đề
+1	lTitle	Label	Không có	Hiển thị tiêu đề
+2	bCancel	Button	Không có	Thoát khỏi màn hình thêm bệnh nhân
+3	lName	Label	Không có	Hiển thị chú thích nhập họ và tên bệnh nhân
+4	tbName	TextBox	Chỉ nhận các ký tự 
+A-Z và a-z	Nhập họ và tên bệnh nhân
+5	lSex	Label	Không có	Hiển thị chú thích nhập giới tính bệnh nhân
+6	cbSex	ComboBox	Chỉ nhận giá trị nam, nữ hoặc khác	Nhập giới tính bệnh nhân
+7	lBirthday	Label	Không có	Hiển thị chú thích chọn ngày sinh bệnh nhân
+8	dtpBirthday	DateTimePicker	Chỉ được chọn ngày nhỏ hơn hoặc bằng ngày hiện tại	Chọn ngày sinh bệnh nhân
+9	lAddress	Label	Không có	Hiển thị chú thích nhập địa chỉ bệnh nhân
+10	tbAddress	TextBox	Không có	Nhập địa chỉ bệnh nhân
+11	bReset	Button	Không có	Xóa dữ liệu hiện tại trong các đối tượng nhập liệu
+12	bSave	Button	Không có	Lưu thông tin của bệnh nhân
 
-		5.3.2.3 Danh sách biến cố và xử lý tương ứng trên màn hình
+		5.3.4.3 Danh sách biến cố và xử lý tương ứng trên màn hình
 STT	Biến cố	Xử lý
-1	Chọn TextBox Họ tên	Nhập họ và tên bệnh nhân
-2	Chọn ComboBox giới tính	Chọn giới tính bệnh nhân
-3	Chọn DateTimePicker Ngày sinh	Chọn ngày sinh bệnh nhân
-4	Chọn TextBox Địa chỉ	Nhập địa chỉ bệnh nhân
-5	Chọn Button Thêm mới	Làm mới tất cả các trường nhận thông tin bệnh nhân
-6	Chọn Button Lưu lại	Lưu thông tin vừa nhập xuống cơ sở dữ liệu
-7	Chọn Button Thoát	Thoát khỏi màn hình
+1	Nhấn nút thoát	Thoát khỏi màn hình thêm bệnh nhân
+2	Nhấn nút mũi tên của ComboBox nhập giới tính bệnh nhân	Hiển thị danh sách giới tính có sẵn
+3	Nhập dữ liệu vào ComboBox nhập giới tính bệnh nhân	Hiển thị danh sách giới tính có sẵn và gợi ý nhập
+4	Nhấn nút làm mới	Xóa dữ liệu hiện tại trong các đối tượng nhập liệu
+5	Nhấn nút lưu	Lưu thông tin bệnh nhân vừa nhập xuống cơ sở dữ liệu
 
-5.3.5 Màn hình Lập phiếu khám bệnh
+
+5.3.5 Màn hình lập phiếu khám bệnh
 		5.3.5.1 Giao diện
  
-
-		5.3.5.2 Mô tả các đối tượng trên màn hình
+5.3.5.2 Mô tả các đối tượng trên màn hình
 STT	Tên	Kiểu	Ràng buộc	Chức năng
 1	lTitle	Label	Không có	Hiển thị tiêu đề
-2	bCancel	Button	Không có	Thoát khỏi màn hình
-3	gbInforPatient	Label	Không có	Nhóm thông tin bệnh nhân
-4	lName	Label	Không có	Hiển thị chỉ thị họ tên
-5	lSex	Label	Không có	Hiển thị chỉ thị giới tính
-6	lDate	Label	Không có	Hiển thị chỉ thị giới tính
-7	lAddress	Label	Không có	Hiển thị chỉ thị địa chỉ
-8	bCancelPatient	Button	Không có	Hủy khám bệnh nhân
-9	lPatientWaiting	Label	Không có	Hiển thị chỉ thị danh sách bệnh nhân chờ khám
-10	dgvPatientWaiting	DataGridView	Không có	Hiển thị danh sách bệnh nhân đang chờ khám trong ngày
-11	gbInforMedicalExam	GroupBox	Không có	Nhóm các thông tin phiếu khám
-12	lIdMedicalExam	Label	Không có	Hiển thị chỉ thị mã khám
-13	tbIdMedicalExam	TextBox	Không có	Hiển thị mã khám bệnh được cấp phát tự động
-14	lDaySick	TextBox	Không có	Hiển thị ngày khám bệnh
-15	bSave	Button	Không có	Lưu lại phiếu khám bệnh
-16	lSignalSick	Label	Không có	Hiển thị chỉ thị triệu chứng
-17	tbSignalSick	TextBox	Không có	Nhập triệu chứng bệnh
-18	lTypleSick	Label	Không có	Hiển thị chỉ thị chẩn đoán loại bệnh
-19	cbTypeSick	ComboBox	Không có	Chọn loại bệnh
-20	bAddTypeSick	Button	Không có	Thêm một loại bệnh mới
-21	gbMedicalBill	GroupBox	Không có	Nhóm thông tin thuốc
-22	lIdMedical	Label	Không có	Hiển thị chỉ thị mã thuốc
-23	tbIdMedical	TextBox	Không có	Hiển thị mã thuốc
-24	lMedicalName	Label	Không có	Hiển thị chỉ thị tên thuốc
-25	cbMedicalName	ComboBox	Không có	Chọn tên thuốc
-26	lMedicalNum	Label	Không có	Hiển thị chỉ thị số lượng thước sử dụng
-22	tbMedicalNum	TextBox	Không có	Nhập số lượng sử dụng thuốc
-23	cbUseWay	Label	Không có	Hiển thị chỉ thị cách dùng
-24	cbUseWay	ComboBox	Không có	Chọn cách dùng
-25	bAddUseWay	Button	Không có	Thêm cách dùng mới
-26	bRefresh	Button	Không có	Xóa dữ liệu các trường nhập trong nhóm đơn thuốc
-27	bAddInto	Button	Không có	Thêm thuốc vào đơn thuốc
-28	bEditMedical	Button	Không có	Sửa loại thuốc đã nhập
-29	bDeleteMedical	Button	Không có	Xóa loại thuốc đã nhập
-30	dgvMedicalList	DataGridView	Không có	Danh sách đơn thuốc
-31	tbSumMedicalMoney	TextBox	Không có	Hiển thị tổng tiền thuốc
-32	lSumMedicalMoney	Label	Không có	Hiển thị chỉ thị tổng tiền thuốc
+2	bCancel	Button	Không có	Thoát khỏi màn hình lập phiếu khám bệnh
+3	gbInfoPatient	GroupBox	Không có	Nhóm các đối tượng dùng để hiển thị thông tin bệnh nhân
+4	lName	Label	Không có	Hiển thị chú thích hiển thị họ và tên bệnh nhân
+5	tbName	TextBox	Không có	Hiển thị họ và tên bệnh nhân
+6	lSex	Label	Không có	Hiển thị chú thích hiển thị giới tính bệnh nhân
+7	cbSex	ComboBox	Không có	Hiển thị giới tính bệnh nhân
+8	lBirthday	Label	Không có	Hiển thị chú thích hiển thị ngày sinh bệnh nhân
+9	dtpBirthday	DateTimePicker	Không có	Hiển thị ngày sinh bệnh nhân
+10	lAddress	Label	Không có	Hiển thị chú thích hiển thị địa chỉ bệnh nhân
+11	tbAddress	TextBox	Không có	Hiển thị địa chỉ bệnh nhân
+12	bCancelMedical
+Examination	Button	Không có	Hủy lập phiếu khám bệnh cho bệnh nhân có thông tin được hiển thị
+13	pMedical
+ExaminationList	Panel	Không có	Nhóm các đối tượng dùng để hiển thị danh sách khám bệnh
+14	lMedical
+ExaminationList	Label	Không có	Hiển thị tên bảng danh sách khám bệnh
+15	dgvMedical
+ExaminationList	DataGridView	Không có	Hiển thị danh sách khám bệnh
+16	lChooseMedical
+ExaminationDate	Label	Không có	Hiển thị chú thích chọn ngày khám bệnh
+17	dtpChooseMedical
+ExaminationDate	DateTimePicker	Chỉ được chọn ngày lớn hơn hoặc bằng ngày hiện tại	Hiển thị hộp thoại chọn ngày khám bệnh
+18	pInfoMedical
+ExaminationSlip	Panel	Không có	Nhóm các đối tượng dùng để lập phiếu nhập thuốc
+19	gbInfoMedical
+ExaminationSlip	GroupBox	Không có	Nhóm các đối tượng dùng để lập phiếu nhập thuốc
+20	lSignalSick	Label	Không có	Hiển thị chú thích nhập triệu chứng bệnh
+21	tbSignalSick	TextBox	Không có	Nhập triệu chứng bệnh
+22	lTypeSick	Label	Không có	Hiển thị chú thích nhập chẩn đoán loại bệnh
+23	cbTypeSick	ComboBox	Chỉ nhận giá trị tên loại bệnh đã lưu trữ	Nhập loại bệnh
+24	bAddTypeSick	Button	Không có	Thêm loại bệnh 
+25	pUsedMedincine	Panel	Không có	Nhóm các đối tượng dùng để thêm thuốc vào danh sách thuốc sử dụng
+26	gbUsedMedicine	GroupBox	Không có	Nhóm các đối tượng dùng để nhập thông tin thuốc được sử dụng
+27	lMedicineName	Label	Không có	Hiển thị chú thích nhập tên thuốc
+28	cbMedicineName	ComboBox	Chỉ nhận giá trị tên thuốc đã lưu trữ	Nhập tên thuốc
+29	lQuantityOfMedicine	Label	Không có	Hiển thị chú thích nhập số lượng thuốc
+30	tbQuantityOf
+Medicine	TextBox	Chỉ nhận các ký tự 0-9, giá trị lớn hơn 0 và nhỏ hơn số lượng tồn của thuốc được nhập	Nhập số lượng thuốc
+31	lUseWay	Label	Không có	Hiển thị chú thích nhập cách dùng
+32	cbUseWay	ComboBox	Chỉ nhận giá trị cách dùng đã lưu trữ	Nhập cách dùng
+33	bAddUseWay	Button	Không có	Thêm cách dùng
+34	bReset	Button	Không có	Xóa dữ liệu hiện tại trong các đối tượng nhập liệu
+35	bAddMedicine	Button	Không có	Thêm thuốc vào danh sách thuốc sử dụng
+36	pUsedMedicineList	Panel	Không có	Nhóm các đối tượng dùng để hiển thị danh sách thuốc sử dụng và tổng tiền thuốc
+37	lUsedMedicineList	Label	Không có	Nhóm các đối tượng dùng để hiển thị danh sách thuốc sử dụng
+38	dgvUsedMedicineList	DataGridView	Không có	Hiển thị danh sách thuốc sử dụng
+39	lSumMedicineMoney	Label	Không có	Hiển thị chú thích hiển thị tổng tiền thuốc
+40	tbSumMedicine
+Money	TextBox	Không có	Hiển thị tổng tiền thuốc
 
-		5.3.5.3 Danh sách biến cố và xử lý tương ứng trên màn hình
+5.3.5.3 Danh sách biến cố và xử lý tương ứng trên màn hình
 STT	Biến cố	Xử lý
-1	Chọn Button Thoát	Thoát khỏi màn hình
-2	Chọn Button Hủy khám	Xóa bệnh nhân ra khỏi hàng chờ
-3	Chọn Button Lưu lại	Lưu thông tin xuống cơ sở dữ liệu và có thể in phiếu
-4	Chọn Button Thêm mới loại bệnh	Hiển thị màn hình Thêm loại bệnh
-5	Chọn Button Thêm các dùng mới	Hiển thị màn hình Thêm cách dùng
-6	Chọn Button Thêm mới	Làm rỗng các trường nhập trong nhóm đơn thuốc
-7	Chọn Button Thêm vào đơn	Kiểm tra và thêm loại thuốc vừa nhập vào đơn thuốc
-8	Chọn Button Chỉnh sửa	Cho phép chỉnh sửa loại thuốc và thay đổi tên button thành Lưu lại
-9	Chọn Button Xóa	Xóa loại thuốc khỏi đơn thuốc
+1	Nhấn nút thoát	Thoát khỏi màn hình lập phiếu khám bệnh
+2	Nhấn nút hủy	Hủy lập phiếu khám bệnh cho bệnh nhân có thông tin được hiển thị
+3	Chọn ngày khám bệnh	Hiển thị danh sách khám bệnh của ngày được chọn
+4	Chọn bệnh nhân trong danh sách khám bệnh	Hiển thị thông tin bệnh nhân trong GroupBox thông tin bệnh nhân
+5	Nhấn nút mũi tên của ComboBox chẩn đoán loại bệnh	Hiển thị danh sách loại bệnh có sẵn
+6	Nhập dữ liệu vào ComboBox chẩn đoán loại bệnh	Hiển thị danh sách loại bệnh có sẵn và gợi ý nhập
+7	Nhấn nút thêm loại bệnh	Hiển thị màn hình thêm loại bệnh
+8	Nhấn nút mũi tên của ComboBox tên thuốc	Hiển thị danh sách tên thuốc có sẵn
+9	Nhập dữ liệu vào ComboBox tên thuốc	Hiển thị danh sách tên thuốc có sẵn và gợi ý nhập
+10	Nhấn nút mũi tên của ComboBox cách dùng	Hiển thị danh sách cách dùng có sẵn
+11	Nhập dữ liệu vào ComboBox cách dùng	Hiển thị danh sách cách dùng có sẵn và gợi ý nhập
+12	Nhấn nút thêm cách dùng	Hiển thị màn hình thêm cách dùng
+13	Nhấn nút làm mới	Xóa dữ liệu hiện tại trong các đối tượng nhập thông tin thuốc
+14	Nhấn nút lưu	Thêm thông tin thuốc vừa nhập vào danh sách thuốc sử dụng
 
-5.3.6 Màn hình Thêm cách dùng
+5.3.6 Màn hình thêm loại bệnh
 		5.3.6.1 Giao diện
  
-
 		5.3.6.2 Mô tả các đối tượng trên màn hình
 STT	Tên	Kiểu	Ràng buộc	Chức năng
 1	lTitle	Label	Không có	Hiển thị tiêu đề
-2	bCancel	Button	Không có	Thóa khỏi màn hình
-3	lUseWayName	Label	Không có	Hiển thị chỉ thị tên cách dùng
-4	tbUseWayName	TextBox	Không có	Nhập tên cách dùng
-5	bRefresh	Button	Không có	Xóa nội dung đã nhập trên màn hình
-6	bSave	Button	Không có	Lưu lại cách dùng mới
+2	bCancel	Button	Không có	Thoát khỏi màn hình thêm loại bệnh
+3	lTypeSickName	Label	Không có	Hiển thị chú thích nhập tên loại bệnh
+4	tbTypeSickName	TextBox	Không có	Nhập tên loại bệnh
+5	bReset	Button	Không có	Xóa dữ liệu hiện tại trong các đối tượng nhập liệu
+6	bSave	Button	Không có	Lưu loại bệnh
 
-		5.3.6.3 Danh sách biến cố và xử lý tương ứng trên màn hình
+5.3.6.3 Danh sách biến cố và xử lý tương ứng trên màn hình
 STT	Biến cố	Xử lý
-1	Chọn Button Thêm mới	Xóa các nội dung trên màn hình
-2	Chọn Button Lưu lại	Lưu lại nội dung vào cơ sở dữ liệu
-3	Chọn Button Thoát	Thoát khỏi màn hình
+1	Nhấn nút thoát	Thoát khỏi màn hình thêm loại bệnh
+2	Nhấn nút làm mới	Xóa dữ liệu hiện tại trong các đối tượng nhập liệu
+3	Nhấn nút lưu	Lưu loại bệnh xuống cơ sở dữ liệu
 
-5.3.7 Màn hình Thêm loại bệnh
+5.3.7 Màn hình thêm cách dùng
 		5.3.7.1 Giao diện
  
-
 		5.3.7.2 Mô tả các đối tượng trên màn hình
 STT	Tên	Kiểu	Ràng buộc	Chức năng
 1	lTitle	Label	Không có	Hiển thị tiêu đề
-2	bCancel	Button	Không có	Thóa khỏi màn hình
-3	lSickName	Label	Không có	Hiển thị chỉ thị tên cách dùng
-4	tbSickName	TextBox	Không có	Nhập tên loại bệnh
-5	bRefresh	Button	Không có	Xóa nội dung đã nhập trên màn hình
-6	bSave	Button	Không có	Lưu lại cách dùng mới
+2	bCancel	Button	Không có	Thoát khỏi màn hình thêm cách dùng
+3	lUseWayName	Label	Không có	Hiển thị chú thích nhập tên cách dùng
+4	tbUseWayName	TextBox	Không có	Nhập tên cách dùng
+5	bReset	Button	Không có	Xóa dữ liệu hiện tại trong các đối tượng nhập liệu
+6	bSave	Button	Không có	Lưu cách dùng
 
-		5.3.6.3 Danh sách biến cố và xử lý tương ứng trên màn hình
+		5.3.7.3 Danh sách biến cố và xử lý tương ứng trên màn hình
 STT	Biến cố	Xử lý
-1	Chọn Button Thêm mới	Xóa các nội dung trên màn hình
-2	Chọn Button Lưu lại	Lưu lại nội dung vào cơ sở dữ liệu
-3	Chọn Button Thoát	Thoát khỏi màn hình
-
-5.3.8 Màn hình Lập hóa đơn thanh toán
+1	Nhấn nút thoát	Thoát khỏi màn hình thêm cách dùng
+2	Nhấn nút làm mới	Xóa dữ liệu hiện tại trong các đối tượng nhập liệu
+3	Nhấn nút lưu	Lưu cách dùng xuống cơ sở dữ liệu
+5.3.8 Màn hình lập hóa đơn thanh toán
 		5.3.8.1 Giao diện
  
-
 		5.3.8.2 Mô tả các đối tượng trên màn hình
 STT	Tên	Kiểu	Ràng buộc	Chức năng
 1	lTitle	Label	Không có	Hiển thị tiêu đề
-2	bCancel	Button	Không có	Thoát khỏi màn hình
-3	dtpSickDay	DateTimePicker	Không có	Chọn ngày khám bệnh
-3	lSickDay	Label	Không có	Hiển thị chỉ thị ngày khám bệnh
-4	gbPatient	GroupBox	Không có	Nhóm thông tin tiếm kiếm bệnh nhân
-5	lIdMedicalExam	Label	Không có	Hiển thị chỉ thị mã khám
-6	cbIdMedicalExam	ComboBox	Không có	Nhập hoặc chọn mã khám
-7	lPatientName	Label	Không có	Hiển thị chỉ thị họ tên bệnh nhân
-8 	tbPatientName	TextBox	Không có	Nhập họ tên bệnh nhân
-9	bRefresh	Button	Không có	Xóa các trường trong nhóm tìm kiếm bệnh nhân
-10	bFind	Button	Không có	Thực hiện tìm kiếm bệnh nhân từ cơ sở dữ liệu
-11	dgvPatientExamed	DataGridView	Không có	Đọc và hiển thị danh sách các phiếu khám bệnh của bệnh nhân từ cơ sở dữ liệu
-12	dgvMedicalList	DataGridView	Không có	Hiển thị đơn thuốc tương ứng với phiếu khám
-13	gbTotalMoney	GroupBox	Không có	Nhóm các chi phí khám bệnh
-14	lTotalExamMoney	Label	Không có	Hiển thị chỉ thĩ tổng tiền khám
-15	tbTotalMoneyExam	TextBox	Không có	Hiển thị tiền khám bệnh
-16	lTotalMedicalMoney	Label	Không có	Hiển thị chỉ thị tổng tiền thuốc
-17	tbTotalMoneyMedical	TextBox	Không có	Hiển thị tổng tiền thuốc
-18	lTotal	Label	Không có	Hiển thị chỉ thị tổng cộng
-19	tbTotal	TextBox	Không có	Hiển thị tổng cộng
-20	bPay	Button	Không có	Thực hiện thanh toán phiếu khám
+2	bCancel	Button	Không có	Thoát khỏi màn hình lập hóa đơn thanh toán
+3	lChooseMedical
+ExaminationDate	Label	Không có	Hiển thị chú thích chọn ngày khám bệnh
+4	dtpChooseMedical
+ExaminationDate	DateTimePicker	Chỉ được chọn ngày lớn hơn hoặc bằng ngày hiện tại	Hiển thị hộp thoại chọn ngày khám bệnh
+5	gbFindMedical
+ExaminationSlip	GroupBox	Không có	Nhóm các đối tượng dùng để tra cứu phiếu khám bệnh
+6	lImportMedical
+ExaminationSlipID	Label	Không có	Hiển thị chú thích nhập mã phiếu khám bệnh
+7	cbImportMedical
+ExaminationSlipID	ComboBox	Chỉ nhận giá trị mã phiếu khám bệnh đã lưu trữ	Nhập mã phiếu khám bệnh
+8	lImportPatient
+Name	Label	Không có	Hiển thị chú thích nhập họ và tên bệnh nhân
+9	cbImportPatient
+Name	ComboBox	Chỉ nhận giá trị họ và tên bệnh nhân đã lưu trữ	Nhập họ và tên bệnh nhân
+10	bFind	Button	Không có	Tra cứu phiếu khám bệnh
+11	bReset	Button	Không có	Xóa dữ liệu hiện tại trong các đối tượng nhập liệu
+12	pMedical
+ExaminationSlip
+List	Panel	Không có	Nhóm các đối tượng dùng để hiển thị danh sách phiếu khám bệnh
+13	lMedical
+ExaminationSlip
+List	Label	Không có	Hiển thị tên bảng danh sách phiếu khám bệnh
+14	dgvMedical
+ExaminationSlip
+List	DataGridView	Không có	Hiển thị danh sách phiếu khám bệnh
+15	pUsedMedicineList	Panel	Không có	Nhóm các đối tượng dùng để hiển thị danh sách thuốc sử dụng
+16	lUsedMedicineList	Label	Không có	Hiển thị tên bảng danh sách thuốc sử dụng
+17	dgvUsedMedicineList	DataGridView	Không có	Hiển thị danh sách thuốc sử dụng
+18	pMedical
+ExaminationCost	Panel	Không có	Nhóm các đối tượng dùng để hiển thị chi phí khám bệnh
+19	gbMedical
+ExaminationCost	GroupBox	Không có	Nhóm các đối tượng dùng để hiển thị chi phí khám bệnh
+20	lMedical
+Examination
+Money	Label	Không có	Hiển thị chú thích hiển thị tiền khám bệnh
+21	tbMedical
+Examination
+Money	TextBox	Không có	Hiển thị tiền khám bệnh
+22	lTotalMedicine
+Money	Label	Không có	Hiển thị chú thích hiển thị tổng tiền thuốc
+23	tbTotalMedicine
+Money	TextBox	Không có	Hiển thị tổng tiền thuốc
+24	lTotalMoney	Label	Không có	Hiển thị chú thích hiển thị tổng tiền
+25	tbTotalMoney	TextBox	Không có	Hiển thị tổng tiền
+26	bSave	Button	Không có	Lưu hóa đơn thanh toán
 
 		5.3.8.3 Danh sách biến cố và xử lý tương ứng trên màn hình
 STT	Biến cố	Xử lý
-1	Chọn Button Làm mới	Xóa các nội dung trên nhóm tìm kiếm phiếu khám bệnh
-2	Chọn Button Tìm kiếm	Tìm kiếm phiếu khám bệnh cho bệnh nhân
-3	Chọn Button Thoát	Thoát khỏi màn hình
-4	Chọn Button Thanh toán	Tiến hành tạo và lưu hóa đơn vào cơ sở dữ liệu
+1 	Nhấn nút thoát	Thoát khỏi màn hình lập hóa đơn thanh toán
+2	Nhấn nút mũi tên của ComboBox nhập mã phiếu khám bệnh	Hiển thị danh sách mã phiếu khám bệnh có sẵn
+3	Nhập dữ liệu vào ComboBox nhập mã phiếu khám bệnh	Hiển thị danh sách mã phiếu khám bệnh có sẵn và gợi ý nhập
+4	Nhấn nút mũi tên của ComboBox nhập họ và tên bệnh nhân	Hiển thị danh sách họ và tên bệnh nhân có sẵn
+5	Nhập dữ liệu vào ComboBox nhập họ và tên bệnh nhân	Hiển thị danh sách họ và tên bệnh nhân có sẵn và gợi ý nhập
+6	Nhấn nút tra cứu phiếu khám bệnh	Tra cứu phiếu khám bệnh
+7	Nhấn nút làm mới	Xóa dữ liệu hiện tại trong các đối tượng nhập liệu
+8	Nhấn vào DateTimePicker chọn ngày khám bệnh	Hiển thị hộp thoại chọn ngày khám bệnh
+9	Chọn phiếu khám bệnh trong danh sách phiếu khám bệnh	Hiển thị danh sách thuốc sử dụng của phiếu khám bệnh đó trong DataGridView hiển thị danh sách thuốc sử dụng
+10	Nhấn nút lưu	Lưu hóa đơn thanh toán xuống cơ sở dữ liệu
 
-
-
-
-
-
-
-
-
-
-
-5.3.9 Màn hình Nhập thuốc
+5.3.9 Màn hình lập phiếu nhập thuốc
 		5.3.9.1 Giao diện
  
-
 		5.3.9.2 Mô tả các đối tượng trên màn hình
 STT	Tên	Kiểu	Ràng buộc	Chức năng
 1	lTitle	Label	Không có	Hiển thị tiêu đề
-2	bCancel	Button	Không có	Thoát khỏi màn hình
-3	gbInputMedical	GroupBox	Không có	Nhóm thông tin thuốc chữa bệnh
-4	lMedicalName	Label	Không có	Hiển thị chỉ thị tên thuốc
-5	tbMedicalName	TextBox	Không có	Nhập tên thuốc
-6	lMedicalUnit	Label	Không có	Hiển thị chỉ thị đơn vị tính
-7	tbMedicalUnit	TextBox	Không có	Nhập hoặc chọn đơn vị tính
-8	lMedicalNum	Label	Không có	HIển thị chỉ thị số lượng
-9	tbMedicalNum	TextBox	Ký tự từ 0 – 9	Nhập số lượng thuốc
-10	lPupMoney	Label	Không có	Hiển thị chỉ thị đơn giá nhập
-11	tbPubMoney	TextBox	Ký tự từ 0 - 9	Nhập đơn giá nhập của thuốc
-12	gbFindMedical	GroupBox	Không có	Nhóm các thông tin tìm kiếm thuốc
-   13	lSellMoney	Label	Không có	Hiển thị chỉ thị đơn giá bán
-14	tbSellMoney	TextBox	Ký tự từ 0 – 9	Nhập đơn giá bán của thuốc
-15	lRate	Label	Không có	Hiển thị chỉ thị tỷ lệ tính
-16	lIdMedical	Label	Không có	Hiển thị chỉ thị mã thuốc
-17	cbIdMedical	ComboBox	Không có	Nhập hoặc chọn mã thuốc
-18	lMedicalName	TextBox	Không có	Nhập tên thuốc
-   19	bRefreshAdd	Button	Không có	Xóa tất cả các trường nhập trong nhóm nhập thuốc chữa bệnh
-20	bSave	Button	Không có	Lưu lại loại thuốc vào cơ sở dữ liệu
-21	bRefreshFind	Button	Không có	Xóa tất cả các trường nhập trong nhóm tìm kiếm thuốc
-22	bFind	Button	Không có	Tìm kiếm thuốc
-23	tbRate	TextBox	Ký tự từ 0 – 9 hoặc ký tự “.”	Nhập tỷ lệ tính
+2	bCancel	Button	Không có	Thoát khỏi màn hình lập phiếu nhập thuốc
+3	pInfoMedicine	Panel	Không có	Nhóm các đối tượng dùng để nhập thông tin thuốc
+4	gbInfoMedicine	GroupBox	Không có	Nhóm các đối tượng dùng để nhập thông tin thuốc
+5	lName	Label	Không có	Hiển thị chú thích nhập tên thuốc
+6	cbName	ComboBox	Không có	Nhập tên thuốc
+7	lUnit	Label	Không có	Hiển thị chú thích nhập đơn vị tính
+8	cbUnit	ComboBox	Chỉ nhận giá trị đơn vị tính đã lưu trữ	Nhập đơn vị tính
+9	bAddUnit	Button	Không có	Thêm đơn vị tính
+10	lQuantityOf
+Input	Label	Không có	Hiển thị chú thích nhập số lượng thuốc
+11	tbQuantityOf
+Input	TextBox	Chỉ nhận các ký tự 0-9 và giá trị lớn hơn 0	Nhập số lượng thuốc
+12	lImportedUnit
+Price	Label	Không có	Hiển thị chú thích nhập đơn giá nhập
+13	tbImportedUnit
+Price	TextBox	Chỉ nhận các ký tự 0-9 và giá trị lớn hơn 0	Nhập đơn giá nhập
+14	lSellableUnit
+Price	Label	Không có	Hiển thị chú thích hiển thị đơn giá bán
+15	tbSellableUnit
+Price	TextBox	Không có	Hiển thị đơn giá bán
+16	lRatioTo
+Calculate
+SellableUnit
+Price	Label	Không có	Hiển thị chú thích nhập tỷ lệ tính đơn giá bán
+17	tbRatioTo
+Calculate
+SellableUnit
+Price	TextBox	Chỉ nhận các ký tự 0-9 và giá trị lớn hơn 100	Nhập tỷ lệ tính đơn giá bán
+18	bReset	Button	Không có	Xóa dữ liệu hiện tại trong các đối tượng nhập liệu
+19	bSave	Button	Không có	Lưu thông tin nhập thuốc
+20	pMedicineList	Panel	Không có	Nhóm các đối tượng dùng để hiển thị danh sách nhập thuốc
+21	lMedicineList	Label	Không có	Hiển thị tên bảng danh sách nhập thuốc
+22	dgvMedicine
+List	DataGrid
+View	Không có	Hiển thị danh sách nhập thuốc
 
 		5.3.9.3 Danh sách biến cố và xử lý tương ứng trên màn hình
 STT	Biến cố	Xử lý
-1	Chọn Button Làm mới	Xóa các nội dung trên nhóm tìm kiếm thuốc
-2	Chọn Button Tìm kiếm	Tìm kiếm phiếu thuốc
-3	Chọn Button Thoát	Thoát khỏi màn hình
-4	Chọn Button Lưu	Tiến hành tạo và thông tin thuốc vào cơ sở dữ liệu
-5	Chọn Button Thêm mới	Xóa nội dụng trong nhóm Nhập thuốc chữa bệnh
+1	Nhấn nút thoát	Thoát khỏi màn hình lập phiếu nhập thuốc
+2	Nhấn nút mũi tên của ComboBox tên thuốc	Hiển thị danh sách tên thuốc có sẵn
+3	Nhập dữ liệu vào ComboBox tên thuốc	Hiển thị danh sách tên thuốc có sẵn và gợi ý nhập
+4	Nhấn nút mũi tên của ComboBox đơn vị tính	Hiển thị danh sách đơn vị tính có sẵn
+5	Nhập dữ liệu vào ComboBox đơn vị tính	Hiển thị danh sách đơn vị tính có sẵn và gợi ý nhập
+6	Nhập đơn giá nhập và tỷ lệ tính đơn giá bán	Hiển thị đơn giá bán
+7	Nhấn nút làm mới	Xóa dữ liệu hiện tại trong các đối tượng nhập liệu
+8	Nhấn nút lưu	Lưu thông tin nhập thuốc xuống cơ sở dữ liệu
 
-5.3.10 Màn hình Thêm đơn vị tính
+
+
+
+
+
+5.3.10 Màn hình thêm đơn vị tính
 		5.3.10.1 Giao diện
  
 
 		5.3.10.2 Mô tả các đối tượng trên màn hình
 STT	Tên	Kiểu	Ràng buộc	Chức năng
 1	lTitle	Label	Không có	Hiển thị tiêu đề
-2	bCancel	Button	Không có	Thoát khỏi màn hình
-3	lUnitName	Label	Không có	Hiển thị chỉ thị Tên đơn vị tính
-4	tbUnitName	TextBox	Không có	Nhập đơn vị tính
-5	bRefresh	Button	Không có	Xóa nội dung trên màn hình
-6	bSave	Button	Không có	Lưu dữ liệu vào cơ sở dữ liệu
+2	bCancel	Button	Không có	Thoát khỏi màn hình thêm đơn vị tính
+3	lUnitName	Label	Không có	Hiển thị chú thích nhập tên đơn vị tính
+4	tbUnitName	TextBox	Không có	Nhập tên đơn vị tính
+5	bReset	Button	Không có	Xóa dữ liệu hiện tại trong các đối tượng nhập liệu
+6	bSave	Button	Không có	Lưu đơn vị tính
 
 		5.3.10.3 Danh sách biến cố và xử lý tương ứng trên màn hình
 STT	Biến cố	Xử lý
-1	Chọn Button Làm mới	Xóa các nội dung nhập trên màn hình
-2	Chọn Button Thoát	Thoát khỏi màn hình
-3	Chọn Button Lưu	Lưu dữ liệu xuống cơ sở dữ liệu
+1	Nhấn nút thoát	Thoát khỏi màn hình thêm đơn vị tính
+2	Nhấn nút làm mới	Xóa dữ liệu hiện tại trong các đối tượng nhập liệu
+3	Nhấn nút lưu	Lưu đơn vị tính xuống cơ sở dữ liệu
 
-5.3.11 Màn hình Thêm đơn vị tính
+5.3.11 Màn hình tra cứu bệnh nhân
 		5.3.11.1 Giao diện
  
-
 		5.3.11.2 Mô tả các đối tượng trên màn hình
 STT	Tên	Kiểu	Ràng buộc	Chức năng
-1	lTitle	Label	Không có	Hiển thị tiêu đề
-2	bCancel	Button	Không có	Thoát khỏi màn hình
-3	lMedicalName	Label	Không có	Hiển thị chỉ thị Tên thuốc
-4	tbMedicalName	TextBox	Không có	Nhập tên thuốc
-5	bRecovery	Button	Không có	Đặt lại các dữ liệu như ban đầu
-6	bSave	Button	Không có	Lưu dữ liệu vào cơ sở dữ liệu
-7	lUnitName	Label	Không có	Hiển thị chỉ thị tên đơn vị tính
-8	cbUnitName	ComboBox	Không có	Nhập hoặc chọn đơn vị tính
-9	lMedicalNum	Label	Không có	Hiển thị chỉ thị số lượng
-10	tbMedicalNum	TextBox	Ký tự từ 0 - 9	Nhập số lượng thuốc
-11	lPupMoney	Label	Không có	Hiển thị chỉ thị đơn giá nhập
-12	tbPubMoney	TextBox	Ký tự từ 0 - 9	Nhập đơn giá nhập của thuốc
-13	lSellMoney	Label	Không có	Hiển thị chỉ thị đơn giá bán
-14	tbSellMoney	TextBox	Ký tự từ 0 - 9	Nhập đơn giá bán của thuốc
-15	lRate	Label	Không có	Hiển thị chỉ thị tỷ lệ tính
-16	tbRate	TextBox	Ký tự từ 0 – 9 hoặc ký tự “.”	Nhập tỷ lệ tính
-17	bAddMedicalUnit	Button	Không có	Hiển thị màn hình Thêm đơn vị tính
+1	lTitle	Label	Không có 	Hiển thị tiêu đề
+2	bCancel	Button	Không có	Thoát khỏi màn hình tra cứu bệnh nhân
+3	gbFindPatient	GroupBox	Không có	Nhóm các đối tượng dùng để tra cứu bệnh nhân
+4	lImportPatientID	Label	Không có	Hiển thị chú thích nhập mã bệnh nhân
+5	cbImportPatientID	ComboBox	Chỉ nhận giá trị mã bệnh nhân đã lưu trữ	Nhập mã bệnh nhân
+6	lImportPatient
+Name	Label	Không có	Hiển thị chú thích nhập họ và tên bệnh nhân
+7	cbImportPatient
+Name	ComboBox	Chỉ nhận giá trị họ và tên bệnh nhân đã lưu trữ	Nhập họ và tên bệnh nhân
+8	bFind	Button	Không có	Tra cứu bệnh nhân
+9	bReset	Button	Không có	Xóa dữ liệu hiện tại trong các đối tượng nhập liệu
+10	cbFindPatientUseMedical
+ExaminationDate	CheckBox	Không có	Xác định có hay không tra cứu bằng ngày khám bệnh
+11	lChooseMedical
+ExaminationDate	Label	Không có	Hiển thị chú thích chọn ngày khám bệnh
+12	dtpChooseMedicalExaminationDate	DateTimePicker	Không có	Chọn ngày khám bệnh
+13	bPrint	Button	Không có	In kết quả tra cứu
+14	pPatientList	Panel	Không có	Nhóm các đối tượng dùng để hiển thị danh sách bệnh nhân
+15	lPatientList	Label	Không có	Hiển thị tên bảng danh sách bệnh nhân
+16	dgvPatientList	DataGridView	Không có	Hiển thị danh sách bệnh nhân
+17	pMedical
+ExaminationSlip
+List	Panel	Không có	Nhóm các đối tượng dùng để hiển thị danh sách phiếu khám bệnh
+18	lMedical
+ExaminationSlip
+List	Label	Không có	Hiển thị tên bảng danh sách phiếu khám bệnh
+19	dgvMedical
+ExaminationSlip
+List	DataGridView	Không có	Hiển thị danh sách phiếu khám bệnh
+20	pUsedMedicineList	Panel	Không có	Nhóm các đối tượng dùng để hiển thị danh sách thuốc sử dụng
+21	lUsedMedicineList	Label	Không có	Hiển thị tên bảng danh sách thuốc sử dụng
+22	dgvUsedMedicineList	DataGridView	Không có	Hiển thị danh sách thuốc sử dụng
 
-		5.3.10.3 Danh sách biến cố và xử lý tương ứng trên màn hình
+		5.3.11.3 Danh sách biến cố và xử lý tương ứng trên màn hình
 STT	Biến cố	Xử lý
-1	Chọn Button Đặt lại	Khôi phục các nội dung nhập trên màn hình
-2	Chọn Button Thoát	Thoát khỏi màn hình
-3	Chọn Button Lưu	Lưu dữ liệu xuống cơ sở dữ liệu
-4	Chọn Button Thêm đơn vị tính	Hiển thị màn hình Thêm đơn vị tính
-5.3.12 Màn hình Thêm đơn vị tính
+1 	Nhấn nút thoát	Thoát khỏi màn hình tra cứu bệnh nhân
+2	Nhấn nút mũi tên của ComboBox nhập mã bệnh nhân	Hiển thị danh sách mã bệnh nhân có sẵn
+3	Nhập dữ liệu vào ComboBox nhập mã bệnh nhân	Hiển thị danh sách mã bệnh nhân có sẵn và gợi ý nhập
+4	Nhấn nút mũi tên của ComboBox nhập họ và tên bệnh nhân	Hiển thị danh sách họ và tên bệnh nhân có sẵn
+5	Nhập dữ liệu vào ComboBox nhập họ và tên bệnh nhân	Hiển thị danh sách họ và tên bệnh nhân có sẵn và gợi ý nhập
+6	Nhấn nút tra cứu bệnh nhân	Tra cứu bệnh nhân
+7	Nhấn nút làm mới	Xóa dữ liệu hiện tại trong các đối tượng nhập liệu
+8	Nhấn vào DateTimePicker chọn ngày khám bệnh	Hiển thị hộp thoại chọn ngày khám bệnh
+9	Chọn CheckBox tra cứu dùng ngày khám bệnh	Tra cứu bệnh nhân
+10	Nhấn nút in	In kết quả tra cứu
+11	Chọn bệnh nhân trong bảng danh sách bệnh nhân	Hiển thị danh sách phiếu khám bệnh của bệnh nhân được chọn
+11	Chọn phiếu khám bệnh trong bảng danh sách phiếu khám bệnh	Hiển thị danh sách thuốc sử dụng của phiếu khám bệnh được chọn
+
+
+
+
+
+
+
+
+
+5.3.12 Màn hình Lập báo cáo
 		5.3.12.1 Giao diện
  
 
 		5.3.12.2 Mô tả các đối tượng trên màn hình
 STT	Tên	Kiểu	Ràng buộc	Chức năng
-1	chbSickDay	CheckBox	Không có	Chọn hoặc không chọn lọc theo ngày khám
-2	dtpSickDay	Date Time Picker	Không có	Chọn ngày ngày khám
-3	gbFindPatient	GroupBox	Không có	Nhóm tìm kiếm bệnh nhân
-4	lFindIdPatient	Label	Không có	Hiển thị chỉ thị nhập mã bệnh nhân
-5	tbFindIdPatient	TextBox	Không có	Nhập mã bệnh nhân
-6	lFindNamePatient	Label	Không có	Hiển thị chỉ thị tìm tên bệnh nhân
-7	tbFindNamePatient	TextBox	Không có	 Nhập tên bệnh nhân
-    8	dgvPatientList	DataGridView	Không có	Lấy dữ liệu từ cơ sở dữ liệu và hiển thị danh sách bệnh nhân
-9	dgvExamList	DataGridView	Không có	Lấy dữ liệu từ cơ sở dữ liệu và hiển thị danh sách các lần khám của bệnh nhân
-10	dgvMedicalList	DataGridView	Không có	Lấy dữ liệu từ cơ sở dữ liệu và hiển thị danh sách các đơn thuốc của mỗi lần khám
-11	bPrint	Button	Không có	In danh sách bệnh nhân
+1	lTitle	Label	Không có	Hiển thị tiêu đề
+2	bCancel	Button	Không có	Thoát khỏi màn hình lập báo cáo
+3	lMonth	Label	Không có	Hiển thị chú thích nhập tháng
+4	tbMonth	TextBox	Chỉ nhận các ký tự 0-9, giá trị lớn hơn 0 và nhỏ hơn 13	Nhập tháng
+5	lYear	Label	Không có	Hiển thị chú thích nhập năm
+6	tbYear	TextBox	Chỉ nhận các ký tự 0-9 và giá trị lớn hơn 0	Nhập năm
+7	bReset	Button	Không có	Xóa dữ liệu hiện tại trong các đối tượng nhập liệu
+8	pRevenueReport	Panel	Không có	Nhóm các đối tượng dùng để hiển thị báo cáo doanh thu
+9	lRevenueReport	Label	Không có	Hiển thị tên bảng báo cáo doanh thu
+10	dgvRevenueReport	DataGridView	Không có	Hiển thị báo cáo doanh thu
+11	bWatchRevenueReport	Button	Không có	Xem báo cáo doanh thu
+12	bPrintRevenueReport	Button	Không có	In báo cáo doanh thu
+13	pUsedMedicineReport	Panel	Không có	Nhóm các đối tượng dùng để hiển thị báo cáo sử dụng thuốc
+14	lUsedMedicineReport	Label	Không có	Hiển thị tên bảng báo cáo sử dụng thuốc
+15	dgvUsedMedicine
+Report	DataGridView	Không có	Hiển thị báo cáo sử dụng thuốc
+16	bWatchUsedMedicineReport	Button	Không có	Xem báo cáo sử dụng thuốc
+17	bPrintUsedMedicine Report	Button	Không có	In báo cáo sử dụng thuốc
+18	lMedicineName	Label	Không có	Hiển thị chú thích nhập tên thuốc
+19	cbMedicineName	ComboBox	Chỉ nhận giá trị tên thuốc đã lưu trữ	Nhập tên thuốc
+20	bFind	Button	Không có	Tra cứu thuốc
 
 		5.3.12.3 Danh sách biến cố và xử lý tương ứng trên màn hình
 STT	Biến cố	Xử lý
-1	Chọn Button làm mới	Xóa nội dung nhập trong nhóm tìm kiếm bệnh nhân
-2	Chọn Button Thoát	Thoát khỏi màn hình
-3	Chọn Button Tìm kiếm	Tìm kiếm bệnh nhân
-4	Chọn CheckBox Ngày khám bệnh	Lọc tất cả bệnh nhân có ngày khám bệnh tương đương
-5	Chọn Button In	In danh sách bệnh nhân
+1	Nhấn nút thoát	Thoát khỏi màn hình lập báo cáo
+2	Nhấn nút làm mới	Xóa dữ liệu hiện tại trong các đối tượng nhập liệu
+3	Nhấn nút xem báo cáo doanh thu	Hiển thị báo cáo doanh thu
+4	Nhấn nút in báo cáo doanh thu	In báo cáo doanh thu
+5	Nhấn nút xem báo cáo sử dụng thuốc	Hiển thị báo cáo sử dụng thuốc
+6	Nhấn nút in báo cáo sử dụng thuốc	In báo cáo sử dụng thuốc
+7	Nhấn nút mũi tên của ComboBox nhập tên thuốc	Hiển thị danh sách tên thuốc có sẵn
+8	Nhập dữ liệu vào ComboBox nhập tên thuốc	Hiển thị danh sách tên thuốc có sẵn và gợi ý nhập
+9	Nhấn nút tra cứu	Hiển thị kết quả tra cứu trong báo cáo sử dụng thuốc
 
 
 
@@ -1224,75 +1287,35 @@ STT	Biến cố	Xử lý
 
 
 
-5.3.13 Màn hình Lập báo cáo
+
+
+
+
+
+
+
+
+
+
+
+
+
+5.3.13 Màn hình thiết lập
 		5.3.13.1 Giao diện
  
-
 		5.3.13.2 Mô tả các đối tượng trên màn hình
 STT	Tên	Kiểu	Ràng buộc	Chức năng
 1	lTitle	Label	Không có	Hiển thị tiêu đề
-2	lBeginDay	Label	Không có	Hiển thị chỉ thị ngày bắt đầu
-3	dtpBeginDay	TextBox	Không có	Chọn ngày bắt đầu khám báo cáo
-4	lpEndDay	Label	Không có	Hiển thị chỉ thị ngày kết thúc
-5	dtpEndDay	TextBox	Không có 	Chọn ngày kết thúc báo cáo
-6	bReportTotal	Button	Không có	Báo cáo doanh thu
-    7	bPrintTotalReport	Button	Không có	In báo cáo doanh thu
-8	lBeginDay2	Label	Không có	Hiển thị chỉ thị ngày bắt đầu
-9	dtpBeginDay2	DateTimePicker	Không có	Chọn ngày bắt đầu báo cáo
-10	lEndDay2	Label	Không có	Hiển thị chỉ thị ngày kết thúc
-11	dtpEndDay2	DateTimePicker	Không có	Chọn ngày kết thúc báo cáo
-12	bReportMedical	Button	Không có	Báo cáo sử dụng thuốc
-13	lMedicalName	Label	Không có	Hiển thị chỉ thị tên thuốc
-14	cbMedicalName	TextBox	Không có	Nhập hoặc chọn tên thuốc
-15	bFind	Button	Không có	Tìm kiếm thuốc
-16	bPrintMedicalReport	Button	Không có	In báo cáo sử dụng thuốc
-17	dgvMoneyReport	DataGridView	Không có	Hiển thị danh sách báo cáo doanh thu
-18	dgvMedicalReport	DataGridView	Không có	Hiển thị danh sách báo cáo sử dụng thuốc
+2	bCancel	Button	Không có	Thoát khỏi màn hình thiết lập
+3	lMaxPatient	Label	Không có	Hiển thị chú thích nhập số bệnh nhân khám tối đa trong ngày
+4	tbMaxPatient	TextBox	Chỉ nhận các ký tự 0-9 và giá trị lớn hơn 0	Nhập số bệnh nhân khám tối đa trong ngày
+5	lMedicalExaminationMoney	Label	Không có	Hiển thị chú thích nhập tiền khám
+6	tbMedical
+ExaminationMoney	TextBox	Chỉ nhận các ký tự 0-9 và giá trị lớn hơn 0	Nhập tiền khám
+7	bSave	Button	Không có	Lưu giá trị thiết lập
 
 		5.3.13.3 Danh sách biến cố và xử lý tương ứng trên màn hình
 STT	Biến cố	Xử lý
-1	Chọn Button Báo cáo doanh thu	Đọc dữ liệu từ cơ sở dữ liệu và hiển thị dữ liệu
-2	Chọn Button Thoát	Thoát khỏi màn hình
-3	Chọn Button Tìm kiếm	Tìm kiếm thuốc
-4	Chọn Button Báo cáo sử dụng thuốc	Đọc dữ liệu từ cơ sở dữ
-liệu và hiển thị dữ liệu
-5	Chọn Button In báo cáo sử dụng thuốc	In danh sách báo cáo sử dụng thuốc
-6	Chọn Button In báo cáo doanh thu	In danh sách báo cáo doanh thu
-
-
-
-
-5.3.14 Màn hình Thiết lập
-		5.3.14.1 Giao diện
- 
-
-		5.3.14.2 Mô tả các đối tượng trên màn hình
-STT	Tên	Kiểu	Ràng buộc	Chức năng
-1	lTitle	Label	Không có	Hiển thị tiêu đề
-2	bCancel	Button	Không có	Thoát khỏi màn hình
-3	gbProbSetting	GroupBox	Không có	Nhóm các thiết lập thuộc tính
-4	gbUnitSetting	GroupBox	Không có	Nhóm thiết lập đơn vị tính
-5	gbUseWay	GroupBox	Không có	Nhóm thiết lập cách dùng
-6	lMaxPatient	Label	Không có	Hiển thị chỉa thị số lượng bệnh nhân khám tối đa
-    7	lExamMoney	Label	Không có	Hiển thị chỉ thị tiền khám
-8	tbMaxPatient	TextBox	Ký tự từ 0 – 9	Nhập số lượng bênh nhân khám tối đa trong ngày
-9	tbExamMoney	TextBox	Ký tự từ 0 – 9	Nhập số tiền khám
-10	bSave	Button	Không có	Lưu xuống cơ sở dữ liệu
-11	bAddUnit	Button	Không có	Hiển thị màn hình Thêm đơn vị tính
-12	bDeleteUnit	Button	Không có	Xóa đơn vị tính trong cơ sở dữ liệu
-13	bAddUseWay	Button	Không có	Hiển thị màn hình thêm cách dùng
-14	bDeleteUseWay	Button	Không có	Xóa cách dùng
-15	dgvUnitList	DataGridView	Không có	Hiển thị danh sách đơn vị tính
-16	dgvUseWayList	DataGridView	Không có	Hiển thị danh sách cách dùng
-
-
-
-		5.3.14.3 Danh sách biến cố và xử lý tương ứng trên màn hình
-STT	Biến cố	Xử lý
-1	Chọn Button Lưu	Lưu dữ liệu vào cơ sở dữ liệu
-2	Chọn Button Thoát	Thoát khỏi màn hình
-3	Chọn Button Thêm mới đơn vị tính	Hiển thị màn hình thêm mới đơn vị tính
-4	Chọn Button Xóa đơn vị tính	Xóa đơn vị tính
-5	Chọn Button Thêm mới cách dùng	Hiển thị màn hình thêm mới cách dùng
-6	Chọn Button Xóa cách dùng	Xóa cách dùng
+1	Nhấn nút thoát	Thoát khỏi màn hình thiết lập
+2	Nhấn nút lưu	Lưu giá trị thiết lập xuống cơ sở dữ liệu
 
