@@ -432,13 +432,13 @@ o	Bước 12: Đóng kết nối cơ sở dữ liệu.
 o	Bước 13: Kết thúc.
  2.3.7.3 Thay đổi tiền khám và tỉ lệ tính đơn giá bán của thuốc
 	Sơ đồ
- Sơ đồ 10: Sơ đồ luồng dữ liệu thay đổi tiền khám và tỉ lệ tính đơn giá bán của thuốc
+Sơ đồ 10: Sơ đồ luồng dữ liệu thay đổi tiền khám và tỉ lệ tính đơn giá bán của thuốc
 	Thuật toán
 o	Bước 1: Nhận D1 từ người dùng.
 o	Bước 2: Kết nối cơ sở dữ liệu.
 o	Bước 3: Đọc D3 từ bộ nhớ phụ.
 o	Bước 4: Kiểm tra tiền khám ở D1 có khác với tiền khám ở D3 hay không.
-o	Bước 5:  Nếu không thỏa thì yêu cầu người dùng nhập lại tiền khám.
+o	Bước 5: Nếu không thỏa thì yêu cầu người dùng nhập lại tiền khám.
 o	Bước 6: Kiểm tra tỉ lệ tính đơn giá bán của thuốc ở D1 có khác với tỉ lệ tính đơn giá bán của thuốc ở D3 hay không.
 o	Bước 7: Nếu không thỏa thì yêu cầu người dùng nhập lại tỉ lệ tính đơn giá bán của thuốc.
 o	Bước 8: Tính đơn giá bán mới của thuốc tương ứng bằng cách nhân đơn giá nhập với tỉ lệ tính đơn giá bán vừa thay đổi.
