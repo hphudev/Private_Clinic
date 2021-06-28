@@ -84,7 +84,7 @@ namespace BUS
         {
             string table = "THUOC";
             Medicine medicine = new Medicine(await IDHandler.FindNewID(table, "MATHUOC", "T", 5), name,
-                importedUnitPrice, unitID, ratioToCalculateSellableUnitPrice);
+                importedUnitPrice, "DVT01", ratioToCalculateSellableUnitPrice);
 
             if (!await IsExistMedicine(medicine))
             {

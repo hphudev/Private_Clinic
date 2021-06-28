@@ -13,6 +13,7 @@ namespace BUS
         protected async override Task<DataGridView> ProcessCreateReport(int month, int year,
             DataGridView dgvReport)
         {
+            int phu = 0;
             if (await IsExistInvoice(month, year))
             {
                 DateTime[] createdReportDates = await GetCreatedDates(month, year,

@@ -29,6 +29,7 @@ namespace GUI
                 formAddMedicalUnit.InsertUnit += FormAddMedicalUnit_InsertUnit;
                 BUS.Event.ShowFormDialog(formAddMedicalUnit);
             };
+            MessageBox.Show(DateTime.Now.ToString());
             this.bRefeshAddUseWay.Click += (s, e) =>
             {
                 FormAddUseWay formAddUseWay = new FormAddUseWay();

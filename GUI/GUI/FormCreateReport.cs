@@ -10,6 +10,7 @@ namespace GUI
             InitializeComponent();
             SetDefaultValue(parent);
             AddEventHandler();
+          
         }
 
         protected override void AddEventHandler()
