@@ -127,7 +127,7 @@ namespace GUI
 
         private void bInputMedicalClicked(object s, EventArgs e)
         {
-            FormInputMedical formInputMedical = new FormInputMedical(this);
+            FormCreateImportedMedicineSlip formInputMedical = new FormCreateImportedMedicineSlip(this);
             BUS.Event.ShowChildForm_HideParentForm(formInputMedical, this);
         }
 
@@ -145,7 +145,7 @@ namespace GUI
 
         private void bSetReportClicked(object s, EventArgs e)
         {
-            FormSetReport formSetReport = new FormSetReport(this);
+            FormCreateReport formSetReport = new FormCreateReport(this);
             BUS.Event.ShowChildForm_HideParentForm(formSetReport, this);
         }
 

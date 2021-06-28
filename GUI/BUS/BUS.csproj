@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\..\..\..\Download\Ngày 15_01_2021\Compressed\TestFramework\TestFramework\[FTUApps.com] - Guna UI Framework Ultimate v2.0.0.1 + Keygen\[FTUApps.com] - Guna UI Framework Ultimate v2.0.0.1 + Keygen\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -44,8 +47,30 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="CreateImportedMedicineSlipHandler.cs" />
+    <Compile Include="CreateMedicineUseReportHandler.cs" />
+    <Compile Include="CreateReportHandler.cs" />
+    <Compile Include="CreateRevenueReportHandler.cs" />
     <Compile Include="Event.cs" />
+    <Compile Include="EventHandler.cs" />
+    <Compile Include="FormAddTypeSickBUS.cs" />
+    <Compile Include="FormAddUseWayBUS.cs" />
+    <Compile Include="FormSetInvolkeBUS.cs" />
+    <Compile Include="FormSetMedicalExaminationBUS.cs" />
+    <Compile Include="Handler.cs" />
+    <Compile Include="IDHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Support.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAO\DAO.csproj">
+      <Project>{e969082f-f15e-41b0-aaeb-47c84f43e9b3}</Project>
+      <Name>DAO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{90ade5df-62d0-4c47-b44e-2b08cf004b53}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

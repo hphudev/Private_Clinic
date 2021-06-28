@@ -35,10 +35,10 @@ namespace GUI
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.bSave = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.tbUnit = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.bRefresh = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.pDragBar.SuspendLayout();
             this.SuspendLayout();
@@ -53,9 +53,10 @@ namespace GUI
             this.pDragBar.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
             this.pDragBar.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.pDragBar.Location = new System.Drawing.Point(0, 0);
+            this.pDragBar.Margin = new System.Windows.Forms.Padding(2);
             this.pDragBar.Name = "pDragBar";
             this.pDragBar.ShadowDecoration.Parent = this.pDragBar;
-            this.pDragBar.Size = new System.Drawing.Size(486, 83);
+            this.pDragBar.Size = new System.Drawing.Size(364, 67);
             this.pDragBar.TabIndex = 118;
             // 
             // bCancel
@@ -72,10 +73,11 @@ namespace GUI
             this.bCancel.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
             this.bCancel.ForeColor = System.Drawing.Color.White;
             this.bCancel.HoverState.Parent = this.bCancel;
-            this.bCancel.Location = new System.Drawing.Point(406, 12);
+            this.bCancel.Location = new System.Drawing.Point(304, 10);
+            this.bCancel.Margin = new System.Windows.Forms.Padding(2);
             this.bCancel.Name = "bCancel";
             this.bCancel.ShadowDecoration.Parent = this.bCancel;
-            this.bCancel.Size = new System.Drawing.Size(68, 36);
+            this.bCancel.Size = new System.Drawing.Size(51, 29);
             this.bCancel.TabIndex = 114;
             this.bCancel.Text = "THOÁT";
             // 
@@ -86,8 +88,9 @@ namespace GUI
             this.label1.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(486, 83);
+            this.label1.Size = new System.Drawing.Size(364, 67);
             this.label1.TabIndex = 113;
             this.label1.Text = "THÊM ĐƠN VỊ TÍNH";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -96,85 +99,88 @@ namespace GUI
             // 
             this.guna2Elipse1.BorderRadius = 20;
             // 
-            // guna2GradientButton1
+            // bSave
             // 
-            this.guna2GradientButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2GradientButton1.Animated = true;
-            this.guna2GradientButton1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientButton1.BorderRadius = 6;
-            this.guna2GradientButton1.CheckedState.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2GradientButton1.CustomImages.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.FillColor = System.Drawing.Color.Ivory;
-            this.guna2GradientButton1.FillColor2 = System.Drawing.Color.Ivory;
-            this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
-            this.guna2GradientButton1.HoverState.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(355, 187);
-            this.guna2GradientButton1.Name = "guna2GradientButton1";
-            this.guna2GradientButton1.ShadowDecoration.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Size = new System.Drawing.Size(118, 36);
-            this.guna2GradientButton1.TabIndex = 126;
-            this.guna2GradientButton1.Text = "Lưu lại";
+            this.bSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.bSave.Animated = true;
+            this.bSave.BackColor = System.Drawing.Color.Transparent;
+            this.bSave.BorderRadius = 6;
+            this.bSave.CheckedState.Parent = this.bSave;
+            this.bSave.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bSave.CustomImages.Parent = this.bSave;
+            this.bSave.FillColor = System.Drawing.Color.Ivory;
+            this.bSave.FillColor2 = System.Drawing.Color.Ivory;
+            this.bSave.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
+            this.bSave.HoverState.Parent = this.bSave;
+            this.bSave.Location = new System.Drawing.Point(266, 152);
+            this.bSave.Margin = new System.Windows.Forms.Padding(2);
+            this.bSave.Name = "bSave";
+            this.bSave.ShadowDecoration.Parent = this.bSave;
+            this.bSave.Size = new System.Drawing.Size(88, 29);
+            this.bSave.TabIndex = 126;
+            this.bSave.Text = "Lưu lại";
             // 
-            // guna2TextBox1
+            // tbUnit
             // 
-            this.guna2TextBox1.AutoSize = true;
-            this.guna2TextBox1.BorderRadius = 6;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox1.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(207, 123);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(266, 43);
-            this.guna2TextBox1.TabIndex = 123;
+            this.tbUnit.AutoSize = true;
+            this.tbUnit.BorderRadius = 6;
+            this.tbUnit.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbUnit.DefaultText = "";
+            this.tbUnit.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbUnit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbUnit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbUnit.DisabledState.Parent = this.tbUnit;
+            this.tbUnit.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbUnit.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbUnit.FocusedState.Parent = this.tbUnit;
+            this.tbUnit.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbUnit.ForeColor = System.Drawing.Color.Black;
+            this.tbUnit.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbUnit.HoverState.Parent = this.tbUnit;
+            this.tbUnit.Location = new System.Drawing.Point(155, 100);
+            this.tbUnit.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.tbUnit.Name = "tbUnit";
+            this.tbUnit.PasswordChar = '\0';
+            this.tbUnit.PlaceholderText = "";
+            this.tbUnit.SelectedText = "";
+            this.tbUnit.ShadowDecoration.Parent = this.tbUnit;
+            this.tbUnit.Size = new System.Drawing.Size(200, 35);
+            this.tbUnit.TabIndex = 123;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
-            this.label2.Location = new System.Drawing.Point(7, 123);
+            this.label2.Location = new System.Drawing.Point(5, 100);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(193, 32);
+            this.label2.Size = new System.Drawing.Size(149, 25);
             this.label2.TabIndex = 119;
             this.label2.Text = "Tên đơn vị tính:";
             // 
-            // guna2GradientButton2
+            // bRefresh
             // 
-            this.guna2GradientButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2GradientButton2.Animated = true;
-            this.guna2GradientButton2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientButton2.BorderRadius = 6;
-            this.guna2GradientButton2.CheckedState.Parent = this.guna2GradientButton2;
-            this.guna2GradientButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2GradientButton2.CustomImages.Parent = this.guna2GradientButton2;
-            this.guna2GradientButton2.FillColor = System.Drawing.Color.Ivory;
-            this.guna2GradientButton2.FillColor2 = System.Drawing.Color.Ivory;
-            this.guna2GradientButton2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
-            this.guna2GradientButton2.HoverState.Parent = this.guna2GradientButton2;
-            this.guna2GradientButton2.Location = new System.Drawing.Point(231, 187);
-            this.guna2GradientButton2.Name = "guna2GradientButton2";
-            this.guna2GradientButton2.ShadowDecoration.Parent = this.guna2GradientButton2;
-            this.guna2GradientButton2.Size = new System.Drawing.Size(118, 36);
-            this.guna2GradientButton2.TabIndex = 127;
-            this.guna2GradientButton2.Text = "Làm mới";
+            this.bRefresh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.bRefresh.Animated = true;
+            this.bRefresh.BackColor = System.Drawing.Color.Transparent;
+            this.bRefresh.BorderRadius = 6;
+            this.bRefresh.CheckedState.Parent = this.bRefresh;
+            this.bRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bRefresh.CustomImages.Parent = this.bRefresh;
+            this.bRefresh.FillColor = System.Drawing.Color.Ivory;
+            this.bRefresh.FillColor2 = System.Drawing.Color.Ivory;
+            this.bRefresh.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bRefresh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
+            this.bRefresh.HoverState.Parent = this.bRefresh;
+            this.bRefresh.Location = new System.Drawing.Point(173, 152);
+            this.bRefresh.Margin = new System.Windows.Forms.Padding(2);
+            this.bRefresh.Name = "bRefresh";
+            this.bRefresh.ShadowDecoration.Parent = this.bRefresh;
+            this.bRefresh.Size = new System.Drawing.Size(88, 29);
+            this.bRefresh.TabIndex = 127;
+            this.bRefresh.Text = "Làm mới";
             // 
             // guna2Elipse3
             // 
@@ -183,16 +189,17 @@ namespace GUI
             // 
             // FormAddMedicalUnit
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.ClientSize = new System.Drawing.Size(486, 235);
-            this.Controls.Add(this.guna2GradientButton2);
+            this.ClientSize = new System.Drawing.Size(364, 191);
+            this.Controls.Add(this.bRefresh);
             this.Controls.Add(this.pDragBar);
-            this.Controls.Add(this.guna2GradientButton1);
-            this.Controls.Add(this.guna2TextBox1);
+            this.Controls.Add(this.bSave);
+            this.Controls.Add(this.tbUnit);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormAddMedicalUnit";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormMedicalUnit";
@@ -209,10 +216,10 @@ namespace GUI
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2GradientButton bSave;
+        private Guna.UI2.WinForms.Guna2TextBox tbUnit;
         private System.Windows.Forms.Label label2;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton2;
+        private Guna.UI2.WinForms.Guna2GradientButton bRefresh;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
     }
 }

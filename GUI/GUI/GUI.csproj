@@ -33,9 +33,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="Bunifu_UI_v1.52">
       <HintPath>..\..\framework\Bunifu_UI_v1.52.dll</HintPath>
     </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="Guna.UI2">
       <HintPath>..\..\..\..\..\Download\Ngày 15_01_2021\Compressed\TestFramework\TestFramework\[FTUApps.com] - Guna UI Framework Ultimate v2.0.0.1 + Keygen\[FTUApps.com] - Guna UI Framework Ultimate v2.0.0.1 + Keygen\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
     </Reference>
@@ -44,6 +49,8 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -58,29 +65,79 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CRInvolke.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRInvolke.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRPatientExam.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRPatientExam.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRPatientList.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRPatientList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSet1.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddMedicalUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddMedicalUnit.designer.cs">
+      <DependentUpon>FormAddMedicalUnit.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormAddPatient.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormAddPatient.Designer.cs">
       <DependentUpon>FormAddPatient.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormAddTypeSickPhu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddTypeSickPhu.designer.cs">
+      <DependentUpon>FormAddTypeSickPhu.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormAddUseWay.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormAddUseWay.Designer.cs">
+    <Compile Include="FormAddUseWay.designer.cs">
       <DependentUpon>FormAddUseWay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddUseWayPhu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddUseWayPhu.designer.cs">
+      <DependentUpon>FormAddUseWayPhu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCreateImportedMedicineSlip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCreateImportedMedicineSlip.designer.cs">
+      <DependentUpon>FormCreateImportedMedicineSlip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCreateReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCreateReport.designer.cs">
+      <DependentUpon>FormCreateReport.cs</DependentUpon>
     </Compile>
     <Compile Include="FormEditMedical.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormEditMedical.Designer.cs">
       <DependentUpon>FormEditMedical.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormInputMedical.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormInputMedical.Designer.cs">
-      <DependentUpon>FormInputMedical.cs</DependentUpon>
     </Compile>
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
@@ -115,20 +172,8 @@
     <Compile Include="FormMedicalExaminationList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormMedicalExaminationList.Designer.cs">
+    <Compile Include="FormMedicalExaminationList.designer.cs">
       <DependentUpon>FormMedicalExaminationList.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormAddMedicalUnit.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormAddMedicalUnit.Designer.cs">
-      <DependentUpon>FormAddMedicalUnit.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormPatientLookup.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormPatientLookup.Designer.cs">
-      <DependentUpon>FormPatientLookup.cs</DependentUpon>
     </Compile>
     <Compile Include="FormAddTypeSick.cs">
       <SubType>Form</SubType>
@@ -136,29 +181,59 @@
     <Compile Include="FormAddTypeSick.Designer.cs">
       <DependentUpon>FormAddTypeSick.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormPatientLookup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPatientLookup.designer.cs">
+      <DependentUpon>FormPatientLookup.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormRegister.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormRegister.Designer.cs">
       <DependentUpon>FormRegister.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormSetting.cs">
+    <Compile Include="FormReportInvolke.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormSetting.Designer.cs">
-      <DependentUpon>FormSetting.cs</DependentUpon>
+    <Compile Include="FormReportInvolke.Designer.cs">
+      <DependentUpon>FormReportInvolke.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormSetReport.cs">
+    <Compile Include="FormReportPatientExam.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormSetReport.Designer.cs">
-      <DependentUpon>FormSetReport.cs</DependentUpon>
+    <Compile Include="FormReportPatientExam.Designer.cs">
+      <DependentUpon>FormReportPatientExam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReportPatientLookup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReportPatientLookup.Designer.cs">
+      <DependentUpon>FormReportPatientLookup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSetInvolke.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSetInvolke.designer.cs">
+      <DependentUpon>FormSetInvolke.cs</DependentUpon>
     </Compile>
     <Compile Include="FormSetMedicalExamination.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormSetMedicalExamination.Designer.cs">
+    <Compile Include="FormSetMedicalExamination.designer.cs">
       <DependentUpon>FormSetMedicalExamination.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSetting.designer.cs">
+      <DependentUpon>FormSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyForm.designer.cs">
+      <DependentUpon>MyForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -168,23 +243,38 @@
     <Compile Include="FormSplash.Designer.cs">
       <DependentUpon>FormSplash.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormSetInvolke.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormSetInvolke.Designer.cs">
-      <DependentUpon>FormSetInvolke.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormStaffManagement.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormStaffManagement.Designer.cs">
       <DependentUpon>FormStaffManagement.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CRInvolke.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRInvolke.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRPatientExam.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRPatientExam.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRPatientList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRPatientList.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddMedicalUnit.resx">
+      <DependentUpon>FormAddMedicalUnit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormAddPatient.resx">
       <DependentUpon>FormAddPatient.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormAddTypeSickPhu.resx">
+      <DependentUpon>FormAddTypeSickPhu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormAddUseWay.resx">
       <DependentUpon>FormAddUseWay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddUseWayPhu.resx">
+      <DependentUpon>FormAddUseWayPhu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormBackground.resx">
       <DependentUpon>FormBackground.cs</DependentUpon>
@@ -192,14 +282,17 @@
     <EmbeddedResource Include="FormBackGround_2.resx">
       <DependentUpon>FormBackGround_2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormCreateImportedMedicineSlip.resx">
+      <DependentUpon>FormCreateImportedMedicineSlip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCreateReport.resx">
+      <DependentUpon>FormCreateReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormEditMedical.resx">
       <DependentUpon>FormEditMedical.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormEntrance.resx">
       <DependentUpon>FormEntrance.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormInputMedical.resx">
-      <DependentUpon>FormInputMedical.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
@@ -210,26 +303,35 @@
     <EmbeddedResource Include="FormMedicalExaminationList.resx">
       <DependentUpon>FormMedicalExaminationList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormAddMedicalUnit.resx">
-      <DependentUpon>FormAddMedicalUnit.cs</DependentUpon>
+    <EmbeddedResource Include="FormAddTypeSick.resx">
+      <DependentUpon>FormAddTypeSick.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPatientLookup.resx">
       <DependentUpon>FormPatientLookup.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormAddTypeSick.resx">
-      <DependentUpon>FormAddTypeSick.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormRegister.resx">
       <DependentUpon>FormRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReportInvolke.resx">
+      <DependentUpon>FormReportInvolke.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReportPatientExam.resx">
+      <DependentUpon>FormReportPatientExam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReportPatientLookup.resx">
+      <DependentUpon>FormReportPatientLookup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSetInvolke.resx">
+      <DependentUpon>FormSetInvolke.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSetMedicalExamination.resx">
+      <DependentUpon>FormSetMedicalExamination.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormSetting.resx">
       <DependentUpon>FormSetting.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormSetReport.resx">
-      <DependentUpon>FormSetReport.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormSetMedicalExamination.resx">
-      <DependentUpon>FormSetMedicalExamination.cs</DependentUpon>
+    <EmbeddedResource Include="MyForm.resx">
+      <DependentUpon>MyForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -244,12 +346,20 @@
     <EmbeddedResource Include="FormSplash.resx">
       <DependentUpon>FormSplash.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormSetInvolke.resx">
-      <DependentUpon>FormSetInvolke.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormStaffManagement.resx">
       <DependentUpon>FormStaffManagement.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -378,6 +488,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\refund_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

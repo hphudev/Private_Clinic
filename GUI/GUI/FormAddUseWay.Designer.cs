@@ -50,8 +50,9 @@ namespace GUI
             this.label1.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(619, 83);
+            this.label1.Size = new System.Drawing.Size(464, 67);
             this.label1.TabIndex = 113;
             this.label1.Text = "THÊM CÁCH DÙNG THUỐC";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -66,9 +67,10 @@ namespace GUI
             this.pDragBar.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
             this.pDragBar.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.pDragBar.Location = new System.Drawing.Point(0, 0);
+            this.pDragBar.Margin = new System.Windows.Forms.Padding(2);
             this.pDragBar.Name = "pDragBar";
             this.pDragBar.ShadowDecoration.Parent = this.pDragBar;
-            this.pDragBar.Size = new System.Drawing.Size(619, 83);
+            this.pDragBar.Size = new System.Drawing.Size(464, 67);
             this.pDragBar.TabIndex = 133;
             // 
             // bCancel
@@ -85,10 +87,11 @@ namespace GUI
             this.bCancel.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
             this.bCancel.ForeColor = System.Drawing.Color.White;
             this.bCancel.HoverState.Parent = this.bCancel;
-            this.bCancel.Location = new System.Drawing.Point(539, 12);
+            this.bCancel.Location = new System.Drawing.Point(404, 10);
+            this.bCancel.Margin = new System.Windows.Forms.Padding(2);
             this.bCancel.Name = "bCancel";
             this.bCancel.ShadowDecoration.Parent = this.bCancel;
-            this.bCancel.Size = new System.Drawing.Size(68, 36);
+            this.bCancel.Size = new System.Drawing.Size(51, 29);
             this.bCancel.TabIndex = 114;
             this.bCancel.Text = "THOÁT";
             // 
@@ -114,14 +117,14 @@ namespace GUI
             this.tbUseWayName.ForeColor = System.Drawing.Color.Black;
             this.tbUseWayName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbUseWayName.HoverState.Parent = this.tbUseWayName;
-            this.tbUseWayName.Location = new System.Drawing.Point(206, 120);
-            this.tbUseWayName.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.tbUseWayName.Location = new System.Drawing.Point(154, 98);
+            this.tbUseWayName.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.tbUseWayName.Name = "tbUseWayName";
             this.tbUseWayName.PasswordChar = '\0';
             this.tbUseWayName.PlaceholderText = "";
             this.tbUseWayName.SelectedText = "";
             this.tbUseWayName.ShadowDecoration.Parent = this.tbUseWayName;
-            this.tbUseWayName.Size = new System.Drawing.Size(381, 43);
+            this.tbUseWayName.Size = new System.Drawing.Size(286, 35);
             this.tbUseWayName.TabIndex = 135;
             // 
             // label2
@@ -129,9 +132,10 @@ namespace GUI
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
-            this.label2.Location = new System.Drawing.Point(12, 120);
+            this.label2.Location = new System.Drawing.Point(9, 98);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(187, 32);
+            this.label2.Size = new System.Drawing.Size(145, 25);
             this.label2.TabIndex = 134;
             this.label2.Text = "Tên cách dùng:";
             // 
@@ -153,12 +157,13 @@ namespace GUI
             this.bRefresh.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bRefresh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
             this.bRefresh.HoverState.Parent = this.bRefresh;
-            this.bRefresh.Location = new System.Drawing.Point(311, 194);
+            this.bRefresh.Location = new System.Drawing.Point(233, 158);
+            this.bRefresh.Margin = new System.Windows.Forms.Padding(2);
             this.bRefresh.Name = "bRefresh";
             this.bRefresh.ShadowDecoration.Parent = this.bRefresh;
-            this.bRefresh.Size = new System.Drawing.Size(138, 47);
+            this.bRefresh.Size = new System.Drawing.Size(104, 38);
             this.bRefresh.TabIndex = 137;
-            this.bRefresh.Text = "Thêm mới";
+            this.bRefresh.Text = "Làm mới";
             // 
             // bSave
             // 
@@ -174,26 +179,29 @@ namespace GUI
             this.bSave.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
             this.bSave.HoverState.Parent = this.bSave;
-            this.bSave.Location = new System.Drawing.Point(469, 194);
+            this.bSave.Location = new System.Drawing.Point(352, 158);
+            this.bSave.Margin = new System.Windows.Forms.Padding(2);
             this.bSave.Name = "bSave";
             this.bSave.ShadowDecoration.Parent = this.bSave;
-            this.bSave.Size = new System.Drawing.Size(118, 47);
+            this.bSave.Size = new System.Drawing.Size(88, 38);
             this.bSave.TabIndex = 136;
             this.bSave.Text = "Lưu lại";
             // 
             // FormAddUseWay
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.ClientSize = new System.Drawing.Size(619, 267);
+            this.ClientSize = new System.Drawing.Size(464, 217);
             this.Controls.Add(this.pDragBar);
             this.Controls.Add(this.tbUseWayName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.bRefresh);
             this.Controls.Add(this.bSave);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormAddUseWay";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormAddUsing";
             this.pDragBar.ResumeLayout(false);
             this.ResumeLayout(false);

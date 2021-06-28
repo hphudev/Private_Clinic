@@ -30,9 +30,8 @@ namespace GUI
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.bCancel = new Guna.UI2.WinForms.Guna2GradientButton();
             this.lTitle = new System.Windows.Forms.Label();
@@ -61,13 +60,13 @@ namespace GUI
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.gbFindPatient = new System.Windows.Forms.GroupBox();
+            this.bRefresh = new Guna.UI2.WinForms.Guna2GradientButton();
             this.cbFindPatient = new System.Windows.Forms.ComboBox();
             this.lInputPatientName = new System.Windows.Forms.Label();
             this.lInputIdPatient = new System.Windows.Forms.Label();
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.bAddPatient = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.bRefresh = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPatientList)).BeginInit();
@@ -75,18 +74,6 @@ namespace GUI
             ((System.ComponentModel.ISupportInitialize)(this.dgvMedicalExaminationList)).BeginInit();
             this.gbFindPatient.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // progressBar1
-            // 
-            this.progressBar1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.progressBar1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.progressBar1.Location = new System.Drawing.Point(0, 1043);
-            this.progressBar1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(1338, 12);
-            this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.progressBar1.TabIndex = 19;
-            this.progressBar1.Value = 50;
             // 
             // guna2GradientPanel1
             // 
@@ -97,9 +84,10 @@ namespace GUI
             this.guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
             this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
             this.guna2GradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2GradientPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.ShadowDecoration.Parent = this.guna2GradientPanel1;
-            this.guna2GradientPanel1.Size = new System.Drawing.Size(1338, 92);
+            this.guna2GradientPanel1.Size = new System.Drawing.Size(1339, 92);
             this.guna2GradientPanel1.TabIndex = 20;
             // 
             // bCancel
@@ -119,6 +107,7 @@ namespace GUI
             this.bCancel.ForeColor = System.Drawing.Color.White;
             this.bCancel.HoverState.Parent = this.bCancel;
             this.bCancel.Location = new System.Drawing.Point(1211, 12);
+            this.bCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bCancel.Name = "bCancel";
             this.bCancel.ShadowDecoration.Parent = this.bCancel;
             this.bCancel.Size = new System.Drawing.Size(115, 36);
@@ -133,7 +122,7 @@ namespace GUI
             this.lTitle.ForeColor = System.Drawing.Color.White;
             this.lTitle.Location = new System.Drawing.Point(0, 0);
             this.lTitle.Name = "lTitle";
-            this.lTitle.Size = new System.Drawing.Size(1338, 92);
+            this.lTitle.Size = new System.Drawing.Size(1339, 92);
             this.lTitle.TabIndex = 113;
             this.lTitle.Text = "DANH SÁCH KHÁM BỆNH";
             this.lTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -161,7 +150,7 @@ namespace GUI
             this.lSickDay.AutoSize = true;
             this.lSickDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lSickDay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(135)))), ((int)(((byte)(134)))));
-            this.lSickDay.Location = new System.Drawing.Point(1028, 104);
+            this.lSickDay.Location = new System.Drawing.Point(1028, 103);
             this.lSickDay.Name = "lSickDay";
             this.lSickDay.Size = new System.Drawing.Size(191, 26);
             this.lSickDay.TabIndex = 117;
@@ -181,21 +170,20 @@ namespace GUI
             this.bFind.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
             this.bFind.HoverState.Parent = this.bFind;
             this.bFind.Location = new System.Drawing.Point(237, 58);
+            this.bFind.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bFind.Name = "bFind";
             this.bFind.ShadowDecoration.Parent = this.bFind;
-            this.bFind.Size = new System.Drawing.Size(102, 37);
+            this.bFind.Size = new System.Drawing.Size(101, 37);
             this.bFind.TabIndex = 122;
             this.bFind.Text = "Tìm kiếm";
-            this.bFind.Click += new System.EventHandler(this.BFind_Click);
             // 
             // lMedicalList
             // 
-            this.lMedicalList.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.lMedicalList.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lMedicalList.AutoSize = true;
             this.lMedicalList.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lMedicalList.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(135)))), ((int)(((byte)(134)))));
-            this.lMedicalList.Location = new System.Drawing.Point(36, 627);
+            this.lMedicalList.Location = new System.Drawing.Point(36, 678);
             this.lMedicalList.Name = "lMedicalList";
             this.lMedicalList.Size = new System.Drawing.Size(249, 26);
             this.lMedicalList.TabIndex = 123;
@@ -216,9 +204,10 @@ namespace GUI
             this.bRegisterPatient.ForeColor = System.Drawing.Color.Ivory;
             this.bRegisterPatient.HoverState.Parent = this.bRegisterPatient;
             this.bRegisterPatient.Location = new System.Drawing.Point(1172, 286);
+            this.bRegisterPatient.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bRegisterPatient.Name = "bRegisterPatient";
             this.bRegisterPatient.ShadowDecoration.Parent = this.bRegisterPatient;
-            this.bRegisterPatient.Size = new System.Drawing.Size(110, 43);
+            this.bRegisterPatient.Size = new System.Drawing.Size(109, 43);
             this.bRegisterPatient.TabIndex = 125;
             this.bRegisterPatient.Text = "Ghi danh";
             // 
@@ -233,7 +222,8 @@ namespace GUI
             this.cbFindIdPatient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbFindIdPatient.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.cbFindIdPatient.FormattingEnabled = true;
-            this.cbFindIdPatient.Location = new System.Drawing.Point(10, 58);
+            this.cbFindIdPatient.Location = new System.Drawing.Point(11, 58);
+            this.cbFindIdPatient.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbFindIdPatient.Name = "cbFindIdPatient";
             this.cbFindIdPatient.Size = new System.Drawing.Size(221, 37);
             this.cbFindIdPatient.TabIndex = 132;
@@ -245,27 +235,31 @@ namespace GUI
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
             this.panel1.Controls.Add(this.dgvPatientList);
+            this.panel1.ForeColor = System.Drawing.Color.Black;
             this.panel1.Location = new System.Drawing.Point(41, 335);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1241, 280);
+            this.panel1.Size = new System.Drawing.Size(1241, 341);
             this.panel1.TabIndex = 127;
             // 
             // dgvPatientList
             // 
+            this.dgvPatientList.AllowUserToAddRows = false;
+            this.dgvPatientList.AllowUserToDeleteRows = false;
             this.dgvPatientList.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvPatientList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvPatientList.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvPatientList.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPatientList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.ButtonFace;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPatientList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvPatientList.ColumnHeadersHeight = 29;
             this.dgvPatientList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.STT,
@@ -274,13 +268,14 @@ namespace GUI
             this.GioiTinh,
             this.NamSinh,
             this.DiaChi});
-            this.dgvPatientList.Location = new System.Drawing.Point(12, 16);
+            this.dgvPatientList.EnableHeadersVisualStyles = false;
+            this.dgvPatientList.Location = new System.Drawing.Point(27, 21);
             this.dgvPatientList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvPatientList.Name = "dgvPatientList";
             this.dgvPatientList.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dgvPatientList.RowHeadersWidth = 51;
             this.dgvPatientList.RowTemplate.Height = 24;
-            this.dgvPatientList.Size = new System.Drawing.Size(1214, 248);
+            this.dgvPatientList.Size = new System.Drawing.Size(1196, 303);
             this.dgvPatientList.TabIndex = 1;
             // 
             // STT
@@ -290,7 +285,7 @@ namespace GUI
             this.STT.MinimumWidth = 6;
             this.STT.Name = "STT";
             this.STT.ReadOnly = true;
-            this.STT.Width = 72;
+            this.STT.Width = 78;
             // 
             // MaKB
             // 
@@ -313,7 +308,7 @@ namespace GUI
             this.GioiTinh.MinimumWidth = 6;
             this.GioiTinh.Name = "GioiTinh";
             this.GioiTinh.ReadOnly = true;
-            this.GioiTinh.Width = 109;
+            this.GioiTinh.Width = 116;
             // 
             // NamSinh
             // 
@@ -322,7 +317,7 @@ namespace GUI
             this.NamSinh.MinimumWidth = 6;
             this.NamSinh.Name = "NamSinh";
             this.NamSinh.ReadOnly = true;
-            this.NamSinh.Width = 117;
+            this.NamSinh.Width = 127;
             // 
             // DiaChi
             // 
@@ -342,9 +337,11 @@ namespace GUI
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
             this.panel2.Controls.Add(this.dgvMedicalExaminationList);
-            this.panel2.Location = new System.Drawing.Point(41, 656);
+            this.panel2.ForeColor = System.Drawing.Color.Black;
+            this.panel2.Location = new System.Drawing.Point(41, 706);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1241, 363);
+            this.panel2.Size = new System.Drawing.Size(1241, 313);
             this.panel2.TabIndex = 128;
             // 
             // dgvMedicalExaminationList
@@ -355,14 +352,14 @@ namespace GUI
             this.dgvMedicalExaminationList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvMedicalExaminationList.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvMedicalExaminationList.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvMedicalExaminationList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.ButtonFace;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvMedicalExaminationList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvMedicalExaminationList.ColumnHeadersHeight = 29;
             this.dgvMedicalExaminationList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -370,26 +367,31 @@ namespace GUI
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5});
-            this.dgvMedicalExaminationList.Location = new System.Drawing.Point(12, 19);
+            this.dgvMedicalExaminationList.EnableHeadersVisualStyles = false;
+            this.dgvMedicalExaminationList.Location = new System.Drawing.Point(12, 18);
             this.dgvMedicalExaminationList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvMedicalExaminationList.MultiSelect = false;
             this.dgvMedicalExaminationList.Name = "dgvMedicalExaminationList";
             this.dgvMedicalExaminationList.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dgvMedicalExaminationList.RowHeadersWidth = 51;
             this.dgvMedicalExaminationList.RowTemplate.Height = 24;
-            this.dgvMedicalExaminationList.Size = new System.Drawing.Size(1214, 329);
+            this.dgvMedicalExaminationList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvMedicalExaminationList.Size = new System.Drawing.Size(1213, 279);
             this.dgvMedicalExaminationList.TabIndex = 2;
             // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Stt";
             this.dataGridViewTextBoxColumn1.HeaderText = "STT";
             this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 72;
+            this.dataGridViewTextBoxColumn1.Width = 78;
             // 
             // dataGridViewTextBoxColumn2
             // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Name";
             this.dataGridViewTextBoxColumn2.HeaderText = "Họ và tên";
             this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
@@ -398,23 +400,26 @@ namespace GUI
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Sex";
             this.dataGridViewTextBoxColumn3.HeaderText = "Giới tính";
             this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            this.dataGridViewTextBoxColumn3.Width = 109;
+            this.dataGridViewTextBoxColumn3.Width = 116;
             // 
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "birthday";
             this.dataGridViewTextBoxColumn4.HeaderText = "Năm sinh";
             this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            this.dataGridViewTextBoxColumn4.Width = 117;
+            this.dataGridViewTextBoxColumn4.Width = 127;
             // 
             // dataGridViewTextBoxColumn5
             // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "address";
             this.dataGridViewTextBoxColumn5.HeaderText = "Địa chỉ";
             this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
@@ -436,12 +441,34 @@ namespace GUI
             this.gbFindPatient.Controls.Add(this.bFind);
             this.gbFindPatient.ForeColor = System.Drawing.Color.Ivory;
             this.gbFindPatient.Location = new System.Drawing.Point(41, 150);
+            this.gbFindPatient.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gbFindPatient.Name = "gbFindPatient";
-            this.gbFindPatient.Size = new System.Drawing.Size(467, 179);
+            this.gbFindPatient.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbFindPatient.Size = new System.Drawing.Size(467, 178);
             this.gbFindPatient.TabIndex = 131;
             this.gbFindPatient.TabStop = false;
             this.gbFindPatient.Text = "TÌm kiếm bệnh nhân";
-            this.gbFindPatient.Enter += new System.EventHandler(this.GroupBox1_Enter);
+            // 
+            // bRefresh
+            // 
+            this.bRefresh.Animated = true;
+            this.bRefresh.BackColor = System.Drawing.Color.Transparent;
+            this.bRefresh.BorderRadius = 6;
+            this.bRefresh.CheckedState.Parent = this.bRefresh;
+            this.bRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bRefresh.CustomImages.Parent = this.bRefresh;
+            this.bRefresh.FillColor = System.Drawing.Color.Ivory;
+            this.bRefresh.FillColor2 = System.Drawing.Color.Ivory;
+            this.bRefresh.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bRefresh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
+            this.bRefresh.HoverState.Parent = this.bRefresh;
+            this.bRefresh.Location = new System.Drawing.Point(345, 58);
+            this.bRefresh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bRefresh.Name = "bRefresh";
+            this.bRefresh.ShadowDecoration.Parent = this.bRefresh;
+            this.bRefresh.Size = new System.Drawing.Size(101, 37);
+            this.bRefresh.TabIndex = 135;
+            this.bRefresh.Text = "Làm mới";
             // 
             // cbFindPatient
             // 
@@ -450,7 +477,8 @@ namespace GUI
             this.cbFindPatient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbFindPatient.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.cbFindPatient.FormattingEnabled = true;
-            this.cbFindPatient.Location = new System.Drawing.Point(10, 130);
+            this.cbFindPatient.Location = new System.Drawing.Point(11, 130);
+            this.cbFindPatient.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbFindPatient.Name = "cbFindPatient";
             this.cbFindPatient.Size = new System.Drawing.Size(437, 37);
             this.cbFindPatient.TabIndex = 134;
@@ -501,38 +529,19 @@ namespace GUI
             this.bAddPatient.ForeColor = System.Drawing.Color.Ivory;
             this.bAddPatient.HoverState.Parent = this.bAddPatient;
             this.bAddPatient.Location = new System.Drawing.Point(968, 286);
+            this.bAddPatient.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bAddPatient.Name = "bAddPatient";
             this.bAddPatient.ShadowDecoration.Parent = this.bAddPatient;
-            this.bAddPatient.Size = new System.Drawing.Size(198, 43);
+            this.bAddPatient.Size = new System.Drawing.Size(197, 43);
             this.bAddPatient.TabIndex = 132;
             this.bAddPatient.Text = "Thêm bệnh nhân mới";
-            // 
-            // bRefresh
-            // 
-            this.bRefresh.Animated = true;
-            this.bRefresh.BackColor = System.Drawing.Color.Transparent;
-            this.bRefresh.BorderRadius = 6;
-            this.bRefresh.CheckedState.Parent = this.bRefresh;
-            this.bRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bRefresh.CustomImages.Parent = this.bRefresh;
-            this.bRefresh.FillColor = System.Drawing.Color.Ivory;
-            this.bRefresh.FillColor2 = System.Drawing.Color.Ivory;
-            this.bRefresh.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bRefresh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
-            this.bRefresh.HoverState.Parent = this.bRefresh;
-            this.bRefresh.Location = new System.Drawing.Point(345, 58);
-            this.bRefresh.Name = "bRefresh";
-            this.bRefresh.ShadowDecoration.Parent = this.bRefresh;
-            this.bRefresh.Size = new System.Drawing.Size(102, 37);
-            this.bRefresh.TabIndex = 135;
-            this.bRefresh.Text = "Làm mới";
             // 
             // FormMedicalExaminationList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightBlue;
-            this.ClientSize = new System.Drawing.Size(1338, 1055);
+            this.ClientSize = new System.Drawing.Size(1339, 1055);
             this.Controls.Add(this.bAddPatient);
             this.Controls.Add(this.gbFindPatient);
             this.Controls.Add(this.panel2);
@@ -542,7 +551,6 @@ namespace GUI
             this.Controls.Add(this.dtpSickDay);
             this.Controls.Add(this.lSickDay);
             this.Controls.Add(this.guna2GradientPanel1);
-            this.Controls.Add(this.progressBar1);
             this.ForeColor = System.Drawing.Color.White;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormMedicalExaminationList";
@@ -561,7 +569,6 @@ namespace GUI
         }
 
         #endregion
-        private System.Windows.Forms.ProgressBar progressBar1;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         private System.Windows.Forms.Label lTitle;
         private ns1.BunifuDatepicker dtpSickDay;
@@ -591,11 +598,11 @@ namespace GUI
         private System.Windows.Forms.Label lInputIdPatient;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse5;
         private Guna.UI2.WinForms.Guna2GradientButton bAddPatient;
+        private Guna.UI2.WinForms.Guna2GradientButton bRefresh;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private Guna.UI2.WinForms.Guna2GradientButton bRefresh;
     }
 }

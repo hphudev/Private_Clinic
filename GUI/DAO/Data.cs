@@ -173,6 +173,43 @@ namespace DAO
                 return -1;
             }
         }
+
+        //Nguyen Hoang Nam
+        public static int ExecutenonQuery(string query, object[] parameter = null)
+        {
+            int data = 0;
+
+            string ConnectionString = ConfigurationManager.ConnectionStrings["Server"].ConnectionString;
+            //SqlConnection connection = new SqlConnection(ConnectionString);
+
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
+            {
+                connection.Open();
+
+
+                SqlCommand command = new SqlCommand(query, connection);
+                if (parameter != null)
+                {
+                    string[] list = query.Split(' ');
+                    int i = 0;
+                    foreach (string item in list)
+                    {
+                        if (item.Contains("@"))
+                        {
+                            command.Parameters.AddWithValue(item, parameter[i]);
+                            i++;
+                        }
+
+                    }
+                }
+                data = command.ExecuteNonQuery();
+
+                connection.Close();
+
+            }
+            return data;
+
+        }
         #endregion
     }
 }

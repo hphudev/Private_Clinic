@@ -33,15 +33,20 @@ namespace BUS
             System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
             form.Opacity = 0;
             timer.Interval = timer_para;
+            form.ControlBox = false;
             timer.Tick += (s, e) =>
             {
                 if (form.Opacity < 1)
                 {
-                    form.Opacity += 0.05;
+                    if (form.Opacity + 0.05 <= 1)
+                        form.Opacity += 0.05;
+                    else
+                        form.Opacity = 1;
                 }
                 else
                 {
                     timer.Stop();
+                    form.ControlBox = true;
                 }
             };
             form.Show();
@@ -173,7 +178,7 @@ namespace BUS
             formBackground.Opacity = 0.50d;
             formBackground.BackColor = Color.Black;
             formBackground.WindowState = FormWindowState.Maximized;
-            formBackground.TopMost = true;
+            //formBackground.TopMost = true;
             formBackground.Location = parent.Location;
             formBackground.ShowInTaskbar = false;
             formBackground.Show();
@@ -190,7 +195,7 @@ namespace BUS
             {
                 Form formBackground = new Form();
                 ShowFormBackground(main, formBackground);
-                main.TopMost = true;
+                //main.TopMost = true;
                 main.ShowDialog();
                 CloseFormBackground(formBackground);
             }

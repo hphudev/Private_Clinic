@@ -45,7 +45,27 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Data.cs" />
+    <Compile Include="DataHandler.cs" />
+    <Compile Include="FormAddTypeSickDAO.cs" />
+    <Compile Include="FormAddUseWayDAO.cs" />
+    <Compile Include="FormSetInvolkeDAO.cs" />
+    <Compile Include="FormSetMedicalExaminationDAO.cs" />
+    <Compile Include="Handler.cs" />
+    <Compile Include="MedicalExaminationCard.cs" />
+    <Compile Include="MedicalExaminationCardDetails.cs" />
+    <Compile Include="MedicalExaminationDetails.cs" />
+    <Compile Include="MedicalUnit.cs" />
+    <Compile Include="NotificationHandler.cs" />
+    <Compile Include="Parameters.cs" />
+    <Compile Include="Patient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UseWay.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{90ade5df-62d0-4c47-b44e-2b08cf004b53}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
