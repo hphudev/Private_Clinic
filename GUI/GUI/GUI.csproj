@@ -355,7 +355,7 @@
     <EmbeddedResource Include="FormStaffManagement.resx">
       <DependentUpon>FormStaffManagement.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="GUI.cd" />
+    <None Include="1_GUI.cd" />
     <None Include="DataSet1.xsc">
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </None>

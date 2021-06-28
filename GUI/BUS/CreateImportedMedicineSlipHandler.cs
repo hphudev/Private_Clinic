@@ -163,23 +163,11 @@ namespace BUS
         }
 
         public static bool IsError(Guna2TextBox tbQuantityOfInput, Guna2TextBox tbImportedUnitPrice,
-            Guna2TextBox tbRationToCalculateSellableUnitPrice, ComboBox cbUnit, ComboBox cbMedicineName)
+            Guna2TextBox tbRationToCalculateSellableUnitPrice, ComboBox cbUnit)
         {
             return (!CheckInput(tbImportedUnitPrice, "Đơn giá nhập") || !CheckInput(tbQuantityOfInput,
                 "Số lượng nhập") || !CheckInput(tbRationToCalculateSellableUnitPrice,
-                "Tỷ lệ tính đơn giá bán", 100) || !CheckUnit(cbUnit) || !CheckMedicineName(cbMedicineName));
-        }
-
-        public static bool CheckMedicineName(ComboBox cbMedicineName)
-        {
-            if (!cbMedicineName.Items.Contains(cbMedicineName.Text))
-            {
-                NotificationHandler.NotifyError("Tên thuốc không tồn tại");
-
-                return false;
-            }
-
-            return true;
+                "Tỷ lệ tính đơn giá bán", 100) || !CheckUnit(cbUnit));
         }
 
         public static bool CheckUnit(ComboBox cbUnit)

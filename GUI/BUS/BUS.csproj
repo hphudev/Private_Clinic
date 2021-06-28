@@ -72,7 +72,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="BUS.cd" />
+    <None Include="2_BUS.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

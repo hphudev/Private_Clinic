@@ -16,18 +16,13 @@ namespace GUI
             this.tbQuantityOfInput.Text = "10";
             this.tbImportedUnitPrice.Text = "5000";
             this.tbRatioToCalculateSellableUnitPrice.Text = "150";
-
-            this.bAddUnit.Click += (s, e) =>
-            {
-                FormAddMedicalUnit formAddMedicalUnit = new FormAddMedicalUnit();
-                BUS.EventHandler.ShowFormDialog(formAddMedicalUnit);
-            };
         }
 
         protected override void AddEventHandler()
         {
             base.AddEventHandler();
             this.bAdd.Click += AddMedicine;
+            this.bAddUnit.Click += AddUnit;
             this.cbUnit.KeyPress += LockInputNumber;
             this.tbQuantityOfInput.KeyPress += LockInputWord;
             this.tbImportedUnitPrice.KeyPress += LockInputWord;
@@ -36,12 +31,17 @@ namespace GUI
             this.tbImportedUnitPrice.Leave += CheckPrice;
             this.tbRatioToCalculateSellableUnitPrice.Leave += CheckRation;
             this.cbUnit.Leave += CheckUnit;
-            this.cbMedicineName.Leave += CheckMedicineName;
             this.Load += LoadComboBox;
             this.bReset.Click += Reset;
             this.bCancel.Click += CloseForm;
             this.tbImportedUnitPrice.Leave += ShowSellableUnitPrice;
             this.tbRatioToCalculateSellableUnitPrice.Leave += ShowSellableUnitPrice;
+        }
+
+        private void AddUnit(object sender, EventArgs e)
+        {
+            BUS.EventHandler.ShowFormDialog(new FormAddMedicalUnit());
+            LoadComboBox(sender, e);
         }
 
         private void ShowSellableUnitPrice(object sender, EventArgs e)
@@ -64,11 +64,6 @@ namespace GUI
                 await CreateImportedMedicineSlipHandler.LoadMedicineName(this.cbMedicineName);
         }
 
-        private void CheckMedicineName(object sender, EventArgs e)
-        {
-            CreateImportedMedicineSlipHandler.CheckMedicineName(this.cbMedicineName);
-        }
-        
         private void CheckUnit(object sender, EventArgs e)
         {
             CreateImportedMedicineSlipHandler.CheckUnit(this.cbUnit);
@@ -92,7 +87,7 @@ namespace GUI
         private async void AddMedicine(object sender, EventArgs e)
         {
             if (!CreateImportedMedicineSlipHandler.IsError(this.tbQuantityOfInput, this.tbImportedUnitPrice,
-                this.tbRatioToCalculateSellableUnitPrice, this.cbUnit, this.cbMedicineName))
+                this.tbRatioToCalculateSellableUnitPrice, this.cbUnit))
             {
                 this.dgvMedicineList =
                     await CreateImportedMedicineSlipHandler.CreateDetailImportedMedicineSlip(this.cbMedicineName.Text,
