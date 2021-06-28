@@ -15,7 +15,7 @@ namespace GUI
             this.cbUnit.Text = "Viên";
             this.tbQuantityOfInput.Text = "10";
             this.tbImportedUnitPrice.Text = "5000";
-            this.tbRatioToCalculateSellableUnitPrice.Text = "150";
+            this.tbRatioToCalculateSellableUnitPrice.Text = "100";
         }
 
         protected override void AddEventHandler()

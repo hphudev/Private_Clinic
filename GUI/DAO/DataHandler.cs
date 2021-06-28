@@ -87,6 +87,7 @@ namespace DAO
             try
             {
                 SqlConnection connection = await OpenConnection();
+                ExeQuery("SET DATEFORMAT DMY", connection);
                 string sqlQuery = "INSERT INTO " + table + " VALUES (" + value + ")";
                 SqlCommand command = new SqlCommand(sqlQuery, connection);
                 command.ExecuteNonQuery();

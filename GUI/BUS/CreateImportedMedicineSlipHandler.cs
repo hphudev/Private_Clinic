@@ -167,7 +167,7 @@ namespace BUS
         {
             return (!CheckInput(tbImportedUnitPrice, "Đơn giá nhập") || !CheckInput(tbQuantityOfInput,
                 "Số lượng nhập") || !CheckInput(tbRationToCalculateSellableUnitPrice,
-                "Tỷ lệ tính đơn giá bán", 100) || !CheckUnit(cbUnit));
+                "Tỷ lệ tính đơn giá bán", 99) || !CheckUnit(cbUnit));
         }
 
         public static bool CheckUnit(ComboBox cbUnit)
