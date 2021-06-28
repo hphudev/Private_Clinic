@@ -45,7 +45,7 @@ namespace GUI
             this.bReturn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.tbRationToCalculateSellableUnitPrice = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tbRatioToCalculateSellableUnitPrice = new Guna.UI2.WinForms.Guna2TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.bAdd = new Guna.UI2.WinForms.Guna2GradientButton();
             this.tbSellableUnitPrice = new Guna.UI2.WinForms.Guna2TextBox();
@@ -59,7 +59,7 @@ namespace GUI
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.cbName = new System.Windows.Forms.ComboBox();
+            this.cbMedicineName = new System.Windows.Forms.ComboBox();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.bCancel = new Guna.UI2.WinForms.Guna2GradientButton();
             this.label14 = new System.Windows.Forms.Label();
@@ -134,6 +134,7 @@ namespace GUI
             this.dgvMedicineList.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dgvMedicineList.RowHeadersWidth = 51;
             this.dgvMedicineList.RowTemplate.Height = 24;
+            this.dgvMedicineList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvMedicineList.Size = new System.Drawing.Size(1836, 346);
             this.dgvMedicineList.TabIndex = 1;
             // 
@@ -235,7 +236,7 @@ namespace GUI
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.tbRationToCalculateSellableUnitPrice);
+            this.groupBox1.Controls.Add(this.tbRatioToCalculateSellableUnitPrice);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.bAdd);
             this.groupBox1.Controls.Add(this.tbSellableUnitPrice);
@@ -249,7 +250,7 @@ namespace GUI
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.cbName);
+            this.groupBox1.Controls.Add(this.cbMedicineName);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.groupBox1.ForeColor = System.Drawing.Color.Ivory;
             this.groupBox1.Location = new System.Drawing.Point(10, 7);
@@ -259,32 +260,32 @@ namespace GUI
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin thuốc";
             // 
-            // tbRationToCalculateSellableUnitPrice
+            // tbRatioToCalculateSellableUnitPrice
             // 
-            this.tbRationToCalculateSellableUnitPrice.AutoSize = true;
-            this.tbRationToCalculateSellableUnitPrice.BorderRadius = 6;
-            this.tbRationToCalculateSellableUnitPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbRationToCalculateSellableUnitPrice.DefaultText = "";
-            this.tbRationToCalculateSellableUnitPrice.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.tbRationToCalculateSellableUnitPrice.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.tbRationToCalculateSellableUnitPrice.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbRationToCalculateSellableUnitPrice.DisabledState.Parent = this.tbRationToCalculateSellableUnitPrice;
-            this.tbRationToCalculateSellableUnitPrice.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbRationToCalculateSellableUnitPrice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbRationToCalculateSellableUnitPrice.FocusedState.Parent = this.tbRationToCalculateSellableUnitPrice;
-            this.tbRationToCalculateSellableUnitPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbRationToCalculateSellableUnitPrice.ForeColor = System.Drawing.Color.Black;
-            this.tbRationToCalculateSellableUnitPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbRationToCalculateSellableUnitPrice.HoverState.Parent = this.tbRationToCalculateSellableUnitPrice;
-            this.tbRationToCalculateSellableUnitPrice.Location = new System.Drawing.Point(649, 174);
-            this.tbRationToCalculateSellableUnitPrice.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.tbRationToCalculateSellableUnitPrice.Name = "tbRationToCalculateSellableUnitPrice";
-            this.tbRationToCalculateSellableUnitPrice.PasswordChar = '\0';
-            this.tbRationToCalculateSellableUnitPrice.PlaceholderText = "";
-            this.tbRationToCalculateSellableUnitPrice.SelectedText = "";
-            this.tbRationToCalculateSellableUnitPrice.ShadowDecoration.Parent = this.tbRationToCalculateSellableUnitPrice;
-            this.tbRationToCalculateSellableUnitPrice.Size = new System.Drawing.Size(153, 43);
-            this.tbRationToCalculateSellableUnitPrice.TabIndex = 148;
+            this.tbRatioToCalculateSellableUnitPrice.AutoSize = true;
+            this.tbRatioToCalculateSellableUnitPrice.BorderRadius = 6;
+            this.tbRatioToCalculateSellableUnitPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbRatioToCalculateSellableUnitPrice.DefaultText = "";
+            this.tbRatioToCalculateSellableUnitPrice.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbRatioToCalculateSellableUnitPrice.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbRatioToCalculateSellableUnitPrice.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbRatioToCalculateSellableUnitPrice.DisabledState.Parent = this.tbRatioToCalculateSellableUnitPrice;
+            this.tbRatioToCalculateSellableUnitPrice.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbRatioToCalculateSellableUnitPrice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbRatioToCalculateSellableUnitPrice.FocusedState.Parent = this.tbRatioToCalculateSellableUnitPrice;
+            this.tbRatioToCalculateSellableUnitPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbRatioToCalculateSellableUnitPrice.ForeColor = System.Drawing.Color.Black;
+            this.tbRatioToCalculateSellableUnitPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbRatioToCalculateSellableUnitPrice.HoverState.Parent = this.tbRatioToCalculateSellableUnitPrice;
+            this.tbRatioToCalculateSellableUnitPrice.Location = new System.Drawing.Point(649, 174);
+            this.tbRatioToCalculateSellableUnitPrice.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.tbRatioToCalculateSellableUnitPrice.Name = "tbRatioToCalculateSellableUnitPrice";
+            this.tbRatioToCalculateSellableUnitPrice.PasswordChar = '\0';
+            this.tbRatioToCalculateSellableUnitPrice.PlaceholderText = "";
+            this.tbRatioToCalculateSellableUnitPrice.SelectedText = "";
+            this.tbRatioToCalculateSellableUnitPrice.ShadowDecoration.Parent = this.tbRatioToCalculateSellableUnitPrice;
+            this.tbRatioToCalculateSellableUnitPrice.Size = new System.Drawing.Size(153, 43);
+            this.tbRatioToCalculateSellableUnitPrice.TabIndex = 148;
             // 
             // label9
             // 
@@ -504,17 +505,17 @@ namespace GUI
             this.label2.TabIndex = 45;
             this.label2.Text = "Tên thuốc:";
             // 
-            // cbName
+            // cbMedicineName
             // 
-            this.cbName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cbName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cbName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.cbName.FormattingEnabled = true;
-            this.cbName.Location = new System.Drawing.Point(186, 29);
-            this.cbName.Name = "cbName";
-            this.cbName.Size = new System.Drawing.Size(310, 37);
-            this.cbName.TabIndex = 149;
+            this.cbMedicineName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbMedicineName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbMedicineName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbMedicineName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.cbMedicineName.FormattingEnabled = true;
+            this.cbMedicineName.Location = new System.Drawing.Point(186, 29);
+            this.cbMedicineName.Name = "cbMedicineName";
+            this.cbMedicineName.Size = new System.Drawing.Size(310, 37);
+            this.cbMedicineName.TabIndex = 149;
             // 
             // guna2GradientPanel1
             // 
@@ -586,7 +587,7 @@ namespace GUI
             // 
             // guna2Elipse5
             // 
-            this.guna2Elipse5.TargetControl = this.cbName;
+            this.guna2Elipse5.TargetControl = this.cbMedicineName;
             // 
             // FormCreateImportedMedicineSlip
             // 
@@ -602,7 +603,6 @@ namespace GUI
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormCreateImportedMedicineSlip";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.FormCreateImportedMedicineSlip_Load);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMedicineList)).EndInit();
@@ -637,13 +637,13 @@ namespace GUI
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
-        private Guna.UI2.WinForms.Guna2TextBox tbRationToCalculateSellableUnitPrice;
+        private Guna.UI2.WinForms.Guna2TextBox tbRatioToCalculateSellableUnitPrice;
         private System.Windows.Forms.Label label9;
         private Guna.UI2.WinForms.Guna2TextBox tbSellableUnitPrice;
         private System.Windows.Forms.Label label7;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse5;
-        private System.Windows.Forms.ComboBox cbName;
+        private System.Windows.Forms.ComboBox cbMedicineName;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaThuoc;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenThuoc;

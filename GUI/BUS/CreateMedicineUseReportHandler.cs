@@ -27,6 +27,10 @@ namespace BUS
 
                 dgvReport = await LoadReport(month, year, dgvReport);
             }
+            else
+            {
+                NotificationHandler.NotifyInfo("Tháng được nhập không có thuốc được sử dụng");
+            }    
 
             return dgvReport;
         }

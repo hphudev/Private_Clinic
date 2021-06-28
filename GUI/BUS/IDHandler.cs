@@ -49,9 +49,16 @@ namespace BUS
         {
             try
             {
+                int quantityOfZero = quantityOfNumber, tmp = numberInID;
                 ID = code;
 
-                for (int i = 0; i < quantityOfNumber - (numberInID / 10 + 1); i++)
+                while (tmp > 0)
+                {
+                    quantityOfZero--;
+                    tmp /= 10;
+                }    
+
+                for (int i = 0; i < quantityOfZero; i++)
                 {
                     ID += "0";
                 }

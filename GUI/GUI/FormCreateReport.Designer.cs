@@ -146,6 +146,7 @@ namespace GUI
             this.dgvMedicineUseReport.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dgvMedicineUseReport.RowHeadersWidth = 51;
             this.dgvMedicineUseReport.RowTemplate.Height = 24;
+            this.dgvMedicineUseReport.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvMedicineUseReport.Size = new System.Drawing.Size(1820, 355);
             this.dgvMedicineUseReport.TabIndex = 1;
             // 
@@ -290,6 +291,7 @@ namespace GUI
             this.dgvRevenueReport.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dgvRevenueReport.RowHeadersWidth = 51;
             this.dgvRevenueReport.RowTemplate.Height = 24;
+            this.dgvRevenueReport.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvRevenueReport.Size = new System.Drawing.Size(1820, 293);
             this.dgvRevenueReport.TabIndex = 1;
             // 

@@ -11,11 +11,11 @@ namespace GUI
             this.parent = parent;
             AddEventHandler();
 
-            //this.tbName.Text = "1";
-            //this.cbUnit.Text = "1";
-            //this.tbQuantityOfInput.Text = "20";
-            //this.tbImportedUnitPrice.Text = "5000";
-            //this.tbRationToCalculateSellableUnitPrice.Text = "100";
+            this.cbMedicineName.Text = "Paracetamol";
+            this.cbUnit.Text = "Viên";
+            this.tbQuantityOfInput.Text = "10";
+            this.tbImportedUnitPrice.Text = "5000";
+            this.tbRatioToCalculateSellableUnitPrice.Text = "150";
 
             this.bAddUnit.Click += (s, e) =>
             {
@@ -31,27 +31,44 @@ namespace GUI
             this.cbUnit.KeyPress += LockInputNumber;
             this.tbQuantityOfInput.KeyPress += LockInputWord;
             this.tbImportedUnitPrice.KeyPress += LockInputWord;
-            this.tbRationToCalculateSellableUnitPrice.KeyPress += LockInputWord;
+            this.tbRatioToCalculateSellableUnitPrice.KeyPress += LockInputWord;
             this.tbQuantityOfInput.Leave += CheckInput;
             this.tbImportedUnitPrice.Leave += CheckPrice;
-            this.tbRationToCalculateSellableUnitPrice.Leave += CheckRation;
+            this.tbRatioToCalculateSellableUnitPrice.Leave += CheckRation;
             this.cbUnit.Leave += CheckUnit;
-            this.Load += LoadUnit;
+            this.cbMedicineName.Leave += CheckMedicineName;
+            this.Load += LoadComboBox;
             this.bReset.Click += Reset;
+            this.bCancel.Click += CloseForm;
+            this.tbImportedUnitPrice.Leave += ShowSellableUnitPrice;
+            this.tbRatioToCalculateSellableUnitPrice.Leave += ShowSellableUnitPrice;
+        }
+
+        private void ShowSellableUnitPrice(object sender, EventArgs e)
+        {
+            CreateImportedMedicineSlipHandler.ShowSellableUnitPrice(this.tbImportedUnitPrice,
+                this.tbRatioToCalculateSellableUnitPrice, ref this.tbSellableUnitPrice);
         }
 
         private void Reset(object sender, EventArgs e)
         {
-            this.cbName.Text = this.cbUnit.Text = this.tbQuantityOfInput.Text =
+            this.cbMedicineName.Text = this.cbUnit.Text = this.tbQuantityOfInput.Text =
                 this.tbImportedUnitPrice.Text = this.tbSellableUnitPrice.Text =
-                this.tbRationToCalculateSellableUnitPrice.Text = "";
+                this.tbRatioToCalculateSellableUnitPrice.Text = "";
         }
 
-        private async void LoadUnit(object sender, EventArgs e)
+        private async void LoadComboBox(object sender, EventArgs e)
         {
             this.cbUnit = await CreateImportedMedicineSlipHandler.LoadUnit(this.cbUnit);
+            this.cbMedicineName = 
+                await CreateImportedMedicineSlipHandler.LoadMedicineName(this.cbMedicineName);
         }
 
+        private void CheckMedicineName(object sender, EventArgs e)
+        {
+            CreateImportedMedicineSlipHandler.CheckMedicineName(this.cbMedicineName);
+        }
+        
         private void CheckUnit(object sender, EventArgs e)
         {
             CreateImportedMedicineSlipHandler.CheckUnit(this.cbUnit);
@@ -75,19 +92,14 @@ namespace GUI
         private async void AddMedicine(object sender, EventArgs e)
         {
             if (!CreateImportedMedicineSlipHandler.IsError(this.tbQuantityOfInput, this.tbImportedUnitPrice,
-                this.tbRationToCalculateSellableUnitPrice, this.cbUnit))
+                this.tbRatioToCalculateSellableUnitPrice, this.cbUnit, this.cbMedicineName))
             {
                 this.dgvMedicineList =
-                    await CreateImportedMedicineSlipHandler.CreateDetailImportedMedicineSlip(this.cbName.Text,
+                    await CreateImportedMedicineSlipHandler.CreateDetailImportedMedicineSlip(this.cbMedicineName.Text,
                     int.Parse(this.tbImportedUnitPrice.Text), this.cbUnit.Text,
-                    int.Parse(this.tbRationToCalculateSellableUnitPrice.Text),
+                    int.Parse(this.tbRatioToCalculateSellableUnitPrice.Text),
                     int.Parse(this.tbQuantityOfInput.Text), this.dgvMedicineList);
             }
-        }
-
-        private void FormCreateImportedMedicineSlip_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

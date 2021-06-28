@@ -43,7 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Data.cs" />
     <Compile Include="DataHandler.cs" />
     <Compile Include="FormAddTypeSickDAO.cs" />
@@ -66,6 +65,9 @@
       <Project>{90ade5df-62d0-4c47-b44e-2b08cf004b53}</Project>
       <Name>DTO</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

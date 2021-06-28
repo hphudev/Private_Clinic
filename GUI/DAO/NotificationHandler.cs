@@ -17,7 +17,6 @@ namespace DAO
         public static void NotifyInfo(string content)
         {
             MessageBox.Show(content + ".", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
         }
     }
 }

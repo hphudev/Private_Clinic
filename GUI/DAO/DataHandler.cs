@@ -70,6 +70,7 @@ namespace DAO
             try
             {
                 string sqlQuery = "SELECT " + columns + " FROM " + tables + " " + condition;
+                ExeQuery("SET DATEFORMAT DMY", connection);
                 SqlCommand command = new SqlCommand(sqlQuery, connection);
 
                 return command.ExecuteReader();
@@ -152,7 +153,7 @@ namespace DAO
             try
             {
                 SqlConnection connection = await OpenConnection();
-                ExeQuery("SET DATEFORMAT MDY", connection);
+                ExeQuery("SET DATEFORMAT DMY", connection);
                 string sqlQuery = "SELECT " + type + "(" + columns + ") FROM " + tables + " " +
                     condition;
                 SqlCommand command = new SqlCommand(sqlQuery, connection);
