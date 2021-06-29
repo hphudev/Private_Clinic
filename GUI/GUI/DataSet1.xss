@@ -13,8 +13,8 @@
     <Shape ID="DesignTable:DTBCTPKBB" ZOrder="6" X="538" Y="99" Height="125" Width="150" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="121" />
     <Shape ID="DesignTable:DTBDOANHTHUDATEE" ZOrder="4" X="391" Y="365" Height="79" Width="226" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="75" />
     <Shape ID="DesignTable:DTBDOANHTHUU" ZOrder="3" X="717" Y="390" Height="125" Width="187" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="121" />
-    <Shape ID="DesignTable:DTBSUDUNGTHUOCDATEE" ZOrder="2" X="402" Y="500" Height="56" Width="244" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="52" />
-    <Shape ID="DesignTable:DTBSUDUNGTHUOCC" ZOrder="1" X="561" Y="594" Height="218" Width="281" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="214" />
+    <Shape ID="DesignTable:DTBSUDUNGTHUOCDATEE" ZOrder="2" X="402" Y="498" Height="56" Width="244" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="52" />
+    <Shape ID="DesignTable:DTBSUDUNGTHUOCC" ZOrder="1" X="561" Y="591" Height="218" Width="281" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="214" />
   </Shapes>
   <Connectors />
 </DiagramLayout>

@@ -87,7 +87,7 @@
         <xs:element name="DTBSUDUNGTHUOCDATEE" msprop:Generator_TableClassName="DTBSUDUNGTHUOCDATEEDataTable" msprop:Generator_TableVarName="tableDTBSUDUNGTHUOCDATEE" msprop:Generator_TablePropName="DTBSUDUNGTHUOCDATEE" msprop:Generator_RowDeletingName="DTBSUDUNGTHUOCDATEERowDeleting" msprop:Generator_RowChangingName="DTBSUDUNGTHUOCDATEERowChanging" msprop:Generator_RowEvHandlerName="DTBSUDUNGTHUOCDATEERowChangeEventHandler" msprop:Generator_RowDeletedName="DTBSUDUNGTHUOCDATEERowDeleted" msprop:Generator_UserTableName="DTBSUDUNGTHUOCDATEE" msprop:Generator_RowChangedName="DTBSUDUNGTHUOCDATEERowChanged" msprop:Generator_RowEvArgName="DTBSUDUNGTHUOCDATEERowChangeEvent" msprop:Generator_RowClassName="DTBSUDUNGTHUOCDATEERow">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="ngaylap" msprop:Generator_ColumnVarNameInTable="columnngaylap" msprop:Generator_ColumnPropNameInRow="ngaylap" msprop:Generator_ColumnPropNameInTable="ngaylapColumn" msprop:Generator_UserColumnName="ngaylap" type="xs:string" minOccurs="0" />
+              <xs:element name="ngaylapp" msprop:Generator_ColumnVarNameInTable="columnngaylapp" msprop:Generator_ColumnPropNameInRow="ngaylapp" msprop:Generator_ColumnPropNameInTable="ngaylappColumn" msprop:Generator_UserColumnName="ngaylapp" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

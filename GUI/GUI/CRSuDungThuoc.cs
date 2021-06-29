@@ -16,14 +16,14 @@ namespace GUI {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class CRMedicineUsed : ReportClass {
+    public class CRSuDungThuoc : ReportClass {
         
-        public CRMedicineUsed() {
+        public CRSuDungThuoc() {
         }
         
         public override string ResourceName {
             get {
-                return "CRMedicineUsed.rpt";
+                return "CRSuDungThuoc.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace GUI {
         
         public override string FullResourceName {
             get {
-                return "GUI.CRMedicineUsed.rpt";
+                return "GUI.CRSuDungThuoc.rpt";
             }
             set {
                 // Do nothing
@@ -90,9 +90,9 @@ namespace GUI {
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedCRMedicineUsed : Component, ICachedReport {
+    public class CachedCRSuDungThuoc : Component, ICachedReport {
         
-        public CachedCRMedicineUsed() {
+        public CachedCRSuDungThuoc() {
         }
         
         [Browsable(false)]
@@ -129,7 +129,7 @@ namespace GUI {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            CRMedicineUsed rpt = new CRMedicineUsed();
+            CRSuDungThuoc rpt = new CRSuDungThuoc();
             rpt.Site = this.Site;
             return rpt;
         }

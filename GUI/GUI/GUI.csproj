@@ -83,12 +83,6 @@
       <DependentUpon>CRInvolke.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="CRMedicineUsed.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CRMedicineUsed.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="CRPatientExam.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -99,6 +93,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CRPatientList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRSuDungThuoc.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRSuDungThuoc.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="DataSet1.cs">
@@ -287,10 +287,6 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CRInvolke.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="CRMedicineUsed.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>CRMedicineUsed.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="CRPatientExam.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CRPatientExam.cs</LastGenOutput>
@@ -298,6 +294,10 @@
     <EmbeddedResource Include="CRPatientList.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CRPatientList.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRSuDungThuoc.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRSuDungThuoc.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="FormAddMedicalUnit.resx">
       <DependentUpon>FormAddMedicalUnit.cs</DependentUpon>

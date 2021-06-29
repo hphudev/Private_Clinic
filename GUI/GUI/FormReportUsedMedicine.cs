@@ -25,10 +25,10 @@ namespace GUI
 
         private async void FormLoad(object sender, EventArgs e)
         {
-            CRMedicineUsed rpt = new CRMedicineUsed();
+            CRSuDungThuoc rpt = new CRSuDungThuoc();
             SqlConnection con = await Data.OpenConnection();
             string query_1 = "", query_2 = "";
-            query_1 = $"select convert(nvarchar(20), thang) + '/' + convert(nvarchar(20), nam) as ngaylap " +
+            query_1 = $"select distinct convert(nvarchar(20), thang) + '/' + convert(nvarchar(20), nam) as ngaylapp " +
                 $" from CTBCSDTHUOC " +
                 $" where thang = '{thang}' and nam = '{nam}'";
 

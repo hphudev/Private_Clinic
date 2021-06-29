@@ -2610,7 +2610,7 @@ namespace GUI {
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class DTBSUDUNGTHUOCDATEEDataTable : global::System.Data.TypedTableBase<DTBSUDUNGTHUOCDATEERow> {
             
-            private global::System.Data.DataColumn columnngaylap;
+            private global::System.Data.DataColumn columnngaylapp;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
@@ -2647,9 +2647,9 @@ namespace GUI {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn ngaylapColumn {
+            public global::System.Data.DataColumn ngaylappColumn {
                 get {
-                    return this.columnngaylap;
+                    return this.columnngaylapp;
                 }
             }
             
@@ -2690,10 +2690,10 @@ namespace GUI {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DTBSUDUNGTHUOCDATEERow AddDTBSUDUNGTHUOCDATEERow(string ngaylap) {
+            public DTBSUDUNGTHUOCDATEERow AddDTBSUDUNGTHUOCDATEERow(string ngaylapp) {
                 DTBSUDUNGTHUOCDATEERow rowDTBSUDUNGTHUOCDATEERow = ((DTBSUDUNGTHUOCDATEERow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        ngaylap};
+                        ngaylapp};
                 rowDTBSUDUNGTHUOCDATEERow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowDTBSUDUNGTHUOCDATEERow);
                 return rowDTBSUDUNGTHUOCDATEERow;
@@ -2716,14 +2716,14 @@ namespace GUI {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
-                this.columnngaylap = base.Columns["ngaylap"];
+                this.columnngaylapp = base.Columns["ngaylapp"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
-                this.columnngaylap = new global::System.Data.DataColumn("ngaylap", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnngaylap);
+                this.columnngaylapp = new global::System.Data.DataColumn("ngaylapp", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnngaylapp);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4114,30 +4114,30 @@ namespace GUI {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string ngaylap {
+            public string ngaylapp {
                 get {
                     try {
-                        return ((string)(this[this.tableDTBSUDUNGTHUOCDATEE.ngaylapColumn]));
+                        return ((string)(this[this.tableDTBSUDUNGTHUOCDATEE.ngaylappColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'ngaylap\' in table \'DTBSUDUNGTHUOCDATEE\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'ngaylapp\' in table \'DTBSUDUNGTHUOCDATEE\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDTBSUDUNGTHUOCDATEE.ngaylapColumn] = value;
+                    this[this.tableDTBSUDUNGTHUOCDATEE.ngaylappColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsngaylapNull() {
-                return this.IsNull(this.tableDTBSUDUNGTHUOCDATEE.ngaylapColumn);
+            public bool IsngaylappNull() {
+                return this.IsNull(this.tableDTBSUDUNGTHUOCDATEE.ngaylappColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetngaylapNull() {
-                this[this.tableDTBSUDUNGTHUOCDATEE.ngaylapColumn] = global::System.Convert.DBNull;
+            public void SetngaylappNull() {
+                this[this.tableDTBSUDUNGTHUOCDATEE.ngaylappColumn] = global::System.Convert.DBNull;
             }
         }
         
