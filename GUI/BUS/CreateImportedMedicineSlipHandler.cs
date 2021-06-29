@@ -94,7 +94,8 @@ namespace BUS
         {
             SqlConnection connection = await DataHandler.OpenConnection();
             SqlDataReader reader = DataHandler.ReadData("THUOC T, DONVITINH DVT", connection, "WHERE " +
-                "T.MADONVITINH = DVT.MADONVITINH", "DVT.MADONVITINH, TENDONVITINH");
+                "T.MADONVITINH = DVT.MADONVITINH AND T.MADONVITINH = '" + medicine.unitID + "'", 
+                "DVT.MADONVITINH, TENDONVITINH");
             reader.Read();
             Unit unit = new Unit(reader);
             DataHandler.CloseConnection(ref connection);

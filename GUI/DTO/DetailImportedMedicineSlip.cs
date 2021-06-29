@@ -17,8 +17,8 @@ namespace DTO
             tmps[1] = "', '";
 
             return tmps[0] + this.ID + tmps[1] + this.medicineID + tmps[1] + this.quantityOfInput +
-                tmps[1] + this.importedMedicineDate.Year + "/" + this.importedMedicineDate.Month + "/" +
-                this.importedMedicineDate.Day + tmps[1] + this.currentSellableUnitPrice + tmps[1] +
+                tmps[1] + this.importedMedicineDate.Day + "/" + this.importedMedicineDate.Month + "/" +
+                this.importedMedicineDate.Year + tmps[1] + this.currentSellableUnitPrice + tmps[1] +
                 this.currentRatioToCalculateSellableUnitPrice + tmps[0];
         }
 

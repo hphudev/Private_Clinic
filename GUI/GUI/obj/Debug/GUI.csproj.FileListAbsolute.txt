@@ -413,3 +413,5 @@ F:\NMCNPM\Ver6\Private_Clinic-NMCNPM-Team_9\GUI\GUI\obj\Debug\GUI.csproj.CoreCom
 F:\NMCNPM\Ver6\Private_Clinic-NMCNPM-Team_9\GUI\GUI\obj\Debug\GUI.csproj.CopyComplete
 F:\NMCNPM\Ver6\Private_Clinic-NMCNPM-Team_9\GUI\GUI\obj\Debug\GUI.exe
 F:\NMCNPM\Ver6\Private_Clinic-NMCNPM-Team_9\GUI\GUI\obj\Debug\GUI.pdb
+C:\Users\DELL\Documents\TvT\UIT\Courses\Studying\SE104.L22\Project\Private_Clinic-NMCNPM-Team_9\GUI\GUI\obj\Debug\GUI.FormReportDoanhThu.resources
+C:\Users\DELL\Documents\TvT\UIT\Courses\Studying\SE104.L22\Project\Private_Clinic-NMCNPM-Team_9\GUI\GUI\obj\Debug\GUI.FormReportUsedMedicine.resources
