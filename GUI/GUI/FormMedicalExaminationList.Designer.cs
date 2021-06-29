@@ -149,7 +149,7 @@ namespace GUI
             this.lSickDay.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lSickDay.AutoSize = true;
             this.lSickDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lSickDay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(135)))), ((int)(((byte)(134)))));
+            this.lSickDay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
             this.lSickDay.Location = new System.Drawing.Point(1028, 103);
             this.lSickDay.Name = "lSickDay";
             this.lSickDay.Size = new System.Drawing.Size(191, 26);
@@ -182,7 +182,7 @@ namespace GUI
             this.lMedicalList.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lMedicalList.AutoSize = true;
             this.lMedicalList.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lMedicalList.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(135)))), ((int)(((byte)(134)))));
+            this.lMedicalList.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
             this.lMedicalList.Location = new System.Drawing.Point(36, 678);
             this.lMedicalList.Name = "lMedicalList";
             this.lMedicalList.Size = new System.Drawing.Size(249, 26);

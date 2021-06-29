@@ -111,10 +111,10 @@ namespace GUI
             this.bInputMedical.Location = new System.Drawing.Point(94, 460);
             this.bInputMedical.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bInputMedical.Name = "bInputMedical";
-            this.bInputMedical.Padding = new System.Windows.Forms.Padding(11, 10, 11, 10);
+            this.bInputMedical.Padding = new System.Windows.Forms.Padding(15, 10, 15, 10);
             this.bInputMedical.Size = new System.Drawing.Size(297, 140);
             this.bInputMedical.TabIndex = 12;
-            this.bInputMedical.Text = "NHẬP THUỐC";
+            this.bInputMedical.Text = "LẬP PHIẾU\r\n NHẬP THUỐC";
             this.bInputMedical.UseVisualStyleBackColor = false;
             // 
             // bSetReport
