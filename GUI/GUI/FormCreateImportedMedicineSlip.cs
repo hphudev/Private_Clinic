@@ -32,10 +32,17 @@ namespace GUI
             this.tbRatioToCalculateSellableUnitPrice.Leave += CheckRation;
             this.cbUnit.Leave += CheckUnit;
             this.Load += LoadComboBox;
+            this.Load += LoadMedicineList;
             this.bReset.Click += Reset;
             this.bCancel.Click += CloseForm;
             this.tbImportedUnitPrice.Leave += ShowSellableUnitPrice;
             this.tbRatioToCalculateSellableUnitPrice.Leave += ShowSellableUnitPrice;
+        }
+
+        private async void LoadMedicineList(object sender, EventArgs e)
+        {
+            this.dgvMedicineList = 
+                await CreateImportedMedicineSlipHandler.LoadMedicineList(this.dgvMedicineList);
         }
 
         private void AddUnit(object sender, EventArgs e)
@@ -89,11 +96,12 @@ namespace GUI
             if (!CreateImportedMedicineSlipHandler.IsError(this.tbQuantityOfInput, this.tbImportedUnitPrice,
                 this.tbRatioToCalculateSellableUnitPrice, this.cbUnit))
             {
-                this.dgvMedicineList =
+                this.dgvImportedMedicineList =
                     await CreateImportedMedicineSlipHandler.CreateDetailImportedMedicineSlip(this.cbMedicineName.Text,
                     int.Parse(this.tbImportedUnitPrice.Text), this.cbUnit.Text,
                     int.Parse(this.tbRatioToCalculateSellableUnitPrice.Text),
-                    int.Parse(this.tbQuantityOfInput.Text), this.dgvMedicineList);
+                    int.Parse(this.tbQuantityOfInput.Text), this.dgvImportedMedicineList);
+                LoadMedicineList(sender, e);
             }
         }
     }

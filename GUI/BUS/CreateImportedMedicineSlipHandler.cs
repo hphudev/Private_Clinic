@@ -10,6 +10,34 @@ namespace BUS
 {
     public abstract class CreateImportedMedicineSlipHandler : Handler
     {
+        public static async Task<DataGridView> LoadMedicineList(DataGridView dgvMedicineList)
+        {
+            dgvMedicineList.Rows.Clear();
+
+            int index = 1;
+            SqlConnection connection = await DataHandler.OpenConnection();
+            SqlDataReader reader = DataHandler.ReadData("THUOC T, DONVITINH DVT", connection, 
+                "WHERE T.MADONVITINH = DVT.MADONVITINH", "*");
+
+            while (reader.HasRows)
+            {
+                if (!reader.Read())
+                {
+                    break;
+                }
+
+                Medicine medicine = new Medicine(reader);
+                Unit unit = new Unit(reader, 7);
+                dgvMedicineList.Rows.Add(index++, medicine.ID, medicine.name, unit.name,
+                    medicine.quantityOfInventory, medicine.importedUnitPrice, medicine.sellableUnitPrice,
+                    medicine.ratioToCalculateSellableUnitPrice);
+            }
+
+            DataHandler.CloseConnection(ref connection);
+
+            return dgvMedicineList;
+        }
+
         public static void ShowSellableUnitPrice(Guna2TextBox tbImportedUnitPrice, 
             Guna2TextBox tbRatioToCalculateSellableUnitPrice, ref Guna2TextBox tbSellableUnitPrice)
         {

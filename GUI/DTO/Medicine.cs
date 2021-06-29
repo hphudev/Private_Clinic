@@ -4,7 +4,7 @@ namespace DTO
 {
     public class Medicine : IdentifiableObject
     {
-        private int quantityOfInventory;
+        public int quantityOfInventory { get; }
 
         public int sellableUnitPrice { get; }
 

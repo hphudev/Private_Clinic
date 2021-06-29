@@ -30,11 +30,11 @@ namespace GUI
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.dgvMedicineList = new System.Windows.Forms.DataGridView();
+            this.dgvImportedMedicineList = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaThuoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenThuoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -71,7 +71,7 @@ namespace GUI
             this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvMedicineList = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -81,12 +81,12 @@ namespace GUI
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMedicineList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvImportedMedicineList)).BeginInit();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.guna2GradientPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMedicineList)).BeginInit();
             this.SuspendLayout();
             // 
             // panel4
@@ -96,7 +96,7 @@ namespace GUI
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel4.Controls.Add(this.label1);
-            this.panel4.Controls.Add(this.dgvMedicineList);
+            this.panel4.Controls.Add(this.dgvImportedMedicineList);
             this.panel4.Location = new System.Drawing.Point(883, 172);
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
@@ -114,24 +114,24 @@ namespace GUI
             this.label1.TabIndex = 139;
             this.label1.Text = "Danh sách nhập thuốc";
             // 
-            // dgvMedicineList
+            // dgvImportedMedicineList
             // 
-            this.dgvMedicineList.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dgvImportedMedicineList.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvMedicineList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvMedicineList.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dgvMedicineList.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.ButtonFace;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvMedicineList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvMedicineList.ColumnHeadersHeight = 55;
-            this.dgvMedicineList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvImportedMedicineList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvImportedMedicineList.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dgvImportedMedicineList.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvImportedMedicineList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvImportedMedicineList.ColumnHeadersHeight = 55;
+            this.dgvImportedMedicineList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.MaThuoc,
             this.TenThuoc,
@@ -140,16 +140,16 @@ namespace GUI
             this.DonGiaNhap,
             this.DonGiaBan,
             this.TyLeTinh});
-            this.dgvMedicineList.EnableHeadersVisualStyles = false;
-            this.dgvMedicineList.Location = new System.Drawing.Point(8, 46);
-            this.dgvMedicineList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dgvMedicineList.Name = "dgvMedicineList";
-            this.dgvMedicineList.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.dgvMedicineList.RowHeadersWidth = 51;
-            this.dgvMedicineList.RowTemplate.Height = 24;
-            this.dgvMedicineList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvMedicineList.Size = new System.Drawing.Size(1001, 198);
-            this.dgvMedicineList.TabIndex = 1;
+            this.dgvImportedMedicineList.EnableHeadersVisualStyles = false;
+            this.dgvImportedMedicineList.Location = new System.Drawing.Point(8, 46);
+            this.dgvImportedMedicineList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvImportedMedicineList.Name = "dgvImportedMedicineList";
+            this.dgvImportedMedicineList.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dgvImportedMedicineList.RowHeadersWidth = 51;
+            this.dgvImportedMedicineList.RowTemplate.Height = 24;
+            this.dgvImportedMedicineList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvImportedMedicineList.Size = new System.Drawing.Size(1001, 198);
+            this.dgvImportedMedicineList.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -610,7 +610,7 @@ namespace GUI
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.dataGridView1);
+            this.panel2.Controls.Add(this.dgvMedicineList);
             this.panel2.Location = new System.Drawing.Point(34, 475);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
@@ -628,24 +628,24 @@ namespace GUI
             this.label6.TabIndex = 139;
             this.label6.Text = "Danh mục thuốc";
             // 
-            // dataGridView1
+            // dgvMedicineList
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dgvMedicineList.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.ButtonFace;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.dataGridView1.ColumnHeadersHeight = 29;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvMedicineList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvMedicineList.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dgvMedicineList.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.ButtonFace;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvMedicineList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvMedicineList.ColumnHeadersHeight = 29;
+            this.dgvMedicineList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4,
@@ -654,16 +654,16 @@ namespace GUI
             this.dataGridViewTextBoxColumn7,
             this.dataGridViewTextBoxColumn8,
             this.dataGridViewTextBoxColumn9});
-            this.dataGridView1.EnableHeadersVisualStyles = false;
-            this.dataGridView1.Location = new System.Drawing.Point(8, 46);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(1850, 355);
-            this.dataGridView1.TabIndex = 1;
+            this.dgvMedicineList.EnableHeadersVisualStyles = false;
+            this.dgvMedicineList.Location = new System.Drawing.Point(8, 46);
+            this.dgvMedicineList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvMedicineList.Name = "dgvMedicineList";
+            this.dgvMedicineList.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dgvMedicineList.RowHeadersWidth = 51;
+            this.dgvMedicineList.RowTemplate.Height = 24;
+            this.dgvMedicineList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvMedicineList.Size = new System.Drawing.Size(1850, 355);
+            this.dgvMedicineList.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn2
             // 
@@ -746,21 +746,21 @@ namespace GUI
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMedicineList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvImportedMedicineList)).EndInit();
             this.panel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.guna2GradientPanel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMedicineList)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.DataGridView dgvMedicineList;
+        private System.Windows.Forms.DataGridView dgvImportedMedicineList;
         private System.Windows.Forms.Button bReturn;
         private System.Windows.Forms.Panel panel1;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
@@ -798,7 +798,7 @@ namespace GUI
         private System.Windows.Forms.DataGridViewTextBoxColumn TyLeTinh;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvMedicineList;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
