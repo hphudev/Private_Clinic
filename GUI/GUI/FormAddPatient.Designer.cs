@@ -251,12 +251,12 @@ namespace GUI
             this.bRefresh.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bRefresh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
             this.bRefresh.HoverState.Parent = this.bRefresh;
-            this.bRefresh.Location = new System.Drawing.Point(266, 394);
+            this.bRefresh.Location = new System.Drawing.Point(280, 394);
             this.bRefresh.Name = "bRefresh";
             this.bRefresh.ShadowDecoration.Parent = this.bRefresh;
-            this.bRefresh.Size = new System.Drawing.Size(138, 47);
+            this.bRefresh.Size = new System.Drawing.Size(124, 47);
             this.bRefresh.TabIndex = 116;
-            this.bRefresh.Text = "Thêm mới";
+            this.bRefresh.Text = "Làm mới";
             // 
             // tbAddress
             // 

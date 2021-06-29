@@ -10,7 +10,16 @@ namespace GUI
             InitializeComponent();
             SetDefaultValue(parent);
             AddEventHandler();
-          
+            this.bPrintTotalReport.Click += (s, e) =>
+            {
+                FormReportDoanhThu form = new FormReportDoanhThu(this.tbMonth.Text, this.tbYear.Text);
+                BUS.Event.ShowFormDialog(form);
+            };
+            this.bPrintMedicalReport.Click += (s, e) =>
+            {
+                FormReportUsedMedicine form = new FormReportUsedMedicine(this.tbMonth.Text, this.tbYear.Text);
+                BUS.Event.ShowFormDialog(form);
+            };
         }
 
         protected override void AddEventHandler()
@@ -22,6 +31,7 @@ namespace GUI
             this.tbYear.Leave += CheckYear;
             this.tbMonth.KeyPress += LockInputWord;
             this.tbYear.KeyPress += LockInputWord;
+            this.bCancel.Click += CloseForm;
         }
 
         private void CheckYear(object sender, EventArgs e)
@@ -52,8 +62,8 @@ namespace GUI
         private async void CreateMedicineUseReport(object sender, EventArgs e)
         {
             this.dgvMedicineUseReport =
-            await new CreateMedicineUseReportHandler().CreateReport(GetMonth(), GetYear(),
-            this.dgvMedicineUseReport);
+                await new CreateMedicineUseReportHandler().CreateReport(GetMonth(), GetYear(),
+                this.dgvMedicineUseReport);
         }
 
         private async void CreateRevenueReport(object sender, EventArgs e)

@@ -20,6 +20,14 @@ namespace GUI
 
     partial class DataSet
     {
+        partial class DTBSUDUNGTHUOCCDataTable
+        {
+        }
+
+        partial class DTBDOANHTHUDATEEDataTable
+        {
+        }
+
         partial class DTBCTPKBBDataTable
         {
         }

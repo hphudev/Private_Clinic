@@ -13,7 +13,6 @@ namespace BUS
         protected async override Task<DataGridView> ProcessCreateReport(int month, int year,
             DataGridView dgvReport)
         {
-            int phu = 0;
             if (await IsExistInvoice(month, year))
             {
                 DateTime[] createdReportDates = await GetCreatedDates(month, year,
@@ -29,6 +28,10 @@ namespace BUS
                 }
 
                 dgvReport = await LoadReport(month, year, dgvReport);
+            }
+            else
+            {
+                NotificationHandler.NotifyInfo("Tháng được nhập không có doanh thu");
             }
 
             return dgvReport;

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Windows.Forms;
-using BUS;
 
 namespace GUI
 {
@@ -39,12 +38,17 @@ namespace GUI
 
         protected virtual void AddEventHandler()
         {
-            this.FormClosed += CloseForm;
+            this.FormClosed += ShowParentForm;
         }
 
-        private void CloseForm(object sender, FormClosedEventArgs e)
+        private void ShowParentForm(object sender, FormClosedEventArgs e)
         {
             BUS.EventHandler.ShowFormEffect(parent, 1);
+        }
+
+        protected void CloseForm(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

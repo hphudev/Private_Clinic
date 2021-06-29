@@ -50,6 +50,7 @@ namespace GUI
             this.ClientSize = new System.Drawing.Size(954, 622);
             this.Controls.Add(this.crvPatientExam);
             this.Name = "FormReportPatientExam";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormReportPatientExam";
             this.ResumeLayout(false);
 

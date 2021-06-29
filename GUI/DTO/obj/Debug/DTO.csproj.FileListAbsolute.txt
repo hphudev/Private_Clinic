@@ -22,3 +22,9 @@ F:\NMCNPM\Ver5\Private_Clinic-NMCNPM-Team_9\GUI\DTO\obj\Debug\DTO.csprojAssembly
 F:\NMCNPM\Ver5\Private_Clinic-NMCNPM-Team_9\GUI\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 F:\NMCNPM\Ver5\Private_Clinic-NMCNPM-Team_9\GUI\DTO\obj\Debug\DTO.dll
 F:\NMCNPM\Ver5\Private_Clinic-NMCNPM-Team_9\GUI\DTO\obj\Debug\DTO.pdb
+C:\Users\DELL\Documents\TvT\UIT\Courses\Studying\SE104.L22\Project\Private_Clinic-NMCNPM-Team_9_2\GUI\DTO\bin\Debug\DTO.dll
+C:\Users\DELL\Documents\TvT\UIT\Courses\Studying\SE104.L22\Project\Private_Clinic-NMCNPM-Team_9_2\GUI\DTO\bin\Debug\DTO.pdb
+C:\Users\DELL\Documents\TvT\UIT\Courses\Studying\SE104.L22\Project\Private_Clinic-NMCNPM-Team_9_2\GUI\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+C:\Users\DELL\Documents\TvT\UIT\Courses\Studying\SE104.L22\Project\Private_Clinic-NMCNPM-Team_9_2\GUI\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Documents\TvT\UIT\Courses\Studying\SE104.L22\Project\Private_Clinic-NMCNPM-Team_9_2\GUI\DTO\obj\Debug\DTO.dll
+C:\Users\DELL\Documents\TvT\UIT\Courses\Studying\SE104.L22\Project\Private_Clinic-NMCNPM-Team_9_2\GUI\DTO\obj\Debug\DTO.pdb

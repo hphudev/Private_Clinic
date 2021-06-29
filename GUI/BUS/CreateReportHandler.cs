@@ -3,7 +3,6 @@ using System.Data.SqlClient;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DAO;
-using Guna.UI2.WinForms;
 
 namespace BUS
 {
@@ -89,6 +88,11 @@ namespace BUS
             DateTime now = DateTime.Now;
             int currentYear = now.Year;
 
+            if (!IsMonth(month))
+            {
+                return true;
+            }
+
             if (year > currentYear || (year == currentYear && month >= now.Month))
             {
                 NotificationHandler.NotifyError("Không được nhập tháng năm lớn hơn hoặc bằng tháng " +
@@ -97,14 +101,16 @@ namespace BUS
                 return true;
             }
 
-            if (!IsMonth(month))
-            {
-                return true;
-            }
-
             if (year == -1)
             {
                 NotificationHandler.NotifyError("Năm không được phép để trống");
+
+                return true;
+            }
+
+            if (year == 0)
+            {
+                NotificationHandler.NotifyError("Năm phải lớn hơn 0");
 
                 return true;
             }

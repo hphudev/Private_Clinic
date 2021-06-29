@@ -50,6 +50,7 @@ namespace GUI
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.crvInvolke);
             this.Name = "FormReportInvolke";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormReportInvolke";
             this.ResumeLayout(false);
 

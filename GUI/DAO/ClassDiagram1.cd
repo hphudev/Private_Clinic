@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DAO.Data" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAEIABAAAAAAAAABAAASAAAEAAAAEAAAAAAAA=</HashCode>
+      <FileName>Data.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAO.DataHandler" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAABAAAAAAAAABAAASAAAEAAAAEAABAAAAA=</HashCode>
+      <FileName>DataHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAO.FormAddTypeSickDAO" Collapsed="true">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAIABAAAAAAAA=</HashCode>
+      <FileName>FormAddTypeSickDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAO.FormAddUseWayDAO" Collapsed="true">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UAAAAAAAAAAAAAAIACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FormAddUseWayDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAO.FormSetInvolkeDAO" Collapsed="true">
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAIAAAAAAEAAAAAAAAAAAQAAEAEAAAAIAAgAAAAA=</HashCode>
+      <FileName>FormSetInvolkeDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAO.FormSetMedicalExaminationDAO" Collapsed="true">
+    <Position X="5.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UEAFAAAAAIAAAACAECCIAQAAAAAACAAAIAIAAgAAAAA=</HashCode>
+      <FileName>FormSetMedicalExaminationDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAO.Handler" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Handler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAO.MedicalExaminationCard" Collapsed="true">
+    <Position X="7" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>MedicalExaminationCard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAO.MedicalExaminationCardDetails" Collapsed="true">
+    <Position X="8.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>MedicalExaminationCardDetails.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAO.MedicalExaminationDetails" Collapsed="true">
+    <Position X="10.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAIAAAAAAAAFAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>MedicalExaminationDetails.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAO.MedicalUnit" Collapsed="true">
+    <Position X="5.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAASFAAAAEQAAAAAgAAEA=</HashCode>
+      <FileName>MedicalUnit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAO.NotificationHandler" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAEAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>NotificationHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAO.Parameters" Collapsed="true">
+    <Position X="7" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAQAAAAAAAAAAAAAABCAAAAQAAAAAAAAAE=</HashCode>
+      <FileName>Parameters.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAO.Patient" Collapsed="true">
+    <Position X="8.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACIoAAAhCEAAAAAQAAAAAAFAAAAQQABABAAAAAA=</HashCode>
+      <FileName>Patient.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAO.UseWay" Collapsed="true">
+    <Position X="10.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAACAAAAAAAAAAAAAAQAAAAIFAEQAAQAAAAAAAAAA=</HashCode>
+      <FileName>UseWay.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

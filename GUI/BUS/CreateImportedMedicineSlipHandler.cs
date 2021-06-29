@@ -10,6 +10,41 @@ namespace BUS
 {
     public abstract class CreateImportedMedicineSlipHandler : Handler
     {
+        public static void ShowSellableUnitPrice(Guna2TextBox tbImportedUnitPrice, 
+            Guna2TextBox tbRatioToCalculateSellableUnitPrice, ref Guna2TextBox tbSellableUnitPrice)
+        {
+            try
+            {
+                tbSellableUnitPrice.Text = (int.Parse(tbImportedUnitPrice.Text) *
+                    int.Parse(tbRatioToCalculateSellableUnitPrice.Text) / 100).ToString();
+            }
+            catch (Exception)
+            {
+                tbSellableUnitPrice.Text = "";
+            }
+        }
+
+        public static async Task<ComboBox> LoadMedicineName(ComboBox cbMedicineName)
+        {
+            SqlConnection connection = await DataHandler.OpenConnection();
+            SqlDataReader reader = DataHandler.ReadData("THUOC", connection, "", "*");
+
+            while (reader.HasRows)
+            {
+                if (!reader.Read())
+                {
+                    break;
+                }
+
+                Medicine medicine = new Medicine(reader);
+                cbMedicineName.Items.Add(medicine.name);
+            }
+
+            DataHandler.CloseConnection(ref connection);
+
+            return cbMedicineName;
+        }
+        
         public static async Task<ComboBox> LoadUnit(ComboBox cbUnit)
         {
             SqlConnection connection = await DataHandler.OpenConnection();
@@ -32,10 +67,10 @@ namespace BUS
         }
 
         public static async Task<DataGridView> CreateDetailImportedMedicineSlip(string name,
-            int importedUnitPrice, string unitID, int ratioToCalculateSellableUnitPrice,
+            int importedUnitPrice, string unitName, int ratioToCalculateSellableUnitPrice,
             int quantityOfInput, DataGridView dgvMedicineList)
         {
-            Medicine medicine = await AddMedicine(name, importedUnitPrice, unitID,
+            Medicine medicine = await AddMedicine(name, importedUnitPrice, unitName,
                 ratioToCalculateSellableUnitPrice);
             DetailImportedMedicineSlip detailImportedMedicineSlip =
                 await AddDetailImportedMedicineSlip(medicine, quantityOfInput);
@@ -80,11 +115,17 @@ namespace BUS
         }
 
         private static async Task<Medicine> AddMedicine(string name, int importedUnitPrice,
-            string unitID, int ratioToCalculateSellableUnitPrice)
+            string unitName, int ratioToCalculateSellableUnitPrice)
         {
             string table = "THUOC";
+            SqlConnection connection = await DataHandler.OpenConnection();
+            SqlDataReader reader = DataHandler.ReadData("DONVITINH", connection, "WHERE TENDONVITINH = N'" + 
+                unitName + "'", "*");
+            reader.Read();
+            Unit unit = new Unit(reader);
+            DataHandler.CloseConnection(ref connection);
             Medicine medicine = new Medicine(await IDHandler.FindNewID(table, "MATHUOC", "T", 5), name,
-                importedUnitPrice, "DVT01", ratioToCalculateSellableUnitPrice);
+                importedUnitPrice, unit.ID, ratioToCalculateSellableUnitPrice);
 
             if (!await IsExistMedicine(medicine))
             {
@@ -97,8 +138,8 @@ namespace BUS
                     GetExistMedicineCondition(medicine));
             }
 
-            SqlConnection connection = await DataHandler.OpenConnection();
-            SqlDataReader reader = DataHandler.ReadData("THUOC", connection,
+            connection = await DataHandler.OpenConnection();
+            reader = DataHandler.ReadData("THUOC", connection,
                 GetExistMedicineCondition(medicine), "*");
             reader.Read();
             medicine = new Medicine(reader);
@@ -126,7 +167,7 @@ namespace BUS
         {
             return (!CheckInput(tbImportedUnitPrice, "Đơn giá nhập") || !CheckInput(tbQuantityOfInput,
                 "Số lượng nhập") || !CheckInput(tbRationToCalculateSellableUnitPrice,
-                "Tỷ lệ tính đơn giá bán", 100) || !CheckUnit(cbUnit));
+                "Tỷ lệ tính đơn giá bán", 99) || !CheckUnit(cbUnit));
         }
 
         public static bool CheckUnit(ComboBox cbUnit)

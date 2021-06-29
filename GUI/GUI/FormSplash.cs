@@ -60,7 +60,7 @@ namespace GUI
             {
                 this.pBar.Value += 90;
                 await BUS.Event.FreezeForm(2000);
-                BUS.Event.ShowChildForm_HideParentForm(new FormEntrance(this), this);
+                BUS.Event.ShowChildForm_HideParentForm(new FormMain(), this);
             }
             return;
         }

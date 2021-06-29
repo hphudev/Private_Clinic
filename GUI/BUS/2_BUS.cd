@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BUS.CreateImportedMedicineSlipHandler" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IABIAAAAgAAAAQAAAEQAAAAAAAABAAAAAAgAAAEAAAA=</HashCode>
+      <FileName>CreateImportedMedicineSlipHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BUS.CreateMedicineUseReportHandler" Collapsed="true">
+    <Position X="5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAICAAABAAAAAAAAAAAAQBAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>CreateMedicineUseReportHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BUS.CreateReportHandler" Collapsed="true">
+    <Position X="6.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEIAACAAAFAAAAAAgAAAAAABABAAAAAAACCBQAAAA=</HashCode>
+      <FileName>CreateReportHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BUS.CreateRevenueReportHandler" Collapsed="true">
+    <Position X="7.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAiAAABAAAAAAAAAAAAAAAAAgAAAAAAAAYAAAA=</HashCode>
+      <FileName>CreateRevenueReportHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BUS.Event" Collapsed="true">
+    <Position X="12" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAIAJCACIgIACBgABABBAAAAAAAIAQAAE=</HashCode>
+      <FileName>Event.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BUS.EventHandler" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAIAJCACIgIACBgABABBAAAAAAAIAQAAE=</HashCode>
+      <FileName>EventHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BUS.FormAddTypeSickBUS" Collapsed="true">
+    <Position X="13.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAEAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>FormAddTypeSickBUS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BUS.FormAddUseWayBUS" Collapsed="true">
+    <Position X="15.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FormAddUseWayBUS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BUS.FormSetInvolkeBUS" Collapsed="true">
+    <Position X="12" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAEAAAAAAAAAAAQAAEAEAAAAIgAgAAAAA=</HashCode>
+      <FileName>FormSetInvolkeBUS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BUS.FormSetMedicalExaminationBUS" Collapsed="true">
+    <Position X="13.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>VAAAAAAAAAAAgAAAADAIAQAAAAAAAAAAAAiCAgAAAAA=</HashCode>
+      <FileName>FormSetMedicalExaminationBUS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BUS.Handler" Collapsed="true">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>Handler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BUS.IDHandler" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAEAAAAAAAAAAAAgAAAAAAAAEA=</HashCode>
+      <FileName>IDHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BUS.Support" Collapsed="true">
+    <Position X="15.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAQAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Support.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

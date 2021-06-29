@@ -28,6 +28,8 @@ namespace GUI
         TypeSick choiceTypeSick = null;
         UseWayPhu choiceUseWay = null;
         Timer autoUpdate;
+        private bool allowLoadNameWaiting = true;
+
         public delegate void TestEventDelegate(object s, EventArgs e);
         //public event TestEventDelegate TestEvent;
 
@@ -172,6 +174,9 @@ namespace GUI
             {
                 if (choicePatient == null)
                     return;
+                DialogResult result = MessageBox.Show("Bạn có muốn hủy khám bệnh nhân này?", "CẢNH BÁO", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (result == DialogResult.No)
+                    return;
                 BUS.FormSetMedicalExaminationBUS.DeleteDetailExam(choicePatient, this.dtpSickDay.Value);
                 MessageBox.Show("Đã hủy khám thành công!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 bWaitingPatientRefresh.PerformClick();
@@ -218,7 +223,7 @@ namespace GUI
 
         private bool CheckNullSave()
         {
-            return choicePatient == null || !gbPatientInformation.Enabled || choiceMedicines.Count == 0;
+            return choicePatient == null || !gbPatientInformation.Enabled || !gbMedicalExam.Enabled || choiceMedicines.Count == 0;
         }
 
         private async void bSaveClicked(object sender, EventArgs e)
@@ -230,6 +235,9 @@ namespace GUI
                     MessageBox.Show("Bạn chưa nhập đủ thông tin có liên quan!", "CẢNH BÁO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
+                DialogResult result = MessageBox.Show("Bạn có muốn lưu phiếu khám bệnh không?", "CÂU HỎI", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.No)
+                    return;
                 DetailExam detailExam = await BUS.FormSetMedicalExaminationBUS.GetDetailExam(choicePatient.Id, this.dtpSickDay.Value);
                 PatientExam patientExam = new PatientExam(
                     "",
@@ -241,7 +249,7 @@ namespace GUI
                  choiceUseWays, choiceNumMedicals);
                 
                 MessageBox.Show("Đã lưu phiếu nhập thuốc!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                DialogResult result = MessageBox.Show("Bạn có muốn in phiếu khám bệnh không?", "CÂU HỎI", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                result = MessageBox.Show("Bạn có muốn in phiếu khám bệnh không?", "CÂU HỎI", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (result == DialogResult.Yes)
                 {
                     FormReportPatientExam form = new FormReportPatientExam(detailExam.Id);
@@ -555,7 +563,7 @@ namespace GUI
             
         }
 
-        private void bWaitingPatientRefreshClicked(object sender, EventArgs e)
+        private async void bWaitingPatientRefreshClicked(object sender, EventArgs e)
         {
             try
             {
@@ -567,6 +575,8 @@ namespace GUI
                         return;
                 }
                 dtpSickDay.Value = DateTime.Now;
+                this.cbFindPatient.Text = "";
+                this.allowLoadNameWaiting = true;
                 FormLoad(this, new EventArgs());
                 RefreshChoicePatient();
                 this.dgvMedicalList.Rows.Clear();
@@ -801,9 +811,15 @@ namespace GUI
                     this.dgvPatientWaiting.Rows[selectIndex].Selected = true;
                 else
                     this.dgvPatientWaiting.ClearSelection();
+                
+                if (allowLoadNameWaiting)
+                {
+                    //Đổ dữ liệu vào bộ lọc tìm kiếm
+                    NamePatientFind_Adapter(waitingPatients);
+                    allowLoadNameWaiting = false;
+                }
 
-                //Đổ dữ liệu vào bộ lọc tìm kiếm
-                NamePatientFind_Adapter(waitingPatients);
+                
             }
             catch (Exception a)
             {
@@ -889,6 +905,11 @@ namespace GUI
         }
 
         private void Label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DgvMedicalList_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
