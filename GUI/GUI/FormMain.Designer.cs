@@ -72,7 +72,7 @@ namespace GUI
             this.bMedicalExaminationList.Padding = new System.Windows.Forms.Padding(11, 10, 11, 10);
             this.bMedicalExaminationList.Size = new System.Drawing.Size(297, 140);
             this.bMedicalExaminationList.TabIndex = 10;
-            this.bMedicalExaminationList.Text = "LẬP DANH SÁCH KHÁM BỆNH";
+            this.bMedicalExaminationList.Text = "LẬP DANH SÁCH\r\nKHÁM BỆNH";
             this.bMedicalExaminationList.UseVisualStyleBackColor = false;
             // 
             // bPatientLookup
@@ -93,7 +93,7 @@ namespace GUI
             this.bPatientLookup.Padding = new System.Windows.Forms.Padding(11, 10, 11, 10);
             this.bPatientLookup.Size = new System.Drawing.Size(297, 140);
             this.bPatientLookup.TabIndex = 11;
-            this.bPatientLookup.Text = "TRA CỨU BỆNH NHÂN";
+            this.bPatientLookup.Text = "TRA CỨU\r\nBỆNH NHÂN";
             this.bPatientLookup.UseVisualStyleBackColor = false;
             // 
             // bInputMedical
@@ -156,7 +156,7 @@ namespace GUI
             this.bSetMedicalExamination.Padding = new System.Windows.Forms.Padding(11, 10, 11, 10);
             this.bSetMedicalExamination.Size = new System.Drawing.Size(297, 140);
             this.bSetMedicalExamination.TabIndex = 16;
-            this.bSetMedicalExamination.Text = "LẬP PHIẾU KHÁM BỆNH";
+            this.bSetMedicalExamination.Text = "LẬP PHIẾU\r\nKHÁM BỆNH";
             this.bSetMedicalExamination.UseVisualStyleBackColor = false;
             // 
             // bCancel
@@ -198,7 +198,7 @@ namespace GUI
             this.bSetInvolke.Padding = new System.Windows.Forms.Padding(11, 10, 11, 10);
             this.bSetInvolke.Size = new System.Drawing.Size(297, 140);
             this.bSetInvolke.TabIndex = 18;
-            this.bSetInvolke.Text = "LẬP HÓA ĐƠN THANH TOÁN";
+            this.bSetInvolke.Text = "LẬP HÓA ĐƠN\r\nTHANH TOÁN";
             this.bSetInvolke.UseVisualStyleBackColor = false;
             // 
             // bSetting

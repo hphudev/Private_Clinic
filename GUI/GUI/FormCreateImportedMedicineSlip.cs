@@ -11,11 +11,11 @@ namespace GUI
             this.parent = parent;
             AddEventHandler();
 
-            this.cbMedicineName.Text = "Paracetamol";
-            this.cbUnit.Text = "Viên";
-            this.tbQuantityOfInput.Text = "10";
-            this.tbImportedUnitPrice.Text = "5000";
-            this.tbRatioToCalculateSellableUnitPrice.Text = "100";
+            //this.cbMedicineName.Text = "Paracetamol";
+            //this.cbUnit.Text = "Viên";
+            //this.tbQuantityOfInput.Text = "10";
+            //this.tbImportedUnitPrice.Text = "5000";
+            //this.tbRatioToCalculateSellableUnitPrice.Text = "100";
         }
 
         protected override void AddEventHandler()

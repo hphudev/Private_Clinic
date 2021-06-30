@@ -31,11 +31,11 @@ namespace GUI
             string query = "";
             if (!check)
             {
-                query = $"select DISTINCT BENHNHAN.mabenhnhan, hoten, gioitinh, CONVERT(NVARCHAR(10),DAY(ngaysinh)) + '/' + CONVERT(NVARCHAR(10),MONTH(ngaysinh)) + '/' + CONVERT(NVARCHAR(10),YEAR(ngaysinh)) as NGAYSINH, diachi, count( benhnhan.mabenhnhan) as TongSoLanKham, sum(HOADON.MACTKB) as TongTien from benhnhan, ctkb left join hoadon on (HOADON.MACTKB = ctkb.MACTKB) where BENHNHAN.MABENHNHAN = CTKB.MABENHNHAN group by benhnhan.mabenhnhan, hoten, gioitinh, ngaysinh, diachi";
+                query = $"select DISTINCT BENHNHAN.mabenhnhan, hoten, gioitinh, CONVERT(NVARCHAR(10),DAY(ngaysinh)) + '/' + CONVERT(NVARCHAR(10),MONTH(ngaysinh)) + '/' + CONVERT(NVARCHAR(10),YEAR(ngaysinh)) as NGAYSINH, diachi, count( distinct phieukb.maphieukb) as TongSoLanKham, sum(HOADON.tongtien) as TongTien from benhnhan, phieukb, ctkb left join hoadon on (HOADON.MACTKB = ctkb.MACTKB) where BENHNHAN.MABENHNHAN = CTKB.MABENHNHAN and CTKB.MACTKB = PHIEUKB.MACTKB group by benhnhan.mabenhnhan, hoten, gioitinh, ngaysinh, diachi";
             }
             else
             {
-                query = $"select DISTINCT BENHNHAN.mabenhnhan, hoten, gioitinh, CONVERT(NVARCHAR(10),DAY(ngaysinh)) + '/' + CONVERT(NVARCHAR(10),MONTH(ngaysinh)) + '/' + CONVERT(NVARCHAR(10),YEAR(ngaysinh)) as NGAYSINH, diachi, count( benhnhan.mabenhnhan) as TongSoLanKham, sum(HOADON.MACTKB) as TongTien from benhnhan, ctkb left join hoadon on (HOADON.MACTKB = ctkb.MACTKB) where BENHNHAN.MABENHNHAN = CTKB.MABENHNHAN AND DAY(ctkb.ngaykhambenh) = '{date.Day.ToString()}' and MONTH(ctkb.ngaykhambenh) ='{date.Month.ToString()}' and YEAR(ctkb.ngaykhambenh) = '{date.Year.ToString()}' group by benhnhan.mabenhnhan, hoten, gioitinh, ngaysinh, diachi";
+                query = $"select DISTINCT BENHNHAN.mabenhnhan, hoten, gioitinh, CONVERT(NVARCHAR(10),DAY(ngaysinh)) + '/' + CONVERT(NVARCHAR(10),MONTH(ngaysinh)) + '/' + CONVERT(NVARCHAR(10),YEAR(ngaysinh)) as NGAYSINH, diachi, count( distinct phieukb.maphieukb) as TongSoLanKham, sum(HOADON.tongtien) as TongTien from benhnhan, phieukb, ctkb left join hoadon on (HOADON.MACTKB = ctkb.MACTKB) where BENHNHAN.MABENHNHAN = CTKB.MABENHNHAN and CTKB.MACTKB = PHIEUKB.MACTKB AND DAY(ctkb.ngaykhambenh) = '{date.Day.ToString()}' and MONTH(ctkb.ngaykhambenh) ='{date.Month.ToString()}' and YEAR(ctkb.ngaykhambenh) = '{date.Year.ToString()}' group by benhnhan.mabenhnhan, hoten, gioitinh, ngaysinh, diachi";
             }
             SqlDataAdapter dap = new SqlDataAdapter(query, con);
             var dt = new DataTable();

@@ -12,9 +12,11 @@ namespace GUI
 {
     public partial class FormMain : Form
     {
-        public FormMain()
+        private FormSplash parent;
+        public FormMain(FormSplash form)
         {
             InitializeComponent();
+            this.parent = form;
             DoubleBuffered = true;
             this.MouseDown += (s, e) =>
             {
@@ -29,7 +31,18 @@ namespace GUI
             Init_bSetReport();
             Init_bSetting();
             Init_bStaffManagement();
+            this.bCancel.Click += bCancelClicked;
+            this.FormClosed += formClosed;
+        }
 
+        private void bCancelClicked(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void formClosed(object sender, FormClosedEventArgs e)
+        {
+            this.parent.Close();
         }
 
         private void Init_bSetMedicalExamination()

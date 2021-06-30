@@ -68,7 +68,9 @@ namespace GUI
             this.bCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.bCancel.Animated = true;
             this.bCancel.BackColor = System.Drawing.Color.Transparent;
+            this.bCancel.BorderColor = System.Drawing.Color.White;
             this.bCancel.BorderRadius = 6;
+            this.bCancel.BorderThickness = 1;
             this.bCancel.CheckedState.Parent = this.bCancel;
             this.bCancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bCancel.CustomImages.Parent = this.bCancel;
@@ -108,7 +110,7 @@ namespace GUI
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
-            this.label5.Location = new System.Drawing.Point(11, 314);
+            this.label5.Location = new System.Drawing.Point(11, 319);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(100, 32);
             this.label5.TabIndex = 17;
@@ -121,9 +123,9 @@ namespace GUI
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
             this.label4.Location = new System.Drawing.Point(11, 254);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(130, 32);
+            this.label4.Size = new System.Drawing.Size(136, 32);
             this.label4.TabIndex = 15;
-            this.label4.Text = "Năm sinh:";
+            this.label4.Text = "Ngày sinh:";
             // 
             // label3
             // 
@@ -164,14 +166,14 @@ namespace GUI
             this.tbName.ForeColor = System.Drawing.Color.Black;
             this.tbName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbName.HoverState.Parent = this.tbName;
-            this.tbName.Location = new System.Drawing.Point(148, 133);
+            this.tbName.Location = new System.Drawing.Point(157, 133);
             this.tbName.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.tbName.Name = "tbName";
             this.tbName.PasswordChar = '\0';
             this.tbName.PlaceholderText = "";
             this.tbName.SelectedText = "";
             this.tbName.ShadowDecoration.Parent = this.tbName;
-            this.tbName.Size = new System.Drawing.Size(391, 43);
+            this.tbName.Size = new System.Drawing.Size(382, 43);
             this.tbName.TabIndex = 20;
             // 
             // cbSex
@@ -188,14 +190,11 @@ namespace GUI
             this.cbSex.FormattingEnabled = true;
             this.cbSex.HoverState.Parent = this.cbSex;
             this.cbSex.ItemHeight = 30;
-            this.cbSex.Items.AddRange(new object[] {
-            "Nam",
-            "Nữ"});
             this.cbSex.ItemsAppearance.Parent = this.cbSex;
-            this.cbSex.Location = new System.Drawing.Point(148, 195);
+            this.cbSex.Location = new System.Drawing.Point(157, 195);
             this.cbSex.Name = "cbSex";
             this.cbSex.ShadowDecoration.Parent = this.cbSex;
-            this.cbSex.Size = new System.Drawing.Size(164, 36);
+            this.cbSex.Size = new System.Drawing.Size(155, 36);
             this.cbSex.Sorted = true;
             this.cbSex.StartIndex = 0;
             this.cbSex.TabIndex = 21;
@@ -209,10 +208,10 @@ namespace GUI
             this.dtpDate.ForeColor = System.Drawing.Color.Black;
             this.dtpDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpDate.FormatCustom = "dd/mm/yyyy";
-            this.dtpDate.Location = new System.Drawing.Point(148, 255);
+            this.dtpDate.Location = new System.Drawing.Point(157, 255);
             this.dtpDate.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.dtpDate.Name = "dtpDate";
-            this.dtpDate.Size = new System.Drawing.Size(391, 42);
+            this.dtpDate.Size = new System.Drawing.Size(382, 42);
             this.dtpDate.TabIndex = 22;
             this.dtpDate.Value = new System.DateTime(2021, 6, 6, 11, 44, 35, 994);
             // 
@@ -275,14 +274,14 @@ namespace GUI
             this.tbAddress.ForeColor = System.Drawing.Color.Black;
             this.tbAddress.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbAddress.HoverState.Parent = this.tbAddress;
-            this.tbAddress.Location = new System.Drawing.Point(148, 314);
+            this.tbAddress.Location = new System.Drawing.Point(157, 315);
             this.tbAddress.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.tbAddress.Name = "tbAddress";
             this.tbAddress.PasswordChar = '\0';
             this.tbAddress.PlaceholderText = "";
             this.tbAddress.SelectedText = "";
             this.tbAddress.ShadowDecoration.Parent = this.tbAddress;
-            this.tbAddress.Size = new System.Drawing.Size(391, 43);
+            this.tbAddress.Size = new System.Drawing.Size(382, 43);
             this.tbAddress.TabIndex = 117;
             // 
             // FormAddPatient

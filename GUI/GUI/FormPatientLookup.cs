@@ -160,9 +160,9 @@ namespace GUI
         private void FormPatientLookup_Load(object sender, EventArgs e)
         {
             dtpSickDay.Value = DateTime.Now;
-            Design_Datagridview(ref dgvPatientList);
-            Design_Datagridview(ref dgvExamList);
-            Design_Datagridview(ref dgvMedicalList);
+            //Design_Datagridview(ref dgvPatientList);
+            //Design_Datagridview(ref dgvExamList);
+            //Design_Datagridview(ref dgvMedicalList);
             LoadComboboxSearch(ref cbFindIdPatient,ref cbFindNamePatient, chbSickDay, dtpSickDay.Value);
             LoadDataGridviewbyId(ref dgvPatientList, cbFindIdPatient.Text);
             LoadExamlistAndMedicineList();
@@ -391,11 +391,12 @@ namespace GUI
             DataTable data = DAO.MedicalExaminationCardDetails.Instance.GetListMedicine(idmedicalexaminationcard);
             DataColumn col = new DataColumn("STT", typeof(int));
             data.Columns.Add(col);
+           
             dtgv.DataSource = data;
             for (int i = 0; i < dtgv.Rows.Count - 1; i++)
             {
                 dtgv.Rows[i].Cells["dataGridViewTextBoxColumn12"].Value = i + 1;
-                
+                dtgv.Rows[i].Cells["DonGIa"].Value = int.Parse(dtgv.Rows[i].Cells["ThanhTien"].Value.ToString()) / int.Parse(dtgv.Rows[i].Cells["SoLuong"].Value.ToString());
             }
             
         }
@@ -421,6 +422,11 @@ namespace GUI
             {
                 LoadListMedicine(ref dgvMedicalList, "");
             }
+        }
+
+        private void ChbSickDay_CheckedChanged_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

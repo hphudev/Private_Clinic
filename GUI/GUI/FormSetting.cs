@@ -116,8 +116,8 @@ namespace GUI
         private void FormSetting_Load(object sender, EventArgs e)
         {
             LoadParameters();
-            Design_Datagridview(ref dgvUnitList);
-            Design_Datagridview(ref dgvUseWayList);
+            //Design_Datagridview(ref dgvUnitList);
+            //Design_Datagridview(ref dgvUseWayList);
             LoadUseWayList(ref dgvUseWayList);
             LoadMedicalUnitList(ref dgvUnitList);
         }

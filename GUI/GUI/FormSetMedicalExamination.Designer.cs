@@ -55,11 +55,6 @@ namespace GUI
             this.label8 = new System.Windows.Forms.Label();
             this.dtpSickDay = new System.Windows.Forms.DateTimePicker();
             this.dgvPatientWaiting = new System.Windows.Forms.DataGridView();
-            this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NamSinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -121,6 +116,12 @@ namespace GUI
             this.guna2Elipse8 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse10 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.lWarming = new System.Windows.Forms.Label();
+            this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NamSinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label16 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPatientWaiting)).BeginInit();
@@ -168,11 +169,11 @@ namespace GUI
             this.tbIdPatient.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.tbIdPatient.DisabledState.Parent = this.tbIdPatient;
             this.tbIdPatient.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbIdPatient.FillColor = System.Drawing.Color.Honeydew;
+            this.tbIdPatient.FillColor = System.Drawing.Color.CadetBlue;
             this.tbIdPatient.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbIdPatient.FocusedState.Parent = this.tbIdPatient;
             this.tbIdPatient.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbIdPatient.ForeColor = System.Drawing.Color.Blue;
+            this.tbIdPatient.ForeColor = System.Drawing.Color.Black;
             this.tbIdPatient.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbIdPatient.HoverState.Parent = this.tbIdPatient;
             this.tbIdPatient.Location = new System.Drawing.Point(129, 34);
@@ -229,11 +230,11 @@ namespace GUI
             this.tbPatientDate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.tbPatientDate.DisabledState.Parent = this.tbPatientDate;
             this.tbPatientDate.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbPatientDate.FillColor = System.Drawing.Color.Honeydew;
+            this.tbPatientDate.FillColor = System.Drawing.Color.CadetBlue;
             this.tbPatientDate.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbPatientDate.FocusedState.Parent = this.tbPatientDate;
             this.tbPatientDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbPatientDate.ForeColor = System.Drawing.Color.Blue;
+            this.tbPatientDate.ForeColor = System.Drawing.Color.Black;
             this.tbPatientDate.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbPatientDate.HoverState.Parent = this.tbPatientDate;
             this.tbPatientDate.Location = new System.Drawing.Point(1020, 34);
@@ -259,11 +260,11 @@ namespace GUI
             this.tbPatientAddress.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.tbPatientAddress.DisabledState.Parent = this.tbPatientAddress;
             this.tbPatientAddress.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbPatientAddress.FillColor = System.Drawing.Color.Honeydew;
+            this.tbPatientAddress.FillColor = System.Drawing.Color.CadetBlue;
             this.tbPatientAddress.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbPatientAddress.FocusedState.Parent = this.tbPatientAddress;
             this.tbPatientAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbPatientAddress.ForeColor = System.Drawing.Color.Blue;
+            this.tbPatientAddress.ForeColor = System.Drawing.Color.Black;
             this.tbPatientAddress.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbPatientAddress.HoverState.Parent = this.tbPatientAddress;
             this.tbPatientAddress.Location = new System.Drawing.Point(1270, 33);
@@ -289,11 +290,11 @@ namespace GUI
             this.tbPatientSex.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.tbPatientSex.DisabledState.Parent = this.tbPatientSex;
             this.tbPatientSex.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbPatientSex.FillColor = System.Drawing.Color.Honeydew;
+            this.tbPatientSex.FillColor = System.Drawing.Color.CadetBlue;
             this.tbPatientSex.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbPatientSex.FocusedState.Parent = this.tbPatientSex;
             this.tbPatientSex.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbPatientSex.ForeColor = System.Drawing.Color.Blue;
+            this.tbPatientSex.ForeColor = System.Drawing.Color.Black;
             this.tbPatientSex.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbPatientSex.HoverState.Parent = this.tbPatientSex;
             this.tbPatientSex.Location = new System.Drawing.Point(760, 33);
@@ -319,11 +320,11 @@ namespace GUI
             this.tbPatientName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.tbPatientName.DisabledState.Parent = this.tbPatientName;
             this.tbPatientName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbPatientName.FillColor = System.Drawing.Color.Honeydew;
+            this.tbPatientName.FillColor = System.Drawing.Color.CadetBlue;
             this.tbPatientName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbPatientName.FocusedState.Parent = this.tbPatientName;
             this.tbPatientName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbPatientName.ForeColor = System.Drawing.Color.Blue;
+            this.tbPatientName.ForeColor = System.Drawing.Color.Black;
             this.tbPatientName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbPatientName.HoverState.Parent = this.tbPatientName;
             this.tbPatientName.Location = new System.Drawing.Point(385, 34);
@@ -413,7 +414,7 @@ namespace GUI
             this.bWaitingPatientRefresh.Font = new System.Drawing.Font("Segoe UI Black", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bWaitingPatientRefresh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
             this.bWaitingPatientRefresh.HoverState.Parent = this.bWaitingPatientRefresh;
-            this.bWaitingPatientRefresh.Location = new System.Drawing.Point(626, 58);
+            this.bWaitingPatientRefresh.Location = new System.Drawing.Point(626, 97);
             this.bWaitingPatientRefresh.Name = "bWaitingPatientRefresh";
             this.bWaitingPatientRefresh.ShadowDecoration.Parent = this.bWaitingPatientRefresh;
             this.bWaitingPatientRefresh.Size = new System.Drawing.Size(114, 37);
@@ -481,7 +482,7 @@ namespace GUI
             this.NamSinh});
             this.dgvPatientWaiting.EnableHeadersVisualStyles = false;
             this.dgvPatientWaiting.GridColor = System.Drawing.SystemColors.ButtonShadow;
-            this.dgvPatientWaiting.Location = new System.Drawing.Point(17, 98);
+            this.dgvPatientWaiting.Location = new System.Drawing.Point(17, 139);
             this.dgvPatientWaiting.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvPatientWaiting.MultiSelect = false;
             this.dgvPatientWaiting.Name = "dgvPatientWaiting";
@@ -502,58 +503,17 @@ namespace GUI
             this.dgvPatientWaiting.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvPatientWaiting.RowTemplate.Height = 24;
             this.dgvPatientWaiting.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvPatientWaiting.Size = new System.Drawing.Size(723, 699);
+            this.dgvPatientWaiting.Size = new System.Drawing.Size(723, 658);
             this.dgvPatientWaiting.TabIndex = 6;
-            // 
-            // STT
-            // 
-            this.STT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.STT.HeaderText = "STT";
-            this.STT.MinimumWidth = 6;
-            this.STT.Name = "STT";
-            this.STT.ReadOnly = true;
-            this.STT.Width = 66;
-            // 
-            // MaBN
-            // 
-            this.MaBN.HeaderText = "Mã BN";
-            this.MaBN.MinimumWidth = 6;
-            this.MaBN.Name = "MaBN";
-            this.MaBN.ReadOnly = true;
-            // 
-            // HoTen
-            // 
-            this.HoTen.HeaderText = "Họ và tên";
-            this.HoTen.MinimumWidth = 6;
-            this.HoTen.Name = "HoTen";
-            this.HoTen.ReadOnly = true;
-            // 
-            // GioiTinh
-            // 
-            this.GioiTinh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.GioiTinh.HeaderText = "Giới tính";
-            this.GioiTinh.MinimumWidth = 6;
-            this.GioiTinh.Name = "GioiTinh";
-            this.GioiTinh.ReadOnly = true;
-            this.GioiTinh.Width = 104;
-            // 
-            // NamSinh
-            // 
-            this.NamSinh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.NamSinh.HeaderText = "Năm sinh";
-            this.NamSinh.MinimumWidth = 6;
-            this.NamSinh.Name = "NamSinh";
-            this.NamSinh.ReadOnly = true;
-            this.NamSinh.Width = 112;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.Honeydew;
-            this.label5.Location = new System.Drawing.Point(355, 15);
+            this.label5.Location = new System.Drawing.Point(12, 100);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(353, 26);
+            this.label5.Size = new System.Drawing.Size(406, 29);
             this.label5.TabIndex = 4;
             this.label5.Text = "Danh sách bệnh nhân chờ khám";
             // 
@@ -605,7 +565,7 @@ namespace GUI
             this.gbPatientInformation.Size = new System.Drawing.Size(1114, 199);
             this.gbPatientInformation.TabIndex = 1;
             this.gbPatientInformation.TabStop = false;
-            this.gbPatientInformation.Text = "Thông tin khám bệnh";
+            this.gbPatientInformation.Text = "Thông tin phiếu khám bệnh";
             // 
             // cbTypeSick
             // 
@@ -634,10 +594,11 @@ namespace GUI
             this.tbDaySick.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.tbDaySick.DisabledState.Parent = this.tbDaySick;
             this.tbDaySick.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbDaySick.FillColor = System.Drawing.Color.CadetBlue;
             this.tbDaySick.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbDaySick.FocusedState.Parent = this.tbDaySick;
             this.tbDaySick.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbDaySick.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbDaySick.ForeColor = System.Drawing.Color.Black;
             this.tbDaySick.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbDaySick.HoverState.Parent = this.tbDaySick;
             this.tbDaySick.Location = new System.Drawing.Point(810, 33);
@@ -692,10 +653,11 @@ namespace GUI
             this.tbIdMedicalExam.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.tbIdMedicalExam.DisabledState.Parent = this.tbIdMedicalExam;
             this.tbIdMedicalExam.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbIdMedicalExam.FillColor = System.Drawing.Color.CadetBlue;
             this.tbIdMedicalExam.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbIdMedicalExam.FocusedState.Parent = this.tbIdMedicalExam;
             this.tbIdMedicalExam.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbIdMedicalExam.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbIdMedicalExam.ForeColor = System.Drawing.Color.Black;
             this.tbIdMedicalExam.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbIdMedicalExam.HoverState.Parent = this.tbIdMedicalExam;
             this.tbIdMedicalExam.Location = new System.Drawing.Point(161, 34);
@@ -768,9 +730,9 @@ namespace GUI
             this.l.ForeColor = System.Drawing.Color.Honeydew;
             this.l.Location = new System.Drawing.Point(5, 34);
             this.l.Name = "l";
-            this.l.Size = new System.Drawing.Size(116, 29);
+            this.l.Size = new System.Drawing.Size(118, 29);
             this.l.TabIndex = 5;
-            this.l.Text = "Mã khám:";
+            this.l.Text = "Mã phiếu:";
             // 
             // panel4
             // 
@@ -811,7 +773,7 @@ namespace GUI
             this.gbMedicalExam.Size = new System.Drawing.Size(1114, 207);
             this.gbMedicalExam.TabIndex = 1;
             this.gbMedicalExam.TabStop = false;
-            this.gbMedicalExam.Text = "Đơn thuốc";
+            this.gbMedicalExam.Text = "Thông tin thuốc";
             // 
             // tbUnitName
             // 
@@ -825,10 +787,11 @@ namespace GUI
             this.tbUnitName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.tbUnitName.DisabledState.Parent = this.tbUnitName;
             this.tbUnitName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbUnitName.FillColor = System.Drawing.Color.CadetBlue;
             this.tbUnitName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbUnitName.FocusedState.Parent = this.tbUnitName;
             this.tbUnitName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbUnitName.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbUnitName.ForeColor = System.Drawing.Color.Black;
             this.tbUnitName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbUnitName.HoverState.Parent = this.tbUnitName;
             this.tbUnitName.Location = new System.Drawing.Point(976, 44);
@@ -862,7 +825,7 @@ namespace GUI
             this.bRefresh.Size = new System.Drawing.Size(133, 37);
             this.bRefresh.TabIndex = 142;
             this.bRefresh.TabStop = false;
-            this.bRefresh.Text = "Thêm mới (F1)";
+            this.bRefresh.Text = "Làm mới (F1)";
             this.bRefresh.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
             // 
             // label14
@@ -996,10 +959,11 @@ namespace GUI
             this.tbIdMedical.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.tbIdMedical.DisabledState.Parent = this.tbIdMedical;
             this.tbIdMedical.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbIdMedical.FillColor = System.Drawing.Color.CadetBlue;
             this.tbIdMedical.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbIdMedical.FocusedState.Parent = this.tbIdMedical;
             this.tbIdMedical.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbIdMedical.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tbIdMedical.ForeColor = System.Drawing.Color.Black;
             this.tbIdMedical.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbIdMedical.HoverState.Parent = this.tbIdMedical;
             this.tbIdMedical.Location = new System.Drawing.Point(155, 40);
@@ -1069,6 +1033,7 @@ namespace GUI
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel55.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
             this.panel55.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel55.Controls.Add(this.label16);
             this.panel55.Controls.Add(this.tbSumMedicalMoney);
             this.panel55.Controls.Add(this.label10);
             this.panel55.Controls.Add(this.bDeleteMedical);
@@ -1091,11 +1056,11 @@ namespace GUI
             this.tbSumMedicalMoney.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.tbSumMedicalMoney.DisabledState.Parent = this.tbSumMedicalMoney;
             this.tbSumMedicalMoney.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbSumMedicalMoney.FillColor = System.Drawing.Color.PaleTurquoise;
+            this.tbSumMedicalMoney.FillColor = System.Drawing.Color.CadetBlue;
             this.tbSumMedicalMoney.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbSumMedicalMoney.FocusedState.Parent = this.tbSumMedicalMoney;
             this.tbSumMedicalMoney.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbSumMedicalMoney.ForeColor = System.Drawing.Color.ForestGreen;
+            this.tbSumMedicalMoney.ForeColor = System.Drawing.Color.White;
             this.tbSumMedicalMoney.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbSumMedicalMoney.HoverState.Parent = this.tbSumMedicalMoney;
             this.tbSumMedicalMoney.Location = new System.Drawing.Point(802, 300);
@@ -1487,6 +1452,58 @@ namespace GUI
             this.lWarming.Text = "Chú ý: Bạn đang xem danh sách chở khám bệnh cũ!";
             this.lWarming.Visible = false;
             // 
+            // STT
+            // 
+            this.STT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.STT.HeaderText = "STT";
+            this.STT.MinimumWidth = 6;
+            this.STT.Name = "STT";
+            this.STT.ReadOnly = true;
+            this.STT.Width = 66;
+            // 
+            // MaBN
+            // 
+            this.MaBN.HeaderText = "Mã BN";
+            this.MaBN.MinimumWidth = 6;
+            this.MaBN.Name = "MaBN";
+            this.MaBN.ReadOnly = true;
+            // 
+            // HoTen
+            // 
+            this.HoTen.HeaderText = "Họ và tên";
+            this.HoTen.MinimumWidth = 6;
+            this.HoTen.Name = "HoTen";
+            this.HoTen.ReadOnly = true;
+            // 
+            // GioiTinh
+            // 
+            this.GioiTinh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.GioiTinh.HeaderText = "Giới tính";
+            this.GioiTinh.MinimumWidth = 6;
+            this.GioiTinh.Name = "GioiTinh";
+            this.GioiTinh.ReadOnly = true;
+            this.GioiTinh.Width = 104;
+            // 
+            // NamSinh
+            // 
+            this.NamSinh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.NamSinh.HeaderText = "Ngày sinh";
+            this.NamSinh.MinimumWidth = 6;
+            this.NamSinh.Name = "NamSinh";
+            this.NamSinh.ReadOnly = true;
+            this.NamSinh.Width = 116;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label16.ForeColor = System.Drawing.Color.Honeydew;
+            this.label16.Location = new System.Drawing.Point(3, 13);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(101, 25);
+            this.label16.TabIndex = 146;
+            this.label16.Text = "Đơn thuốc";
+            // 
             // FormSetMedicalExamination
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1508,7 +1525,7 @@ namespace GUI
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormSetMedicalExamination";
-            this.Text = "Lập phiếu khám bệnh";
+            this.Text = "Phần mềm quản lý phòng mạch";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -1589,11 +1606,6 @@ namespace GUI
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse7;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse8;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn STT;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaBN;
-        private System.Windows.Forms.DataGridViewTextBoxColumn HoTen;
-        private System.Windows.Forms.DataGridViewTextBoxColumn GioiTinh;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NamSinh;
         private System.Windows.Forms.ComboBox cbFindPatient;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse10;
         private System.Windows.Forms.DateTimePicker dtpSickDay;
@@ -1616,5 +1628,11 @@ namespace GUI
         private System.Windows.Forms.DataGridViewTextBoxColumn ThanhTien;
         private System.Windows.Forms.DataGridViewTextBoxColumn CachDung;
         private Guna.UI2.WinForms.Guna2GradientButton bDeleteMedical;
+        private System.Windows.Forms.DataGridViewTextBoxColumn STT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaBN;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HoTen;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GioiTinh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NamSinh;
+        private System.Windows.Forms.Label label16;
     }
 }

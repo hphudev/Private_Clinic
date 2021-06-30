@@ -64,3 +64,15 @@ C:\Users\DELL\Documents\TvT\UIT\Courses\Studying\SE104.L22\Project\Private_Clini
 C:\Users\DELL\Documents\TvT\UIT\Courses\Studying\SE104.L22\Project\Private_Clinic-NMCNPM-Team_9_Code_2\GUI\BUS\obj\Debug\BUS.csproj.CopyComplete
 C:\Users\DELL\Documents\TvT\UIT\Courses\Studying\SE104.L22\Project\Private_Clinic-NMCNPM-Team_9_Code_2\GUI\BUS\obj\Debug\BUS.dll
 C:\Users\DELL\Documents\TvT\UIT\Courses\Studying\SE104.L22\Project\Private_Clinic-NMCNPM-Team_9_Code_2\GUI\BUS\obj\Debug\BUS.pdb
+F:\NMCNPM\Ver8\Private_Clinic-NMCNPM-Team_9\GUI\BUS\bin\Debug\BUS.dll
+F:\NMCNPM\Ver8\Private_Clinic-NMCNPM-Team_9\GUI\BUS\bin\Debug\BUS.pdb
+F:\NMCNPM\Ver8\Private_Clinic-NMCNPM-Team_9\GUI\BUS\bin\Debug\DAO.dll
+F:\NMCNPM\Ver8\Private_Clinic-NMCNPM-Team_9\GUI\BUS\bin\Debug\DTO.dll
+F:\NMCNPM\Ver8\Private_Clinic-NMCNPM-Team_9\GUI\BUS\bin\Debug\Guna.UI2.dll
+F:\NMCNPM\Ver8\Private_Clinic-NMCNPM-Team_9\GUI\BUS\bin\Debug\DAO.pdb
+F:\NMCNPM\Ver8\Private_Clinic-NMCNPM-Team_9\GUI\BUS\bin\Debug\DTO.pdb
+F:\NMCNPM\Ver8\Private_Clinic-NMCNPM-Team_9\GUI\BUS\obj\Debug\BUS.csprojAssemblyReference.cache
+F:\NMCNPM\Ver8\Private_Clinic-NMCNPM-Team_9\GUI\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+F:\NMCNPM\Ver8\Private_Clinic-NMCNPM-Team_9\GUI\BUS\obj\Debug\BUS.csproj.CopyComplete
+F:\NMCNPM\Ver8\Private_Clinic-NMCNPM-Team_9\GUI\BUS\obj\Debug\BUS.dll
+F:\NMCNPM\Ver8\Private_Clinic-NMCNPM-Team_9\GUI\BUS\obj\Debug\BUS.pdb

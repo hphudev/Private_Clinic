@@ -47,13 +47,13 @@ namespace GUI
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(619, 83);
             this.label1.TabIndex = 113;
-            this.label1.Text = "THÊM CÁCH DÙNG THUỐC";
+            this.label1.Text = "THÊM CÁCH DÙNG";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pDragBar
@@ -76,7 +76,9 @@ namespace GUI
             this.bCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.bCancel.Animated = true;
             this.bCancel.BackColor = System.Drawing.Color.Transparent;
+            this.bCancel.BorderColor = System.Drawing.Color.White;
             this.bCancel.BorderRadius = 6;
+            this.bCancel.BorderThickness = 1;
             this.bCancel.CheckedState.Parent = this.bCancel;
             this.bCancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bCancel.CustomImages.Parent = this.bCancel;
@@ -158,7 +160,7 @@ namespace GUI
             this.bRefresh.ShadowDecoration.Parent = this.bRefresh;
             this.bRefresh.Size = new System.Drawing.Size(138, 47);
             this.bRefresh.TabIndex = 137;
-            this.bRefresh.Text = "Thêm mới";
+            this.bRefresh.Text = "Làm mới";
             // 
             // bSave
             // 
@@ -181,7 +183,7 @@ namespace GUI
             this.bSave.TabIndex = 136;
             this.bSave.Text = "Lưu lại";
             // 
-            // FormAddUseWay
+            // FormAddUseWayPhu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -194,7 +196,7 @@ namespace GUI
             this.Controls.Add(this.bSave);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormAddUseWay";
+            this.Name = "FormAddUseWayPhu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormAddUsing";
             this.pDragBar.ResumeLayout(false);

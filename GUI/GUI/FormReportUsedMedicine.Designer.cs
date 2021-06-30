@@ -51,7 +51,7 @@ namespace GUI
             this.Controls.Add(this.crvReport);
             this.Name = "FormReportUsedMedicine";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormReportUsedMedicine";
+            this.Text = "Phần mềm quản lý phòng mạch";
             this.ResumeLayout(false);
 
         }

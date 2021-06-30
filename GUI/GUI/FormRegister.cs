@@ -101,8 +101,8 @@ namespace GUI
 
         private void bRegisterClicked(Object s, EventArgs e)
         {
-            FormMain formMain = new FormMain();
-            BUS.Event.ShowChildForm_HideParentForm(formMain, parent);
+            //FormMain formMain = new FormMain();
+            //BUS.Event.ShowChildForm_HideParentForm(formMain, parent);
         }
     }
 }

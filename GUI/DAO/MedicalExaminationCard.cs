@@ -40,7 +40,7 @@ namespace DAO
                 connection.Open();
                 string table = "CTKB AS C, BENH AS B ,(PHIEUKB  left join HOADON on PHIEUKB.MACTKB = HOADON.MACTKB )";
                 string condition = string.Format(" where PHIEUKB.MACTKB=C.MACTKB AND PHIEUKB.MABENH=B.MABENH AND C.MABENHNHAN='{0}'", id);
-                string column = " PHIEUKB.MAPHIEUKB,C.NGAYKHAMBENH,B.TENBENH, TONGTIEN ,PHIEUKB.TRIEUCHUNG";
+                string column = " DISTINCT PHIEUKB.MAPHIEUKB,C.NGAYKHAMBENH,B.TENBENH, TONGTIEN ,PHIEUKB.TRIEUCHUNG";
                 DataTable data = new DataTable();
                 data.Load(DAO.Data.ReadData(table, connection, condition, column));
                 connection.Close();

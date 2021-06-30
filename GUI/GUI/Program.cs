@@ -10,7 +10,7 @@ namespace GUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormCreateImportedMedicineSlip(null));
+            Application.Run(new FormSplash());
         }
     }
 }

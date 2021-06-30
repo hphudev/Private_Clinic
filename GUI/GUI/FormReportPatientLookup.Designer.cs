@@ -51,7 +51,7 @@ namespace GUI
             this.Controls.Add(this.crvPatient);
             this.Name = "FormReportPatientLookup";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormReportPatient";
+            this.Text = "Phần mềm quản lý phòng mạch";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
 

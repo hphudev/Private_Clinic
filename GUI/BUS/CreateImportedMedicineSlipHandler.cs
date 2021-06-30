@@ -17,7 +17,7 @@ namespace BUS
             int index = 1;
             SqlConnection connection = await DataHandler.OpenConnection();
             SqlDataReader reader = DataHandler.ReadData("THUOC T, DONVITINH DVT", connection, 
-                "WHERE T.MADONVITINH = DVT.MADONVITINH", "*");
+                "WHERE T.MADONVITINH = DVT.MADONVITINH ORDER BY MATHUOC", "*");
 
             while (reader.HasRows)
             {

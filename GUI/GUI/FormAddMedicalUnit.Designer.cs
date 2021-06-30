@@ -53,10 +53,10 @@ namespace GUI
             this.pDragBar.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
             this.pDragBar.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.pDragBar.Location = new System.Drawing.Point(0, 0);
-            this.pDragBar.Margin = new System.Windows.Forms.Padding(2);
+            this.pDragBar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pDragBar.Name = "pDragBar";
             this.pDragBar.ShadowDecoration.Parent = this.pDragBar;
-            this.pDragBar.Size = new System.Drawing.Size(364, 67);
+            this.pDragBar.Size = new System.Drawing.Size(485, 82);
             this.pDragBar.TabIndex = 118;
             // 
             // bCancel
@@ -64,7 +64,9 @@ namespace GUI
             this.bCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.bCancel.Animated = true;
             this.bCancel.BackColor = System.Drawing.Color.Transparent;
+            this.bCancel.BorderColor = System.Drawing.Color.White;
             this.bCancel.BorderRadius = 6;
+            this.bCancel.BorderThickness = 1;
             this.bCancel.CheckedState.Parent = this.bCancel;
             this.bCancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bCancel.CustomImages.Parent = this.bCancel;
@@ -73,11 +75,11 @@ namespace GUI
             this.bCancel.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
             this.bCancel.ForeColor = System.Drawing.Color.White;
             this.bCancel.HoverState.Parent = this.bCancel;
-            this.bCancel.Location = new System.Drawing.Point(304, 10);
-            this.bCancel.Margin = new System.Windows.Forms.Padding(2);
+            this.bCancel.Location = new System.Drawing.Point(405, 12);
+            this.bCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bCancel.Name = "bCancel";
             this.bCancel.ShadowDecoration.Parent = this.bCancel;
-            this.bCancel.Size = new System.Drawing.Size(51, 29);
+            this.bCancel.Size = new System.Drawing.Size(68, 36);
             this.bCancel.TabIndex = 114;
             this.bCancel.Text = "THOÁT";
             // 
@@ -88,9 +90,8 @@ namespace GUI
             this.label1.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(364, 67);
+            this.label1.Size = new System.Drawing.Size(485, 82);
             this.label1.TabIndex = 113;
             this.label1.Text = "THÊM ĐƠN VỊ TÍNH";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -113,11 +114,11 @@ namespace GUI
             this.bSave.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
             this.bSave.HoverState.Parent = this.bSave;
-            this.bSave.Location = new System.Drawing.Point(266, 152);
-            this.bSave.Margin = new System.Windows.Forms.Padding(2);
+            this.bSave.Location = new System.Drawing.Point(355, 187);
+            this.bSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bSave.Name = "bSave";
             this.bSave.ShadowDecoration.Parent = this.bSave;
-            this.bSave.Size = new System.Drawing.Size(88, 29);
+            this.bSave.Size = new System.Drawing.Size(117, 36);
             this.bSave.TabIndex = 126;
             this.bSave.Text = "Lưu lại";
             // 
@@ -138,14 +139,14 @@ namespace GUI
             this.tbUnit.ForeColor = System.Drawing.Color.Black;
             this.tbUnit.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbUnit.HoverState.Parent = this.tbUnit;
-            this.tbUnit.Location = new System.Drawing.Point(155, 100);
-            this.tbUnit.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.tbUnit.Location = new System.Drawing.Point(207, 123);
+            this.tbUnit.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.tbUnit.Name = "tbUnit";
             this.tbUnit.PasswordChar = '\0';
             this.tbUnit.PlaceholderText = "";
             this.tbUnit.SelectedText = "";
             this.tbUnit.ShadowDecoration.Parent = this.tbUnit;
-            this.tbUnit.Size = new System.Drawing.Size(200, 35);
+            this.tbUnit.Size = new System.Drawing.Size(267, 43);
             this.tbUnit.TabIndex = 123;
             // 
             // label2
@@ -153,10 +154,9 @@ namespace GUI
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
-            this.label2.Location = new System.Drawing.Point(5, 100);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(7, 123);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(149, 25);
+            this.label2.Size = new System.Drawing.Size(193, 32);
             this.label2.TabIndex = 119;
             this.label2.Text = "Tên đơn vị tính:";
             // 
@@ -174,11 +174,11 @@ namespace GUI
             this.bRefresh.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bRefresh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
             this.bRefresh.HoverState.Parent = this.bRefresh;
-            this.bRefresh.Location = new System.Drawing.Point(173, 152);
-            this.bRefresh.Margin = new System.Windows.Forms.Padding(2);
+            this.bRefresh.Location = new System.Drawing.Point(231, 187);
+            this.bRefresh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bRefresh.Name = "bRefresh";
             this.bRefresh.ShadowDecoration.Parent = this.bRefresh;
-            this.bRefresh.Size = new System.Drawing.Size(88, 29);
+            this.bRefresh.Size = new System.Drawing.Size(117, 36);
             this.bRefresh.TabIndex = 127;
             this.bRefresh.Text = "Làm mới";
             // 
@@ -189,17 +189,17 @@ namespace GUI
             // 
             // FormAddMedicalUnit
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.ClientSize = new System.Drawing.Size(364, 191);
+            this.ClientSize = new System.Drawing.Size(485, 235);
             this.Controls.Add(this.bRefresh);
             this.Controls.Add(this.pDragBar);
             this.Controls.Add(this.bSave);
             this.Controls.Add(this.tbUnit);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormAddMedicalUnit";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormMedicalUnit";

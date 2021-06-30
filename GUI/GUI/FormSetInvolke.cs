@@ -95,11 +95,7 @@ namespace GUI
                 
                 if (choiceIdPatientExam != null)
                 {
-                    if (this.dgvPatientExamed.Rows[choicePosPatientExam].Cells[6].Value.ToString() == "Đã thanh toán")
-                    {
-                        MessageBox.Show("Hóa đơn này đã thanh toán!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        return;
-                    }
+                   
                     List<PatientExam> patientExams = await BUS.FormSetInvolkeBUS.GetPatientExams(null, choiceIdPatientExam, this.dtpSickDay.Value);
                     int count = await BUS.FormSetInvolkeBUS.CountInvolke() + 1;
                     string id = BUS.Support.IdAdapter("HD", count, 5);
@@ -110,6 +106,11 @@ namespace GUI
                         totalMedicalMoney,
                         totalMoney);
                     BUS.FormSetInvolkeBUS.AddInvolke(invoke);
+                    if (this.dgvPatientExamed.Rows[choicePosPatientExam].Cells[6].Value.ToString() == "Đã thanh toán")
+                    {
+                        MessageBox.Show("Hóa đơn này đã thanh toán!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
                     LoadForm(this.dtpSickDay.Value);
                    
                     MessageBox.Show("Đã thanh toán hóa đơn thành công!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -153,10 +154,10 @@ namespace GUI
                         this.dgvMedicalList.Rows.Count + 1,
                         medicine.name,
                         await BUS.FormSetInvolkeBUS.GetUnitName(medicine.unitID),
-                        medicine.sellableUnitPrice,
+                        detailPatientExam.Money / detailPatientExam.MedicalNum,
                         detailPatientExam.MedicalNum,
-                        medicine.sellableUnitPrice * detailPatientExam.MedicalNum);
-                    totalMedicalMoney += medicine.sellableUnitPrice * detailPatientExam.MedicalNum;
+                        detailPatientExam.Money);
+                    totalMedicalMoney += detailPatientExam.Money;
                 }
                 totalExamMoney = await BUS.FormSetInvolkeBUS.GetExamMoney();
                 this.tbTotalMoneyExam.Text = BUS.Support.IntToMoney(totalExamMoney);

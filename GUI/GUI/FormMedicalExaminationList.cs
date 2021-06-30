@@ -38,9 +38,10 @@ namespace GUI
         private void FormAddPatient_InsertPatient(object sender, Patientevent e)
         {
             dgvPatientList.Refresh();
+            dgvPatientList.ClearSelection();
             if (dgvPatientList.Rows.Count > 1)
             {
-                dgvPatientList.SelectedCells[0].OwningRow.Selected = false;
+                //    dgvPatientList.SelectedCells[0].OwningRow.Selected = false;
             }
             LoadNamePatientintoCombobox(ref cbFindPatient);
             LoadIdPatientintoCombobox(ref cbFindIdPatient);

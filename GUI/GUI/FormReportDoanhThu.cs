@@ -27,11 +27,11 @@ namespace GUI
             CRDoanhThu rpt = new CRDoanhThu();
             SqlConnection con = await Data.OpenConnection();
             string query_1 = "", query_2 = "";
-            query_1 = $"select convert(nvarchar(20), MONTH(NGAYLAP)) +'/' + convert(nvarchar(20), YEAR(NGAYLAP)) as ngaylap" +
+            query_1 = $"select distinct convert(nvarchar(20), MONTH(NGAYLAP)) +'/' + convert(nvarchar(20), YEAR(NGAYLAP)) as ngaylap" +
                 $" from CTBCDOANHTHU " +
                 $" where MONTH(NGAYLAP) = '{thang}' and YEAR(NGAYLAP) = '{nam}'";
 
-            query_2 = $"select convert(nvarchar(20), DAY(ngaylap)) + '/' + convert(nvarchar(20), MONTH(NGAYLAP)) +'/' + convert(nvarchar(20), YEAR(NGAYLAP)) as ngaylap, sobenhnhan, doanhthu, TYLEDOANHTHUTHANG as tyle " +
+            query_2 = $"select distinct convert(nvarchar(20), DAY(ngaylap)) + '/' + convert(nvarchar(20), MONTH(NGAYLAP)) +'/' + convert(nvarchar(20), YEAR(NGAYLAP)) as ngaylap, sobenhnhan, doanhthu, TYLEDOANHTHUTHANG as tyle " +
                 $" from CTBCDOANHTHU " +
                 $" where MONTH(NGAYLAP) = '{thang}' and YEAR(NGAYLAP) = '{nam}'";
             SqlDataAdapter dap = new SqlDataAdapter(query_1, con);

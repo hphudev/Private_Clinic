@@ -255,7 +255,7 @@ namespace GUI
                     FormReportPatientExam form = new FormReportPatientExam(detailExam.Id);
                     BUS.Event.ShowFormDialog(form);
                 }
-                dtpSickDay.Value = DateTime.Now;
+                //dtpSickDay.Value = DateTime.Now;
                 FormLoad(this, new EventArgs());
                 RefreshChoicePatient();
                 this.dgvMedicalList.Rows.Clear();
@@ -574,7 +574,7 @@ namespace GUI
                     if (result == DialogResult.No)
                         return;
                 }
-                dtpSickDay.Value = DateTime.Now;
+                //dtpSickDay.Value = DateTime.Now;
                 this.cbFindPatient.Text = "";
                 this.allowLoadNameWaiting = true;
                 FormLoad(this, new EventArgs());
