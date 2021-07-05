@@ -1312,3 +1312,98 @@ STT	Biến cố	Xử lý
 2	Nhấn nút lưu	Lưu giá trị thiết lập xuống cơ sở dữ liệu
 
 
+
+
+
+
+Chương 6. CÀI ĐẶT VÀ THỬ NGHIỆM
+Bảng 6.1 Bảng chức năng phần mềm và mức độ hoàn thành
+STT	Chức năng	Mức độ hoàn thành (%)	Ghi chú
+1	Lập danh sách khám bệnh	95	
+2	Lập phiếu khám bệnh	100	
+3	Lập hóa đơn thanh toán	100	
+4	Lập phiếu nhập thuốc	95	
+5	Tra cứu bệnh nhân	100	
+6	Lập báo cáo	100	
+7	Thiết lập	100	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Chương 7. NHẬN XÉT VÀ KẾT LUẬN
+	Phần mềm của chúng em đã đáp ứng đầy đủ các chức năng được yêu cầu của người dùng. Tuy nhiên, một số chức năng vẫn chưa đáp ứng tốt yêu cầu của người dùng và có thể có một số lỗi vẫn chưa được phát hiện. Ngoài ra, trong quá trình hiện thực phần mềm, chúng em đã học được kỹ năng giao tiếp, kỹ năng làm việc nhóm và nhiều bài học kinh nghiệm quý giá khác để có thể giúp ích cho việc học tập và làm việc của chúng em trong tương lai.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Chương 8. HƯỚNG PHÁT TRIỂN
+	Trong tương lai, chúng em sẽ hoàn thiện các chức năng chưa đáp ứng tốt yêu cầu của người dùng và mở rộng thêm một số tính năng để có thể đáp ứng được nhu cầu thực tiễn một cách tốt hơn.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Chương 9. TÀI LIỆU THAM KHẢO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Chương 10. BẢNG PHÂN CÔNG CÔNG VIỆC
+Bảng 10.1 Bảng phân công công việc
+STT	MSSV	Công việc được giao	Mức độ hoàn thành (%)
+1	19520216	Code tính năng lập danh sách khám bệnh, code tính năng lập phiếu nhập thuốc, thiết kế giao diện phần mềm và viết báo cáo	100
+2	19520940	Code tính năng lập phiếu nhập thuốc, code tính năng lập báo cáo, thiết kế cơ sở dữ liệu và viết báo cáo 	100
+3	19520171	Code tính năng lập hóa đơn thanh toán, code tính năng tra cứu bệnh nhân và viết báo cáo	100
+
