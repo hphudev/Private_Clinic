@@ -1379,6 +1379,9 @@ Chương 8. HƯỚNG PHÁT TRIỂN
 
 
 Chương 9. TÀI LIỆU THAM KHẢO
+	Danh sách đề tài môn học Nhập môn Công nghệ phần mềm (Giảng viên Nguyễn Thị Thanh Tuyền - Trường Đại học Công nghệ Thông tin ĐHQG TP.HCM).
+	Hình thức trình bày luận văn/báo cáo (Giảng viên Nguyễn Thị Thanh Tuyền - Trường Đại học Công nghệ Thông tin ĐHQG TP.HCM).
+	Báo cáo đồ án môn học Nhập môn Công nghệ phần mềm (Giảng viên Nguyễn Thị Thanh Tuyền - Trường Đại học Công nghệ Thông tin ĐHQG TP.HCM).
 
 
 
@@ -1405,5 +1408,5 @@ Bảng 10.1 Bảng phân công công việc
 STT	MSSV	Công việc được giao	Mức độ hoàn thành (%)
 1	19520216	Code tính năng lập danh sách khám bệnh, code tính năng lập phiếu nhập thuốc, thiết kế giao diện phần mềm và viết báo cáo	100
 2	19520940	Code tính năng lập phiếu nhập thuốc, code tính năng lập báo cáo, thiết kế cơ sở dữ liệu và viết báo cáo 	100
-3	19520171	Code tính năng lập hóa đơn thanh toán, code tính năng tra cứu bệnh nhân và viết báo cáo	100
+3	19520171	Code tính năng lập hóa đơn thanh toán, code tính năng tra cứu bệnh nhân, code tính năng thiết lập và viết báo cáo	100
 
