@@ -139,14 +139,14 @@ namespace GUI
             this.tbUnit.ForeColor = System.Drawing.Color.Black;
             this.tbUnit.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbUnit.HoverState.Parent = this.tbUnit;
-            this.tbUnit.Location = new System.Drawing.Point(207, 123);
+            this.tbUnit.Location = new System.Drawing.Point(243, 123);
             this.tbUnit.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.tbUnit.Name = "tbUnit";
             this.tbUnit.PasswordChar = '\0';
             this.tbUnit.PlaceholderText = "";
             this.tbUnit.SelectedText = "";
             this.tbUnit.ShadowDecoration.Parent = this.tbUnit;
-            this.tbUnit.Size = new System.Drawing.Size(267, 43);
+            this.tbUnit.Size = new System.Drawing.Size(231, 43);
             this.tbUnit.TabIndex = 123;
             // 
             // label2
@@ -156,9 +156,9 @@ namespace GUI
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
             this.label2.Location = new System.Drawing.Point(7, 123);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(193, 32);
+            this.label2.Size = new System.Drawing.Size(229, 32);
             this.label2.TabIndex = 119;
-            this.label2.Text = "Tên đơn vị tính:";
+            this.label2.Text = "Tên đơn vị tính (*):";
             // 
             // bRefresh
             // 

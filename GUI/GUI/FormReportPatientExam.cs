@@ -26,9 +26,9 @@ namespace GUI
             CRPatientExam rpt = new CRPatientExam();
             SqlConnection con = await Data.OpenConnection();
             string query_1 = "", query_2 = "";
-            query_1 = $"SELECT maphieukb, BENHNHAN.HOTEN, CONVERT(NVARCHAR(10), DAY(ngaykhambenh)) + '/' + CONVERT(NVARCHAR(10), MONTH(ngaykhambenh)) + '/' + CONVERT(NVARCHAR(10), YEAR(ngaykhambenh)) as ngaykhambenh" +
+            query_1 = $"SELECT distinct maphieukb, BENHNHAN.HOTEN, CONVERT(NVARCHAR(10), DAY(ngaykhambenh)) + '/' + CONVERT(NVARCHAR(10), MONTH(ngaykhambenh)) + '/' + CONVERT(NVARCHAR(10), YEAR(ngaykhambenh)) as ngaykhambenh" +
             $", trieuchung, tenbenh FROM PHIEUKB, CTKB, BENHNHAN, benh where ctkb.mactkb = '{idPatientExam}' and PHIEUKB.MABENH = BENH.MABENH and CTKB.MACTKB = PHIEUKB.MACTKB and CTKB.MABENHNHAN = BENHNHAN.MABENHNHAN";
-            query_2 = $"select tenthuoc, tendonvitinh, soluong, tencachdung " +
+            query_2 = $"select distinct tenthuoc, tendonvitinh, soluong, tencachdung " +
             $"from phieukb as pkb, ctkb, ctphieukb as ctpkb, thuoc as t, donvitinh as dvt, cachdung as cd " +
             $"where ctkb.mactkb = '{idPatientExam}' and pkb.MACTKB = ctkb.MACTKB and pkb.MAPHIEUKB = ctpkb.MAPHIEUKB and ctpkb.MATHUOC = t.MATHUOC and ctpkb.MACACHDUNG = cd.MACACHDUNG and t.MADONVITINH = dvt.MADONVITINH";
 

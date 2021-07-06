@@ -112,9 +112,9 @@ namespace GUI
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
             this.label5.Location = new System.Drawing.Point(11, 319);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(100, 32);
+            this.label5.Size = new System.Drawing.Size(136, 32);
             this.label5.TabIndex = 17;
-            this.label5.Text = "Địa chỉ:";
+            this.label5.Text = "Địa chỉ (*):";
             // 
             // label4
             // 
@@ -123,9 +123,9 @@ namespace GUI
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
             this.label4.Location = new System.Drawing.Point(11, 254);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(136, 32);
+            this.label4.Size = new System.Drawing.Size(172, 32);
             this.label4.TabIndex = 15;
-            this.label4.Text = "Ngày sinh:";
+            this.label4.Text = "Ngày sinh (*):";
             // 
             // label3
             // 
@@ -134,9 +134,9 @@ namespace GUI
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
             this.label3.Location = new System.Drawing.Point(9, 195);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(120, 32);
+            this.label3.Size = new System.Drawing.Size(156, 32);
             this.label3.TabIndex = 14;
-            this.label3.Text = "Giới tính:";
+            this.label3.Text = "Giới tính (*):";
             // 
             // label2
             // 
@@ -145,9 +145,9 @@ namespace GUI
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
             this.label2.Location = new System.Drawing.Point(9, 133);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(132, 32);
+            this.label2.Size = new System.Drawing.Size(168, 32);
             this.label2.TabIndex = 13;
-            this.label2.Text = "Họ và tên:";
+            this.label2.Text = "Họ và tên (*):";
             // 
             // tbName
             // 
@@ -166,14 +166,14 @@ namespace GUI
             this.tbName.ForeColor = System.Drawing.Color.Black;
             this.tbName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbName.HoverState.Parent = this.tbName;
-            this.tbName.Location = new System.Drawing.Point(157, 133);
+            this.tbName.Location = new System.Drawing.Point(184, 133);
             this.tbName.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.tbName.Name = "tbName";
             this.tbName.PasswordChar = '\0';
             this.tbName.PlaceholderText = "";
             this.tbName.SelectedText = "";
             this.tbName.ShadowDecoration.Parent = this.tbName;
-            this.tbName.Size = new System.Drawing.Size(382, 43);
+            this.tbName.Size = new System.Drawing.Size(355, 43);
             this.tbName.TabIndex = 20;
             // 
             // cbSex
@@ -191,12 +191,11 @@ namespace GUI
             this.cbSex.HoverState.Parent = this.cbSex;
             this.cbSex.ItemHeight = 30;
             this.cbSex.ItemsAppearance.Parent = this.cbSex;
-            this.cbSex.Location = new System.Drawing.Point(157, 195);
+            this.cbSex.Location = new System.Drawing.Point(184, 195);
             this.cbSex.Name = "cbSex";
             this.cbSex.ShadowDecoration.Parent = this.cbSex;
-            this.cbSex.Size = new System.Drawing.Size(155, 36);
+            this.cbSex.Size = new System.Drawing.Size(128, 36);
             this.cbSex.Sorted = true;
-            this.cbSex.StartIndex = 0;
             this.cbSex.TabIndex = 21;
             // 
             // dtpDate
@@ -208,10 +207,10 @@ namespace GUI
             this.dtpDate.ForeColor = System.Drawing.Color.Black;
             this.dtpDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpDate.FormatCustom = "dd/mm/yyyy";
-            this.dtpDate.Location = new System.Drawing.Point(157, 255);
+            this.dtpDate.Location = new System.Drawing.Point(184, 255);
             this.dtpDate.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.dtpDate.Name = "dtpDate";
-            this.dtpDate.Size = new System.Drawing.Size(382, 42);
+            this.dtpDate.Size = new System.Drawing.Size(355, 42);
             this.dtpDate.TabIndex = 22;
             this.dtpDate.Value = new System.DateTime(2021, 6, 6, 11, 44, 35, 994);
             // 
@@ -274,14 +273,14 @@ namespace GUI
             this.tbAddress.ForeColor = System.Drawing.Color.Black;
             this.tbAddress.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbAddress.HoverState.Parent = this.tbAddress;
-            this.tbAddress.Location = new System.Drawing.Point(157, 315);
+            this.tbAddress.Location = new System.Drawing.Point(184, 315);
             this.tbAddress.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.tbAddress.Name = "tbAddress";
             this.tbAddress.PasswordChar = '\0';
             this.tbAddress.PlaceholderText = "";
             this.tbAddress.SelectedText = "";
             this.tbAddress.ShadowDecoration.Parent = this.tbAddress;
-            this.tbAddress.Size = new System.Drawing.Size(382, 43);
+            this.tbAddress.Size = new System.Drawing.Size(355, 43);
             this.tbAddress.TabIndex = 117;
             // 
             // FormAddPatient

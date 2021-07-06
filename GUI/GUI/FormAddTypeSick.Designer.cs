@@ -116,14 +116,14 @@ namespace GUI
             this.tbSickName.ForeColor = System.Drawing.Color.Black;
             this.tbSickName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbSickName.HoverState.Parent = this.tbSickName;
-            this.tbSickName.Location = new System.Drawing.Point(190, 122);
+            this.tbSickName.Location = new System.Drawing.Point(228, 122);
             this.tbSickName.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.tbSickName.Name = "tbSickName";
             this.tbSickName.PasswordChar = '\0';
             this.tbSickName.PlaceholderText = "";
             this.tbSickName.SelectedText = "";
             this.tbSickName.ShadowDecoration.Parent = this.tbSickName;
-            this.tbSickName.Size = new System.Drawing.Size(370, 43);
+            this.tbSickName.Size = new System.Drawing.Size(332, 43);
             this.tbSickName.TabIndex = 130;
             // 
             // label2
@@ -133,9 +133,9 @@ namespace GUI
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
             this.label2.Location = new System.Drawing.Point(10, 122);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(175, 32);
+            this.label2.Size = new System.Drawing.Size(211, 32);
             this.label2.TabIndex = 129;
-            this.label2.Text = "Tên loại bệnh:";
+            this.label2.Text = "Tên loại bệnh (*):";
             // 
             // guna2Elipse3
             // 

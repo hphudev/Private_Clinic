@@ -118,14 +118,14 @@ namespace GUI
             this.tbUseWayName.ForeColor = System.Drawing.Color.Black;
             this.tbUseWayName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbUseWayName.HoverState.Parent = this.tbUseWayName;
-            this.tbUseWayName.Location = new System.Drawing.Point(205, 121);
+            this.tbUseWayName.Location = new System.Drawing.Point(242, 121);
             this.tbUseWayName.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.tbUseWayName.Name = "tbUseWayName";
             this.tbUseWayName.PasswordChar = '\0';
             this.tbUseWayName.PlaceholderText = "";
             this.tbUseWayName.SelectedText = "";
             this.tbUseWayName.ShadowDecoration.Parent = this.tbUseWayName;
-            this.tbUseWayName.Size = new System.Drawing.Size(381, 43);
+            this.tbUseWayName.Size = new System.Drawing.Size(344, 43);
             this.tbUseWayName.TabIndex = 135;
             // 
             // label2
@@ -135,9 +135,9 @@ namespace GUI
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
             this.label2.Location = new System.Drawing.Point(12, 121);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(187, 32);
+            this.label2.Size = new System.Drawing.Size(223, 32);
             this.label2.TabIndex = 134;
-            this.label2.Text = "Tên cách dùng:";
+            this.label2.Text = "Tên cách dùng (*):";
             // 
             // guna2Elipse3
             // 

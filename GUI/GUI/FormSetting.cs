@@ -53,7 +53,7 @@ namespace GUI
             }
             else
             {
-                MessageBox.Show("Bạn chưa chọn đơn vị tính muốn xóa!");
+                DAO.NotificationHandler.NotifyWarning("Bạn chưa chọn đơn vị tính muốn xóa");
             }
         }
 
@@ -88,7 +88,7 @@ namespace GUI
             }
             else
             {
-                MessageBox.Show("Bạn chưa chọn cách dùng muốn xóa!");
+                DAO.NotificationHandler.NotifyWarning("Bạn chưa chọn cách dùng muốn xóa!");
             }    
         }
 
@@ -162,7 +162,7 @@ namespace GUI
         {
             if (CheckIsNumber(maxnumberpatient)==false)
             {
-                MessageBox.Show("Số bệnh nhân tối đa phải là kiểu số!");
+                DAO.NotificationHandler.NotifyWarning("Số bệnh nhân tối đa phải là kiểu số!");
                 return -2;
             }
             else
@@ -176,7 +176,7 @@ namespace GUI
         {
             if (CheckIsNumber(medicalexpenses) == false)
             {
-                MessageBox.Show("Tiền khám phải là kiểu số!");
+                DAO.NotificationHandler.NotifyWarning("Tiền khám phải là kiểu số!");
                 return -2;
             }
             else
@@ -190,7 +190,7 @@ namespace GUI
         {
             if (tbMaxNumberPatient.Text == "" && tbMedicalExpenses.Text == "")
             {
-                MessageBox.Show("Không có dữ liệu để cập nhật!");
+                DAO.NotificationHandler.NotifyWarning("Không có dữ liệu để cập nhật!");
                 //return;
             }
             else
@@ -207,11 +207,11 @@ namespace GUI
                 }
                 if(checkMaxNumberPatient == 1 || checkMedicalExpenses == 1)
                 {
-                    MessageBox.Show("Đã cập nhật thành công!");
+                    DAO.NotificationHandler.NotifyInfo("Đã cập nhật thành công");
                 }    
                 else
                 {
-                    MessageBox.Show("Không thể cập nhật!");
+                    DAO.NotificationHandler.NotifyWarning("Không thể cập nhật");
                 }                    
             }
             LoadParameters();
@@ -247,7 +247,7 @@ namespace GUI
         {
             int checkdelete = 0;
             List<string> listcannotbedelete = new List<string>();
-            if (MessageBox.Show("Bạn có chắc muốn xóa toàn bộ thông tin không?", "Thông báo", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
+            if (MessageBox.Show("Bạn có chắc muốn xóa toàn bộ thông tin không?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.OK)
             {
                 foreach(DTO.UseWay iteam in list)
                 {
@@ -260,7 +260,7 @@ namespace GUI
                     }
                     else if (check == -1)
                     {
-                        MessageBox.Show("Lỗi kết nối!");
+                        DAO.NotificationHandler.NotifyError("Lỗi kết nối!");
                         return;
                     }
                     else
@@ -271,7 +271,7 @@ namespace GUI
                 }
                 if(checkdelete==list.Count)
                 {
-                    MessageBox.Show("Đã xóa thành công!");
+                    DAO.NotificationHandler.NotifyInfo("Đã xóa thành công!");
                 }
                 else
                 {
@@ -280,7 +280,7 @@ namespace GUI
                     {
                         mess = mess + ' ' + id;
                     }
-                    MessageBox.Show("Không thể xóa những cách dùng có mã sau do đã được sử dụng:" + mess);
+                    DAO.NotificationHandler.NotifyWarning("Không thể xóa những cách dùng có mã sau do đã được sử dụng:" + mess);
                 }    
                
             }
@@ -290,7 +290,7 @@ namespace GUI
         {
             int checkdelete = 0;
             List<string> listcannotbedelete = new List<string>();
-            if (MessageBox.Show("Bạn có chắc muốn xóa toàn bộ thông tin không?", "Thông báo", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
+            if (MessageBox.Show("Bạn có chắc muốn xóa toàn bộ thông tin không?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.OK)
             {
                 foreach (DTO.MedicalUnit iteam in list)
                 {
@@ -314,7 +314,7 @@ namespace GUI
                 }
                 if (checkdelete == list.Count)
                 {
-                    MessageBox.Show("Đã xóa thành công!");
+                    DAO.NotificationHandler.NotifyInfo("Đã xóa thành công!");
                 }
                 else
                 {
@@ -323,7 +323,7 @@ namespace GUI
                     {
                         mess = mess + ' ' + id;
                     }
-                    MessageBox.Show("Không thể xóa những đơn vị tính có mã sau do đã được sử dụng:" + mess);
+                    DAO.NotificationHandler.NotifyWarning("Không thể xóa những đơn vị tính có mã sau do đã được sử dụng:" + mess);
                 }
 
             }

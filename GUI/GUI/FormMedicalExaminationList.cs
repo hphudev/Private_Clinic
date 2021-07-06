@@ -257,7 +257,7 @@ namespace GUI
                 }
                 if (list.Count == 0)
                 {
-                    DAO.NotificationHandler.NotifyInfo("Không có bệnh nhân để thêm vào!");
+                    DAO.NotificationHandler.NotifyWarning("Không có bệnh nhân để thêm vào!");
                    
                     return;
                 }
@@ -266,7 +266,7 @@ namespace GUI
                     DateTime ngaykhambenh = dtpSickDay.Value;
                     if (kiemtrathoigian(ngaykhambenh) == false)
                     {
-                        DAO.NotificationHandler.NotifyInfo("Thời gian khám bênh không hợp lệ!");
+                        DAO.NotificationHandler.NotifyError("Ngày khám bênh không được nhỏ hơn ngày hiện tại!");
                         return;
                     }
                     else
@@ -305,7 +305,7 @@ namespace GUI
                 }
                 else
                 {
-                    DAO.NotificationHandler.NotifyInfo("Số lượng bệnh nhân vượt quá số lượng cho phép!");
+                    DAO.NotificationHandler.NotifyWarning("Số lượng bệnh nhân vượt quá số lượng cho phép!");
                     return;
                 }
                 LoadListbyDateintoDatagridview(ref dgvMedicalExaminationList);
@@ -315,13 +315,13 @@ namespace GUI
                 }
                 else
                 {
-                    DAO.NotificationHandler.NotifyInfo("Không thể thêm 1 số bệnh nhân do đã khám bệnh trong ngày!");
+                    DAO.NotificationHandler.NotifyWarning("Bệnh nhân đã có trong danh sách khám bệnh của ngày được chọn");
                 }
 
             }
             catch
             {
-                DAO.NotificationHandler.NotifyInfo("Lỗi hệ thống!");
+                DAO.NotificationHandler.NotifyError("Lỗi hệ thống!");
             }
         }
 

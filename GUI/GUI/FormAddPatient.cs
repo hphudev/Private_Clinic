@@ -118,7 +118,7 @@ namespace GUI
                 }
                 else if (id != "")
                 {
-                    MessageBox.Show("Thông tin bệnh nhân đã có trong hệ thống!");
+                    DAO.NotificationHandler.NotifyWarning("Thông tin bệnh nhân đã có trong hệ thống!");
                     return;
                 }
                 else
@@ -140,7 +140,7 @@ namespace GUI
 
                     if (name == "" || sex == null || birthday == null || address == "")
                     {
-                        MessageBox.Show("Bạn cần phải nhập đầy đủ dữ liệu!");
+                        DAO.NotificationHandler.NotifyWarning("Bạn cần phải nhập đầy đủ dữ liệu!");
                         return;
                     }
 
@@ -174,7 +174,7 @@ namespace GUI
 
                         DAO.Patient.Instance.InsertPatient(patient);
 
-                        MessageBox.Show("Đã nhập thành công bệnh nhân!");
+                        DAO.NotificationHandler.NotifyInfo("Đã nhập thành công bệnh nhân!");
                         if (insertPatient != null)
                         {
                             insertPatient(this, new Patientevent(patient));

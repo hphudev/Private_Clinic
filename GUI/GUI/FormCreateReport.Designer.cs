@@ -40,21 +40,11 @@ namespace GUI
             this.label4 = new System.Windows.Forms.Label();
             this.bPrintMedicalReport = new System.Windows.Forms.Button();
             this.dgvMedicineUseReport = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenThuoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DonViTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SoLanDung = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bCreateMedicineUseReport = new Guna.UI2.WinForms.Guna2GradientButton();
             this.bReturn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.dgvRevenueReport = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ngay = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SoBenhNhan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DoanhThu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TyLe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bPrintTotalReport = new System.Windows.Forms.Button();
             this.bCreateRevenueReport = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
@@ -68,6 +58,16 @@ namespace GUI
             this.tbMonth = new Guna.UI2.WinForms.Guna2TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ngay = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoBenhNhan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DoanhThu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TyLe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenThuoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DonViTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoLanDung = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMedicineUseReport)).BeginInit();
             this.panel1.SuspendLayout();
@@ -165,49 +165,6 @@ namespace GUI
             this.dgvMedicineUseReport.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvMedicineUseReport.Size = new System.Drawing.Size(1820, 355);
             this.dgvMedicineUseReport.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewTextBoxColumn1.HeaderText = "STT";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 78;
-            // 
-            // TenThuoc
-            // 
-            this.TenThuoc.HeaderText = "Tên thuốc";
-            this.TenThuoc.MinimumWidth = 6;
-            this.TenThuoc.Name = "TenThuoc";
-            this.TenThuoc.ReadOnly = true;
-            // 
-            // DonViTinh
-            // 
-            this.DonViTinh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.DonViTinh.HeaderText = "Đơn vị tính";
-            this.DonViTinh.MinimumWidth = 6;
-            this.DonViTinh.Name = "DonViTinh";
-            this.DonViTinh.ReadOnly = true;
-            this.DonViTinh.Width = 138;
-            // 
-            // SoLuong
-            // 
-            this.SoLuong.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.SoLuong.HeaderText = "Số lượng";
-            this.SoLuong.MinimumWidth = 6;
-            this.SoLuong.Name = "SoLuong";
-            this.SoLuong.ReadOnly = true;
-            this.SoLuong.Width = 123;
-            // 
-            // SoLanDung
-            // 
-            this.SoLanDung.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.SoLanDung.HeaderText = "Số lần dùng";
-            this.SoLanDung.MinimumWidth = 6;
-            this.SoLanDung.Name = "SoLanDung";
-            this.SoLanDung.ReadOnly = true;
-            this.SoLanDung.Width = 152;
             // 
             // bCreateMedicineUseReport
             // 
@@ -322,43 +279,6 @@ namespace GUI
             this.dgvRevenueReport.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvRevenueReport.Size = new System.Drawing.Size(1820, 293);
             this.dgvRevenueReport.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewTextBoxColumn2.HeaderText = "STT";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Width = 78;
-            // 
-            // Ngay
-            // 
-            this.Ngay.HeaderText = "Ngày";
-            this.Ngay.MinimumWidth = 6;
-            this.Ngay.Name = "Ngay";
-            this.Ngay.ReadOnly = true;
-            // 
-            // SoBenhNhan
-            // 
-            this.SoBenhNhan.HeaderText = "Số bệnh nhân";
-            this.SoBenhNhan.MinimumWidth = 6;
-            this.SoBenhNhan.Name = "SoBenhNhan";
-            this.SoBenhNhan.ReadOnly = true;
-            // 
-            // DoanhThu
-            // 
-            this.DoanhThu.HeaderText = "DoanhThu";
-            this.DoanhThu.MinimumWidth = 6;
-            this.DoanhThu.Name = "DoanhThu";
-            this.DoanhThu.ReadOnly = true;
-            // 
-            // TyLe
-            // 
-            this.TyLe.HeaderText = "Tỷ lệ doanh thu";
-            this.TyLe.MinimumWidth = 6;
-            this.TyLe.Name = "TyLe";
-            this.TyLe.ReadOnly = true;
             // 
             // bPrintTotalReport
             // 
@@ -557,6 +477,86 @@ namespace GUI
             this.label1.TabIndex = 133;
             this.label1.Text = "Tháng:";
             // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewTextBoxColumn2.HeaderText = "Mã doanh thu";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 167;
+            // 
+            // Ngay
+            // 
+            this.Ngay.HeaderText = "Ngày";
+            this.Ngay.MinimumWidth = 6;
+            this.Ngay.Name = "Ngay";
+            this.Ngay.ReadOnly = true;
+            // 
+            // SoBenhNhan
+            // 
+            this.SoBenhNhan.HeaderText = "Số bệnh nhân";
+            this.SoBenhNhan.MinimumWidth = 6;
+            this.SoBenhNhan.Name = "SoBenhNhan";
+            this.SoBenhNhan.ReadOnly = true;
+            // 
+            // DoanhThu
+            // 
+            this.DoanhThu.HeaderText = "DoanhThu";
+            this.DoanhThu.MinimumWidth = 6;
+            this.DoanhThu.Name = "DoanhThu";
+            this.DoanhThu.ReadOnly = true;
+            // 
+            // TyLe
+            // 
+            this.TyLe.HeaderText = "Tỷ lệ doanh thu";
+            this.TyLe.MinimumWidth = 6;
+            this.TyLe.Name = "TyLe";
+            this.TyLe.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewTextBoxColumn1.HeaderText = "Mã sử dụng thuốc";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 207;
+            // 
+            // TenThuoc
+            // 
+            this.TenThuoc.HeaderText = "Tên thuốc";
+            this.TenThuoc.MinimumWidth = 6;
+            this.TenThuoc.Name = "TenThuoc";
+            this.TenThuoc.ReadOnly = true;
+            // 
+            // DonViTinh
+            // 
+            this.DonViTinh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.DonViTinh.HeaderText = "Đơn vị tính";
+            this.DonViTinh.MinimumWidth = 6;
+            this.DonViTinh.Name = "DonViTinh";
+            this.DonViTinh.ReadOnly = true;
+            this.DonViTinh.Width = 138;
+            // 
+            // SoLuong
+            // 
+            this.SoLuong.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.SoLuong.HeaderText = "Số lượng";
+            this.SoLuong.MinimumWidth = 6;
+            this.SoLuong.Name = "SoLuong";
+            this.SoLuong.ReadOnly = true;
+            this.SoLuong.Width = 123;
+            // 
+            // SoLanDung
+            // 
+            this.SoLanDung.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.SoLanDung.HeaderText = "Số lần dùng";
+            this.SoLanDung.MinimumWidth = 6;
+            this.SoLanDung.Name = "SoLanDung";
+            this.SoLanDung.ReadOnly = true;
+            this.SoLanDung.Width = 152;
+            // 
             // FormCreateReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -589,11 +589,6 @@ namespace GUI
         #endregion
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.DataGridView dgvMedicineUseReport;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TenThuoc;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DonViTinh;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SoLuong;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SoLanDung;
         private System.Windows.Forms.Button bReturn;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dgvRevenueReport;
@@ -609,15 +604,20 @@ namespace GUI
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
         private Guna.UI2.WinForms.Guna2GradientButton bCreateRevenueReport;
         private Guna.UI2.WinForms.Guna2GradientButton bCreateMedicineUseReport;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Ngay;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SoBenhNhan;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DoanhThu;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TyLe;
         private System.Windows.Forms.GroupBox groupBox1;
         private Guna.UI2.WinForms.Guna2TextBox tbYear;
         private Guna.UI2.WinForms.Guna2TextBox tbMonth;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenThuoc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DonViTinh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SoLuong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SoLanDung;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ngay;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SoBenhNhan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DoanhThu;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TyLe;
     }
 }

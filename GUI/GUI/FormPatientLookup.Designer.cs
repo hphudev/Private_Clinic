@@ -352,6 +352,7 @@ namespace GUI
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvPatientList.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvPatientList.RowHeadersWidth = 51;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
             dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.PowderBlue;
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Blue;
@@ -710,21 +711,25 @@ namespace GUI
             // 
             // MaKham
             // 
+            this.MaKham.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.MaKham.DataPropertyName = "MAPHIEUKB";
             this.MaKham.FillWeight = 107.8173F;
             this.MaKham.HeaderText = "Mã phiếu";
             this.MaKham.MinimumWidth = 6;
             this.MaKham.Name = "MaKham";
             this.MaKham.ReadOnly = true;
+            this.MaKham.Width = 126;
             // 
             // NGAYKHAM
             // 
+            this.NGAYKHAM.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.NGAYKHAM.DataPropertyName = "NGAYKHAMBENH";
             this.NGAYKHAM.FillWeight = 107.8173F;
             this.NGAYKHAM.HeaderText = "Ngày khám";
             this.NGAYKHAM.MinimumWidth = 6;
             this.NGAYKHAM.Name = "NGAYKHAM";
             this.NGAYKHAM.ReadOnly = true;
+            this.NGAYKHAM.Width = 143;
             // 
             // LOAIBENH
             // 
@@ -737,12 +742,14 @@ namespace GUI
             // 
             // dataGridViewTextBoxColumn13
             // 
+            this.dataGridViewTextBoxColumn13.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn13.DataPropertyName = "TONGTIEN";
             this.dataGridViewTextBoxColumn13.FillWeight = 107.8173F;
             this.dataGridViewTextBoxColumn13.HeaderText = "Tổng tiền";
             this.dataGridViewTextBoxColumn13.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
             this.dataGridViewTextBoxColumn13.ReadOnly = true;
+            this.dataGridViewTextBoxColumn13.Width = 128;
             // 
             // TRIEUCHUNG
             // 

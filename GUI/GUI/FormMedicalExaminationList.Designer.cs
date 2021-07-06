@@ -287,6 +287,7 @@ namespace GUI
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvPatientList.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvPatientList.RowHeadersWidth = 51;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.PowderBlue;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Blue;
@@ -351,6 +352,7 @@ namespace GUI
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvMedicalExaminationList.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvMedicalExaminationList.RowHeadersWidth = 51;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(126)))), ((int)(((byte)(186)))));
             dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.PowderBlue;
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Blue;
