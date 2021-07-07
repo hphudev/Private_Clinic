@@ -51,182 +51,171 @@ NHẬN XÉT CỦA GIẢNG VIÊN
 Chương 1. TỔNG QUAN	14
 1.1 Giới thiệu bài toán cần giải quyết	14
 1.2 Mô tả quy trình thực hiện công việc chính	14
-Chương 2. XÁC ĐỊNH VÀ MÔ HÌNH HÓA CÁC YÊU CẦU PHẦN MỀM	15
-2.1 Phân loại các yêu cầu phần mềm	15
-2.1.1 Yêu cầu nghiệp vụ	15
-2.1.2 Yêu cầu chất lượng	15
-2.2 Bảng trách nhiệm cho từng loại yêu cầu	15
-2.2.1 Bảng trách nhiệm yêu cầu nghiệp vụ	15
-2.2.2 Bảng trách nhiệm yêu cầu chất lượng	16
-2.3 Sơ đồ luồng dữ liệu cho từng loại yêu cầu	17
-2.3.1 Lập danh sách khám bệnh	17
-2.3.2 Lập phiếu nhập thuốc	19
-2.3.3 Lập phiếu khám bệnh	20
-2.3.4 Tra cứu bệnh nhân	22
-2.3.5 Lập hóa đơn thanh toán	24
-2.3.6 Lập báo cáo tháng	25
-2.3.7 Thay đổi quy định	29
-Chương 3. THIẾT KẾ HỆ THỐNG	33
-3.1	Kiến trúc hệ thống	33
-3.2	Mô tả thành phần trong hệ thống	34
-Chương 4. THIẾT KẾ DỮ LIỆU	35
-4.1	Thuật toán lập sơ đồ logic	35
-4.2 Sơ đồ logic hoàn chỉnh	44
-4.3 Danh sách các bảng dữ liệu (table) trong sơ đồ logic	46
-4.4 Mô tả từng bảng dữ liệu	47
-4.4.1 Bảng BENHNHAN	47
-4.4.2 Bảng CTKB	48
-4.4.3 Bảng THAMSO	48
-4.4.4 Bảng THUOC	48
-4.4.5 Bảng CTPHIEUNT	49
-4.4.6 Bảng BENH	50
-4.4.7 Bảng PHIEUKB	51
-4.4.8 Bảng CTPHIEUKB	51
-4.4.9 Bảng CACHDUNG	52
-4.4.10 Bảng DONVITINH	52
-4.4.11 Bảng HOADON	52
-4.4.12 Bảng CTBCDOANHTHU	53
-4.4.13 Bảng CTBCSDTHUOC	54
-Chương 5. THIẾT KẾ GIAO DIỆN	55
-5.1	Sơ đồ liên kết màn hình	55
-5.1.1 Sơ đồ tổng quan	55
-5.1.2 Sơ đồ chi tiết màn hình lập danh sách khám bệnh	56
-5.1.3 Sơ đồ chi tiết màn hình lập phiếu khám bệnh	56
-5.1.4 Sơ đồ chi tiết màn hình lập phiếu nhập thuốc	56
-5.2	Danh sách màn hình	57
-5.3	Mô tả các màn hình	59
-5.3.1 Màn hình khởi động	59
-5.3.2 Màn hình hiển thị danh sách chức năng	60
-5.3.3 Màn hình lập danh sách khám bệnh	62
-5.3.4 Màn hình thêm bệnh nhân	66
-5.3.5 Màn hình lập phiếu khám bệnh	68
-5.3.6 Màn hình thêm loại bệnh	74
-5.3.7 Màn hình thêm cách dùng	76
-5.3.8 Màn hình lập hóa đơn thanh toán	77
-5.3.9 Màn hình lập phiếu nhập thuốc	82
-5.3.10 Màn hình thêm đơn vị tính	85
-5.3.11 Màn hình tra cứu bệnh nhân	87
-5.3.12 Màn hình lập báo cáo	91
-5.3.13 Màn hình thiết lập	95
-Chương 6. CÀI ĐẶT VÀ THỬ NGHIỆM	97
-Chương 7. NHẬN XÉT VÀ KẾT LUẬN	98
-Chương 8. HƯỚNG PHÁT TRIỂN	99
-Chương 9. TÀI LIỆU THAM KHẢO	100
-Chương 10. BẢNG PHÂN CÔNG CÔNG VIỆC	101
-
-
-
-
-
-
-
-
-	
-
-
+Chương 2. XÁC ĐỊNH VÀ MÔ HÌNH HÓA CÁC YÊU CẦU PHẦN MỀM	16
+2.1 Phân loại các yêu cầu phần mềm	16
+2.1.1 Yêu cầu nghiệp vụ	16
+2.1.2 Yêu cầu chất lượng	16
+2.2 Bảng trách nhiệm cho từng loại yêu cầu	16
+2.2.1 Bảng trách nhiệm yêu cầu nghiệp vụ	16
+2.2.2 Bảng trách nhiệm yêu cầu chất lượng	17
+2.3 Sơ đồ luồng dữ liệu cho từng loại yêu cầu	18
+2.3.1 Lập danh sách khám bệnh	18
+2.3.2 Lập phiếu nhập thuốc	20
+2.3.3 Lập phiếu khám bệnh	21
+2.3.4 Tra cứu bệnh nhân	23
+2.3.5 Lập hóa đơn thanh toán	25
+2.3.6 Lập báo cáo tháng	26
+2.3.7 Thay đổi quy định	30
+Chương 3. THIẾT KẾ HỆ THỐNG	34
+3.1 Kiến trúc hệ thống	34
+3.2 Mô tả thành phần trong hệ thống	35
+Chương 4. THIẾT KẾ DỮ LIỆU	36
+4.1 Thuật toán lập sơ đồ logic	36
+4.2 Sơ đồ logic hoàn chỉnh	45
+4.3 Danh sách các bảng dữ liệu (table) trong sơ đồ logic	47
+4.4 Mô tả từng bảng dữ liệu	48
+4.4.1 Bảng BENHNHAN	48
+4.4.2 Bảng CTKB	49
+4.4.3 Bảng THAMSO	49
+4.4.4 Bảng THUOC	49
+4.4.5 Bảng CTPHIEUNT	50
+4.4.6 Bảng BENH	51
+4.4.7 Bảng PHIEUKB	52
+4.4.8 Bảng CTPHIEUKB	52
+4.4.9 Bảng CACHDUNG	53
+4.4.10 Bảng DONVITINH	53
+4.4.11 Bảng HOADON	53
+4.4.12 Bảng CTBCDOANHTHU	54
+4.4.13 Bảng CTBCSDTHUOC	55
+Chương 5. THIẾT KẾ GIAO DIỆN	57
+5.1 Sơ đồ liên kết màn hình	57
+5.1.1 Sơ đồ tổng quan	57
+5.1.2 Sơ đồ chi tiết màn hình lập danh sách khám bệnh	57
+5.1.3 Sơ đồ chi tiết màn hình lập phiếu khám bệnh	58
+5.1.4 Sơ đồ chi tiết màn hình lập phiếu nhập thuốc	58
+5.2 Danh sách màn hình	58
+5.3 Mô tả các màn hình	60
+5.3.1 Màn hình khởi động	60
+5.3.2 Màn hình hiển thị danh sách chức năng	62
+5.3.3 Màn hình lập danh sách khám bệnh	64
+5.3.4 Màn hình thêm bệnh nhân	68
+5.3.5 Màn hình lập phiếu khám bệnh	70
+5.3.6 Màn hình thêm loại bệnh	76
+5.3.7 Màn hình thêm cách dùng	77
+5.3.8 Màn hình lập hóa đơn thanh toán	79
+5.3.9 Màn hình lập phiếu nhập thuốc	84
+5.3.10 Màn hình thêm đơn vị tính	87
+5.3.11 Màn hình tra cứu bệnh nhân	89
+5.3.12 Màn hình lập báo cáo	93
+5.3.13 Màn hình thiết lập	97
+Chương 6. CÀI ĐẶT VÀ THỬ NGHIỆM	99
+Chương 7. NHẬN XÉT VÀ KẾT LUẬN	100
+Chương 8. HƯỚNG PHÁT TRIỂN	101
+Chương 9. TÀI LIỆU THAM KHẢO	102
+Chương 10. BẢNG PHÂN CÔNG CÔNG VIỆC	103
 
 
 
 
 DANH MỤC HÌNH
-Chương 2. XÁC ĐỊNH VÀ MÔ HÌNH HÓA CÁC YÊU CẦU PHẦN MỀM	15
-Hình 2.1 Sơ đồ 1: Sơ đồ luồng dữ liệu lập danh sách khám bệnh	18
-Hình 2.2 Sơ đồ 2: Sơ đồ luồng dữ liệu lập phiếu nhập thuốc	19
-Hình 2.3 Sơ đồ 3: Sơ đồ luồng dữ liệu lập phiếu khám bệnh	21
-Hình 2.4 Sơ đồ 4: Sơ đồ luồng dữ liệu tra cứu bệnh nhân	23
-Hình 2.5 Sơ đồ 5: Sơ đồ luồng dữ liệu lập hóa đơn thanh toán	24
-Hình 2.6 Sơ đồ 6: Sơ đồ luồng dữ liệu lập báo cáo doanh thu theo tháng	26
-Hình 2.7 Sơ đồ 7: Sơ đồ luồng dữ liệu lập báo cáo sử dụng thuốc theo tháng	27
-Hình 2.8 Sơ đồ 8: Sơ đồ luồng dữ liệu thay đổi số lượng bệnh nhân tối đa	29
-Hình 2.9 Sơ đồ 9: Sơ đồ luồng dữ liệu thay đổi số lượng loại bệnh, đơn vị tính và cách dùng	30
-Hình 2.10 Sơ đồ 10: Sơ đồ luồng dữ liệu thay đổi tiền khám và tỉ lệ tính đơn giá bán của thuốc	31
-Chương 3. THIẾT KẾ HỆ THỐNG	33
-Hình 3.1 Mô hình 3-Leyers, 3-Tiers	33
-Chương 4. THIẾT KẾ DỮ LIỆU	35
-Hình 4.1 Sơ đồ logic lập danh sách khám bệnh với tính đúng đắn	35
-Hình 4.2 Sơ đồ logic lập danh sách khám bệnh với tính tiến hóa	36
-Hình 4.3 Sơ đồ logic lập phiếu nhập thuốc với tính đúng đắn	37
-Hình 4.4 Sơ đồ logic lập phiếu khám bệnh với tính đúng đắn	38
-Hình 4.5 Sơ đồ logic lập phiếu nhập thuốc với tính tiến hóa	39
-Hình 4.6 Sơ đồ logic lập hóa đơn thanh toán với tính đúng đắn	41
-Hình 4.7 Sơ đồ logic lập báo cáo doanh thu theo tháng với tính đúng đắn	42
-Hình 4.8 Sơ đồ logic lập báo cáo sử dụng thuốc theo tháng với tính đúng đắn	43
-Hình 4.9 Sơ đồ logic hoàn chỉnh rút gọn	44
-Hình 4.10 Sơ đồ logic hoàn chỉnh đầy đủ	45
-Chương 5. THIẾT KẾ GIAO DIỆN	55
-Hình 5.1 Sơ đồ liên kết màn hình tổng quan	55
-Hình 5.2 Sơ đồ chi tiết màn hình lập danh sách khám bệnh	56
-Hình 5.3 Sơ đồ chi tiết màn hình lập phiếu khám bệnh	56
-Hình 5.4 Sơ đồ chi tiết màn hình lập phiếu nhập thuốc	56
-Hình 5.5 Giao diện màn hình khởi động	59
-Hình 5.6 Giao diện màn hình hiển thị danh sách chức năng	60
-Hình 5.7 Giao diện màn hình lập danh sách khám bệnh	62
-Hình 5.8 Giao diện màn hình thêm bệnh nhân	66
-Hình 5.9 Giao diện màn hình lập phiếu khám bệnh	68
-Hình 5.10 Giao diện màn hình thêm loại bệnh	74
-Hình 5.11 Giao diện màn hình thêm cách dùng	76
-Hình 5.12 Giao diện màn hình lập hóa đơn thanh toán	77
-Hình 5.13 Giao diện màn hình lập phiếu nhập thuốc	82
-Hình 5.14 Giao diện màn hình thêm đơn vị tính	85
-Hình 5.15 Giao diện màn hình tra cứu bệnh nhân	87
-Hình 5.16 Giao diện màn hình lập báo cáo	91
-Hình 5.17 Giao diện màn hình thiết lập	95
+Chương 2. XÁC ĐỊNH VÀ MÔ HÌNH HÓA CÁC YÊU CẦU PHẦN MỀM	16
+Hình 2.1 Sơ đồ 1: Sơ đồ luồng dữ liệu lập danh sách khám bệnh	19
+Hình 2.2 Sơ đồ 2: Sơ đồ luồng dữ liệu lập phiếu nhập thuốc	20
+Hình 2.3 Sơ đồ 3: Sơ đồ luồng dữ liệu lập phiếu khám bệnh	22
+Hình 2.4 Sơ đồ 4: Sơ đồ luồng dữ liệu tra cứu bệnh nhân	24
+Hình 2.5 Sơ đồ 5: Sơ đồ luồng dữ liệu lập hóa đơn thanh toán	25
+Hình 2.6 Sơ đồ 6: Sơ đồ luồng dữ liệu lập báo cáo doanh thu theo tháng	27
+Hình 2.7 Sơ đồ 7: Sơ đồ luồng dữ liệu lập báo cáo sử dụng thuốc theo tháng	28
+Hình 2.8 Sơ đồ 8: Sơ đồ luồng dữ liệu thay đổi số lượng bệnh nhân tối đa	30
+Hình 2.9 Sơ đồ 9: Sơ đồ luồng dữ liệu thay đổi số lượng loại bệnh, đơn vị tính và cách dùng	31
+Hình 2.10 Sơ đồ 10: Sơ đồ luồng dữ liệu thay đổi tiền khám và tỉ lệ tính đơn giá bán của thuốc	32
+Chương 3. THIẾT KẾ HỆ THỐNG	34
+Hình 3.1 Mô hình 3-Leyers, 3-Tiers	34
+Chương 4. THIẾT KẾ DỮ LIỆU	36
+Hình 4.1 Sơ đồ logic lập danh sách khám bệnh với tính đúng đắn	36
+Hình 4.2 Sơ đồ logic lập danh sách khám bệnh với tính tiến hóa	37
+Hình 4.3 Sơ đồ logic lập phiếu nhập thuốc với tính đúng đắn	38
+Hình 4.4 Sơ đồ logic lập phiếu khám bệnh với tính đúng đắn	39
+Hình 4.5 Sơ đồ logic lập phiếu khám bệnh với tính tiến hóa	40
+Hình 4.6 Sơ đồ logic lập hóa đơn thanh toán với tính đúng đắn	42
+Hình 4.7 Sơ đồ logic lập báo cáo doanh thu theo tháng với tính đúng đắn	43
+Hình 4.8 Sơ đồ logic lập báo cáo sử dụng thuốc theo tháng với tính đúng đắn	44
+Hình 4.9 Sơ đồ logic hoàn chỉnh rút gọn	45
+Hình 4.10 Sơ đồ logic hoàn chỉnh đầy đủ	46
+Chương 5. THIẾT KẾ GIAO DIỆN	57
+Hình 5.1 Sơ đồ liên kết màn hình tổng quan	57
+Hình 5.2 Sơ đồ chi tiết màn hình lập danh sách khám bệnh	57
+Hình 5.3 Sơ đồ chi tiết màn hình lập phiếu khám bệnh	58
+Hình 5.4 Sơ đồ chi tiết màn hình lập phiếu nhập thuốc	58
+Hình 5.5 Giao diện màn hình khởi động	60
+Hình 5.6 Giao diện màn hình hiển thị danh sách chức năng	62
+Hình 5.7 Giao diện màn hình lập danh sách khám bệnh	64
+Hình 5.8 Giao diện màn hình thêm bệnh nhân	68
+Hình 5.9 Giao diện màn hình lập phiếu khám bệnh	70
+Hình 5.10 Giao diện màn hình thêm loại bệnh	76
+Hình 5.11 Giao diện màn hình thêm cách dùng	77
+Hình 5.12 Giao diện màn hình lập hóa đơn thanh toán	79
+Hình 5.13 Giao diện màn hình lập phiếu nhập thuốc	84
+Hình 5.14 Giao diện màn hình thêm đơn vị tính	87
+Hình 5.15 Giao diện màn hình tra cứu bệnh nhân	89
+Hình 5.16 Giao diện màn hình lập báo cáo	93
+Hình 5.17 Giao diện màn hình thiết lập	97
 
 
 
 DANH MỤC BẢNG
-Chương 2. XÁC ĐỊNH VÀ MÔ HÌNH HÓA CÁC YÊU CẦU PHẦN MỀM	15
-Bảng 2.1 Bảng trách nhiệm yêu cầu nghiệp vụ	15
-Bảng 2.2 Bảng trách nhiệm yêu cầu chất lượng	16
-Chương 3. THIẾT KẾ HỆ THỐNG	33
-Bảng 3.1 Bảng mô tả thành phần trong hệ thống	34
-Chương 4. THIẾT KẾ DỮ LIỆU	35
-Bảng 4.1 Danh sách các bảng dữ liệu (table) trong sơ đồ logic	46
-Bảng 4.2 Bảng các thuộc tính của bảng BENHNHAN	47
-Bảng 4.3 Bảng các thuộc tính của bảng CTKB	48
-Bảng 4.4 Bảng các thuộc tính của bảng THAMSO	48
-Bảng 4.5 Bảng các thuộc tính của bảng THUOC	48
-Bảng 4.6 Bảng các thuộc tính của bảng CTPHIEUNT	49
-Bảng 4.7 Bảng các thuộc tính của bảng BENH	50
-Bảng 4.8 Bảng các thuộc tính của bảng PHIEUKB	51
-Bảng 4.9 Bảng các thuộc tính của bảng CTPHIEUKB	51
-Bảng 4.10 Bảng các thuộc tính của bảng CACHDUNG	52
-Bảng 4.11 Bảng các thuộc tính của bảng DONVITINH	52
-Bảng 4.12 Bảng các thuộc tính của bảng HOADON	52
-Bảng 4.13 Bảng các thuộc tính của bảng CTBCDOANHTHU	53
-Bảng 4.14 Bảng các thuộc tính của bảng CTBCSDTHUOC	54
-Chương 5. THIẾT KẾ GIAO DIỆN	55
-Bảng 5.1 Bảng danh sách màn hình	57
-Bảng 5.2 Bảng mô tả các đối tượng trên màn hình khởi động	59
-Bảng 5.3 Danh sách biến cố và xử lý tương ứng trên màn hình khởi động	60
-Bảng 5.4 Bảng mô tả các đối tượng trên màn hình hiển thị danh sách chức năng	61
-Bảng 5.5 Danh sách biến cố và xử lý tương ứng trên màn hình hiển thị danh sách chức năng	62
-Bảng 5.6 Bảng mô tả các đối tượng trên màn hình lập danh sách khám bệnh	63
-Bảng 5.7 Danh sách biến cố và xử lý tương ứng trên màn hình lập danh sách khám bệnh	65
-Bảng 5.8 Bảng mô tả các đối tượng trên màn hình thêm bệnh nhân	66
-Bảng 5.9 Danh sách biến cố và xử lý tương ứng trên màn hình thêm bệnh nhân	67
-Bảng 5.10 Bảng mô tả các đối tượng trên màn hình lập phiếu khám bệnh	68
-Bảng 5.11 Danh sách biến cố và xử lý tương ứng trên màn hình lập phiếu khám bệnh	73
-Bảng 5.12 Bảng mô tả các đối tượng trên màn hình thêm loại bệnh	75
-Bảng 5.13 Danh sách biến cố và xử lý tương ứng trên màn hình thêm loại bệnh	75
-Bảng 5.14 Bảng mô tả các đối tượng trên màn hình thêm cách dùng	76
-Bảng 5.15 Danh sách biến cố và xử lý tương ứng trên màn hình thêm cách dùng	76
-Bảng 5.16 Bảng mô tả các đối tượng trên màn hình lập hóa đơn thanh toán	77
-Bảng 5.17 Danh sách biến cố và xử lý tương ứng trên màn hình lập hóa đơn thanh toán	80
-Bảng 5.18 Bảng mô tả các đối tượng trên màn hình lập phiếu nhập thuốc	82
-Bảng 5.19 Danh sách biến cố và xử lý tương ứng trên màn hình lập phiếu nhập thuốc	84
-Bảng 5.20 Bảng mô tả các đối tượng trên màn hình thêm đơn vị tính	85
-Bảng 5.21 Danh sách biến cố và xử lý tương ứng trên màn hình thêm đơn vị tính	86
-Bảng 5.22 Bảng mô tả các đối tượng trên màn hình tra cứu bệnh nhân	87
-Bảng 5.23 Danh sách biến cố và xử lý tương ứng trên màn hình tra cứu bệnh nhân	89
-Bảng 5.24 Bảng mô tả các đối tượng trên màn hình lập báo cáo	91
-Bảng 5.25 Danh sách biến cố và xử lý tương ứng trên màn hình lập báo cáo	93
-Bảng 5.26 Bảng mô tả các đối tượng trên màn hình thiết lập	96
-Bảng 5.27 Danh sách biến cố và xử lý tương ứng trên màn hình thiết lập	96
-Chương 6. CÀI ĐẶT VÀ THỬ NGHIỆM	97
-Bảng 6.1 Bảng chức năng phần mềm và mức độ hoàn thành	97
-Chương 10. BẢNG PHÂN CÔNG CÔNG VIỆC	101
-Bảng 10.1 Bảng phân công công việc	101
+Chương 2. XÁC ĐỊNH VÀ MÔ HÌNH HÓA CÁC YÊU CẦU PHẦN MỀM	16
+Bảng 2.1 Bảng trách nhiệm yêu cầu nghiệp vụ	16
+Bảng 2.2 Bảng trách nhiệm yêu cầu chất lượng	17
+Chương 3. THIẾT KẾ HỆ THỐNG	34
+Bảng 3.1 Bảng mô tả thành phần trong hệ thống	35
+Chương 4. THIẾT KẾ DỮ LIỆU	36
+Bảng 4.1 Danh sách các bảng dữ liệu (table) trong sơ đồ logic	47
+Bảng 4.2 Bảng các thuộc tính của bảng BENHNHAN	48
+Bảng 4.3 Bảng các thuộc tính của bảng CTKB	49
+Bảng 4.4 Bảng các thuộc tính của bảng THAMSO	49
+Bảng 4.5 Bảng các thuộc tính của bảng THUOC	49
+Bảng 4.6 Bảng các thuộc tính của bảng CTPHIEUNT	50
+Bảng 4.7 Bảng các thuộc tính của bảng BENH	51
+Bảng 4.8 Bảng các thuộc tính của bảng PHIEUKB	52
+Bảng 4.9 Bảng các thuộc tính của bảng CTPHIEUKB	52
+Bảng 4.10 Bảng các thuộc tính của bảng CACHDUNG	53
+Bảng 4.11 Bảng các thuộc tính của bảng DONVITINH	53
+Bảng 4.12 Bảng các thuộc tính của bảng HOADON	53
+Bảng 4.13 Bảng các thuộc tính của bảng CTBCDOANHTHU	54
+Bảng 4.14 Bảng các thuộc tính của bảng CTBCSDTHUOC	55
+Chương 5. THIẾT KẾ GIAO DIỆN	57
+Bảng 5.1 Bảng danh sách màn hình	58
+Bảng 5.2 Bảng mô tả các đối tượng trên màn hình khởi động	61
+Bảng 5.3 Danh sách biến cố và xử lý tương ứng trên màn hình khởi động	61
+Bảng 5.4 Bảng mô tả các đối tượng trên màn hình hiển thị danh sách chức năng	62
+Bảng 5.5 Danh sách biến cố và xử lý tương ứng trên màn hình hiển thị danh sách chức năng	63
+Bảng 5.6 Bảng mô tả các đối tượng trên màn hình lập danh sách khám bệnh	64
+Bảng 5.7 Danh sách biến cố và xử lý tương ứng trên màn hình lập danh sách khám bệnh	66
+Bảng 5.8 Bảng mô tả các đối tượng trên màn hình thêm bệnh nhân	68
+Bảng 5.9 Danh sách biến cố và xử lý tương ứng trên màn hình thêm bệnh nhân	69
+Bảng 5.10 Bảng mô tả các đối tượng trên màn hình lập phiếu khám bệnh	70
+Bảng 5.11 Danh sách biến cố và xử lý tương ứng trên màn hình lập phiếu khám bệnh	75
+Bảng 5.12 Bảng mô tả các đối tượng trên màn hình thêm loại bệnh	76
+Bảng 5.13 Danh sách biến cố và xử lý tương ứng trên màn hình thêm loại bệnh	77
+Bảng 5.14 Bảng mô tả các đối tượng trên màn hình thêm cách dùng	78
+Bảng 5.15 Danh sách biến cố và xử lý tương ứng trên màn hình thêm cách dùng	78
+Bảng 5.16 Bảng mô tả các đối tượng trên màn hình lập hóa đơn thanh toán	79
+Bảng 5.17 Danh sách biến cố và xử lý tương ứng trên màn hình lập hóa đơn thanh toán	82
+Bảng 5.18 Bảng mô tả các đối tượng trên màn hình lập phiếu nhập thuốc	84
+Bảng 5.19 Danh sách biến cố và xử lý tương ứng trên màn hình lập phiếu nhập thuốc	86
+Bảng 5.20 Bảng mô tả các đối tượng trên màn hình thêm đơn vị tính	87
+Bảng 5.21 Danh sách biến cố và xử lý tương ứng trên màn hình thêm đơn vị tính	88
+Bảng 5.22 Bảng mô tả các đối tượng trên màn hình tra cứu bệnh nhân	89
+Bảng 5.23 Danh sách biến cố và xử lý tương ứng trên màn hình tra cứu bệnh nhân	91
+Bảng 5.24 Bảng mô tả các đối tượng trên màn hình lập báo cáo	93
+Bảng 5.25 Danh sách biến cố và xử lý tương ứng trên màn hình lập báo cáo	95
+Bảng 5.26 Bảng mô tả các đối tượng trên màn hình thiết lập	98
+Bảng 5.27 Danh sách biến cố và xử lý tương ứng trên màn hình thiết lập	98
+Chương 6. CÀI ĐẶT VÀ THỬ NGHIỆM	99
+Bảng 6.1 Bảng chức năng phần mềm và mức độ hoàn thành	99
+Chương 10. BẢNG PHÂN CÔNG CÔNG VIỆC	103
+Bảng 10.1 Bảng phân công công việc	103
 
 
 
@@ -261,19 +250,9 @@ DANH MỤC VIẾT TẮT
 
 
 LỜI NÓI ĐẦU
-Từ ngàn xưa đến nay, các dịch vụ y tế đóng góp một vai trò hết sức quan trọng trong sứ mệnh bảo vệ sức khỏe con người, giúp ta phòng ngừa và chống chọi lại các căn bệnh quá ác suốt những năm qua. 
-      Với tốc độ phát triển của nền kinh tế nhanh như hiện nay tại Việt Nam, mọi
-người đã có thể quan tâm tới sức khỏe của mình hơn, kèm theo đó Việt Nam là một nước thuộc vùng nhiệt đới nên tỉ lệ mắc các bệnh khá cao dẫn đến đến việc
-các bệnh viện luôn trong tình trạng quá tải. Cũng chính vì lý do này mà các phòng khám tư đặc biệt là các phòng mạch tư phát triển mạnh mẽ trong thời gian gần đây. Nhưng công tác quản lý phòng mạch tư sẽ rất phức tạp nếu không có sự trợ giúp của các công cụ và các công nghệ quản lý. 
-      Với lòng đam mê nghiên cứu khoa học và mong muốn đóng góp cho nền y tế nước nhà . Nhóm chúng em xin phép chọn đề tài xây dựng và phân tích thiết kế phần mềm quản lý phòng mạch tư cho đồ án môn học. Vì kinh phí cũng như thời gian hạn hẹp nên các chức năng của phần mềm chưa được được hoàn thiện một cách đầy đủ nhất so với các điều kiện thực tế. Chúng em hi vọng nếu có điều kiện đầy đủ, các chức năng cũng như giao diện có thể đầy đủ hơn và có thể áp dụng vào các yêu cầu thực tế.
-     Chúng em xin chân thành cảm ơn cô đã truyền đạt cho chúng em rất nhiều kiến thức về môn học và sự hướng dẫn, tư vấn nhiệt tình của các thầy để chúng em có thể hoàn thành đồ án một cách tốt nhất.  
-
-
-
-
-
-
-
+Từ ngàn xưa đến nay, các dịch vụ y tế đóng góp một vai trò hết sức quan trọng trong sứ mệnh bảo vệ sức khỏe con người, giúp ta phòng ngừa và chống chọi lại các căn bệnh quái ác suốt những năm qua. 
+Với lòng đam mê nghiên cứu khoa học và mong muốn đóng góp cho nền y tế nước nhà, nhóm chúng em xin phép chọn đề tài xây dựng và phân tích thiết kế phần mềm quản lý phòng mạch tư cho đồ án môn học. Vì kinh phí cũng như thời gian hạn hẹp nên các chức năng của phần mềm chưa được được hoàn thiện một cách đầy đủ nhất so với các điều kiện thực tế. Chúng em hi vọng nếu có điều kiện đầy đủ, các chức năng cũng như giao diện có thể đầy đủ hơn và có thể áp dụng vào các yêu cầu thực tế.
+Chúng em xin chân thành cảm ơn cô đã truyền đạt cho chúng em rất nhiều kiến thức về môn học và sự hướng dẫn, tư vấn nhiệt tình để chúng em có thể hoàn thành đồ án một cách tốt nhất.  
 
 
 
@@ -289,6 +268,29 @@ Chương 1. TỔNG QUAN
 	1.1 Giới thiệu bài toán cần giải quyết
 		Hiện nay, trong bối cảnh xã hội đang phát triển, các nhu cầu của con người mỗi ngày một tăng. Ngoài các nhu cầu về ăn uống và thời trang thì nhu cầu được sử dụng các dịch vụ chăm sóc sức khỏe và sắc đẹp cũng dần tăng theo. Chính vì vậy, để nắm bắt được xu thế đó, các dịch vụ phòng mạch tư đã bắt đầu phát triển và trở nên phổ biến trong xã hội hiện đại. Tuy nhiên, trong thời đại công nghệ 4.0, việc quản lý một mô hình kinh doanh hay dịch vụ theo kiểu truyền thống sẽ khó giải quyết được bài toán về tốc độ, sự tiện nghi và cũng như là phân tích lợi ích và hạn chế của hoạt động kinh doanh mà chủ sở hữu đang hoạt động. Bởi những nguyên nhân ấy, nhóm chúng em đã đề xuất ra một mô hình quản lý theo hướng công nghệ hay cụ thể hơn là một phần mềm có thể giải quyết được các vấn đề nêu trên.
 	1.2 Mô tả quy trình thực hiện công việc chính
+		1.2.1 Lập danh sách khám bệnh
+	Chọn ngày khám bệnh.
+	Nhập thông tin bệnh nhân đối với bệnh nhân mới hoặc chọn thông tin bệnh nhân có sẵn đối với bệnh nhân đã từng tới khám.
+	Nhấn nút ghi danh.
+		1.2.2 Lập phiếu khám bệnh
+	Chọn ngày khám bệnh.
+	Chọn bệnh nhân cần lập phiếu khám bệnh.
+	Nhập thông tin phiếu khám bệnh.
+	Nhấn nút lưu.
+		1.2.3 Lập hóa đơn thanh toán
+	Chọn phiếu khám bệnh cần lập hóa đơn thanh toán.
+	Nhấn nút thanh toán.
+		1.2.4 Lập phiếu nhập thuốc
+	Nhập thông tin phiếu nhập thuốc.
+	Nhấn nút lưu.
+		1.2.5 Tra cứu bệnh nhân
+	Nhập thông tin về tiêu chuẩn cần tra cứu.
+	Nhấn nút tìm kiếm.
+		1.2.6 Lập báo cáo tháng
+	Nhập thời gian (tháng và năm) cần lập báo cáo tháng.
+	Nhấn nút xem báo cáo.
+
+
 
 
 
@@ -344,8 +346,6 @@ STT	Họ Tên	Giới Tính	Năm Sinh	Địa Chỉ
 
 	Quy định
 QĐ1: Mỗi ngày khám tối đa 40 bệnh nhân.
-
-
 
 
 
@@ -615,7 +615,6 @@ STT	Thành phần	Diễn giải
 
 
 
-
 Chương 4. THIẾT KẾ DỮ LIỆU
 4.1	Thuật toán lập sơ đồ logic
 	Bước 1: Xét yêu cầu lập danh sách khám bệnh
@@ -649,6 +648,8 @@ o	Thiết kế dữ liệu với tính đúng đắn
 -   Các thuộc tính mới: NgayNhapThuoc, SoLuongNhap, TyLeTinhDonGiaBanHienTai, DonGiaBanHienTai,  TenThuoc, SoLuongTon, DonGiaNhap, DonGiaBan, DonViTinh và TyLeTinhDonGiaBan.
 -   Thiết kế dữ liệu: table CTPHIEUNT và table THUOC.
 -   Các thuộc tính trừu tượng mới: MaCTPhieuNT và  MaThuoc.
+
+
 
 
 
@@ -693,8 +694,7 @@ o	Thiết kế dữ liệu với tính tiến hóa
  
 
  
-Hình 4.5 Sơ đồ logic lập phiếu nhập thuốc với tính tiến hóa
-
+Hình 4.5 Sơ đồ logic lập phiếu khám bệnh với tính tiến hóa
 	Bước 4: Xét yêu cầu tra cứu bệnh nhân
 o	Thiết kế dữ liệu với tính đúng đắn
 -   Biểu mẫu liên quan: BM3.
@@ -721,26 +721,27 @@ o	Thiết kế dữ liệu với tính đúng đắn
 
 
 
+
 -   Sơ đồ Logic
  
 
  
 Hình 4.6 Sơ đồ logic lập hóa đơn thanh toán với tính đúng đắn
-o	Thiết kế dữ liệu với tính tiến hóa
+o	Thiết kế dữ liệu với  oan tiến hóa
 -   Quy định liên quan: QĐ4.
 -   Sơ đồ luồng dữ liệu về việc thay đổi quy định: SĐ10.
--   Các thuộc tính mới: Không có.
+-   Các thuộc  oan mới: Không có.
 -   Các tham số mới: TienKham.
 -   Thiết kế dữ liệu: Không thay đổi.
--   Các thuộc tính trừu tượng mới: Không có.
+-   Các thuộc  oan trừu tượng mới: Không có.
 -   Sơ đồ Logic: Không thay đổi.
 	Bước 6: Xét yêu cầu lập báo cáo doanh thu theo tháng
-o	Thiết kế dữ liệu với tính đúng đắn
+o	Thiết kế dữ liệu với  oan  oan đắn
 -   Biểu mẫu liên quan: BM5.1.
 -   Sơ đồ luồng dữ liệu: SĐ6.
--   Các thuộc tính mới: NgayLap, SoBenhNhan, DoanhThu và TyLeDoanhThuThang.
+-   Các thuộc  oan mới: NgayLap, SoBenhNhan, DoanhThu và TyLeDoanhThuThang.
 -   Thiết kế dữ liệu: table CTBCDOANHTHU.
--   Các thuộc tính trừu tượng mới: MaCTBCDoanhThu.
+-   Các thuộc  oan trừu tượng mới: MaCTBCDoanhThu.
 
 
 -   Sơ đồ Logic
@@ -748,36 +749,36 @@ o	Thiết kế dữ liệu với tính đúng đắn
 
  
 Hình 4.7 Sơ đồ logic lập báo cáo doanh thu theo tháng với tính đúng đắn
-o	Thiết kế dữ liệu với tính tiến hóa
+o	Thiết kế dữ liệu với  oan tiến hóa
 -   Quy định liên quan: Không có.
 -   Sơ đồ luồng dữ liệu về việc thay đổi quy định: Không có.
--   Các thuộc tính mới: Không có.
+-   Các thuộc  oan mới: Không có.
 -   Các tham số mới: Không có.
 -   Thiết kế dữ liệu: Không có.
--   Các thuộc tính trừu tượng mới: Không có.
+-   Các thuộc  oan trừu tượng mới: Không có.
 -   Sơ đồ Logic: Không thay đổi.
 	Bước 7: Xét yêu cầu lập báo cáo sử dụng thuốc theo tháng
-o	Thiết kế dữ liệu với tính đúng đắn
+o	Thiết kế dữ liệu với  oan  oan đắn
 -   Biểu mẫu liên quan: BM5.2.
 -   Sơ đồ luồng dữ liệu: SĐ7.
--   Các thuộc tính mới: Thang, Nam, SoLuongDung và SoLanDung.
+-   Các thuộc  oan mới: Thang, Nam, SoLuongDung và SoLanDung.
 -   Thiết kế dữ liệu: table CTBCSDTHUOC.
--   Các thuộc tính trừu tượng mới: MaCTBCSDThuoc.
+-   Các thuộc  oan trừu tượng mới: MaCTBCSDThuoc.
 
 -   Sơ đồ Logic
  
 
  
 Hình 4.8 Sơ đồ logic lập báo cáo sử dụng thuốc theo tháng với tính đúng đắn
-o	Thiết kế dữ liệu với tính tiến hóa
+o	Thiết kế dữ liệu với  oan tiến hóa
 -   Quy định liên quan: Không có.
 -   Sơ đồ luồng dữ liệu về việc thay đổi quy định: Không có.
--   Các thuộc tính mới: Không có.
+-   Các thuộc  oan mới: Không có.
 -   Các tham số mới: Không có.
 -   Thiết kế dữ liệu: Không có.
--   Các thuộc tính trừu tượng mới: Không có.
+-   Các thuộc  oan trừu tượng mới: Không có.
 -   Sơ đồ Logic: Không thay đổi.
-4.2 Sơ đồ logic hoàn chỉnh
+4.2 Sơ đồ logic  oan chỉnh
  
 Hình 4.9 Sơ đồ logic hoàn chỉnh rút gọn
  
@@ -785,7 +786,7 @@ Hình 4.10 Sơ đồ logic hoàn chỉnh đầy đủ
 
 
 
-4.3 Danh sách các bảng dữ liệu (table) trong sơ đồ logic
+4.4	Danh sách các bảng dữ liệu (table) trong sơ đồ logic
 Bảng 4.1 Danh sách các bảng dữ liệu (table) trong sơ đồ logic
 STT	Tên bảng dữ liệu	Diễn giải
 1	BENHNHAN	Lưu trữ thông tin về bệnh nhân bao gồm mã bệnh nhân, họ tên, giới tính, ngày sinh và địa chỉ
@@ -914,19 +915,34 @@ STT	Thuộc tính	Kiểu dữ liệu	Ràng buộc	Diễn giải
 5	SoLuongDung	Số nguyên	Bằng tổng số lượng dùng của thuốc tương ứng trong các chi tiết phiếu khám bệnh trong tháng năm được nhập	Số lượng dùng
 6	SoLanDung	Số nguyên	Bằng số lần xuất hiện của thuốc tương ứng trong các chi tiết phiếu khám bệnh trong tháng năm được nhập	Số lần dùng
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Chương 5. THIẾT KẾ GIAO DIỆN
 5.1	Sơ đồ liên kết màn hình
 5.1.1 Sơ đồ tổng quan
  
 Hình 5.1 Sơ đồ liên kết màn hình tổng quan
-
-
-
-
 5.1.2 Sơ đồ chi tiết màn hình lập danh sách khám bệnh
 
  
 Hình 5.2 Sơ đồ chi tiết màn hình lập danh sách khám bệnh
+
+
+
 5.1.3 Sơ đồ chi tiết màn hình lập phiếu khám bệnh
  
 Hình 5.3 Sơ đồ chi tiết màn hình lập phiếu khám bệnh
@@ -950,19 +966,12 @@ STT	Màn hình	Loại màn hình	Chức năng
 12	Màn hình lập báo cáo	Báo biểu	Trình bày kết quả báo cáo về doanh thu và sử dụng thuốc
 13	Màn hình thiết lập	Màn hình nhập liệu	Cho phép nhập và lưu trữ thông tin về số lượng bệnh nhân tối đa trong ngày, tiền khám và tỷ lệ tính đơn giá bán thuốc mới
 
-
-
-
-
-
-
-
-
 5.3	Mô tả các màn hình
 5.3.1 Màn hình khởi động
 5.3.1.1 Giao diện
  
 Hình 5.5 Giao diện màn hình khởi động
+
 5.3.1.2 Mô tả các đối tượng trên màn hình
 Bảng 5.2 Bảng mô tả các đối tượng trên màn hình khởi động
 STT	Tên	Kiểu	Ràng buộc	Chức năng
@@ -978,11 +987,11 @@ STT	Biến cố	Xử lý
 2	Kết nối máy chủ thất bại	Thanh tiến độ đạt tối thiểu, hiển thị nút mất kết nối, hiển thị thông báo mất kết nối và hiển thị hướng dẫn thoát chương trình
 3	Nhấn nút kết nối lại	Tiến hành gửi lệnh kết nối đến máy chủ
 
+
 5.3.2 Màn hình hiển thị danh sách chức năng
 5.3.2.1 Giao diện
  
 Hình 5.6 Giao diện màn hình hiển thị danh sách chức năng
-
 5.3.2.2 Mô tả các đối tượng trên màn hình
 Bảng 5.4 Bảng mô tả các đối tượng trên màn hình hiển thị danh sách chức năng
 STT	Tên	Kiểu	Ràng buộc	Chức năng
@@ -994,9 +1003,6 @@ STT	Tên	Kiểu	Ràng buộc	Chức năng
 6	bCreateReport	Button	Không có	Hiển thị màn hình lập báo cáo
 7	bSetting	Button	Không có	Hiển thị màn hình thiết lập
 8	bCancel	Button	Không có	Kết thúc chương trình
-
-
-
 
 5.3.2.3 Danh sách biến cố và xử lý tương ứng trên màn hình
 Bảng 5.5 Danh sách biến cố và xử lý tương ứng trên màn hình hiển thị danh sách chức năng
@@ -1056,6 +1062,15 @@ STT	Biến cố	Xử lý
 8	Nhấn vào DateTimePicker chọn ngày khám bệnh	Hiển thị hộp thoại chọn ngày khám bệnh
 9	Nhấn nút thêm mới bệnh nhân	Hiển thị màn hình thêm bệnh nhân
 10	Nhấn nút ghi danh 	Thêm bệnh nhân được chọn từ danh sách bệnh nhân vào danh sách khám bệnh
+
+
+
+
+
+
+
+
+
 
 5.3.4 Màn hình thêm bệnh nhân
 5.3.4.1 Giao diện
@@ -1184,15 +1199,12 @@ STT	Biến cố	Xử lý
 2	Nhấn nút làm mới	Xóa dữ liệu hiện tại trong các đối tượng nhập liệu
 3	Nhấn nút lưu	Lưu loại bệnh xuống cơ sở dữ liệu
 
-
-
-
-
-
 5.3.7 Màn hình thêm cách dùng
 5.3.7.1 Giao diện
  
 Hình 5.11 Giao diện màn hình thêm cách dùng
+
+
 5.3.7.2 Mô tả các đối tượng trên màn hình
 Bảng 5.14 Bảng mô tả các đối tượng trên màn hình thêm cách dùng
 STT	Tên	Kiểu	Ràng buộc	Chức năng
@@ -1209,6 +1221,11 @@ STT	Biến cố	Xử lý
 1	Nhấn nút thoát	Thoát khỏi màn hình thêm cách dùng
 2	Nhấn nút làm mới	Xóa dữ liệu hiện tại trong các đối tượng nhập liệu
 3	Nhấn nút lưu	Lưu cách dùng xuống cơ sở dữ liệu
+
+
+
+
+
 5.3.8 Màn hình lập hóa đơn thanh toán
 5.3.8.1 Giao diện
  
@@ -1277,7 +1294,9 @@ STT	Biến cố	Xử lý
 8	Nhấn vào DateTimePicker chọn ngày khám bệnh	Hiển thị hộp thoại chọn ngày khám bệnh
 9	Chọn phiếu khám bệnh trong danh sách phiếu khám bệnh	Hiển thị danh sách thuốc sử dụng của phiếu khám bệnh đó trong DataGridView hiển thị danh sách thuốc sử dụng
 10	Nhấn nút lưu	Lưu hóa đơn thanh toán xuống cơ sở dữ liệu
-	
+
+
+
 
 
 
@@ -1573,9 +1592,9 @@ Chương 8. HƯỚNG PHÁT TRIỂN
 
 
 Chương 9. TÀI LIỆU THAM KHẢO
-	Danh sách đề tài môn học Nhập môn Công nghệ phần mềm (Giảng viên Nguyễn Thị Thanh Tuyền - Trường Đại học Công nghệ Thông tin ĐHQG TP.HCM).
-	Hình thức trình bày luận văn/báo cáo (Giảng viên Nguyễn Thị Thanh Tuyền - Trường Đại học Công nghệ Thông tin ĐHQG TP.HCM).
-	Báo cáo đồ án môn học Nhập môn Công nghệ phần mềm (Giảng viên Nguyễn Thị Thanh Tuyền - Trường Đại học Công nghệ Thông tin ĐHQG TP.HCM).
+	Danh sách đề tài môn học Nhập môn Công nghệ phần mềm (Giảng viên Đỗ Thị Thanh Tuyền - Trường Đại học Công nghệ Thông tin ĐHQG TP.HCM).
+	Hình thức trình bày luận văn/báo cáo (Giảng viên Đỗ Thị Thanh Tuyền - Trường Đại học Công nghệ Thông tin ĐHQG TP.HCM).
+	Báo cáo đồ án môn học Nhập môn Công nghệ phần mềm (Giảng viên Đỗ Thị Thanh Tuyền - Trường Đại học Công nghệ Thông tin ĐHQG TP.HCM).
 
 
 
