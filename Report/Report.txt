@@ -727,21 +727,21 @@ o	Thiết kế dữ liệu với tính đúng đắn
 
  
 Hình 4.6 Sơ đồ logic lập hóa đơn thanh toán với tính đúng đắn
-o	Thiết kế dữ liệu với  oan tiến hóa
+o	Thiết kế dữ liệu với tính tiến hóa
 -   Quy định liên quan: QĐ4.
 -   Sơ đồ luồng dữ liệu về việc thay đổi quy định: SĐ10.
--   Các thuộc  oan mới: Không có.
+-   Các thuộc tính mới: Không có.
 -   Các tham số mới: TienKham.
 -   Thiết kế dữ liệu: Không thay đổi.
--   Các thuộc  oan trừu tượng mới: Không có.
+-   Các thuộc tính trừu tượng mới: Không có.
 -   Sơ đồ Logic: Không thay đổi.
 	Bước 6: Xét yêu cầu lập báo cáo doanh thu theo tháng
-o	Thiết kế dữ liệu với  oan  oan đắn
+o	Thiết kế dữ liệu với tính đúng đắn
 -   Biểu mẫu liên quan: BM5.1.
 -   Sơ đồ luồng dữ liệu: SĐ6.
--   Các thuộc  oan mới: NgayLap, SoBenhNhan, DoanhThu và TyLeDoanhThuThang.
+-   Các thuộc tính mới: NgayLap, SoBenhNhan, DoanhThu và TyLeDoanhThuThang.
 -   Thiết kế dữ liệu: table CTBCDOANHTHU.
--   Các thuộc  oan trừu tượng mới: MaCTBCDoanhThu.
+-   Các thuộc tính trừu tượng mới: MaCTBCDoanhThu.
 
 
 -   Sơ đồ Logic
@@ -749,36 +749,36 @@ o	Thiết kế dữ liệu với  oan  oan đắn
 
  
 Hình 4.7 Sơ đồ logic lập báo cáo doanh thu theo tháng với tính đúng đắn
-o	Thiết kế dữ liệu với  oan tiến hóa
+o	Thiết kế dữ liệu với tính tiến hóa
 -   Quy định liên quan: Không có.
 -   Sơ đồ luồng dữ liệu về việc thay đổi quy định: Không có.
--   Các thuộc  oan mới: Không có.
+-   Các thuộc tính mới: Không có.
 -   Các tham số mới: Không có.
 -   Thiết kế dữ liệu: Không có.
--   Các thuộc  oan trừu tượng mới: Không có.
+-   Các thuộc tính trừu tượng mới: Không có.
 -   Sơ đồ Logic: Không thay đổi.
 	Bước 7: Xét yêu cầu lập báo cáo sử dụng thuốc theo tháng
-o	Thiết kế dữ liệu với  oan  oan đắn
+o	Thiết kế dữ liệu với tính đúng đắn
 -   Biểu mẫu liên quan: BM5.2.
 -   Sơ đồ luồng dữ liệu: SĐ7.
--   Các thuộc  oan mới: Thang, Nam, SoLuongDung và SoLanDung.
+-   Các thuộc tính mới: Thang, Nam, SoLuongDung và SoLanDung.
 -   Thiết kế dữ liệu: table CTBCSDTHUOC.
--   Các thuộc  oan trừu tượng mới: MaCTBCSDThuoc.
+-   Các thuộc tính trừu tượng mới: MaCTBCSDThuoc.
 
 -   Sơ đồ Logic
  
 
  
 Hình 4.8 Sơ đồ logic lập báo cáo sử dụng thuốc theo tháng với tính đúng đắn
-o	Thiết kế dữ liệu với  oan tiến hóa
+o	Thiết kế dữ liệu với tính tiến hóa
 -   Quy định liên quan: Không có.
 -   Sơ đồ luồng dữ liệu về việc thay đổi quy định: Không có.
--   Các thuộc  oan mới: Không có.
+-   Các thuộc tính mới: Không có.
 -   Các tham số mới: Không có.
 -   Thiết kế dữ liệu: Không có.
--   Các thuộc  oan trừu tượng mới: Không có.
+-   Các thuộc tính trừu tượng mới: Không có.
 -   Sơ đồ Logic: Không thay đổi.
-4.2 Sơ đồ logic  oan chỉnh
+4.2 Sơ đồ logic hoàn chỉnh
  
 Hình 4.9 Sơ đồ logic hoàn chỉnh rút gọn
  
@@ -786,7 +786,7 @@ Hình 4.10 Sơ đồ logic hoàn chỉnh đầy đủ
 
 
 
-4.4	Danh sách các bảng dữ liệu (table) trong sơ đồ logic
+4.3 Danh sách các bảng dữ liệu (table) trong sơ đồ logic
 Bảng 4.1 Danh sách các bảng dữ liệu (table) trong sơ đồ logic
 STT	Tên bảng dữ liệu	Diễn giải
 1	BENHNHAN	Lưu trữ thông tin về bệnh nhân bao gồm mã bệnh nhân, họ tên, giới tính, ngày sinh và địa chỉ
